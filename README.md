@@ -43,8 +43,11 @@ The goal is to detect wheter a fingerprint image is authentic or spoofed. We sti
 #### Classes
 There are 10 continous features, the classes are imbalanced (but not too much). We need to optimize on one only target application.
 
+
 ### Biometric identity verification
 The goal is to detect wheter a pair of embeddings belongs to the same person. 
 
 #### Classes
 The training set is built to make this project as complex as the others, but check out the documentation. Classes are also slightly imbalanced.
+
+Lalala
