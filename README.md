@@ -50,4 +50,3 @@ The goal is to detect wheter a pair of embeddings belongs to the same person.
 #### Classes
 The training set is built to make this project as complex as the others, but check out the documentation. Classes are also slightly imbalanced.
 
-Lalala
