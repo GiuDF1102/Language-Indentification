@@ -10,7 +10,16 @@ Select a candidate between more different possible alternatives (Best performanc
 Once we have chosena a model, we need the test set (evaluation in the document). You cannot estimate anything on the evaluation test. However the evaluation should depend on the target application.
 
 ## Post-evaluation
-Show the differences between the selected model and the discarded ones.
+Show the differences between the selected model and the discarded ones. Basically follow the questions on the slides.
+
+## Structure of the Report
+Should be a pdf file. It should have the form of a scientific paper... There is no need to add notions about the models, it is not relevant. Write only from the results of the project. If some techniques are not the best, try to add some information about why they don't work, it might be interesting.
+
+- The code of the project has to be provided.
+
+- Avoid using ML libraries.
+
+- Do a ZIP file, avoid RAR.
 
 ## About "Target Application"
 "Sometimes it is better to have more false positive guesses than false negative guesses."
