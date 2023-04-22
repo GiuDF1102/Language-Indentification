@@ -154,5 +154,5 @@ if __name__=="__main__":
 
     plt.show()
 
-    #get_scatter(DP,labels,labels_dict, features_dict_PCA)
-    #get_hist(DP,labels,labels_dict, features_dict_PCA)
+    get_scatter(DP,labels,labels_dict, features_dict_PCA)
+    get_hist(DP,labels,labels_dict, features_dict_PCA)
