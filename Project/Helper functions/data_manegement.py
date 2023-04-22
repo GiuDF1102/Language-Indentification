@@ -1,5 +1,5 @@
 import numpy as np
-import numpy as np
+import scipy.linalg as sci
 import matplotlib.pyplot as plt
 import os 
 import shutil
@@ -21,6 +21,7 @@ def load(file_name):
 
     return (np.array(label_list, dtype=int), np.array(features_list, dtype=float).T)
 
+
 def get_hist(data, labels, map_classes, map_features):
 
     shutil.rmtree("histograms")
@@ -34,7 +35,7 @@ def get_hist(data, labels, map_classes, map_features):
     for i in range(length):
         classes_list.append(data[:, (labels == i)])
 
-    for i in range(length+1):
+    for i in range(len(map_features)):
         plt.figure()
         plt.xlabel(inv_map_feats[i])
         for j in range(length):
@@ -43,6 +44,7 @@ def get_hist(data, labels, map_classes, map_features):
             plt.tight_layout()
 
         plt.savefig("histograms/Histogram {}.svg".format(inv_map_feats[i]))
+
 
 def get_scatter(data, labels, map_classes, map_features):
     
@@ -73,7 +75,84 @@ def get_scatter(data, labels, map_classes, map_features):
                 plt.tight_layout()
                 plt.savefig("scatter_plots/Scatter Plot {} x {}.svg".format(inv_map_feats[i], inv_map_feats[j]))
 
+def FromRowToColumn(v):
+    return v.reshape((v.size, 1))
+
+def calcmean(D):
+    return D.mean(1) #ritorno media sulle colonne
+
+def PCA(D,m): #D=matrice con dati organizzati per colonne, m=dimensionalita' finale
+     mu=D.mean(1) 
+     
+     mu=FromRowToColumn(mu)
+    
+     DC=D-mu
+
+     C=np.dot(DC,DC.T)
+     C=C/float(DC.shape[1]) 
+
+     s,U=np.linalg.eigh(C)
+     P=U[:,::-1][:,0:m]
+    
+     DP=np.dot(P.T, D)
+     return DP
+
+def LDA(Dataset,Labels,m):
+    SB=0
+    SW=0
+    mu=FromRowToColumn(calcmean(Dataset))
+    for i in range(2):
+        DC1s=Dataset[:,Labels==i]
+        muC1s=FromRowToColumn(DC1s.mean(1))
+        SW+=np.dot(DC1s-muC1s,(DC1s-muC1s).T)
+        SB+=DC1s.shape[1]*np.dot(muC1s-mu,(muC1s-mu).T)
+    SW/=Dataset.shape[1]
+    SB/=Dataset.shape[1]
+    # print(SW)
+    # print(SB)
+
+    # risolvo problema generale agli autovalori
+    s,U=sci.eigh(SB,SW)
+    W=U[:,::-1][:,0:m]
+    DP=np.dot(W.T,Dataset)
+    return DP
+
 if __name__=="__main__":
-    labels, features = load("Test.txt")
-    print(features)
-    print(labels)
+    labels, features = load("Train.txt")
+
+    labels_dict = {
+        "Not-Italian": 0,
+        "Italian": 1
+    }
+    features_dict = {
+        "elem 0": 0,
+        "elem 1": 1,
+        "elem 2": 2,
+        "elem 3": 3,
+        "elem 4": 4,
+        "elem 5": 5        
+    }
+
+    features_dict_PCA = {
+        "PCA elem 0": 0,
+        "PCA elem 1": 1   
+    }
+
+
+    #get_hist(features,labels,labels_dict, features_dict)
+    #get_scatter(features,labels,labels_dict, features_dict)
+    #DP = PCA(features,3)
+    DP = LDA(features,labels,3)
+    print(DP)
+    classes_list = []
+    for i in range(2):
+        classes_list.append(DP[:, (labels == i)])
+
+    fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
+    ax.scatter3D(classes_list[0][0], classes_list[0][1], classes_list[0][2], marker='<', s=20)
+    ax.scatter3D(classes_list[1][0], classes_list[1][1], classes_list[1][2], marker='o', s=20)
+
+    plt.show()
+
+    #get_scatter(DP,labels,labels_dict, features_dict_PCA)
+    #get_hist(DP,labels,labels_dict, features_dict_PCA)
