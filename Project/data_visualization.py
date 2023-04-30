@@ -5,7 +5,8 @@ import numpy as np
 
 def get_hist(data, labels, map_classes, map_features):
 
-    shutil.rmtree("histograms")
+    if(os.path.exists("histograms")):
+        shutil.rmtree("histograms")
     os.makedirs("histograms")
 
     length = len(np.unique(labels))
@@ -28,7 +29,8 @@ def get_hist(data, labels, map_classes, map_features):
 
 def get_scatter(data, labels, map_classes, map_features):
     
-    shutil.rmtree("scatter_plots")
+    if(os.path.exists("scatter_plots")):
+        shutil.rmtree("scatter_plots")
     os.makedirs("scatter_plots")
 
     length_feat = len(map_features)
