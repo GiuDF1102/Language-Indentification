@@ -21,11 +21,11 @@ def get_hist(data, labels, map_classes, map_features):
         plt.figure()
         plt.xlabel(inv_map_feats[i])
         for j in range(length):
-            plt.hist(classes_list[j][i], bins = 10, density = True, alpha = 0.4, label = inv_map_class[j])
+            plt.hist(classes_list[j][i], bins = 25, density = True, alpha = 0.4, label = inv_map_class[j])
             plt.legend()
             plt.tight_layout()
 
-        plt.savefig("histograms/Histogram {}.svg".format(inv_map_feats[i]))
+        plt.savefig("histograms/Histogram {}.png".format(inv_map_feats[i]))
 
 def get_scatter(data, labels, map_classes, map_features):
     
@@ -55,7 +55,8 @@ def get_scatter(data, labels, map_classes, map_features):
             if i != j:
                 plt.legend()
                 plt.tight_layout()
-                plt.savefig("scatter_plots/Scatter Plot {} x {}.svg".format(inv_map_feats[i], inv_map_feats[j]))
+            
+            plt.savefig("scatter_plots/Scatter Plot {} x {}.png".format(inv_map_feats[i], inv_map_feats[j]))
 
 def get_scatter_3d(Data, n_classes, labels):
     classes_list = []
