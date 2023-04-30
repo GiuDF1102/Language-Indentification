@@ -75,6 +75,17 @@ def get_scatter(data, labels, map_classes, map_features):
                 plt.tight_layout()
                 plt.savefig("scatter_plots/Scatter Plot {} x {}.svg".format(inv_map_feats[i], inv_map_feats[j]))
 
+def get_scatter_3d(Data,n_classes):
+    classes_list = []
+    for i in range(2):
+        classes_list.append(Data[:, (labels == i)])
+    #[classe][feature]
+    fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
+    for i in range(n_classes):
+         ax.scatter3D(classes_list[i][0], classes_list[i][1], classes_list[i][2], s=20)
+
+    plt.show()
+
 def FromRowToColumn(v):
     return v.reshape((v.size, 1))
 
@@ -132,27 +143,15 @@ if __name__=="__main__":
         "elem 4": 4,
         "elem 5": 5        
     }
-
     features_dict_PCA = {
         "PCA elem 0": 0,
         "PCA elem 1": 1   
     }
 
-
     #get_hist(features,labels,labels_dict, features_dict)
     #get_scatter(features,labels,labels_dict, features_dict)
-    #DP = PCA(features,3)
-    DP = LDA(features,labels,3)
-    print(DP)
-    classes_list = []
-    for i in range(2):
-        classes_list.append(DP[:, (labels == i)])
-
-    fig, ax = plt.subplots(subplot_kw={"projection": "3d"})
-    ax.scatter3D(classes_list[0][0], classes_list[0][1], classes_list[0][2], marker='<', s=20)
-    ax.scatter3D(classes_list[1][0], classes_list[1][1], classes_list[1][2], marker='o', s=20)
-
-    plt.show()
-
+    DP = PCA(features,3)
+    #DP = LDA(features,labels,3)
+    get_scatter_3d(DP,2)
     get_scatter(DP,labels,labels_dict, features_dict_PCA)
     get_hist(DP,labels,labels_dict, features_dict_PCA)
