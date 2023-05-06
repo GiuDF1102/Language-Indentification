@@ -30,12 +30,38 @@ if __name__=="__main__":
     #dv.get_hist(features,labels,labels_dict, features_dict)
     #dv.get_scatter(features,labels,labels_dict, features_dict)
 
-    DP = dr.PCA(features,2)
+    DP = dr.PCA(features,5)
+    DPT = dr.PCA(features_test,5)
+
     #DP = LDA(features,labels,3)
     #dv.get_scatter_3d(DP,2,labels)
     #dv.get_scatter(DP,labels,labels_dict, features_dict_PCA)
     #dv.get_hist(DP,labels,labels_dict, features_dict_PCA)
 
+    # #WITH PCA
+    # mvg_cl = gg.multivariate_cl()
+    # mean, C = mvg_cl.fit(DP, labels)
+    # predicted = mvg_cl.trasform(DPT, mean, C)
+    # print("PCA Multivarate:", gg.calc_accuracy(labels_test, predicted))
+
+    # tied_cl = gg.tied_multivariate_cl()
+    # mean, C = tied_cl.fit(DP, labels)
+    # predicted = tied_cl.trasform(DPT, mean, C)
+    # print("PCA Tied MVG:", gg.calc_accuracy(labels_test, predicted))
+
+    # naive_cl = gg.naive_multivariate_cl()
+    # mean, C = naive_cl.fit(DP, labels)
+    # predicted = naive_cl.trasform(DPT, mean, C)
+    # print("PCA Naive MVG:", gg.calc_accuracy(labels_test, predicted))
+
+    # tied_naive_cl = gg.tied_naive_multivariate_cl()
+    # mean, C = tied_naive_cl.fit(DP, labels)
+    # predicted = tied_naive_cl.trasform(DPT, mean, C)
+    # print("PCA Tied Naive MVG:", gg.calc_accuracy(labels_test, predicted))
+    dv.calc_correlation_matrix(features, "Dataset")
+    dv.calc_correlation_matrix(DP, "Dataset-PCA")
+    #WITHOUT
+    print("\n------- WITHOUT PCA -------")
     mvg_cl = gg.multivariate_cl()
     mean, C = mvg_cl.fit(features, labels)
     predicted = mvg_cl.trasform(features_test, mean, C)

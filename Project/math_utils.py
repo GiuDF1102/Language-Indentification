@@ -1,5 +1,9 @@
 import numpy as np
 
+def dataset_cov_mat(D,mu):
+    DC = D - mu.reshape((mu.size, 1))
+    return (1/D.shape[1])*np.dot(DC,DC.T)
+
 def FromRowToColumn(v):
     return v.reshape((v.size, 1))
 
@@ -39,3 +43,6 @@ def calcmean_variance(Data, labels):
         classes_variance.append(variance_class)
 
     return classes_variance
+
+
+    

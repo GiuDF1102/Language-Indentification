@@ -2,6 +2,25 @@ import matplotlib.pyplot as plt
 import os 
 import shutil
 import numpy as np
+import math_utils as mu
+import seaborn as sns
+
+def calc_correlation_matrix(D, name): #TODO:ottimizzare
+    if(os.path.exists("correlation_martices")):
+        shutil.rmtree("correlation_martices")
+    os.makedirs("correlation_martices")
+
+    mean = mu.calcmean(D)
+    cov_matr = mu.dataset_cov_mat(D,mean)
+    variance=cov_matr.diagonal()
+    corr_matrix = np.zeros(cov_matr.shape)
+    for i in range(cov_matr.shape[0]):
+            for j in range(cov_matr.shape[1]):
+                    corr_matrix[i][j] = cov_matr[i][j]/np.sqrt(variance[i]*variance[j])
+
+    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
+    plt.savefig("correlation_martices/correlation_martices {}.png".format(name))
+    return corr_matrix
 
 def get_hist(data, labels, map_classes, map_features):
 

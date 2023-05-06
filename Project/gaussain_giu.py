@@ -95,6 +95,7 @@ class multivariate_cl:
             C_ML = dataset_cov_mat(x[:,labels==i], m_ML)
             m_estimates.append(m_ML.reshape(m_ML.shape[0], 1))
             C_estimates.append(C_ML)
+            
 
         if len(self.priors) == 0:
             self.priors = array_classes/len(x[0])
