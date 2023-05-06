@@ -11,6 +11,16 @@ import matplotlib.pyplot as plt
 from sklearn.utils import shuffle
 import scipy as sci
 
+def calc_accuracy(labels, predicted):
+    confronted = (labels == predicted)
+    correct = 0
+    
+    for i in confronted:
+        if(i == True):
+            correct = correct + 1
+    
+    return correct/len(predicted)
+
 def vrow(x):
     return x.reshape((1,x.shape[0]))
 
@@ -81,8 +91,8 @@ class multivariate_cl:
         for i in range(loop_len):
             class_count = len(x[:, labels==i][0])
             array_classes[i] = class_count
-            m_ML = dataset_mean(DTR[:,LTR==i])
-            C_ML = dataset_cov_mat(DTR[:,LTR==i], m_ML)
+            m_ML = dataset_mean(x[:,labels==i])
+            C_ML = dataset_cov_mat(x[:,labels==i], m_ML)
             m_estimates.append(m_ML.reshape(m_ML.shape[0], 1))
             C_estimates.append(C_ML)
 
@@ -120,8 +130,8 @@ class naive_multivariate_cl:
         for i in range(loop_len):
             class_count = len(x[:, labels==i][0])
             array_classes[i] = class_count
-            m_ML = dataset_mean(DTR[:,LTR==i])
-            C_ML = dataset_cov_mat(DTR[:,LTR==i], m_ML)
+            m_ML = dataset_mean(x[:,labels==i])
+            C_ML = dataset_cov_mat(x[:,labels==i], m_ML)
             m_estimates.append(m_ML.reshape(m_ML.shape[0], 1))
             C_estimates.append(C_ML)
 
