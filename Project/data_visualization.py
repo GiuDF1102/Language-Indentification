@@ -6,9 +6,9 @@ import math_utils as mu
 import seaborn as sns
 
 def calc_correlation_matrix(D, name): #TODO:ottimizzare
-    if(os.path.exists("correlation_martices")):
-        shutil.rmtree("correlation_martices")
-    os.makedirs("correlation_martices")
+    # if(os.path.exists("correlation_martices")):
+    #     shutil.rmtree("correlation_martices")
+    # os.makedirs("correlation_martices")
 
     mean = mu.calcmean(D)
     cov_matr = mu.dataset_cov_mat(D,mean)
@@ -20,6 +20,7 @@ def calc_correlation_matrix(D, name): #TODO:ottimizzare
 
     sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
     plt.savefig("correlation_martices/correlation_martices {}.png".format(name))
+    plt.close()
     return corr_matrix
 
 def get_hist(data, labels, map_classes, map_features):
