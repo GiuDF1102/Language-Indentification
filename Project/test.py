@@ -1,8 +1,7 @@
 import data_utils as du
 import data_visualization as dv
 import dimensionality_reduction as dr
-import math_utils as mu
-import gaussain_giu as gg
+import gaussian as gg
 
 if __name__=="__main__":
     labels, features = du.load("..\PROJECTS\Language_detection\Train.txt")
