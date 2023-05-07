@@ -19,7 +19,8 @@ def calc_correlation_matrix(D, name): #TODO:ottimizzare
                     corr_matrix[i][j] = cov_matr[i][j]/np.sqrt(variance[i]*variance[j])
 
     sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
-    plt.savefig("correlation_martices/correlation_martices {}.png".format(name))
+    plt.title(f"{name} correlation matrix")
+    plt.savefig("correlation_martices/correlation_martice {}.png".format(name))
     plt.close()
     return corr_matrix
 
@@ -46,6 +47,7 @@ def get_hist(data, labels, map_classes, map_features):
             plt.tight_layout()
 
         plt.savefig("histograms/Histogram {}.png".format(inv_map_feats[i]))
+    plt.close()
 
 def get_scatter(data, labels, map_classes, map_features):
     
@@ -75,8 +77,8 @@ def get_scatter(data, labels, map_classes, map_features):
             if i != j:
                 plt.legend()
                 plt.tight_layout()
-            
-            plt.savefig("scatter_plots/Scatter Plot {} x {}.png".format(inv_map_feats[i], inv_map_feats[j]))
+                plt.savefig("scatter_plots/Scatter Plot {} x {}.png".format(inv_map_feats[i], inv_map_feats[j]))
+            plt.close()
 
 def get_scatter_3d(Data, n_classes, labels):
     classes_list = []
@@ -88,3 +90,4 @@ def get_scatter_3d(Data, n_classes, labels):
          ax.scatter3D(classes_list[i][0], classes_list[i][1], classes_list[i][2], s=20) #[classe][feature]
 
     plt.show()
+    plt.close()
