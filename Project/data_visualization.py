@@ -20,7 +20,7 @@ def calc_correlation_matrix(D, name): #TODO:ottimizzare
 
     sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
     plt.title(f"{name} correlation matrix")
-    plt.savefig("correlation_martices/correlation_martice {}.png".format(name))
+    plt.savefig("correlation_martices/correlation_matrice {}.png".format(name))
     plt.close()
     return corr_matrix
 
