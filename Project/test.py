@@ -2,6 +2,7 @@ import data_utils as du
 import data_visualization as dv
 import dimensionality_reduction as dr
 import gaussian as gg
+import validation as val
 
 if __name__=="__main__":
     labels, features = du.load("..\PROJECTS\Language_detection\Train.txt")
@@ -27,7 +28,7 @@ if __name__=="__main__":
     #no_reduction_means = mu.calcmean_classes(features, labels)
     #no_reduction_variance = mu.calcmean_variance(features, labels)
     #dv.get_hist(features,labels,labels_dict, features_dict)
-    #dv.get_scatter(features,labels,labels_dict, features_dict)
+    dv.get_scatter(features,labels,labels_dict, features_dict)
 
     DP = dr.PCA(features,5)
     DPT = dr.PCA(features_test,5)
@@ -80,3 +81,4 @@ if __name__=="__main__":
     mean, C = tied_naive_cl.fit(features, labels)
     predicted = tied_naive_cl.trasform(features_test, mean, C)
     print("Tied Naive MVG:", gg.calc_accuracy(labels_test, predicted))
+    # print(val.k_fold([mvg_cl,tied_cl,naive_cl,tied_naive_cl],features,labels,5))
