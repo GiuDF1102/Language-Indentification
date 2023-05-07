@@ -28,7 +28,7 @@ if __name__=="__main__":
     #no_reduction_means = mu.calcmean_classes(features, labels)
     #no_reduction_variance = mu.calcmean_variance(features, labels)
     #dv.get_hist(features,labels,labels_dict, features_dict)
-    dv.get_scatter(features,labels,labels_dict, features_dict)
+    #dv.get_scatter(features,labels,labels_dict, features_dict)
 
     DP = dr.PCA(features,5)
     DPT = dr.PCA(features_test,5)
