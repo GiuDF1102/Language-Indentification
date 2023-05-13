@@ -2,3 +2,10 @@
 **/Project/scatter_plots
 **/Project/__pycache__
 **/Project/correlation_matrices
+**/Project/histograms_l2_norm
+**/Project/histograms_original
+**/Project/histograms_PCA
+**/Project/histograms_z_score
+**/Project/scatter_plots_z_score
+**/Project/scatter_plots_PCA
+**/Project/scatter_plots_original

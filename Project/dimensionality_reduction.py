@@ -33,7 +33,7 @@ def LDA(Dataset,Labels,m):
     # print(SB)
 
     # risolvo problema generale agli autovalori
-    s,U=sci.eigh(SB,SW)
+    s,U=sci.linalg.eig(SB,SW)
     W=U[:,::-1][:,0:m]
     DP=np.dot(W.T,Dataset)
     return DP

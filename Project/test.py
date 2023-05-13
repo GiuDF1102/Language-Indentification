@@ -1,8 +1,9 @@
 import data_utils as du
 import data_visualization as dv
 import dimensionality_reduction as dr
-import gaussian as gg
+import gaussian_classifiers as gc
 import validation as val
+import math_utils as mu
 
 if __name__=="__main__":
     labels, features = du.load("..\PROJECTS\Language_detection\Train.txt")
@@ -22,63 +23,97 @@ if __name__=="__main__":
     }
     features_dict_PCA = {
         "PC-0": 0,
-        "PC-1": 1   
+        "PC-1": 1,
+        "PC-2": 2,
+        "PC-3": 3,
+        "PC-4": 4   
     }
 
-    #no_reduction_means = mu.calcmean_classes(features, labels)
-    #no_reduction_variance = mu.calcmean_variance(features, labels)
+    print("Number of italian samples:", (labels == 1).sum())
+    print("Number of not italian samples:", (labels == 0).sum())
+    print((labels == 0).sum()/((labels == 1).sum()+(labels == 0).sum()))
+    no_reduction_means = mu.calcmean_classes(features, labels)
+    no_reduction_variance = mu.calcvariance_classes(features, labels)
+    print("No reduction means italian: ", no_reduction_means[1])
+    print("No reduction means not italian: ", no_reduction_means[0])
+    print("No reduction variance italian: ", no_reduction_variance[1])
+    print("No reduction variance not italian: ", no_reduction_variance[0])
+    #The means of the classes 
     #dv.get_hist(features,labels,labels_dict, features_dict)
     #dv.get_scatter(features,labels,labels_dict, features_dict)
 
-    DP = dr.PCA(features,5)
-    DPT = dr.PCA(features_test,5)
+    
+    #z_scored = mu.z_score(features)
+    #z_scored_test = mu.z_score(features_test)
+    #l2_normed = mu.l2_norm(features)
+    #l2_normed_test = mu.l2_norm(features_test) # NORMALIZATION IS NOT USEFUL
+    
+    #DP = dr.PCA(features,5)
+    #DPT = dr.PCA(features_test,5)
+    #DP = dr.LDA(features,labels,3)
 
-    #DP = LDA(features,labels,3)
     #dv.get_scatter_3d(DP,2,labels)
-    #dv.get_scatter(DP,labels,labels_dict, features_dict_PCA)
-    #dv.get_hist(DP,labels,labels_dict, features_dict_PCA)
+    #dv.get_scatter(features,labels,labels_dict, features_dict)
+    dv.get_hist(features,labels,labels_dict, features_dict)
 
-    # #WITH PCA
-    # mvg_cl = gg.multivariate_cl()
+    dv.calc_correlation_matrix(features, "Dataset")
+    dv.calc_correlation_matrix(features.T[ labels == 1].T, "Dataset Italian")
+    dv.calc_correlation_matrix(features.T[ labels == 0].T, "Dataset not Italian")
+    #dv.calc_correlation_matrix(z_scored, "Dataset-zscore")
+    #dv.calc_correlation_matrix(DP, "Dataset-PCA")
+
+    # print("\n------- WITH PCA -------")
+    # mvg_cl = gc.multivariate_cl()
     # mean, C = mvg_cl.fit(DP, labels)
     # predicted = mvg_cl.trasform(DPT, mean, C)
-    # print("PCA Multivarate:", gg.calc_accuracy(labels_test, predicted))
+    # print(f"Multivarate + PCA: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
 
-    # tied_cl = gg.tied_multivariate_cl()
+    # tied_cl = gc.tied_multivariate_cl()
     # mean, C = tied_cl.fit(DP, labels)
     # predicted = tied_cl.trasform(DPT, mean, C)
-    # print("PCA Tied MVG:", gg.calc_accuracy(labels_test, predicted))
+    # print(f"Tied Multivarate + PCA: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
 
-    # naive_cl = gg.naive_multivariate_cl()
+    # naive_cl = gc.naive_multivariate_cl()
     # mean, C = naive_cl.fit(DP, labels)
     # predicted = naive_cl.trasform(DPT, mean, C)
-    # print("PCA Naive MVG:", gg.calc_accuracy(labels_test, predicted))
+    # print(f"Naive Multivarate + PCA: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
 
-    # tied_naive_cl = gg.tied_naive_multivariate_cl()
+    # tied_naive_cl = gc.tied_naive_multivariate_cl()
     # mean, C = tied_naive_cl.fit(DP, labels)
     # predicted = tied_naive_cl.trasform(DPT, mean, C)
-    # print("PCA Tied Naive MVG:", gg.calc_accuracy(labels_test, predicted))
-    dv.calc_correlation_matrix(features, "Dataset")
-    dv.calc_correlation_matrix(DP, "Dataset-PCA")
-    #WITHOUT
-    print("\n------- WITHOUT PCA -------")
-    mvg_cl = gg.multivariate_cl()
-    mean, C = mvg_cl.fit(features, labels)
-    predicted = mvg_cl.trasform(features_test, mean, C)
-    print("Multivarate:", gg.calc_accuracy(labels_test, predicted))
+    # print(f"Tied Naive Multivarate + PCA: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
 
-    tied_cl = gg.tied_multivariate_cl()
-    mean, C = tied_cl.fit(features, labels)
-    predicted = tied_cl.trasform(features_test, mean, C)
-    print("Tied MVG:", gg.calc_accuracy(labels_test, predicted))
+    # print("\n------- WITHOUT PCA -------")
+    # mvg_cl = gc.multivariate_cl()
+    # mean, C = mvg_cl.fit(features, labels)
+    # predicted = mvg_cl.trasform(features_test, mean, C)
+    # print(f"Multivarate: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
 
-    naive_cl = gg.naive_multivariate_cl()
-    mean, C = naive_cl.fit(features, labels)
-    predicted = naive_cl.trasform(features_test, mean, C)
-    print("Naive MVG:", gg.calc_accuracy(labels_test, predicted))
+    # tied_cl = gc.tied_multivariate_cl()
+    # mean, C = tied_cl.fit(features, labels)
+    # predicted = tied_cl.trasform(features_test, mean, C)
+    # print(f"Tied Multivarate: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
 
-    tied_naive_cl = gg.tied_naive_multivariate_cl()
-    mean, C = tied_naive_cl.fit(features, labels)
-    predicted = tied_naive_cl.trasform(features_test, mean, C)
-    print("Tied Naive MVG:", gg.calc_accuracy(labels_test, predicted))
-    # print(val.k_fold([mvg_cl,tied_cl,naive_cl,tied_naive_cl],features,labels,5))
+    # naive_cl = gc.naive_multivariate_cl()
+    # mean, C = naive_cl.fit(features, labels)
+    # predicted = naive_cl.trasform(features_test, mean, C)
+    # print(f"Naive Multivarate: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
+
+    # tied_naive_cl = gc.tied_naive_multivariate_cl()
+    # mean, C = tied_naive_cl.fit(features, labels)
+    # predicted = tied_naive_cl.trasform(features_test, mean, C)
+    # print(f"Tied Naive Multivarate: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%\n")
+
+    #print("\n------- WITH ZSCORE -------")
+    #mvg_cl = gc.multivariate_cl()
+    #mean, C = mvg_cl.fit(z_scored, labels)
+    #predicted = mvg_cl.trasform(z_scored_test, mean, C)
+    #print(f"Multivarate + zscore: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
+
+    #other classifiers produce singular matrices
+
+    #learners = [gc.multivariate_cl(),gc.naive_multivariate_cl(), gc.tied_multivariate_cl(), gc.tied_naive_multivariate_cl()]
+    #print(val.k_fold(learners, DP, labels, len(labels)))
+    #NO PCA [93.71573175875159, 92.74567692956558, 83.12948123154787, 83.12948123154787]
+    #PCA    [93.92661324335724, 93.63137916490932, 83.12948123154787, 83.12948123154787]
+    
