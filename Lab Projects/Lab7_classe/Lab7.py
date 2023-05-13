@@ -12,6 +12,9 @@ def load_iris_without_setosa():
 def vcol(v):
     return v.reshape((v.size, 1))
 
+def FromVectorToMatrix(V,ncol):
+    return V.reshape((V.size, ncol))
+
 def split_db_2to1(D, L, seed=0):#versicolor=1, virginica=0
     # 2/3 dei dati per il training----->100 per training, 50 per test
     nTrain = int(D.shape[1]*2.0/3.0)
@@ -46,13 +49,26 @@ class logReg():
         xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.logreg_obj,x0=x0,approx_grad=True)
         w,b=vcol(xOpt[0:self.DTR.shape[0]]),xOpt[-1]
         return w,b
+        
+class logRegMC():
+    def __init__(self,D,L,l):
+        self.DTR=D
+        self.ZTR=L*2.0-1.0
+        self.num_class = len(np.unique(L))
+        self.l=l
+        self.dim=D.shape[0]
+
+    #def logreg_obj(self,V):
+        
+    
 
 if __name__=="__main__":
 
-    D,L=load_iris_without_setosa()
+    """    D,L=load_iris_without_setosa()
     (DTR,LTR),(DTE,LTE)=split_db_2to1(D,L)
     logReg.__init__(DTR,LTR,1.0)
-    
-
+    """
+    V=np.array([2,4,5,6,7,8,8,0,9])
+    print(FromVectorToMatrix(V,3))
 
     
