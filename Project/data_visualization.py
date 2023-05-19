@@ -26,28 +26,26 @@ def calc_correlation_matrix(D, name): #TODO:ottimizzare
 
 def get_hist(data, labels, map_classes, map_features):
 
-    if(os.path.exists("histograms")):
-        shutil.rmtree("histograms")
+    shutil.rmtree("histograms")
     os.makedirs("histograms")
 
     length = len(np.unique(labels))
     classes_list = []
     inv_map_class = {v: k for k, v in map_classes.items()}
     inv_map_feats = {v: k for k, v in map_features.items()}
-    fig, ax = plt.subplots(3,2, figsize=(15,19))
 
     for i in range(length):
         classes_list.append(data[:, (labels == i)])
 
-    for i in range(len(map_features)):
+    for i in range(length+1):
+        plt.figure()
+        plt.xlabel(inv_map_feats[i])
         for j in range(length):
-            row = int(i/2)
-            col = i%2
-            ax[row, col].hist(classes_list[j][i], bins = 25, density = True, alpha = 0.4, label = inv_map_class[j])
-            ax[row, col].legend()
-            ax[row, col].set_title(inv_map_feats[i])
-    plt.tight_layout()
-    plt.savefig("histograms/Histogram {}.png".format(inv_map_feats[i]))
+            plt.hist(classes_list[j][i], bins = 10, density = True, alpha = 0.4, label = inv_map_class[j])
+            plt.legend()
+            plt.tight_layout()
+
+        plt.savefig("histograms/Histogram {}.svg".format(inv_map_feats[i]))
     plt.close()
 
 def get_scatter(data, labels, map_classes, map_features):
