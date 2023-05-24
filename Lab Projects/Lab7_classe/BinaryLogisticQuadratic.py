@@ -36,8 +36,7 @@ def split_db_2to1(D, L, seed=0):#versicolor=1, virginica=0
     return (DTR, LTR), (DTE, LTE)  # DTR= data training, LTR= Label training
     # DTE= Data test, LTE= label testing
 
-
-def transform(DTE, w,b):
+def transform(DTE, w, b):
     posteriors = np.dot(w.T,DTE)+b
     posteriors[posteriors>0] = 1
     posteriors[posteriors<=0] = 0
@@ -53,24 +52,41 @@ class logReg():
     def logreg_obj(self,v):
         w= fromRowToColumn(v[0:self.dim])
         b=v[-1]
+        x_stacked = features_expansion(DTR)
         scores=np.dot(w.T,self.DTR)+b
         loss_per_sample=np.logaddexp(0,-self.ZTR*scores)
         loss=loss_per_sample.mean()+0.5*self.l*np.linalg.norm(w)**2
         return loss
     
     def train(self):
-        x0=np.zeros(self.DTR.shape[0]+1)
+        x_stacked = features_expansion(DTR)
+        x0=np.zeros(x_stacked.shape[0]+1)
         xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.logreg_obj,x0=x0,approx_grad=True)
-        w,b= fromRowToColumn(xOpt[0:self.DTR.shape[0]]),xOpt[-1]
-        return w,b
+        return xOpt
     
+
+def features_expansion(Dataset):
+    expansion = []
+    for i in range(Dataset.shape[1]):
+        vec = np.reshape(np.dot(fromRowToColumn(Dataset[:, i]), fromRowToColumn(Dataset[:, i]).T), (-1, 1), order='F')
+        expansion.append(vec)
+    return np.vstack((np.hstack(expansion), Dataset))
+
 if __name__ == '__main__':
     D, L = load_iris_without_setosa()
     (DTR, LTR), (DTE, LTE) = split_db_2to1(D, L)
+    print(DTR.shape[0])
     
-    logreg = logReg(DTR, LTR, 0.000001)
+    """logreg = logReg(DTR, LTR, 0.000001)
     w,b = logreg.train()
     labels = transform(DTE, w, b)
     labels = list(map(int,labels.flatten()))
-    print(1-calc_accuracy(LTE, labels))
-    
+    print(1-calc_accuracy(LTE, labels)) """
+
+    """ test_x2 = phi_x(DTE.T) """
+    regressor=logReg(DTR,LTR,0.001)
+    x=regressor.train()
+    print(x[0:4])
+    test = transform(DTE, x[0:4], x[-1])
+    print(test)
+    print(1-calc_accuracy(test,LTE))
