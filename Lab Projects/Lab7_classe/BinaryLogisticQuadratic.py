@@ -50,10 +50,10 @@ class logReg():
         self.dim=D.shape[0]
 
     def logreg_obj(self,v):
-        w= fromRowToColumn(v[0:self.dim])
+        phi = features_expansion(DTR)
+        w= fromRowToColumn(v[0:phi.shape[0]])
         b=v[-1]
-        x_stacked = features_expansion(DTR)
-        scores=np.dot(w.T,self.DTR)+b
+        scores=np.dot(w.T,phi)+b
         loss_per_sample=np.logaddexp(0,-self.ZTR*scores)
         loss=loss_per_sample.mean()+0.5*self.l*np.linalg.norm(w)**2
         return loss
@@ -65,7 +65,7 @@ class logReg():
         return xOpt
     
 
-def features_expansion(Dataset):
+def features_expansion(Dataset):#restituisce phi
     expansion = []
     for i in range(Dataset.shape[1]):
         vec = np.reshape(np.dot(fromRowToColumn(Dataset[:, i]), fromRowToColumn(Dataset[:, i]).T), (-1, 1), order='F')

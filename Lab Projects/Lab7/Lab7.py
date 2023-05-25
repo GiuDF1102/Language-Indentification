@@ -3,7 +3,6 @@ import scipy as sci
 import scipy.optimize as sciopt
 import sklearn.datasets as sk
 
-
 def load_iris_without_setosa():
     D, L = sk.load_iris()['data'].T, sk.load_iris()['target']
     D = D[:, L != 0] #non prendo iris setosa

@@ -1,4 +1,5 @@
 import numpy as np
+import math_utils as mu
 
 def load(file_name):
     file_path = file_name
@@ -44,5 +45,11 @@ def split_k(X, y, k):
         train_indices = list(range(0, start)) + list(range(end, len(X)))
         print(train_indices, val_indices)
         folds.append((train_indices, val_indices))
-    
     return folds
+
+def features_expansion(Dataset):
+    expansion = []
+    for i in range(Dataset.shape[1]):
+        vec = np.reshape(np.dot(mu.FromRowToColumn(Dataset[:, i]), mu.FromRowToColumn(Dataset[:, i]).T), (-1, 1), order='F')
+        expansion.append(vec)
+    return np.vstack((np.hstack(expansion), Dataset))

@@ -4,6 +4,7 @@ import dimensionality_reduction as dr
 import gaussian_classifiers as gc
 import validation as val
 import math_utils as mu
+import logistic_regression_classifiers as lrc
 
 if __name__=="__main__":
     labels, features = du.load("..\PROJECTS\Language_detection\Train.txt")
@@ -29,15 +30,23 @@ if __name__=="__main__":
         "PC-4": 4   
     }
 
-    print("Number of italian samples:", (labels == 1).sum())
-    print("Number of not italian samples:", (labels == 0).sum())
-    print((labels == 0).sum()/((labels == 1).sum()+(labels == 0).sum()))
-    no_reduction_means = mu.calcmean_classes(features, labels)
-    no_reduction_variance = mu.calcvariance_classes(features, labels)
-    print("No reduction means italian: ", no_reduction_means[1])
-    print("No reduction means not italian: ", no_reduction_means[0])
-    print("No reduction variance italian: ", no_reduction_variance[1])
-    print("No reduction variance not italian: ", no_reduction_variance[0])
+    featuresTrainQuadratic = du.features_expansion(features)
+    featuresTestQuadratic = du.features_expansion(features_test)
+    logQuad =lrc.logReg(featuresTrainQuadratic,labels,0.001)
+    w,b=logQuad.train()
+    test = lrc.transform(featuresTestQuadratic,w, b)
+    print("Logistic Regression: ", val.calc_accuracy(labels_test,test)*100)
+
+
+    # print("Number of italian samples:", (labels == 1).sum())
+    # print("Number of not italian samples:", (labels == 0).sum())
+    # print((labels == 0).sum()/((labels == 1).sum()+(labels == 0).sum()))
+    # no_reduction_means = mu.calcmean_classes(features, labels)
+    # no_reduction_variance = mu.calcvariance_classes(features, labels)
+    # print("No reduction means italian: ", no_reduction_means[1])
+    # print("No reduction means not italian: ", no_reduction_means[0])
+    # print("No reduction variance italian: ", no_reduction_variance[1])
+    # print("No reduction variance not italian: ", no_reduction_variance[0])
     #The means of the classes 
     #dv.get_hist(features,labels,labels_dict, features_dict)
     #dv.get_scatter(features,labels,labels_dict, features_dict)
@@ -54,11 +63,11 @@ if __name__=="__main__":
 
     #dv.get_scatter_3d(DP,2,labels)
     #dv.get_scatter(features,labels,labels_dict, features_dict)
-    dv.get_hist(features,labels,labels_dict, features_dict)
+    # dv.get_hist(features,labels,labels_dict, features_dict)
 
-    dv.calc_correlation_matrix(features, "Dataset")
-    dv.calc_correlation_matrix(features.T[ labels == 1].T, "Dataset Italian")
-    dv.calc_correlation_matrix(features.T[ labels == 0].T, "Dataset not Italian")
+    # dv.calc_correlation_matrix(features, "Dataset")
+    # dv.calc_correlation_matrix(features.T[ labels == 1].T, "Dataset Italian")
+    # dv.calc_correlation_matrix(features.T[ labels == 0].T, "Dataset not Italian")
     #dv.calc_correlation_matrix(z_scored, "Dataset-zscore")
     #dv.calc_correlation_matrix(DP, "Dataset-PCA")
 
@@ -84,10 +93,10 @@ if __name__=="__main__":
     # print(f"Tied Naive Multivarate + PCA: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
 
     # print("\n------- WITHOUT PCA -------")
-    # mvg_cl = gc.multivariate_cl()
-    # mean, C = mvg_cl.fit(features, labels)
-    # predicted = mvg_cl.trasform(features_test, mean, C)
-    # print(f"Multivarate: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
+    mvg_cl = gc.multivariate_cl()
+    mean, C = mvg_cl.fit(features, labels)
+    predicted = mvg_cl.trasform(features_test, mean, C)
+    print(f"Multivarate: {round(val.calc_accuracy(labels_test, predicted)*100,2)}%")
 
     # tied_cl = gc.tied_multivariate_cl()
     # mean, C = tied_cl.fit(features, labels)
