@@ -22,9 +22,10 @@ class logReg():
         x0=np.zeros(self.DTR.shape[0]+1)
         xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.logreg_obj,x0=x0,approx_grad=True)
         return xOpt[0:self.DTR.shape[0]], xOpt[-1]
+    
+    
 
-def transform(DTE, w, b):
-    posteriors = np.dot(w.T,DTE)+b
-    posteriors[posteriors>0] = 1
-    posteriors[posteriors<=0] = 0
-    return posteriors
+def transform(DTE, w, b, t):
+    scores = np.dot(w.T,DTE)+b
+    labels = np.where(scores<t, 0,1)
+    return labels,scores

@@ -15,6 +15,7 @@ import math_utils as mut
 class multivariate_cl:
     priors = []
     logSPost = []
+    name = "Multivariate"
     
     def __init__(self, priors=None):
         if priors is not None:
@@ -55,6 +56,7 @@ class multivariate_cl:
 class naive_multivariate_cl:
     priors = []
     logSPost = []
+    name  = "Naive Multivariate"
     
     def __init__(self, priors=None):
         if priors is not None:
@@ -95,6 +97,7 @@ class tied_multivariate_cl:
     priors = []
     logSPost = []
     logSJoint = []
+    name = "Tied Multivariate"
         
     def __init__(self, priors=None):
         if priors is not None:
@@ -144,6 +147,7 @@ class tied_multivariate_cl:
 class tied_naive_multivariate_cl:
     priors = []
     logSPost = []
+    name = "Tied Naive Multivariate"
         
     def __init__(self, priors=None):
         if priors is not None:
