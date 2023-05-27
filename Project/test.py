@@ -6,6 +6,7 @@ import validation as val
 import math_utils as mu
 import logistic_regression_classifiers as lrc
 from datetime import datetime
+import numpy as np
 
 if __name__=="__main__":
     start_time = datetime.now()
@@ -35,13 +36,15 @@ if __name__=="__main__":
         "PC-4": 4   
     }
 
-    #MEANS AND VARIANCE
+    """#MEANS AND VARIANCE
     no_reduction_means = mu.calcmean_classes(features, labels)
     no_reduction_variance = mu.calcvariance_classes(features, labels)
-
+    """
+    
     #PCA DATA
     PCA_5 = dr.PCA(features,5)
     PCA_5_TEST = dr.PCA(features_test,5)
+
 
     #QUADRATIC FEATURES FOR REGRESSION
     featuresTrainQuadratic = du.features_expansion(features)
@@ -49,6 +52,7 @@ if __name__=="__main__":
     featuresTrainQuadraticPCA = du.features_expansion(PCA_5)
     featuresTestQuadraticPCA = du.features_expansion(PCA_5_TEST)
 
+    """
     #PRINTING SCATTERPLOTS
     dv.get_scatter(features,labels,labels_dict, features_dict)
     #dv.get_scatter(PCA_5,labels,labels_dict, features_dict_PCA)
@@ -86,7 +90,7 @@ if __name__=="__main__":
     mean_PCA, C_PCA = tied_naive_cl.fit(features, labels)
     predicted_tied_naive = tied_naive_cl.trasform(features_test, mean, C)
     mean_PCA, C_PCA = tied_naive_cl.fit(PCA_5, labels)
-    predicted_tied_naive_PCA = tied_naive_cl.trasform(PCA_5_TEST, mean_PCA, C_PCA)
+    predicted_tied_naive_PCA = tied_naive_cl.trasform(PCA_5_TEST, mean_PCA, C_PCA) """
 
     #LOGISTIC REGRESSION
     logQuad =lrc.logReg(featuresTrainQuadratic,labels,0.001)
@@ -96,15 +100,75 @@ if __name__=="__main__":
     w,b=logQuadPCA.train()
     (predicted_qlr_PCA,scores_PCA) = lrc.transform(featuresTestQuadraticPCA,w, b,0)
 
-    #KFOLD 
+
+    """     #KFOLD 
     # - GAUSSIAN CLASSIFIERS
     learners = [gc.multivariate_cl(),gc.naive_multivariate_cl(), gc.tied_multivariate_cl(), gc.tied_naive_multivariate_cl()]
     accuracies = val.k_fold(learners, features, labels, len(labels))
-    accuracies_PCA = val.k_fold(learners, features, labels, len(labels))
+    accuracies_PCA = val.k_fold(learners, features, labels, len(labels))  """
+
+    # - LOGISTIC REGRESSION
+    pi1 = 0.5
+    C1 = np.array([[0, 1], [1, 0]]) 
+    pi2 = 0.1
+    C2 = np.array([[0, 1], [1, 0]]) 
+    ConfMatrClass = val.confusion_matrix(labels_test, predicted_qlr)
+    ConfMatr = ConfMatrClass.get_confusion_matrix()
+    FNR, FPR = ConfMatrClass.FNR_FPR_binary()
+    dcf = ConfMatrClass.DCF_binary(pi1, C1)
+    normDCF = ConfMatrClass.DCF_binary_norm(pi1, C1)
+    minDCF1, bestThresh1 = val.min_DCF(scores, labels_test, pi1, C1)
+    minDCF2, bestThresh2 = val.min_DCF(scores, labels_test, pi2, C2)
+
+    logQuad =lrc.logReg(featuresTrainQuadratic,labels,0.001)
+    w,b=logQuad.train()
+    
+    print("--------- Logistic Regression  ---------- ")
+    print(f"FNR: {FNR}, FPR: {FPR}")
+    print("Confusion Matrix: \n{}".format(ConfMatr))
+    print("DCF: {}".format(dcf))
+    print("NormDCF: {}".format(normDCF))
+    print("minDCF1: {}".format(minDCF1))
+    print("bestThreshold1: {}".format(bestThresh1))
+    print("minDCF2: {}".format(minDCF2))
+    print("bestThreshold2: {}".format(bestThresh2))
+
+    print("Logistic Regression Qudratic with optimal threshold - prior=0.5")
+    (predicted_qlr,scores) = lrc.transform(featuresTestQuadratic,w, b,bestThresh1)
+    ConfMatrClass = val.confusion_matrix(labels_test, predicted_qlr)
+    ConfMatr = ConfMatrClass.get_confusion_matrix()
+    val.get_ROC(scores, labels_test, pi1, C1, "Logistic Regression Quadratic - prior=0.5") 
+    val.get_error_plot(scores, labels_test, C1, "Logistic Regression Quadratic - prior=0.5")
+    print("Confusion Matrix: \n{}".format(ConfMatr))
+
+    print("Logistic Regression Qudratic with optimal threshold - prior=0.1")
+    (predicted_qlr,scores) = lrc.transform(featuresTestQuadratic,w, b,bestThresh2)
+    ConfMatrClass = val.confusion_matrix(labels_test, predicted_qlr)
+    ConfMatr = ConfMatrClass.get_confusion_matrix()
+    val.get_ROC(scores, labels_test, pi2, C2, "Logistic Regression Quadratic - prior=0.1")
+    val.get_error_plot(scores, labels_test, C2, "Logistic Regression Quadratic - prior=0.1") 
+    print("Confusion Matrix: \n{}".format(ConfMatr))
+
+
+    """     mvg_cl = gc.multivariate_cl)
+    mvg_cl.fit(features, labels)
+    predicted_mvg = mvg_cl.trasform(features_test)
+    
+    ConfMatrClass = val.confusion_matrix(labels_test, predicted_mvg)
+    ConfMatr = ConfMatrClass.get_confusion_matrix()
+    FNR, FPR = ConfMatrClass.FNR_FPR_binary()
+    dcf = ConfMatrClass.DCF_binary(pi1, C1)
+    normDCF = ConfMatrClass.DCF_binary_norm(pi1, C1)
+
+    print("--------- GAU MVG FPR/FNR  ---------- ")
+    print(f"FNR: {FNR}, FPR: {FPR}")
+    print("Confusion Matrix: \n{}".format(ConfMatr))
+    print("DCF: {}".format(dcf))
+    print("NormDCF: {}".format(normDCF)) """
 
     end_time = datetime.now()
 
-    #PRINTING RESULTS
+    """     #PRINTING RESULTS
     print("--------- Data Information ---------- ")
     print(" Number of italian samples: {}".format((labels == 1).sum()))
     print(" Number of not italian samples: {}".format((labels == 0).sum()))
@@ -127,11 +191,11 @@ if __name__=="__main__":
     print(f"Naive Multivarate: {round(val.calc_accuracy(labels_test, predicted_naive)*100,2)}%")
     print(f"Tied Naive Multivarate: {round(val.calc_accuracy(labels_test, predicted_tied_naive)*100,2)}%")
     print(f"Logistic Regression: {round(val.calc_accuracy(labels_test,predicted_qlr)*100,2)}%")
-    print(f"Multivarate + PCA: {round(val.calc_accuracy(labels_test, predicted_mvg_PCA)*100,2)}%")
-    print(f"Tied Multivarate + PCA: {round(val.calc_accuracy(labels_test, predicted_tied_PCA)*100,2)}%")
-    print(f"Naive Multivarate + PCA: {round(val.calc_accuracy(labels_test, predicted_naive_PCA)*100,2)}%")
-    print(f"Tied Naive Multivarate + PCA: {round(val.calc_accuracy(labels_test, predicted_tied_naive_PCA)*100,2)}%")
-    print(f"Logistic Regression + PCA: {round(val.calc_accuracy(labels_test,predicted_qlr_PCA)*100,2)}%")
+    print(f"Multivarate +  PCA_5_DIM: {round(val.calc_accuracy(labels_test, predicted_mvg_PCA)*100,2)}%")
+    print(f"Tied Multivarate + PCA_5_DIM: {round(val.calc_accuracy(labels_test, predicted_tied_PCA)*100,2)}%")
+    print(f"Naive Multivarate +  PCA_5_DIM: {round(val.calc_accuracy(labels_test, predicted_naive_PCA)*100,2)}%")
+    print(f"Tied Naive Multivarate +  PCA_5_DIM: {round(val.calc_accuracy(labels_test, predicted_tied_naive_PCA)*100,2)}%")
+    print(f"Logistic Regression +  PCA_5_DIM: {round(val.calc_accuracy(labels_test,predicted_qlr_PCA)*100,2)}%")
 
 
     print("--------- KFOLD ----------")
@@ -140,6 +204,7 @@ if __name__=="__main__":
         print(f" - {learners[i].name}: {round(accuracies[i],2)}%")    
     for i in range(len(accuracies_PCA)):
         print(f" - {learners[i].name} + PCA: {round(accuracies_PCA[i],2)}%")
+    """
 
     print("--------- TIME ----------")
-    print(f"Time elapsed: {end_time - start_time}")
+    print(f"Time elapsed: {end_time - start_time}") 

@@ -16,6 +16,8 @@ class multivariate_cl:
     priors = []
     logSPost = []
     name = "Multivariate"
+    m = None
+    C = None
     
     def __init__(self, priors=None):
         if priors is not None:
@@ -38,13 +40,15 @@ class multivariate_cl:
 
         if len(self.priors) == 0:
             self.priors = array_classes/len(x[0])
-            
-        return m_estimates, C_estimates
+        
+        self.m =  m_estimates
+        self.C = C_estimates
+        return
     
-    def trasform(self,x, mu, C):
+    def trasform(self,x):
         listLogJoint = []
-        for i in range(len(mu)):
-            listLogJoint.append(mut.log_gaussian_multivariate(x, mu[i], C[i])+np.log(self.priors[i]))
+        for i in range(len(self.m)):
+            listLogJoint.append(mut.log_gaussian_multivariate(x, self.m[i], self.C[i])+np.log(self.priors[i]))
         logSJoint = np.array(listLogJoint)
         logSMarginal = mut.vrow(sci.special.logsumexp(logSJoint, axis=0))
         self.logSPost = logSJoint - logSMarginal
@@ -57,7 +61,9 @@ class naive_multivariate_cl:
     priors = []
     logSPost = []
     name  = "Naive Multivariate"
-    
+    mu= None
+    C=None
+
     def __init__(self, priors=None):
         if priors is not None:
             self.priors = priors
@@ -79,12 +85,14 @@ class naive_multivariate_cl:
         if len(self.priors) == 0:
             self.priors = array_classes/len(x[0])
             
-        return m_estimates, C_estimates
+        self.mu= m_estimates
+        self.C= C_estimates
+        return
 
-    def trasform(self,x, mu, C):
+    def trasform(self,x):
         listLogJoint = []
-        for i in range(len(mu)):
-            listLogJoint.append(mut.log_gaussian_multivariate(x, mu[i], C[i]*np.eye(C[i].shape[0]))+np.log(self.priors[i]))
+        for i in range(len(self.mu)):
+            listLogJoint.append(mut.log_gaussian_multivariate(x, self.mu[i], self.C[i]*np.eye(self.C[i].shape[0]))+np.log(self.priors[i]))
         logSJoint = np.array(listLogJoint)
         logSMarginal = mut.vrow(sci.special.logsumexp(logSJoint, axis=0))
         self.logSPost = logSJoint - logSMarginal
@@ -98,7 +106,8 @@ class tied_multivariate_cl:
     logSPost = []
     logSJoint = []
     name = "Tied Multivariate"
-        
+    mu=None
+    C=None
     def __init__(self, priors=None):
         if priors is not None:
             self.priors = priors
@@ -126,13 +135,15 @@ class tied_multivariate_cl:
         if len(self.priors) == 0:
             self.priors = array_classes/len(x[0])
         
-        return m_estimates, C_tied
+        self.mu=m_estimates
+        self.C=C_tied
+        return
         
-    def trasform(self,x, mu, C):
+    def trasform(self,x):
         listLogJoint = []
     
-        for i in range(len(mu)):
-            listLogJoint.append(mut.log_gaussian_multivariate(x, mu[i], C)+np.log(self.priors[i]))
+        for i in range(len(self.mu)):
+            listLogJoint.append(mut.log_gaussian_multivariate(x, self.mu[i], self.C)+np.log(self.priors[i]))
         self.logSJoint = np.array(listLogJoint)
         logSMarginal = mut.vrow(sci.special.logsumexp(self.logSJoint, axis=0))
         self.logSPost = self.logSJoint - logSMarginal
@@ -148,6 +159,8 @@ class tied_naive_multivariate_cl:
     priors = []
     logSPost = []
     name = "Tied Naive Multivariate"
+    m = None
+    C = None
         
     def __init__(self, priors=None):
         if priors is not None:
@@ -177,13 +190,15 @@ class tied_naive_multivariate_cl:
             self.priors = array_classes/len(x[0])
             
         
-        return m_estimates, C_tied
+        self.m = m_estimates
+        self.C = C_tied
+        return 
         
-    def trasform(self,x, mu, C):
+    def trasform(self,x):
         listLogJoint = []
     
-        for i in range(len(mu)):
-            listLogJoint.append(mut.log_gaussian_multivariate(x, mu[i], C*np.eye(C.shape[0]))+np.log(self.priors[i]))
+        for i in range(len(self.m)):
+            listLogJoint.append(mut.log_gaussian_multivariate(x, self.m[i], self.C*np.eye(self.C.shape[0]))+np.log(self.priors[i]))
         logSJoint = np.array(listLogJoint)
         logSMarginal = mut.vrow(sci.special.logsumexp(logSJoint, axis=0))
         self.logSPost = logSJoint - logSMarginal
