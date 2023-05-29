@@ -24,8 +24,8 @@ def k_fold(learners,x,labels,k):
             X_train = np.concatenate(np.delete(X, i, axis=0), axis=0).T
             y_train = np.concatenate(np.delete(y, i, axis=0), axis=0)
             X_val = X[i].T
-            m,C = learner.fit(X_train, y_train)
-            predicted = learner.trasform(X_val,m,C)
+            learner.fit(X_train, y_train)
+            predicted = learner.trasform(X_val)
             concat_predicted.extend((predicted.tolist()))
         error_rates.append((1-calc_accuracy(Y, np.array(concat_predicted)))*100)
     return error_rates
@@ -75,7 +75,7 @@ class confusion_matrix:
     def FNR_FPR_binary(self):
         cm = self.confusion_matrix
         FNR = cm[0][1]/(cm[0][1]+cm[1][1])
-        FPR = 1 - FNR
+        FPR = cm[1][0]/(cm[0][0]+cm[1][0])
         return (FNR, FPR)
     
     def DCF_binary(self,pi, C):
@@ -84,11 +84,10 @@ class confusion_matrix:
         Cfp = C[1][0]
         return (pi*Cfn*FNR+(1-pi)*Cfp*FPR)
 
+        #usign a dummy bayesian for reference: min:(pi*Cfn,(1-pi)*Cfp)
     def DCF_binary_norm(self,pi, C):
-        FNR, FPR = self.FNR_FPR_binary()
-        Cfn = C[0][1]
-        Cfp = C[1][0]
-        return (pi*Cfn*FNR+(1-pi)*Cfp*FPR)/np.min([pi*Cfn, (1-pi)*Cfp])
+        DCFu=self.DCF_binary(pi,C)
+        return (DCFu)/np.minimum(pi*C[0][1], (1-pi)*C[1][0])
 
 def FNR_FPR_binary_ind(confusion_matrix):
     cm = confusion_matrix
@@ -109,7 +108,7 @@ def min_DCF(scores, true_labels, pi, C):
     best_threshold = None
     for t in sorted_scores:
         predicted_labels = np.where(scores>t,1,0)
-        cnf_mat = confusion_matrix(true_labels, predicted_labels, False)
+        cnf_mat = confusion_matrix(true_labels, predicted_labels)
         cm = cnf_mat.get_confusion_matrix()
         dcf = DCF_binary_norm_ind(cm,pi, C)
         if dcf < min_dcf:
@@ -122,7 +121,7 @@ def DCF(scores, true_labels, pi, C):
     Cfp = C[1][0]
     t = - np.log((pi*Cfn)/(1-pi)*Cfp)
     predicted_labels = np.where(scores>t,1,0)
-    cnf_mat = confusion_matrix(true_labels, predicted_labels, False)
+    cnf_mat = confusion_matrix(true_labels, predicted_labels)
     cm = cnf_mat.get_confusion_matrix()
     FNR, FPR = FNR_FPR_binary_ind(cm)
     return (pi*Cfn*FNR+(1-pi)*Cfp*FPR)/np.min([pi*Cfn, (1-pi)*Cfp]) 
@@ -133,7 +132,7 @@ def get_ROC(scores, true_labels, pi, C, name):
     TPR_list = []
     for t in sorted_scores:
         predicted_labels = np.where(scores>t,1,0)
-        cnf_mat = confusion_matrix(true_labels, predicted_labels, False)
+        cnf_mat = confusion_matrix(true_labels, predicted_labels)
         cm = cnf_mat.get_confusion_matrix()
         FNR, FPR = FNR_FPR_binary_ind(cm)
         TPR = 1 - FNR
@@ -144,6 +143,7 @@ def get_ROC(scores, true_labels, pi, C, name):
     plt.xlabel('FPR')
     plt.ylabel('TPR')
     plt.grid(True)
+    plt.title("ROC - {}".format(name))
     plt.savefig("ROC - {}.png".format(name))
     plt.close()
         
@@ -162,6 +162,7 @@ def get_error_plot(scores, true_labels, C,name):
     plt.xlim([-3, 3])
     plt.ylabel('DCF value')
     plt.xlabel('prior log-odds')
+    plt.title("ROC - {}".format(name))
     plt.savefig("error plot - {}.png".format(name))
     plt.close()
         
