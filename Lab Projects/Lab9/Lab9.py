@@ -73,12 +73,26 @@ def primalObjective(w, D, C, LTR, f):
     dg = pl-dl
     return pl, dl, dg
 
+def polinomialKernel(X,costant,degree,regularization):
+    return ((np.dot(expandedData(data).T,expandedData(data))+c)**d)+regularization
+
+ def CalcHWithQuadraticKernel(Data,costant,degree,labels,regularization):
+    Z=modifyLabel(labels)
+    D=expandMatrix(K,data)
+    G=polinomialKernel(D,costant,degree,regularization)
+    H = np.zeros(G.shape)
+    for i in range(D.shape[1]):
+        for j in range(D.shape[1]):
+            H[i][j] = Z[i]*Z[j]*G[i][j]
+
+    return H
+
 if __name__ == "__main__":
     data,labels=load_iris_without_setosa()
     (DTR, LTR), (DTE, LTE)=split_db_2to1(data,labels)
     alpha=np.zeros(DTR.shape[1])#stessa dim del numero si sample
 
-    H = calcH(DTR,LTR,1)
+    """ H = calcH(DTR,LTR,1)
     C=0.1
     bounds = list(repeat((0, C), DTR.shape[1]))
     (alpha, f, data)=opt.fmin_l_bfgs_b(J, alpha, args=(H,),bounds=bounds, factr=1.0)
@@ -95,4 +109,11 @@ if __name__ == "__main__":
     print(errorRate)
 
     D = expandMatrix(1, DTR)
-    print(primalObjective(w, D, C, LTR, f))
+    print(primalObjective(w, D, C, LTR, f)) """
+
+    # SVM con Kernel polimoniale
+    H=CalcHWithQuadraticKernel(DTR,0,2,LTR,0) 
+    C=0.1
+    bounds = list(repeat((0, C), DTR.shape[1]))
+    (alpha, f, data)=opt.fmin_l_bfgs_b(J, alpha, args=(H,),bounds=bounds, factr=1.0)
+    w = np.sum((alpha*modifyLabel(LTR)).reshape(1, DTR.shape[1])*expandMatrix(1, DTR), axis=1)
