@@ -131,6 +131,7 @@ def dualLossErrorRatePoly(DTR, C, Hij, LTR, LTE, DTE, K, d, c):
     b = list(repeat((0, C), DTR.shape[1]))
     (x, f, data) = scopt.fmin_l_bfgs_b(LD_objectiveFunctionOfModifiedDualFormulation,
                                     np.zeros(DTR.shape[1]), args=(Hij,), bounds=b, factr=1.0)
+    print(x)
     # Compute the scores
     S = np.sum(
         np.dot((x*LTR).reshape(1, DTR.shape[1]), (np.dot(DTR.T, DTE)+c)**d+ K), axis=0)
@@ -174,6 +175,7 @@ def dualLossErrorRateRBF(DTR, C, Hij, LTR, LTE, DTE, K, gamma):
 def kernelPoly(DTR, LTR, DTE, LTE, K, C, d, c):
     # Compute the H matrix exploiting broadcasting
     kernelFunction = (np.dot(DTR.T, DTR)+c)**d+ K**2
+    print(kernelFunction)
     # To compute zi*zj I need to reshape LTR as a matrix with one column/row
     # and then do the dot product
     zizj = np.dot(LTR.reshape(LTR.size, 1), LTR.reshape(1, LTR.size))
@@ -213,17 +215,17 @@ if __name__ == "__main__":
     D, L = load_iris_binary()
     (DTR, LTR), (DTE, LTE) = split_db_2to1(D, L)
     # K=1
-    modifiedDualFormulation(DTR, LTR, DTE, LTE, 1)
+    #modifiedDualFormulation(DTR, LTR, DTE, LTE, 1)
     # K=10
-    modifiedDualFormulation(DTR, LTR, DTE, LTE, 10)
+    #modifiedDualFormulation(DTR, LTR, DTE, LTE, 10)
     # ---------------- KERNEL SVM ----------------------
     # The parameters 0,1,2,0 are K, C, d, c
-    kernelPoly(DTR, LTR, DTE, LTE, 0, 1, 2, 0)
+    #kernelPoly(DTR, LTR, DTE, LTE, 0, 1, 2, 0)
     kernelPoly(DTR, LTR, DTE, LTE, 1, 1, 2, 0)
-    kernelPoly(DTR, LTR, DTE, LTE, 0, 1, 2, 1)
-    kernelPoly(DTR, LTR, DTE, LTE, 1, 1, 2, 1)
+    #kernelPoly(DTR, LTR, DTE, LTE, 0, 1, 2, 1)
+    #kernelPoly(DTR, LTR, DTE, LTE, 1, 1, 2, 1)
     # The parameters 0,1,1 are K, C, gamma
-    kernelRBF(DTR, LTR, DTE, LTE, 0, 1, 1)
-    kernelRBF(DTR, LTR, DTE, LTE, 0, 1, 10)
-    kernelRBF(DTR, LTR, DTE, LTE, 1, 1, 1)
-    kernelRBF(DTR, LTR, DTE, LTE, 1, 1, 10)
+    #kernelRBF(DTR, LTR, DTE, LTE, 0, 1, 1)
+    #kernelRBF(DTR, LTR, DTE, LTE, 0, 1, 10)
+    #kernelRBF(DTR, LTR, DTE, LTE, 1, 1, 1)
+    #kernelRBF(DTR, LTR, DTE, LTE, 1, 1, 10)

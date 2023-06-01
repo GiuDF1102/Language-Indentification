@@ -73,16 +73,33 @@ def primalObjective(w, D, C, LTR, f):
     dg = pl-dl
     return pl, dl, dg
 
-def polinomialKernel(X,costant,degree,regularization):
-    return ((np.dot(expandedData(data).T,expandedData(data))+c)**d)+regularization
+def polinomialKernel(data1,data2,costant,degree,K,eps):
+    return ((np.dot(data1.T,data2)+costant)**degree)+eps
 
- def CalcHWithQuadraticKernel(Data,costant,degree,labels,regularization):
+def RBFKernel(data1,data2,gamma,eps):
+    G=np.zeros((data1.shape[1],data2.shape[1]))
+    for i in range(data1.shape[1]):
+        for j in range(data2.shape[1]):
+            G[i,j]=np.exp(-gamma*(np.linalg.norm(data1[:, i]-data2[:, j])**2))+eps
+    return G
+
+
+def calcHWithQuadraticKernel(data1,data2,labels,costant,degree,K,eps):
     Z=modifyLabel(labels)
-    D=expandMatrix(K,data)
-    G=polinomialKernel(D,costant,degree,regularization)
+    G=polinomialKernel(data1,data2,costant,degree,K,eps)
     H = np.zeros(G.shape)
-    for i in range(D.shape[1]):
-        for j in range(D.shape[1]):
+    for i in range(data1.shape[1]):
+        for j in range(data2.shape[1]):
+            H[i][j] = Z[i]*Z[j]*G[i][j]
+
+    return H
+
+def calcHWithRBFKernel(data1,data2,labels,gamma,eps):
+    Z=modifyLabel(labels)
+    G=RBFKernel(data1,data2,gamma,eps)
+    H = np.zeros(G.shape)
+    for i in range(data1.shape[1]):
+        for j in range(data2.shape[1]):
             H[i][j] = Z[i]*Z[j]*G[i][j]
 
     return H
@@ -92,13 +109,15 @@ if __name__ == "__main__":
     (DTR, LTR), (DTE, LTE)=split_db_2to1(data,labels)
     alpha=np.zeros(DTR.shape[1])#stessa dim del numero si sample
 
-    """ H = calcH(DTR,LTR,1)
+    #SVM lineare
+    H = calcH(DTR,LTR,1)
     C=0.1
+    K=1
     bounds = list(repeat((0, C), DTR.shape[1]))
     (alpha, f, data)=opt.fmin_l_bfgs_b(J, alpha, args=(H,),bounds=bounds, factr=1.0)
-    w = np.sum((alpha*modifyLabel(LTR)).reshape(1, DTR.shape[1])*expandMatrix(1, DTR), axis=1)
+    w = np.sum((alpha*modifyLabel(LTR)).reshape(K, DTR.shape[1])*expandMatrix(K, DTR), axis=1)
     
-    scores = np.dot(w.T, expandMatrix(1, DTE))
+    scores = np.dot(w.T, expandMatrix(K, DTE))
     
     LP = 1*(scores > 0)
     # Replace 0 with -1 because of the transformation that we did on the labels
@@ -109,11 +128,45 @@ if __name__ == "__main__":
     print(errorRate)
 
     D = expandMatrix(1, DTR)
-    print(primalObjective(w, D, C, LTR, f)) """
+    """ print(primalObjective(w, D, C, LTR, f)) """
 
     # SVM con Kernel polimoniale
-    H=CalcHWithQuadraticKernel(DTR,0,2,LTR,0) 
-    C=0.1
-    bounds = list(repeat((0, C), DTR.shape[1]))
+    Costraint=1
+    c=1
+    d=2
+    K=1
+    eps=np.sqrt(K)
+    H=calcHWithQuadraticKernel(DTR,DTR,LTR,c,d,K,eps) 
+
+    bounds = list(repeat((0, Costraint), DTR.shape[1]))
     (alpha, f, data)=opt.fmin_l_bfgs_b(J, alpha, args=(H,),bounds=bounds, factr=1.0)
-    w = np.sum((alpha*modifyLabel(LTR)).reshape(1, DTR.shape[1])*expandMatrix(1, DTR), axis=1)
+    scores= np.sum(np.dot((alpha*modifyLabel(LTR)).reshape(1, DTR.shape[1]),polinomialKernel(DTR,DTE,c,d,K,eps)), axis=0)
+    
+    LP = 1*(scores > 0)
+    # Replace 0 with -1 because of the transformation that we did on the labels
+    LP[LP == 0] = -1
+    numberOfCorrectPredictions = np.array(LP == modifyLabel(LTE)).sum()
+    accuracy = numberOfCorrectPredictions/modifyLabel(LTE).size*100
+    errorRate = 100-accuracy
+    print(errorRate)
+    
+
+    # SVM con Kernel RBF
+    Costraint=1
+    gamma=10
+    eps=1
+    
+    H=calcHWithRBFKernel(DTR,DTR,LTR,gamma,eps)
+
+    bounds = list(repeat((0, Costraint), DTR.shape[1]))
+    (alpha, f, data)=opt.fmin_l_bfgs_b(J, alpha, args=(H,),bounds=bounds, factr=1.0)
+    scores= np.sum(np.dot((alpha*modifyLabel(LTR)).reshape(1, DTR.shape[1]),RBFKernel(DTR,DTE,gamma,eps)), axis=0)
+    
+    LP = 1*(scores > 0)
+    # Replace 0 with -1 because of the transformation that we did on the labels
+    LP[LP == 0] = -1
+    numberOfCorrectPredictions = np.array(LP == modifyLabel(LTE)).sum()
+    accuracy = numberOfCorrectPredictions/modifyLabel(LTE).size*100
+    errorRate = 100-accuracy
+    print(errorRate)
+
