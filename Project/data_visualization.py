@@ -18,9 +18,12 @@ def calc_correlation_matrix(D, name): #TODO:ottimizzare
             for j in range(cov_matr.shape[1]):
                     corr_matrix[i][j] = cov_matr[i][j]/np.sqrt(variance[i]*variance[j])
 
-    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm')
+    plt.figure()
+    sns.heatmap(corr_matrix, annot=True, cmap='coolwarm', cbar=False, square=True)
     plt.title(f"{name} correlation matrix")
-    plt.savefig("correlation_matrices/correlation_matrice {}.png".format(name))
+    plt.tight_layout()
+    plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.1)
+    plt.savefig("correlation_matrices/correlation_matrice {}.svg".format(name), bbox_inches='tight')
     plt.close()
     return corr_matrix
 
@@ -29,18 +32,19 @@ def get_hist(data, labels, map_classes, map_features):
     shutil.rmtree("histograms")
     os.makedirs("histograms")
 
-    length = len(np.unique(labels))
+    num_classes = len(np.unique(labels))
+    num_histograms = len(map_features)
     classes_list = []
     inv_map_class = {v: k for k, v in map_classes.items()}
     inv_map_feats = {v: k for k, v in map_features.items()}
 
-    for i in range(length):
+    for i in range(num_classes):
         classes_list.append(data[:, (labels == i)])
 
-    for i in range(length+1):
+    for i in range(num_histograms):
         plt.figure()
         plt.xlabel(inv_map_feats[i])
-        for j in range(length):
+        for j in range(num_classes):
             plt.hist(classes_list[j][i], bins = 10, density = True, alpha = 0.4, label = inv_map_class[j])
             plt.legend()
             plt.tight_layout()
