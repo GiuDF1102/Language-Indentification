@@ -3,6 +3,11 @@ import data_utils as du
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 
+def calcErrorRate(lab, pre):
+    confronted = lab == pre
+    correct = np.sum(np.where(confronted == True, 1, 0))
+    return (1-correct/len(lab))*100
+
 def calc_accuracy(labels, predicted):
     confronted = (labels == predicted)
     TP = 0
