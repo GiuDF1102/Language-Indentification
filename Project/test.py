@@ -5,6 +5,7 @@ import gaussian_classifiers as gc
 import validation as val
 import math_utils as mu
 import logistic_regression_classifiers as lrc
+import SVM_classifiers as svmc
 from datetime import datetime
 import numpy as np
 
@@ -84,21 +85,30 @@ if __name__=="__main__":
     predicted_naive = naive_cl.trasform(features_test, mean, C)
     mean_PCA, C_PCA = naive_cl.fit(PCA_5, labels)
     predicted_naive_PCA = naive_cl.trasform(PCA_5_TEST, mean_PCA, C_PCA)
+    """
 
     tied_naive_cl = gc.tied_naive_multivariate_cl()
-    mean, C = tied_naive_cl.fit(features, labels)
-    mean_PCA, C_PCA = tied_naive_cl.fit(features, labels)
-    predicted_tied_naive = tied_naive_cl.trasform(features_test, mean, C)
-    mean_PCA, C_PCA = tied_naive_cl.fit(PCA_5, labels)
-    predicted_tied_naive_PCA = tied_naive_cl.trasform(PCA_5_TEST, mean_PCA, C_PCA) """
+    tied_naive_cl.train(features, labels)
+    predicted_tied_naive = tied_naive_cl.trasform(features_test)
+    # mean_PCA, C_PCA = tied_naive_cl.fit(PCA_5, labels)
+    # predicted_tied_naive_PCA = tied_naive_cl.trasform(PCA_5_TEST, mean_PCA, C_PCA)
 
     #LOGISTIC REGRESSION
     logQuad =lrc.logReg(featuresTrainQuadratic,labels,0.001)
-    w,b=logQuad.train()
-    (predicted_qlr,scores) = lrc.transform(featuresTestQuadratic,w, b,0)
-    logQuadPCA =lrc.logReg(featuresTrainQuadraticPCA,labels,0.001)
-    w,b=logQuadPCA.train()
-    (predicted_qlr_PCA,scores_PCA) = lrc.transform(featuresTestQuadraticPCA,w, b,0)
+    logQuad.train()
+    predicted_qlr = logQuad.transform(featuresTestQuadratic,0)
+    # logQuadPCA =lrc.logReg(featuresTrainQuadraticPCA,labels,0.001)
+    # logQuadPCA.train()
+    # predicted_qlr_PCA = lrc.transform(featuresTestQuadraticPCA,w, b,0)
+
+    # SVM
+    svmObjRBF = svmc.SVM('RBF')
+    svmObjRBF.train(features, labels, C=1, K=0, gamma=10)
+    P = svmObjRBF.trasform(features_test)
+    errorRateRBF = val.calcErrorRate(du.modifyLabel(labels_test), P)
+    print("RBF error rate: {:.1f}".format(errorRateRBF))
+
+
 
 
     """     #KFOLD 
@@ -108,46 +118,46 @@ if __name__=="__main__":
     accuracies_PCA = val.k_fold(learners, features, labels, len(labels))  """
 
     # - LOGISTIC REGRESSION
-    pi1 = 0.5
-    C1 = np.array([[0, 1], [1, 0]]) 
-    pi2 = 0.1
-    C2 = np.array([[0, 1], [1, 0]]) 
-    ConfMatrClass = val.confusion_matrix(labels_test, predicted_qlr)
-    ConfMatr = ConfMatrClass.get_confusion_matrix()
-    FNR, FPR = ConfMatrClass.FNR_FPR_binary()
-    dcf = ConfMatrClass.DCF_binary(pi1, C1)
-    normDCF = ConfMatrClass.DCF_binary_norm(pi1, C1)
-    minDCF1, bestThresh1 = val.min_DCF(scores, labels_test, pi1, C1)
-    minDCF2, bestThresh2 = val.min_DCF(scores, labels_test, pi2, C2)
+    # pi1 = 0.5
+    # C1 = np.array([[0, 1], [1, 0]]) 
+    # pi2 = 0.1
+    # C2 = np.array([[0, 1], [1, 0]]) 
+    # ConfMatrClass = val.confusion_matrix(labels_test, predicted_qlr)
+    # ConfMatr = ConfMatrClass.get_confusion_matrix()
+    # FNR, FPR = ConfMatrClass.FNR_FPR_binary()
+    # dcf = ConfMatrClass.DCF_binary(pi1, C1)
+    # normDCF = ConfMatrClass.DCF_binary_norm(pi1, C1)
+    # minDCF1, bestThresh1 = val.min_DCF(scores, labels_test, pi1, C1)
+    # minDCF2, bestThresh2 = val.min_DCF(scores, labels_test, pi2, C2)
 
-    logQuad =lrc.logReg(featuresTrainQuadratic,labels,0.001)
-    w,b=logQuad.train()
+    # logQuad =lrc.logReg(featuresTrainQuadratic,labels,0.001)
+    # w,b=logQuad.train()
     
-    print("--------- Logistic Regression  ---------- ")
-    print(f"FNR: {FNR}, FPR: {FPR}")
-    print("Confusion Matrix: \n{}".format(ConfMatr))
-    print("DCF: {}".format(dcf))
-    print("NormDCF: {}".format(normDCF))
-    print("minDCF1: {}".format(minDCF1))
-    print("bestThreshold1: {}".format(bestThresh1))
-    print("minDCF2: {}".format(minDCF2))
-    print("bestThreshold2: {}".format(bestThresh2))
+    # print("--------- Logistic Regression  ---------- ")
+    # print(f"FNR: {FNR}, FPR: {FPR}")
+    # print("Confusion Matrix: \n{}".format(ConfMatr))
+    # print("DCF: {}".format(dcf))
+    # print("NormDCF: {}".format(normDCF))
+    # print("minDCF1: {}".format(minDCF1))
+    # print("bestThreshold1: {}".format(bestThresh1))
+    # print("minDCF2: {}".format(minDCF2))
+    # print("bestThreshold2: {}".format(bestThresh2))
 
-    print("Logistic Regression Qudratic with optimal threshold - prior=0.5")
-    (predicted_qlr,scores) = lrc.transform(featuresTestQuadratic,w, b,bestThresh1)
-    ConfMatrClass = val.confusion_matrix(labels_test, predicted_qlr)
-    ConfMatr = ConfMatrClass.get_confusion_matrix()
-    val.get_ROC(scores, labels_test, pi1, C1, "Logistic Regression Quadratic - prior=0.5") 
-    val.get_error_plot(scores, labels_test, C1, "Logistic Regression Quadratic - prior=0.5")
-    print("Confusion Matrix: \n{}".format(ConfMatr))
+    # print("Logistic Regression Qudratic with optimal threshold - prior=0.5")
+    # (predicted_qlr,scores) = lrc.transform(featuresTestQuadratic,w, b,bestThresh1)
+    # ConfMatrClass = val.confusion_matrix(labels_test, predicted_qlr)
+    # ConfMatr = ConfMatrClass.get_confusion_matrix()
+    # val.get_ROC(scores, labels_test, pi1, C1, "Logistic Regression Quadratic - prior=0.5") 
+    # val.get_error_plot(scores, labels_test, C1, "Logistic Regression Quadratic - prior=0.5")
+    # print("Confusion Matrix: \n{}".format(ConfMatr))
 
-    print("Logistic Regression Qudratic with optimal threshold - prior=0.1")
-    (predicted_qlr,scores) = lrc.transform(featuresTestQuadratic,w, b,bestThresh2)
-    ConfMatrClass = val.confusion_matrix(labels_test, predicted_qlr)
-    ConfMatr = ConfMatrClass.get_confusion_matrix()
-    val.get_ROC(scores, labels_test, pi2, C2, "Logistic Regression Quadratic - prior=0.1")
-    val.get_error_plot(scores, labels_test, C2, "Logistic Regression Quadratic - prior=0.1") 
-    print("Confusion Matrix: \n{}".format(ConfMatr))
+    # print("Logistic Regression Qudratic with optimal threshold - prior=0.1")
+    # (predicted_qlr,scores) = lrc.transform(featuresTestQuadratic,w, b,bestThresh2)
+    # ConfMatrClass = val.confusion_matrix(labels_test, predicted_qlr)
+    # ConfMatr = ConfMatrClass.get_confusion_matrix()
+    # val.get_ROC(scores, labels_test, pi2, C2, "Logistic Regression Quadratic - prior=0.1")
+    # val.get_error_plot(scores, labels_test, C2, "Logistic Regression Quadratic - prior=0.1") 
+    # print("Confusion Matrix: \n{}".format(ConfMatr))
 
 
     """     mvg_cl = gc.multivariate_cl)
