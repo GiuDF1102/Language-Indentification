@@ -53,3 +53,6 @@ def features_expansion(Dataset):
         vec = np.reshape(np.dot(mu.FromRowToColumn(Dataset[:, i]), mu.FromRowToColumn(Dataset[:, i]).T), (-1, 1), order='F')
         expansion.append(vec)
     return np.vstack((np.hstack(expansion), Dataset))
+
+def modifyLabel(trainLabels):
+    return np.where(trainLabels==0,-1,1)
