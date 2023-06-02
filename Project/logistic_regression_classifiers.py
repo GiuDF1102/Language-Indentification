@@ -4,28 +4,29 @@ import numpy as np
 import scipy.optimize as opt
 
 class logReg():
-    def __init__(self,D,L,l):
-        self.DTR=D
-        self.ZTR=L*2.0-1.0
-        self.l=l
-        self.dim=D.shape[0]
+    __b = None
+    __w = None
 
-    def logreg_obj(self,v):
-        w= mu.FromRowToColumn(v[0:self.DTR.shape[0]])
+    def __init__(self,D,L,l):
+        self.__DTR=D
+        self.__ZTR=L*2.0-1.0
+        self.__l=l
+
+    def __logreg_obj(self,v):
+        w= mu.FromRowToColumn(v[0:self.__DTR.shape[0]])
         b=v[-1]
-        scores=np.dot(w.T,self.DTR)+b
-        loss_per_sample=np.logaddexp(0,-self.ZTR*scores)
-        loss=loss_per_sample.mean()+0.5*self.l*np.linalg.norm(w)**2
+        scores=np.dot(w.T,self.__DTR)+b
+        loss_per_sample=np.logaddexp(0,-self.__ZTR*scores)
+        loss=loss_per_sample.mean()+0.5*self.__l*np.linalg.norm(w)**2
         return loss
     
     def train(self):
-        x0=np.zeros(self.DTR.shape[0]+1)
-        xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.logreg_obj,x0=x0,approx_grad=True)
-        return xOpt[0:self.DTR.shape[0]], xOpt[-1]
-    
-    
+        x0=np.zeros(self.__DTR.shape[0]+1)
+        xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.__logreg_obj,x0=x0,approx_grad=True)
+        self.__w = xOpt[0:self.__DTR.shape[0]]
+        self.__b = xOpt[-1]    
 
-def transform(DTE, w, b, t):
-    scores = np.dot(w.T,DTE)+b
-    labels = np.where(scores<t, 0,1)
-    return labels,scores
+    def transform(self, DTE, t):
+        self.scores = np.dot(self.__w.T,DTE)+self.__b
+        labels = np.where(self.scores<t, 0,1)
+        return labels
