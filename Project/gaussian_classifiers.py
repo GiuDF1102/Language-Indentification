@@ -23,7 +23,7 @@ class multivariate_cl:
         if priors is not None:
             self.priors = priors
     
-    def fit(self,x,labels):
+    def train(self,x,labels):
         m_estimates = []
         C_estimates = []
         loop_len = len(np.unique(labels))
@@ -68,7 +68,7 @@ class naive_multivariate_cl:
         if priors is not None:
             self.priors = priors
         
-    def fit(self,x,labels):
+    def train(self,x,labels):
         m_estimates = []
         C_estimates = []
         loop_len = len(np.unique(labels))
@@ -112,7 +112,7 @@ class tied_multivariate_cl:
         if priors is not None:
             self.priors = priors
         
-    def fit(self,x,labels):
+    def train(self,x,labels):
         m_estimates = []
         C_estimates = []
         loop_len = len(np.unique(labels))
@@ -166,7 +166,7 @@ class tied_naive_multivariate_cl:
         if priors is not None:
             self.priors = priors
         
-    def fit(self,x,labels):
+    def train(self,x,labels):
         m_estimates = []
         C_estimates = []
         loop_len = len(np.unique(labels[0]))
