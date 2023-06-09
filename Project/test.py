@@ -237,24 +237,29 @@ if __name__=="__main__":
     # print("NO PCA minDCF prior Naive (minDCF: {}, best threshold: {})".format(minDCFNaive_P2, bestThresholdNaive_P2))
     # print("NO PCA minDCF prior Tied Naive (minDCF: {}, best threshold: {})".format(minDCFTiedNaive_P2, bestThresholdTiedNaive_P2))
 
-    pi1 = 0.5
-    pi2 = 0.1
+    pi = 0.5
+    #pi2 = 0.1
 
-    workingPoint = (pi1, 1, 1)
+    workingPoint = (pi, 1, 1)
 
     for i in [3,4,5]:
         print("PCA: {}".format(i))
         PCA = dr.PCA(features,i)
-        mvg_test = gc.multivariate_cl([1-pi1, pi1]) #( class 0, class 1 )
+
+        expanded_f = du.features_expansion(PCA)
+        log_reg = lrc.logReg(0.1)
+        val.k_fold(log_reg, expanded_f, labels, 5, workingPoint, "Logistic Regression")
+
+        mvg_test = gc.multivariate_cl([1-pi, pi]) #( class 0, class 1 )
         val.k_fold(mvg_test, PCA, labels, 5, workingPoint, "MVG")
 
-        mvg_test_naive = gc.naive_multivariate_cl([1-pi1, pi1])
+        mvg_test_naive = gc.naive_multivariate_cl([1-pi, pi])
         val.k_fold(mvg_test_naive, PCA, labels, 5, workingPoint, "Naive")
 
-        mvg_test_tied = gc.tied_multivariate_cl([1-pi1, pi1])
+        mvg_test_tied = gc.tied_multivariate_cl([1-pi, pi])
         val.k_fold(mvg_test_tied, PCA, labels, 5, workingPoint, "Tied")
 
-        mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi1, pi1])
+        mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi, pi])
         val.k_fold(mvg_test_tied_naive, PCA, labels, 5, workingPoint, "Tied Naive")
 
         svm_lin = svmc.SVM('linear',  C=0.1, K=1)
@@ -267,16 +272,16 @@ if __name__=="__main__":
         val.k_fold(svm_rbf, PCA, labels, 5, workingPoint, "SMV RBF")
 
     print("NO PCA")
-    mvg_test = gc.multivariate_cl([1-pi1, pi1]) #( class 0, class 1 )
+    mvg_test = gc.multivariate_cl([1-pi, pi]) #( class 0, class 1 )
     val.k_fold(mvg_test, features, labels, 5, workingPoint, "MVG")
 
-    mvg_test_naive = gc.naive_multivariate_cl([1-pi1, pi1])
+    mvg_test_naive = gc.naive_multivariate_cl([1-pi, pi])
     val.k_fold(mvg_test_naive, features, labels, 5, workingPoint, "Naive")
 
-    mvg_test_tied = gc.tied_multivariate_cl([1-pi1, pi1])
+    mvg_test_tied = gc.tied_multivariate_cl([1-pi, pi])
     val.k_fold(mvg_test_tied, features, labels, 5, workingPoint, "Tied")
 
-    mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi1, pi1])
+    mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi, pi])
     val.k_fold(mvg_test_tied_naive, features, labels, 5, workingPoint, "Tied Naive")
 
     svm_lin = svmc.SVM('linear',  C=0.1, K=1)
