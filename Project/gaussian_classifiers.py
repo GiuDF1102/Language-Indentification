@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Apr 23 13:37:59 2023
-
-@author: giuli
-
-About gaussian distributions and classifiers
-"""
 import numpy as np
 import matplotlib.pyplot as plt
 from sklearn.utils import shuffle
@@ -15,13 +7,13 @@ import math_utils as mut
 class multivariate_cl:
     priors = []
     logSPost = []
+    logSJoint = None
     name = "Multivariate"
     m = None
     C = None
     
-    def __init__(self, priors=None):
-        if priors is not None:
-            self.priors = priors
+    def __init__(self, priors):
+        self.priors = priors
     
     def train(self,x,labels):
         m_estimates = []
@@ -36,11 +28,7 @@ class multivariate_cl:
             C_ML = mut.cov_mat(x[:,labels==i], m_ML)
             m_estimates.append(m_ML.reshape(m_ML.shape[0], 1))
             C_estimates.append(C_ML)
-            
-
-        if len(self.priors) == 0:
-            self.priors = array_classes/len(x[0])
-        
+                    
         self.m =  m_estimates
         self.C = C_estimates
         return
@@ -49,13 +37,17 @@ class multivariate_cl:
         listLogJoint = []
         for i in range(len(self.m)):
             listLogJoint.append(mut.log_gaussian_multivariate(x, self.m[i], self.C[i])+np.log(self.priors[i]))
-        logSJoint = np.array(listLogJoint)
-        logSMarginal = mut.vrow(sci.special.logsumexp(logSJoint, axis=0))
-        self.logSPost = logSJoint - logSMarginal
+        self.logSJoint = np.array(listLogJoint)
+        logSMarginal = mut.vrow(sci.special.logsumexp(self.logSJoint, axis=0))
+        self.logSPost = self.logSJoint - logSMarginal
         return np.argmax(self.logSPost, axis=0)
 
-    def get_posteriors(self):
-        return self.logSPost
+    def get_llr(self):
+        #only if 2 classes
+        return self.logSPost[0]-self.logSPost[1]
+
+    def get_scores(self):
+        return np.exp(self.logSPost)
     
 class naive_multivariate_cl:
     priors = []
@@ -64,9 +56,8 @@ class naive_multivariate_cl:
     mu= None
     C=None
 
-    def __init__(self, priors=None):
-        if priors is not None:
-            self.priors = priors
+    def __init__(self, priors):
+        self.priors = priors
         
     def train(self,x,labels):
         m_estimates = []
@@ -98,8 +89,8 @@ class naive_multivariate_cl:
         self.logSPost = logSJoint - logSMarginal
         return np.argmax(self.logSPost, axis=0)
     
-    def get_posteriors(self):
-        return self.logSPost
+    def get_scores(self):
+        return np.exp(self.logSPost)
 
 class tied_multivariate_cl:
     priors = []
@@ -108,10 +99,10 @@ class tied_multivariate_cl:
     name = "Tied Multivariate"
     mu=None
     C=None
-    def __init__(self, priors=None):
-        if priors is not None:
-            self.priors = priors
-        
+
+    def __init__(self, priors):
+        self.priors = priors
+
     def train(self,x,labels):
         m_estimates = []
         C_estimates = []
@@ -149,8 +140,8 @@ class tied_multivariate_cl:
         self.logSPost = self.logSJoint - logSMarginal
         return np.argmax(self.logSPost, axis=0)
 
-    def get_posteriors(self):
-        return self.logSPost
+    def get_scores(self):
+        return np.exp(self.logSPost)
     
     def get_joint(self):
         return self.logSJoint
@@ -158,53 +149,48 @@ class tied_multivariate_cl:
 class tied_naive_multivariate_cl:
     priors = []
     logSPost = []
+    num_classes = 0
+    logSJoint = None
     name = "Tied Naive Multivariate"
     m = None
     C = None
         
-    def __init__(self, priors=None):
-        if priors is not None:
-            self.priors = priors
+    def __init__(self, priors):
+        self.priors = priors
         
     def train(self,x,labels):
+        loop_len = len(np.unique(labels))
         m_estimates = []
         C_estimates = []
-        loop_len = len(np.unique(labels[0]))
         array_classes = np.empty(loop_len, dtype=float)
-        C = 0
         
         for i in range(loop_len):
             class_count = len(x[:, labels==i][0])
             array_classes[i] = class_count
             m_ML = mut.calcmean(x[:,labels==i])
             C_ML = mut.cov_mat(x[:,labels==i], m_ML)
-            m_estimates.append(m_ML.reshape(m_ML.shape[0], 1))
+            mu = m_ML.reshape(m_ML.shape[0], 1)
+            m_estimates.append(mu)
             C_estimates.append(C_ML)
-         
+
+        self.C = np.zeros(C_estimates[0].shape)
         for i in range(len(m_estimates)):
-            C = C + x[:,labels==i].shape[1]*C_estimates[i]
+            self.C = self.C + x[:,labels==i].shape[1]*C_estimates[i]
             
-        C_tied = (1/x.shape[1])*C
+        C_tied = (1/x.shape[1])*self.C
         
-        if len(self.priors) == 0:
-            self.priors = array_classes/len(x[0])
-            
-        
-        self.m = m_estimates
         self.C = C_tied
+        self.m = m_estimates
         return 
         
     def trasform(self,x):
         listLogJoint = []
-    
         for i in range(len(self.m)):
             listLogJoint.append(mut.log_gaussian_multivariate(x, self.m[i], self.C*np.eye(self.C.shape[0]))+np.log(self.priors[i]))
-        logSJoint = np.array(listLogJoint)
-        logSMarginal = mut.vrow(sci.special.logsumexp(logSJoint, axis=0))
-        self.logSPost = logSJoint - logSMarginal
+        self.logSJoint = np.array(listLogJoint)
+        logSMarginal = mut.vrow(sci.special.logsumexp(self.logSJoint, axis=0))
+        self.logSPost = self.logSJoint - logSMarginal
         return np.argmax(self.logSPost, axis=0)
-    
-    def get_posteriors(self):
-        return self.logSPost
 
-    
+    def get_scores(self):
+        return np.exp(self.logSPost)
