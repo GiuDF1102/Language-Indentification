@@ -82,6 +82,6 @@ def log_gaussian_multivariate(x, mu, C):
     k_3 = 0.5*(x_m*np.dot(C_inv,x_m))
     
     return -k_1-k_2-k_3.sum(0)
-
+    
 def log_likelihood(x,m_ML,C_ML):
     return np.sum(log_gaussian_multivariate(x,m_ML,C_ML))
