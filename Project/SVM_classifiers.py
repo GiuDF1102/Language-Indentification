@@ -118,7 +118,7 @@ class SVM:
             self.__calcHWithRBFKernel(data,data,labels,self.__gamma,eps)
             self.__optGetWRBF(kwargs['C'], self.__K, data, labels)
 
-    def trasform(self, dataTest):
+    def transform(self, dataTest):
 
         if self.__kernel == 'linear':
             self.scores = np.dot(self.__w.T, self.__expandMatrix(self.__K, dataTest))
