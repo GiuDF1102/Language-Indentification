@@ -33,7 +33,7 @@ class multivariate_cl:
         self.C = C_estimates
         return
     
-    def trasform(self,x):
+    def transform(self,x):
         listLogJoint = []
         for i in range(len(self.m)):
             listLogJoint.append(mut.log_gaussian_multivariate(x, self.m[i], self.C[i])+np.log(self.priors[i]))
@@ -80,7 +80,7 @@ class naive_multivariate_cl:
         self.C= C_estimates
         return
 
-    def trasform(self,x):
+    def transform(self,x):
         listLogJoint = []
         for i in range(len(self.mu)):
             listLogJoint.append(mut.log_gaussian_multivariate(x, self.mu[i], self.C[i]*np.eye(self.C[i].shape[0]))+np.log(self.priors[i]))
@@ -130,7 +130,7 @@ class tied_multivariate_cl:
         self.C=C_tied
         return
         
-    def trasform(self,x):
+    def transform(self,x):
         listLogJoint = []
     
         for i in range(len(self.mu)):
@@ -183,7 +183,7 @@ class tied_naive_multivariate_cl:
         self.m = m_estimates
         return 
         
-    def trasform(self,x):
+    def transform(self,x):
         listLogJoint = []
         for i in range(len(self.m)):
             listLogJoint.append(mut.log_gaussian_multivariate(x, self.m[i], self.C*np.eye(self.C.shape[0]))+np.log(self.priors[i]))

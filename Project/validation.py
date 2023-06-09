@@ -306,7 +306,7 @@ def compute_minDCF(scores, labels, workingPoint):
     return min_dcf, best_threshold
 
 def k_fold(learner,x,labels,k, workingPoint, name):
-    X, Y = shuffle(x.T, labels)
+    X, Y = shuffle(x.T, labels, random_state=0)
     X_splitted = np.array_split(X, k)
     y_splitted = np.array_split(Y, k)
     concat_predicted = []
@@ -320,7 +320,7 @@ def k_fold(learner,x,labels,k, workingPoint, name):
         X_train = np.vstack(X_folds).T
         y_train = np.hstack(y_folds)
         learner.train(X_train, y_train)
-        learner.trasform(X_val)
+        learner.transform(X_val)
         scores = learner.get_scores()
         concat_scores.append(scores)
     gotscores = np.hstack(concat_scores)
