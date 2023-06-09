@@ -242,9 +242,31 @@ if __name__=="__main__":
 
     workingPoint = (pi1, 1, 1)
 
-    log_reg = lrc.logReg(0.1)
-    val.k_fold(log_reg, featuresTrainQuadratic, labels, 5, workingPoint, "Logistic Regression")
+    for i in [3,4,5]:
+        print("PCA: {}".format(i))
+        PCA = dr.PCA(features,i)
+        mvg_test = gc.multivariate_cl([1-pi1, pi1]) #( class 0, class 1 )
+        val.k_fold(mvg_test, PCA, labels, 5, workingPoint, "MVG")
 
+        mvg_test_naive = gc.naive_multivariate_cl([1-pi1, pi1])
+        val.k_fold(mvg_test_naive, PCA, labels, 5, workingPoint, "Naive")
+
+        mvg_test_tied = gc.tied_multivariate_cl([1-pi1, pi1])
+        val.k_fold(mvg_test_tied, PCA, labels, 5, workingPoint, "Tied")
+
+        mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi1, pi1])
+        val.k_fold(mvg_test_tied_naive, PCA, labels, 5, workingPoint, "Tied Naive")
+
+        svm_lin = svmc.SVM('linear',  C=0.1, K=1)
+        val.k_fold(svm_lin, PCA, labels, 5, workingPoint, "SMV linear")
+
+        svm_quad = svmc.SVM('Polinomial',  C=1, K=1, d=2, c=0)
+        val.k_fold(svm_quad, PCA, labels, 5, workingPoint, "SMV Quadratic")
+
+        svm_rbf = svmc.SVM('RBF',  C=100, K=0, gamma=0.1)
+        val.k_fold(svm_rbf, PCA, labels, 5, workingPoint, "SMV RBF")
+
+    print("NO PCA")
     mvg_test = gc.multivariate_cl([1-pi1, pi1]) #( class 0, class 1 )
     val.k_fold(mvg_test, features, labels, 5, workingPoint, "MVG")
 
@@ -266,6 +288,10 @@ if __name__=="__main__":
     svm_rbf = svmc.SVM('RBF',  C=100, K=0, gamma=0.1)
     val.k_fold(svm_rbf, features, labels, 5, workingPoint, "SMV RBF")
 
+    log_reg = lrc.logReg(0.1)
+    val.k_fold(log_reg, featuresTrainQuadratic, labels, 5, workingPoint, "Logistic Regression")
+    
+    
     end_time = datetime.now()
 
     print("--------- TIME ----------")
