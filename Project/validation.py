@@ -262,15 +262,15 @@ def optimal_bayes_decision_binary(scores, labels, workingPoint):
     cm = cnf_matr.get_confusion_matrix()
     return cm
 
-def optimal_bayes_decision_binary_t(scores, labels, workingPoint,t):
+#
+def optimal_bayes_decision_binary_t(llr, labels, workingPoint,t):
     # workingPoint (pi, Cfn, Cfp)
     prior = workingPoint[0]
     Cfn = workingPoint[1]
     Cfp = workingPoint[2]
-    Cx0 = Cfn*scores[1]
-    Cx1 = Cfp*scores[0]
-    r = np.log(Cx0/Cx1)
-    labels_r = np.where(r>t,1,0)
+    # Cx0 = Cfn*scores[1]
+    # Cx1 = Cfp*scores[0]
+    labels_r = np.where(llr>t,1,0)
     cnf_matr = confusion_matrix(labels, labels_r)
     cm = cnf_matr.get_confusion_matrix()
     return cm
@@ -291,13 +291,12 @@ def compute_dummy_bayes(workingPoint):
     dummy = np.array([pi*Cfn, (1-pi)*Cfp])
     return np.min(dummy) 
 
-def compute_minDCF(scores, labels, workingPoint):
-    llr = np.log(scores[0])-np.log(scores[1])
+def compute_minDCF(llr, labels, workingPoint):
     sorted_scores = sorted(llr)
     min_dcf = np.inf
     best_threshold = None
     for t in sorted_scores:
-        cm = optimal_bayes_decision_binary_t(scores, labels, workingPoint,t)
+        cm = optimal_bayes_decision_binary_t(llr, labels, workingPoint,t)
         DCFu = compute_bayes_risk(cm, workingPoint)
         actualDCF = DCFu/compute_dummy_bayes(workingPoint)
         if actualDCF < min_dcf:
@@ -313,6 +312,7 @@ def k_fold(learner,x,labels,k, workingPoint, name):
     concat_scores = []
     concat_llr = []
     for i in range(k): #for each fold
+        print("{} Fold {}".format(name, i))
         X_folds = X_splitted.copy()
         y_folds = y_splitted.copy()
         X_val = X_folds.pop(i).T
@@ -324,7 +324,7 @@ def k_fold(learner,x,labels,k, workingPoint, name):
         scores = learner.get_scores()
         concat_scores.append(scores)
     gotscores = np.hstack(concat_scores)
-    cm = optimal_bayes_decision_binary(gotscores, Y, workingPoint)
+    cm = optimal_bayes_decision_binary_t(gotscores, Y, workingPoint,0)
     DCFu = compute_bayes_risk(cm, workingPoint)
     actualDCF = DCFu/compute_dummy_bayes(workingPoint)
     minDCF, _ = compute_minDCF(gotscores, Y, workingPoint)

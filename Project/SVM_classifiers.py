@@ -15,9 +15,30 @@ class SVM:
     __data = None
     __alpha = None
     __az = None
+    __c = None
 
-    def __init__(self, kernel='linear'):
+    def __init__(self, kernel='linear', **kwargs):
         self.__kernel = kernel
+
+        if len(kwargs) == 0:
+            print("Please provide the arguments for {} SVM".format(self.__kernel))
+            return
+
+        if self.__kernel == 'linear':
+            self.__K = kwargs['K']
+            self.__C = kwargs['C']
+        
+        elif self.__kernel == 'Polinomial':
+            self.__K = kwargs['K']
+            self.__c = kwargs['c']
+            self.__d = kwargs['d']
+            self.__C = kwargs['C']
+
+        elif self.__kernel == 'RBF':
+            self.__K = kwargs['K']
+            self.__gamma = kwargs['gamma']
+            self.__C = kwargs['C']
+
 
     def __modifyLabel(self, trainLabels):
         return np.where(trainLabels==0,-1,1)
@@ -90,33 +111,23 @@ class SVM:
         (alpha, f, dataopt)=opt.fmin_l_bfgs_b(self.__J, alpha, args=(self.__H,),bounds=bounds, factr=1.0)
         self.__az = (alpha*self.__modifyLabel(labels)).reshape(1, data.shape[1])
 
-    def train(self, data, labels, **kwargs):
-
-        if len(kwargs) == 0:
-            print("Please provide the arguments for {} SVM".format(self.__kernel))
-            return
+    def train(self, data, labels):
 
         if self.__kernel == 'linear':
-            self.__K = kwargs['K']
             self.__calcHLinear(data, labels)
-            self.__optGetWLinear(kwargs['C'], kwargs['K'], data, labels)
+            self.__optGetWLinear(self.__C,self.__K, data, labels)
         
-        elif self.__kernel == 'polinomial':
-            self.__K = kwargs['K']
-            self.__c = kwargs['c']
-            self.__d = kwargs['d']
+        elif self.__kernel == 'Polinomial':
             self.__data = data
             eps = np.sqrt(self.__K)
             self.__calcHWithQuadraticKernel(data,data,labels,self.__c,self.__d,self.__K,eps)
-            self.__optGetWPolinomial(kwargs['C'], self.__K, data, labels)
+            self.__optGetWPolinomial(self.__C, self.__K, data, labels)
 
         elif self.__kernel == 'RBF':
-            self.__K = kwargs['K']
-            self.__gamma = kwargs['gamma']
             self.__data = data
             eps = np.sqrt(self.__K)
             self.__calcHWithRBFKernel(data,data,labels,self.__gamma,eps)
-            self.__optGetWRBF(kwargs['C'], self.__K, data, labels)
+            self.__optGetWRBF(self.__C, self.__K, data, labels)
 
     def transform(self, dataTest):
 
@@ -125,7 +136,7 @@ class SVM:
             predicted = np.where(self.scores > 0, 1, -1)
             return predicted
         
-        elif self.__kernel == 'polinomial':
+        elif self.__kernel == 'Polinomial':
             self.scores= np.sum(np.dot(self.__az,self.__polinomialKernel(self.__data,dataTest,self.__c,self.__d,self.__K, np.sqrt(self.__K))), axis=0)
             predicted = np.where(self.scores > 0, 1, -1)
             return predicted
@@ -134,3 +145,6 @@ class SVM:
             self.scores= np.sum(np.dot(self.__az,self.__RBFKernel(self.__data,dataTest,self.__gamma, np.sqrt(self.__K))), axis=0)
             predicted = np.where(self.scores > 0, 1, -1)
             return predicted
+
+    def get_scores(self):
+        return self.scores

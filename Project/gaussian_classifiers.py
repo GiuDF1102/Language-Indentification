@@ -42,12 +42,9 @@ class multivariate_cl:
         self.logSPost = self.logSJoint - logSMarginal
         return np.argmax(self.logSPost, axis=0)
 
-    def get_llr(self):
-        #only if 2 classes
-        return self.logSPost[0]-self.logSPost[1]
-
     def get_scores(self):
-        return np.exp(self.logSPost)
+        #only if 2 classes
+        return self.logSPost[1]-self.logSPost[0]
     
 class naive_multivariate_cl:
     priors = []
@@ -88,9 +85,10 @@ class naive_multivariate_cl:
         logSMarginal = mut.vrow(sci.special.logsumexp(logSJoint, axis=0))
         self.logSPost = logSJoint - logSMarginal
         return np.argmax(self.logSPost, axis=0)
-    
+
     def get_scores(self):
-        return np.exp(self.logSPost)
+        #only if 2 classes
+        return self.logSPost[1]-self.logSPost[0]
 
 class tied_multivariate_cl:
     priors = []
@@ -141,10 +139,8 @@ class tied_multivariate_cl:
         return np.argmax(self.logSPost, axis=0)
 
     def get_scores(self):
-        return np.exp(self.logSPost)
-    
-    def get_joint(self):
-        return self.logSJoint
+        #only if 2 classes
+        return self.logSPost[1]-self.logSPost[0]
 
 class tied_naive_multivariate_cl:
     priors = []
@@ -193,4 +189,5 @@ class tied_naive_multivariate_cl:
         return np.argmax(self.logSPost, axis=0)
 
     def get_scores(self):
-        return np.exp(self.logSPost)
+        #only if 2 classes
+        return self.logSPost[1]-self.logSPost[0]

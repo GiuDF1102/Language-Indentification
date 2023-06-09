@@ -210,10 +210,6 @@ if __name__=="__main__":
     """
 
     #K-folds
-    pi1 = 0.5
-    pi2 = 0.1
-    C = [[0,1],
-         [1,0]]
 
     #scoresMVG = val.k_fold_Gaussian(gc.multivariate_cl([pi1, 1-pi1]), features, labels, 5, "MVG")
     # scoresTied = val.k_fold_Gaussian(gc.tied_multivariate_cl(priors=[0.5, 0.5]), features, labels, 5, "Tied")
@@ -241,8 +237,15 @@ if __name__=="__main__":
     # print("NO PCA minDCF prior Naive (minDCF: {}, best threshold: {})".format(minDCFNaive_P2, bestThresholdNaive_P2))
     # print("NO PCA minDCF prior Tied Naive (minDCF: {}, best threshold: {})".format(minDCFTiedNaive_P2, bestThresholdTiedNaive_P2))
 
-    workingPoint = (0.5, 1, 1)
-    mvg_test = gc.multivariate_cl([1-pi1, pi1])
+    pi1 = 0.5
+    pi2 = 0.1
+
+    workingPoint = (pi1, 1, 1)
+
+    log_reg = lrc.logReg(0.1)
+    val.k_fold(log_reg, featuresTrainQuadratic, labels, 5, workingPoint, "Logistic Regression")
+
+    mvg_test = gc.multivariate_cl([1-pi1, pi1]) #( class 0, class 1 )
     val.k_fold(mvg_test, features, labels, 5, workingPoint, "MVG")
 
     mvg_test_naive = gc.naive_multivariate_cl([1-pi1, pi1])
@@ -253,6 +256,15 @@ if __name__=="__main__":
 
     mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi1, pi1])
     val.k_fold(mvg_test_tied_naive, features, labels, 5, workingPoint, "Tied Naive")
+
+    svm_lin = svmc.SVM('linear',  C=0.1, K=1)
+    val.k_fold(svm_lin, features, labels, 5, workingPoint, "SMV linear")
+
+    svm_quad = svmc.SVM('Polinomial',  C=1, K=1, d=2, c=0)
+    val.k_fold(svm_quad, features, labels, 5, workingPoint, "SMV Quadratic")
+
+    svm_rbf = svmc.SVM('RBF',  C=100, K=0, gamma=0.1)
+    val.k_fold(svm_rbf, features, labels, 5, workingPoint, "SMV RBF")
 
     end_time = datetime.now()
 
