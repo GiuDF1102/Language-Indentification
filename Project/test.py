@@ -87,29 +87,24 @@ if __name__=="__main__":
     predicted_naive_PCA = naive_cl.trasform(PCA_5_TEST, mean_PCA, C_PCA)
     """
 
-    tied_naive_cl = gc.tied_naive_multivariate_cl()
-    tied_naive_cl.train(features, labels)
-    predicted_tied_naive = tied_naive_cl.trasform(features_test)
+    # tied_naive_cl = gc.tied_naive_multivariate_cl()
+    # tied_naive_cl.train(features, labels)
+    # predicted_tied_naive = tied_naive_cl.trasform(features_test)
     # mean_PCA, C_PCA = tied_naive_cl.fit(PCA_5, labels)
     # predicted_tied_naive_PCA = tied_naive_cl.trasform(PCA_5_TEST, mean_PCA, C_PCA)
 
     #LOGISTIC REGRESSION
-    logQuad =lrc.logReg(featuresTrainQuadratic,labels,0.001)
-    logQuad.train()
-    predicted_qlr = logQuad.transform(featuresTestQuadratic,0)
+    # logQuad =lrc.logReg(featuresTrainQuadratic,labels,0.001)
+    # logQuad.train()
+    # predicted_qlr = logQuad.transform(featuresTestQuadratic,0)
     # logQuadPCA =lrc.logReg(featuresTrainQuadraticPCA,labels,0.001)
     # logQuadPCA.train()
     # predicted_qlr_PCA = lrc.transform(featuresTestQuadraticPCA,w, b,0)
 
     # SVM
-    svmObjRBF = svmc.SVM('RBF')
-    svmObjRBF.train(features, labels, C=1, K=0, gamma=10)
-    P = svmObjRBF.trasform(features_test)
-    errorRateRBF = val.calcErrorRate(du.modifyLabel(labels_test), P)
-    print("RBF error rate: {:.1f}".format(errorRateRBF))
-
-
-
+    # svm_lin = svmc.SVM('linear')
+    # conf_matr = val.k_fold_SVM_linear(svm_lin, features, labels, 5, 0.1, 1)
+    # print(conf_matr.get_confusion_matrix())
 
     """     #KFOLD 
     # - GAUSSIAN CLASSIFIERS
@@ -176,8 +171,6 @@ if __name__=="__main__":
     print("DCF: {}".format(dcf))
     print("NormDCF: {}".format(normDCF)) """
 
-    end_time = datetime.now()
-
     """     #PRINTING RESULTS
     print("--------- Data Information ---------- ")
     print(" Number of italian samples: {}".format((labels == 1).sum()))
@@ -215,6 +208,53 @@ if __name__=="__main__":
     for i in range(len(accuracies_PCA)):
         print(f" - {learners[i].name} + PCA: {round(accuracies_PCA[i],2)}%")
     """
+
+    #K-folds
+    pi1 = 0.5
+    pi2 = 0.1
+    C = [[0,1],
+         [1,0]]
+
+    #scoresMVG = val.k_fold_Gaussian(gc.multivariate_cl([pi1, 1-pi1]), features, labels, 5, "MVG")
+    # scoresTied = val.k_fold_Gaussian(gc.tied_multivariate_cl(priors=[0.5, 0.5]), features, labels, 5, "Tied")
+    # scoresNaive = val.k_fold_Gaussian(gc.naive_multivariate_cl(priors=[0.5, 0.5]), features, labels, 5, "Naive")
+    # scoresTiedNaive = val.k_fold_Gaussian(gc.tied_naive_multivariate_cl(priors=[0.5, 0.5]), features, labels, 5, "Tied Naive")
+    
+    #minDCFMVG_P1, bestThresholdMVG_P1 = val.min_DCF(scoresMVG, labels, pi1, C)
+    #print("MinDCF MVG: {}".format(minDCFMVG_P1))
+    # minDCFTied_P1, bestThresholdTied_P1 = val.min_DCF(scoresTied, labels, pi1, C)
+    # minDCFNaive_P1, bestThresholdNaive_P1 = val.min_DCF(scoresNaive, labels, pi1, C)
+    # minDCFTiedNaive_P1, bestThresholdTiedNaive_P1 = val.min_DCF(scoresTiedNaive, labels, pi1, C)
+
+    # minDCFMVG_P2, bestThresholdMVG_P2 = val.min_DCF(scoresMVG, labels, pi2, C)
+    # minDCFTied_P2, bestThresholdTied_P2 = val.min_DCF(scoresTied, labels, pi2, C)
+    # minDCFNaive_P2, bestThresholdNaive_P2 = val.min_DCF(scoresNaive, labels, pi2, C)
+    # minDCFTiedNaive_P2, bestThresholdTiedNaive_P2 = val.min_DCF(scoresTiedNaive, labels, pi2, C)
+
+    # print("NO PCA minDCF prior MVG (minDCF: {}, best threshold: {})".format(minDCFMVG_P1, bestThresholdMVG_P1))
+    # print("NO PCA minDCF prior Tied (minDCF: {}, best threshold: {})".format(minDCFTied_P1, bestThresholdTied_P1))
+    # print("NO PCA minDCF prior Naive (minDCF: {}, best threshold: {})".format(minDCFNaive_P1, bestThresholdNaive_P1))
+    # print("NO PCA minDCF prior Tied Naive (minDCF: {}, best threshold: {})".format(minDCFTiedNaive_P1, bestThresholdTiedNaive_P1))
+
+    # print("NO PCA minDCF prior MVG (minDCF: {}, best threshold: {})".format(minDCFMVG_P2, bestThresholdMVG_P2))
+    # print("NO PCA minDCF prior Tied (minDCF: {}, best threshold: {})".format(minDCFTied_P2, bestThresholdTied_P2))
+    # print("NO PCA minDCF prior Naive (minDCF: {}, best threshold: {})".format(minDCFNaive_P2, bestThresholdNaive_P2))
+    # print("NO PCA minDCF prior Tied Naive (minDCF: {}, best threshold: {})".format(minDCFTiedNaive_P2, bestThresholdTiedNaive_P2))
+
+    workingPoint = (0.5, 1, 1)
+    mvg_test = gc.multivariate_cl([1-pi1, pi1])
+    val.k_fold(mvg_test, features, labels, 5, workingPoint, "MVG")
+
+    mvg_test_naive = gc.naive_multivariate_cl([1-pi1, pi1])
+    val.k_fold(mvg_test_naive, features, labels, 5, workingPoint, "Naive")
+
+    mvg_test_tied = gc.tied_multivariate_cl([1-pi1, pi1])
+    val.k_fold(mvg_test_tied, features, labels, 5, workingPoint, "Tied")
+
+    mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi1, pi1])
+    val.k_fold(mvg_test_tied_naive, features, labels, 5, workingPoint, "Tied Naive")
+
+    end_time = datetime.now()
 
     print("--------- TIME ----------")
     print(f"Time elapsed: {end_time - start_time}") 
