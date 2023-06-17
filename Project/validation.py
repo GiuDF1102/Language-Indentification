@@ -2,6 +2,7 @@ import numpy as np
 import data_utils as du
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
+import calibration as cal
 
 def calcErrorRate(lab, pre):
     confronted = lab == pre
@@ -262,7 +263,6 @@ def optimal_bayes_decision_binary(scores, labels, workingPoint):
     cm = cnf_matr.get_confusion_matrix()
     return cm
 
-#
 def optimal_bayes_decision_binary_t(llr, labels, workingPoint,t):
     # workingPoint (pi, Cfn, Cfp)
     prior = workingPoint[0]
@@ -291,12 +291,17 @@ def compute_dummy_bayes(workingPoint):
     dummy = np.array([pi*Cfn, (1-pi)*Cfp])
     return np.min(dummy) 
 
-def compute_minDCF(llr, labels, workingPoint):
+def compute_minDCF(llr, labels, workingPoint, pi, calibrated):
+    if calibrated == True:
+        calibration_obj = cal.logRegCalibration(llr, labels, pi)
+        a, g = calibration_obj.train()
+        llr = cal.get_calibrated_scores(llr, a, g, pi)
     sorted_scores = sorted(llr)
     min_dcf = np.inf
     best_threshold = None
     for t in sorted_scores:
-        cm = optimal_bayes_decision_binary_t(llr, labels, workingPoint,t)
+        predictions = np.where(llr>t,1,0)
+        cm = __calc_conf_matrix(predictions, labels, 2)
         DCFu = compute_bayes_risk(cm, workingPoint)
         actualDCF = DCFu/compute_dummy_bayes(workingPoint)
         if actualDCF < min_dcf:
@@ -305,14 +310,14 @@ def compute_minDCF(llr, labels, workingPoint):
     return min_dcf, best_threshold
 
 def k_fold(learner,x,labels,k, workingPoint, name):
+    pi = workingPoint[0]
     X, Y = shuffle(x.T, labels, random_state=0)
     X_splitted = np.array_split(X, k)
     y_splitted = np.array_split(Y, k)
-    concat_predicted = []
     concat_scores = []
     concat_llr = []
     for i in range(k): #for each fold
-        print("{} Fold {}".format(name, i))
+        # print("{} Fold {}".format(name, i))
         X_folds = X_splitted.copy()
         y_folds = y_splitted.copy()
         X_val = X_folds.pop(i).T
@@ -324,8 +329,50 @@ def k_fold(learner,x,labels,k, workingPoint, name):
         scores = learner.get_scores()
         concat_scores.append(scores)
     gotscores = np.hstack(concat_scores)
-    cm = optimal_bayes_decision_binary_t(gotscores, Y, workingPoint,0)
+    gotpredicted = np.where(gotscores> -np.log(pi/(1-pi)), 1, 0)
+    cm = __calc_conf_matrix(gotpredicted, Y, 2)
     DCFu = compute_bayes_risk(cm, workingPoint)
     actualDCF = DCFu/compute_dummy_bayes(workingPoint)
-    minDCF, _ = compute_minDCF(gotscores, Y, workingPoint)
+    minDCF, best_t = compute_minDCF(gotscores, Y, workingPoint, False, None)
+    print("{} DCF: {}".format(name, actualDCF))
+    print("{} minDCF: {}".format(name, minDCF))
+    print("{} confusion matrix:\n {}".format(name, cm))
+    min_DCF_predicted = np.where(gotscores>best_t, 1, 0)
+    cm_best  = __calc_conf_matrix(min_DCF_predicted, Y, 2)
+    print("{} confusion matrix best th:\n {}\n".format(name, cm_best))    
+    return actualDCF, minDCF
+
+def __calc_conf_matrix(predicted, labels, size):
+    matrix = np.zeros((size, size)).astype(int)
+    for i in range(labels.size -1):
+        matrix[predicted[i]][labels[i]] += 1
+    return matrix
+
+def k_fold_calibrated(learner,x,labels,k, workingPoint, name, pi):
+    X, Y = shuffle(x.T, labels, random_state=0)
+    X_splitted = np.array_split(X, k)
+    y_splitted = np.array_split(Y, k)
+    concat_predicted = []
+    concat_scores = []
+    concat_llr = []
+    for i in range(k): #for each fold
+        # print("{} Fold {}".format(name, i))
+        X_folds = X_splitted.copy()
+        y_folds = y_splitted.copy()
+        X_val = X_folds.pop(i).T
+        y_val = y_folds.pop(i)
+        X_train = np.vstack(X_folds).T
+        y_train = np.hstack(y_folds)
+        learner.train(X_train, y_train)
+        predicted = learner.transform(X_val)
+        scores = learner.get_scores()
+        concat_scores.append(scores)
+        concat_predicted.append(predicted)
+    gotscores = np.hstack(concat_scores)
+    gotpredicted = np.hstack(concat_predicted)
+    cm = __calc_conf_matrix(gotpredicted, Y, 2)
+    DCFu = compute_bayes_risk(cm, workingPoint)
+    actualDCF = DCFu/compute_dummy_bayes(workingPoint)
+    minDCF, _ = compute_minDCF(gotscores, Y, workingPoint, pi, True)
+    print("{} DCF: {}".format(name, actualDCF))
     print("{} minDCF: {}".format(name, minDCF))
