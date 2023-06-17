@@ -12,10 +12,6 @@ import sys
 import matplotlib.pyplot as plt
 
 if __name__ == "__main__":
-    orig_stdout = sys.stdout
-    f = open('out_log_reg.txt', 'w')
-    sys.stdout = f
-
     start_time = datetime.now()
 
     #LOAD DATA
@@ -26,28 +22,26 @@ if __name__ == "__main__":
     featuresTrainQuadratic = du.features_expansion(features)
 
     #LAMBDA 
-    logRegObj = lrc.logReg(1, pi=0.5, balanced=True)
+    logRegObj = lrc.logReg(1, pi=0.1, balanced=True)
     logRegObj.train(featuresTrainQuadratic, labels)
     labels_pred = logRegObj.transform(featuresTrainQuadratic)
 
     #PRINT ACCURACY
     print("--------- ACCURACY ----------")
-    print(f"Accuracy: {val.accuracy(labels, labels_pred)}")
+    print(f"Accuracy: {val.calc_accuracy(labels, labels_pred)}")
 
     #LAMBDA 
-    logRegObj = lrc.logReg(1, pi=0.5, balanced=False)
+    logRegObj = lrc.logReg(1, pi=0.1, balanced=False)
     logRegObj.train(featuresTrainQuadratic, labels)
     labels_pred = logRegObj.transform(featuresTrainQuadratic)
 
     #PRINT ACCURACY
     print("--------- ACCURACY ----------")
-    print(f"Accuracy: {val.accuracy(labels, labels_pred)}")
+    print(f"Accuracy: {val.calc_accuracy(labels, labels_pred)}")
 
     end_time = datetime.now()
 
     print("--------- TIME ----------")
     print(f"Time elapsed: {end_time - start_time}")
     
-    sys.stdout = orig_stdout
-    f.close()
         
