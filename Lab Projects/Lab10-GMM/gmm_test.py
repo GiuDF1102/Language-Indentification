@@ -116,13 +116,18 @@ class GMM_classifier:
                 w = Z/N
                 mu = column(F/Z)
                 sigma = S/Z - numpy.dot(mu, mu.T)
-                #constraint
-                U, s, _ = numpy.linalg.svd(sigma)
-                s[s<psi] = psi
-                sigma = numpy.dot(U, column(s)*U.T)
                 
                 gmm_new.append((w, mu, sigma))
             gmm = gmm_new
             #print(ll_new)
         #print(ll_new-ll_old)
         return gmm
+
+if __name__=="__main__":
+    xMain = np.load("./GMM-data/GMM_data_4D.npy")
+    gmmMain = load_gmm("./GMM-data/GMM_4D_3G_init.json")
+    gmmFinal= load_gmm("./GMM-data/GMM_4D_3G_EM.json")
+    solMain = np.load("./GMM-data/GMM_4D_3G_init_ll.npy")
+
+    print(EM_GMM(xMain, 3, gmmMain))
+    print(gmmFinal)
