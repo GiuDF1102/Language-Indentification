@@ -38,52 +38,51 @@ def logpdf_GMM(X,gmm,nGaussian):
         S.append(logpdf_GAU_ND(X,mu,covMatrix) + np.log(wPrior))
     S = np.array(S)        
     logdens = sci.special.logsumexp(S, axis=0)
+
     return logdens
 
-def EStep(gmmStart,X,nGaussian):
-    S = [] #(M,N)
-    for i in range(nGaussian):
-        wPrior = gmmStart[i][0]
-        mu = gmmStart[i][1]
-        covMatrix = gmmStart[i][2]
-        S.append(logpdf_GAU_ND(X,mu,covMatrix) + np.log(wPrior))
-    S = np.array(S)    #joint    
-    logdens = sci.special.logsumexp(S, axis=0) #marginal
+def EStep(gmmStart,X):
+    G = len(gmmStart)
+    N = X.shape[1]
+    SJ = np.zeros((G, N))
+    for g in range(G):
+        SJ[g,:] = logpdf_GAU_ND(X, gmmStart[g][1], gmmStart[g][2]) + np.log(gmmStart[g][0])
+    SM = sci.special.logsumexp(SJ, axis=0)
+    llNew = SM.sum()/N
+    P = np.exp(SJ - SM)
+    print(llNew)
+    return P, llNew
 
-    responsibilities = S - logdens
-    return np.exp(responsibilities)
-
-"""     logSJoint = np.array(listLogJoint)
-    logSMarginal = mut.vrow(sci.special.logsumexp(selflogSJoint, axis=0))
-    logSPost = logSJoint - logSMarginal
-    return logSPost """
-
-def MStep(resposibilties,X,nGaussian):
-    #remember that posteriors are made of a posteriors for each class
-    Zg_list = []
-    Fg_list = []
-    Sg_list = []
-    Zg_list = []
-    Fg_list = []
-    Sg_list = []
-    gmmParamaters = []
+def MStep(P, X, nGaussian):
+    gmmNew = []
+    N = X.shape[1]
     for g in range(nGaussian):
-        Zg_list.append(resposibilties[g].sum())
-        Fg_list.append(np.dot(resposibilties[g],X.T))
-        Sg_list.append(np.dot(resposibilties[g],np.dot(X.T,X)).sum())
+        gamma = P[g, :]
+        Z = gamma.sum()
+        F = (FromColumnToRow(gamma)*X).sum(1)
+        S = np.dot(X, (FromColumnToRow(gamma)*X).T)
+        w = Z/N
+        mu = FromColumnToRow(F/Z)
+        Sigma = S/Z - np.dot(mu, mu.T)
+        gmmNew.append((w, FromRowToColumn(mu), Sigma))
+    return gmmNew
 
-        muG.append(Fg_list[g]/Zg_list[g])
-        covG.append(Sg_list[g]/Zg_list[g]-np.dot(muG,muG.T))
-        wG.append((Zg_list[g]/np.array(Zg_list).sum())
-    gmmParamaters.append((muG, covG, wG))
-    return gmmParamaters
+def EM_GMM(X, nGaussian, gmm):
+    llNew = None
+    llOld = None
+    nIter = 0
+    while llOld is None or np.abs(llNew - llOld) > 1e-6:
+        llOld = llNew
+        nIter += 1
+        respons, llNew = EStep(gmm, X)
+        gmmNew = MStep(respons, X, nGaussian)
+        print("Iteration: ", nIter)
+        gmm = gmmNew
+    return gmm
 
 if __name__ == '__main__':
     xMain = np.load("./GMM-data/GMM_data_4D.npy")
     gmmMain = load_gmm("./GMM-data/GMM_4D_3G_init.json")
     solMain = np.load("./GMM-data/GMM_4D_3G_init_ll.npy")
-
-    #logDensMain = logpdf_GMM(xMain,gmmMain,3)
     
-    resposibilitiesMain = EStep(gmmMain, xMain, 3)
-    print(MStep(resposibilitiesMain, xMain, 3))
+    print(EM_GMM(xMain, 3, gmmMain))

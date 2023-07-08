@@ -20,25 +20,60 @@ if __name__ == "__main__":
 
     #FEATURES EXPANSION
     featuresTrainQuadratic = du.features_expansion(features)
+    featuresTestQuadratic = du.features_expansion(features_test)
 
     #LAMBDA 
     logRegObj = lrc.logReg(1, pi=0.1, balanced=True)
     logRegObj.train(featuresTrainQuadratic, labels)
-    labels_pred = logRegObj.transform(featuresTrainQuadratic)
-
+    labels_pred = logRegObj.transform(featuresTestQuadratic)
     #PRINT ACCURACY
     print("--------- ACCURACY ----------")
-    print(f"Accuracy: {val.calc_accuracy(labels, labels_pred)}")
+    print((labels_pred == labels_test).sum() / len(labels_test))
+    print("CONFUSION MATRIX")
+    print(val.confusion_matrix(labels_test, labels_pred).get_confusion_matrix())
 
     #LAMBDA 
     logRegObj = lrc.logReg(1, pi=0.1, balanced=False)
     logRegObj.train(featuresTrainQuadratic, labels)
-    labels_pred = logRegObj.transform(featuresTrainQuadratic)
+    labels_pred = logRegObj.transform(featuresTestQuadratic)
 
     #PRINT ACCURACY
     print("--------- ACCURACY ----------")
-    print(f"Accuracy: {val.calc_accuracy(labels, labels_pred)}")
+    print((labels_pred == labels_test).sum() / len(labels_test))
+    print("CONFUSION MATRIX")
+    print(val.confusion_matrix(labels_test, labels_pred).get_confusion_matrix())
 
+    # plt.figure()
+    
+    # #KFOLD LAMBDA
+    # lambdas=np.logspace(-5, 5, num=50)
+    # k=3
+    # minDCFlist = []
+    # for l in lambdas:
+    #     logRegObj = lrc.logReg(l, pi=0.5, balanced=True)
+    #     actualDCF, minDCF = val.k_fold(logRegObj, featuresTrainQuadratic, labels, k, (0.5, 1, 1), "Log Reg with lambda {}".format(l))
+    #     minDCFlist.append(minDCF)
+    #     print("{}, minDCF with lambda {} is {}".format(0.5, l, minDCF))
+    # plt.plot(lambdas, minDCFlist, label="minDCF", color="red")
+
+    # #KFOLD LAMBDA
+    # lambdas=np.logspace(-5, 5, num=50)
+    # k=3
+    # minDCFlist = []
+    # for l in lambdas:
+    #     logRegObj = lrc.logReg(l, pi=0.1, balanced=True)
+    #     actualDCF, minDCF = val.k_fold(logRegObj, featuresTrainQuadratic, labels, k, (0.1, 1, 1), "Log Reg with lambda {}".format(l))
+    #     minDCFlist.append(minDCF)
+    #     print("{}, minDCF with lambda {} is {}".format(0.1, l, minDCF))
+    # plt.plot(lambdas, minDCFlist, label="minDCF", color="blue")
+
+    # plt.xscale("log")
+    # plt.xlabel("λ")
+    # plt.ylabel("minDCF")
+    # plt.legend(title="Prior", loc="upper right", labels=["0.5", "0.1"])
+    
+    # plt.savefig("logReg_lambda.svg")    
+    
     end_time = datetime.now()
 
     print("--------- TIME ----------")

@@ -334,12 +334,12 @@ def k_fold(learner,x,labels,k, workingPoint, name):
     DCFu = compute_bayes_risk(cm, workingPoint)
     actualDCF = DCFu/compute_dummy_bayes(workingPoint)
     minDCF, best_t = compute_minDCF(gotscores, Y, workingPoint, False, None)
-    print("{} DCF: {}".format(name, actualDCF))
-    print("{} minDCF: {}".format(name, minDCF))
-    print("{} confusion matrix:\n {}".format(name, cm))
+    # print("{} DCF: {}".format(name, actualDCF))
+    # print("{} minDCF: {}".format(name, minDCF))
+    # print("{} confusion matrix:\n {}".format(name, cm))
     min_DCF_predicted = np.where(gotscores>best_t, 1, 0)
     cm_best  = __calc_conf_matrix(min_DCF_predicted, Y, 2)
-    print("{} confusion matrix best th:\n {}\n".format(name, cm_best))    
+    # print("{} confusion matrix best th:\n {}\n".format(name, cm_best))    
     return actualDCF, minDCF
 
 def __calc_conf_matrix(predicted, labels, size):
