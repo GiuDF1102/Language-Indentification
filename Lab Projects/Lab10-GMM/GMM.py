@@ -72,7 +72,96 @@ def MStep(P, X, nGaussian):
         gmmNew.append((w, mu, sigma))
     return gmmNew
 
-def GMM_EM(X, nGaussian, gmmStart):
+def MStepDiagonal(P, X, nGaussian):
+    gmmNew = []
+    N = X.shape[1]
+    psi = 0.01
+    for g in range(nGaussian):
+        gamma = P[g, :]
+        Z = gamma.sum()
+        F = (FromColumnToRow(gamma)*X).sum(1)
+        S = np.dot(X, (FromColumnToRow(gamma)*X).T)
+        w = Z/N
+        mu = FromRowToColumn(F/Z)
+        sigma = S/Z - np.dot(mu, mu.T)
+
+        sigma=sigma*np.eye(sigma.shape[0])
+        U, s, _ = np.linalg.svd(sigma)
+        s[s<psi] = psi
+        sigma = np.dot(U, FromRowToColumn(s)*U.T)
+
+        gmmNew.append((w, mu, sigma))
+    return gmmNew
+
+def MStepTied(P, X, nGaussian):
+    gmmNew = []
+    N = X.shape[1]
+    psi = 0.01
+    covMatrixList=[]
+    Zlist=[]
+    sigmaNew = np.zeros((X.shape[0], X.shape[0]))
+
+    for g in range(nGaussian):
+        gamma = P[g, :]
+        Z = gamma.sum()
+        Zlist.append(Z)
+        F = (FromColumnToRow(gamma)*X).sum(1)
+        S = np.dot(X, (FromColumnToRow(gamma)*X).T)
+        w = Z/N
+        mu = FromRowToColumn(F/Z)
+        sigma = S/Z - np.dot(mu, mu.T)
+        gmmNew.append((w, mu, sigma))
+
+    for i,gmm in enumerate(gmmNew):
+        sigmaNew += np.dot(Zlist[i],gmm[2])
+
+    sigmaNew=sigmaNew/N
+    
+    U, s, _ = np.linalg.svd(sigmaNew)
+    s[s<psi] = psi
+    sigmaNew = np.dot(U, FromRowToColumn(s)*U.T)
+    
+    for g in range(nGaussian):
+        gmmNew[g] = (gmmNew[g][0], gmmNew[g][1], sigmaNew)
+    
+    return gmmNew
+
+def MStepTiedDiagonal(P, X, nGaussian):
+    print("MStep tied Diag")
+    gmmNew = []
+    N = X.shape[1]
+    psi = 0.01
+    covMatrixList=[]
+    Zlist=[]
+    sigmaNew = np.zeros((X.shape[0], X.shape[0]))
+
+    for g in range(nGaussian):
+        gamma = P[g, :]
+        Z = gamma.sum()
+        Zlist.append(Z)
+        F = (FromColumnToRow(gamma)*X).sum(1)
+        S = np.dot(X, (FromColumnToRow(gamma)*X).T)
+        w = Z/N
+        mu = FromRowToColumn(F/Z)
+        sigma = S/Z - np.dot(mu, mu.T)
+        gmmNew.append((w, mu, sigma))
+
+    for i,gmm in enumerate(gmmNew):
+        sigmaNew += np.dot(Zlist[i],gmm[2])
+
+    sigmaNew=sigmaNew/N
+    sigmaNew=sigmaNew*np.eye(sigmaNew.shape[0])
+    
+    U, s, _ = np.linalg.svd(sigmaNew)
+    s[s<psi] = psi
+    sigmaNew = np.dot(U, FromRowToColumn(s)*U.T)
+    
+    for g in range(nGaussian):
+        gmmNew[g] = (gmmNew[g][0], gmmNew[g][1], sigmaNew)
+    
+    return gmmNew
+
+def GMM_EM(X, nGaussian, gmmStart,Mtype):
     llNew = None
     llOld = None
     nIter = 0
@@ -82,26 +171,37 @@ def GMM_EM(X, nGaussian, gmmStart):
         llOld = llNew
         nIter += 1
         respons, llNew = EStep(gmmStart, X)
-        gmmNew = MStep(respons, X, nGaussian)
+        gmmNew = None
+        if(Mtype=="tied"):
+            gmmNew = MStepTied(respons,X,nGaussian)
+        elif(Mtype=="diagonal"):
+            gmmNew = MStepDiagonal(respons,X,nGaussian)
+        elif(Mtype=="tied diagonal"):
+            gmmNew = MStepTiedDiagonal(respons,X,nGaussian)
+        else:
+            gmmNew = MStep(respons, X, nGaussian)
         gmmStart = gmmNew
-        #print("likelyhood: ",llNew)
         if llOld is not None:
             if llNew < llOld:
                 print("Error: Log likelihood decreased")
-                print("llOld: {} llNew: {}".format(llOld, llNew))
-                return
+                print("llOld: {} llNew: {} iter: {}".format(llOld, llNew, nIter))
+                return 
     return gmmStart
 
-def LBG(X, iterations, alpha = 0.1):
+def LBG(X, iterations,Mtype, alpha = 0.1):
     mu = FromRowToColumn(X.mean(1))
     C=np.cov(X)
     psi = 0.01
     GMM_i = [(1.0, mu, C)]
     if(C.shape==()):
         C = C.reshape((C.size, 1))
+
+    if(Mtype == "diagonal" or Mtype=="tied diagonal"):
+        C = C*np.eye(C.shape[0])
     U, s, _ = np.linalg.svd(C)
     s[s<psi] = psi
     sigma = np.dot(U, FromRowToColumn(s)*U.T)
+    GMM_i = [(1.0, mu, sigma)]
     for i in range(iterations):
         GMM_list=[]
         for g in GMM_i:
@@ -116,7 +216,14 @@ def LBG(X, iterations, alpha = 0.1):
             c2 = (Wg/2,Ug-Dg,Sg)
             GMM_list.append(c1)
             GMM_list.append(c2)
-            GMM_i = GMM_EM(X,len(GMM_list),GMM_list)
+            if(Mtype=="tied"):
+                GMM_i = GMM_EM(X,len(GMM_list),GMM_list,"tied")
+            elif(Mtype == "diagonal"):
+                GMM_i = GMM_EM(X,len(GMM_list),GMM_list,"diagonal")
+            elif(Mtype=="tied diagonal"):    
+                GMM_i = GMM_EM(X,len(GMM_list),GMM_list,"tied diagonal")
+            else:
+                GMM_i = GMM_EM(X,len(GMM_list),GMM_list,"mvg")
     return GMM_i
 
 def GMM_ll_per_sample(X, gmm):
@@ -128,13 +235,13 @@ def GMM_ll_per_sample(X, gmm):
         S[g, :] = logpdf_GAU_ND(X, gmm[g][1], gmm[g][2]) + np.log(gmm[g][0])
     return sci.special.logsumexp(S, axis=0)
 
-def train(xTrain, xLabels, numComponents):
+def train(xTrain, xLabels, numComponents,Mtype):
     numClasses = len(np.unique(xLabels))
     GMM_list = []
     for i in range(numClasses):
         xClassI = xTrain[:, xLabels == i]
         k = int(np.ceil(np.log2(numComponents)))
-        GMMI = LBG(xClassI, k)
+        GMMI = LBG(xClassI, k, Mtype)
         GMM_list.append(GMMI)
     return GMM_list
 
@@ -175,8 +282,8 @@ if __name__ == '__main__':
     xTest, xLabels = load_iris()
     (dataTrain, labelsTrain), (dataTest, labelsTest) = split_db_2to1(xTest, xLabels)
 
-    GMM_list_main = train(dataTrain, labelsTrain, 16)#numero di gaussiani non da elevare alla seconda
-    predicted = trasform(dataTest, labelsTest, GMM_list_main, 16)
+    GMM_list_main = train(dataTrain, labelsTrain, 4,"tied diagonal")#numero di gaussiani non da elevare alla seconda
+    predicted = trasform(dataTest, labelsTest, GMM_list_main, 4)#numero di gaussiani non da elevare alla seconda
     print("Error: {}".format((1-np.sum(predicted == labelsTest)/len(labelsTest))*100))
     
     
