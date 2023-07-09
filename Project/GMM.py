@@ -8,11 +8,13 @@ class GMM:
     ll=None
     GMM_list=None
     predicted=None
-    nGaussian=None
+    nTarget=None
+    nNonTarget=None
     Mtype=None
 
-    def __init__(self,nGaussian,Mtype):
-        self.nGaussian=nGaussian
+    def __init__(self,nTarget,nNonTarget,Mtype):
+        self.nTarget=nTarget
+        self.nNonTarget=nNonTarget
         self.Mtype=Mtype
 
     def _logpdf_GAU_ND(self,x, mu, C):
@@ -36,10 +38,10 @@ class GMM:
         return sci.special.logsumexp(S, axis=0)
 
     def _EStep(self,gmmStart,X):
-        self.nGaussian = len(gmmStart)
+        gmmStartlength=len(gmmStart)
         N = X.shape[1]
-        SJ = np.zeros((self.nGaussian, N))
-        for g in range(self.nGaussian):
+        SJ = np.zeros((gmmStartlength, N))
+        for g in range(gmmStartlength):
             SJ[g, :] = self._logpdf_GAU_ND(X, gmmStart[g][1], gmmStart[g][2]) + np.log(gmmStart[g][0])
         SM = sci.special.logsumexp(SJ, axis=0)
         llNew = SM.sum() / N
@@ -47,11 +49,11 @@ class GMM:
 
         return P, llNew
 
-    def _MStep(self,P, X):
+    def _MStep(self,P, X,lenGMMStart):
         gmmNew = []
         N = X.shape[1]
         psi = 0.01
-        for g in range(self.nGaussian):
+        for g in range(lenGMMStart):
             gamma = P[g, :]
             Z = gamma.sum()
             F = (mut.FromColumnToRow(gamma)*X).sum(1)
@@ -67,11 +69,11 @@ class GMM:
             gmmNew.append((w, mu, sigma))
         return gmmNew
 
-    def _MStepDiagonal(self,P, X):
+    def _MStepDiagonal(self,P, X,nGaussian):
         gmmNew = []
         N = X.shape[1]
         psi = 0.01
-        for g in range(self.nGaussian):
+        for g in range(nGaussian):
             gamma = P[g, :]
             Z = gamma.sum()
             F = (mut.FromColumnToRow(gamma)*X).sum(1)
@@ -88,7 +90,7 @@ class GMM:
             gmmNew.append((w, mu, sigma))
         return gmmNew
 
-    def _MStepTied(self,P, X):
+    def _MStepTied(self,P, X,nGaussian):
         gmmNew = []
         N = X.shape[1]
         psi = 0.01
@@ -96,7 +98,7 @@ class GMM:
         Zlist=[]
         sigmaNew = np.zeros((X.shape[0], X.shape[0]))
 
-        for g in range(self.nGaussian):
+        for g in range(nGaussian):
             gamma = P[g, :]
             Z = gamma.sum()
             Zlist.append(Z)
@@ -116,12 +118,12 @@ class GMM:
         s[s<psi] = psi
         sigmaNew = np.dot(U, mut.FromRowToColumn(s)*U.T)
         
-        for g in range(self.nGaussian):
+        for g in range(nGaussian):
             gmmNew[g] = (gmmNew[g][0], gmmNew[g][1], sigmaNew)
         
         return gmmNew
 
-    def _MStepTiedDiagonal(self,P, X):
+    def _MStepTiedDiagonal(self,P, X,nGaussian):
         gmmNew = []
         N = X.shape[1]
         psi = 0.01
@@ -129,7 +131,7 @@ class GMM:
         Zlist=[]
         sigmaNew = np.zeros((X.shape[0], X.shape[0]))
 
-        for g in range(self.nGaussian):
+        for g in range(nGaussian):
             gamma = P[g, :]
             Z = gamma.sum()
             Zlist.append(Z)
@@ -150,7 +152,7 @@ class GMM:
         s[s<psi] = psi
         sigmaNew = np.dot(U, mut.FromRowToColumn(s)*U.T)
         
-        for g in range(self.nGaussian):
+        for g in range(nGaussian):
             gmmNew[g] = (gmmNew[g][0], gmmNew[g][1], sigmaNew)
         
         return gmmNew
@@ -167,13 +169,13 @@ class GMM:
             respons, llNew = self._EStep(gmmStart, X)
             gmmNew = None
             if(self.Mtype=="tied"):
-                gmmNew = self._MStepTied(respons,X)
+                gmmNew = self._MStepTied(respons,X,len(gmmStart))
             elif(self.Mtype=="diagonal"):
-                gmmNew = self._MStepDiagonal(respons,X)
+                gmmNew = self._MStepDiagonal(respons,X,len(gmmStart))
             elif(self.Mtype=="tied diagonal"):
-                gmmNew = self._MStepTiedDiagonal(respons,X)
+                gmmNew = self._MStepTiedDiagonal(respons,X,len(gmmStart))
             else:
-                gmmNew =self._MStep(respons, X)
+                gmmNew =self._MStep(respons, X,len(gmmStart))
             gmmStart = gmmNew
             if llOld is not None:
                 if llNew < llOld:
@@ -182,7 +184,7 @@ class GMM:
                     return 
         return gmmStart
 
-    def _LBG(self,X, iterations, alpha = 0.1):
+    def _LBG(self,X, iterations,nGaussian, alpha = 0.1):
         mu = mut.FromRowToColumn(X.mean(1))
         C=np.cov(X)
         psi = 0.01
@@ -221,13 +223,15 @@ class GMM:
         return GMM_i
 
     def train(self,xTrain, xLabels):
-        numClasses = len(np.unique(xLabels))
         self.GMM_list = []
-        for i in range(numClasses):
-            xClassI = xTrain[:, xLabels == i]
-            k = int(np.ceil(np.log2(self.nGaussian)))
-            GMMI = self._LBG(xClassI, k)
-            self.GMM_list.append(GMMI)
+        D0 = xTrain[:, xLabels == 0]
+        D1= xTrain[:,xLabels==1]
+        k0= int(np.ceil(np.log2(self.nNonTarget)))
+        k1= int(np.ceil(np.log2(self.nTarget)))
+        GMM0 = self._LBG(D0,k0,self.nNonTarget)
+        GMM1= self._LBG(D1,k1,self.nTarget)
+        self.GMM_list.append(GMM0)
+        self.GMM_list.append(GMM1)
 
     def trasform(self,xTest, xLabels):
         numClasses = len(np.unique(xLabels))
