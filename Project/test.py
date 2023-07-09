@@ -184,13 +184,10 @@ if __name__ == "__main__":
 
 
     """TEST GMM"""
-    PCA5Feature=dr.PCA(features,5)
-    PCA5TestFeatures=dr.PCA(features_test,5)
-    GMMclass=gmm.GMM(4,8,"mvg")
-    GMMclass.train(PCA5Feature,labels)
-    GMMclass.trasform(PCA5TestFeatures,labels_test)
-    print(val.calcErrorRate(labels_test,GMMclass.get_predicted()))
-
+    GMMclass=gmm.GMM(1,8,"mvg")
+    _,minDCF = val.k_fold(GMMclass,features,labels,5, (0.5,1,1))
+    print("GMM 1, 8",minDCF)
+    
     end_time = datetime.now()
 
     print("--------- TIME ----------")

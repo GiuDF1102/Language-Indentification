@@ -233,16 +233,15 @@ class GMM:
         self.GMM_list.append(GMM0)
         self.GMM_list.append(GMM1)
 
-    def trasform(self,xTest, xLabels):
-        numClasses = len(np.unique(xLabels))
+    def transform(self,xTest):
         self.ll=[]
-        for i in range(numClasses):
+        for i in range(2):
             self.ll.append(self._GMM_ll_per_sample(xTest, self.GMM_list[i]))
         self.ll = np.array(self.ll)
         self.predicted=np.argmax(self.ll, axis=0)
 
     def get_scores(self):
-        return self.ll
+        return self.ll[1] - self.ll[0]
 
     def get_predicted(self):
         return self.predicted
