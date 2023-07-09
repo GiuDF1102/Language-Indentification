@@ -3,6 +3,9 @@ import numpy as np
 def FromRowToColumn(v):
     return v.reshape((v.size, 1))
 
+def FromColumnToRow(v):
+    return v.reshape((1, v.size))
+
 def vrow(x):
     return x.reshape((1,x.shape[0]))
 
