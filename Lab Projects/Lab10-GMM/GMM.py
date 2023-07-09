@@ -1,6 +1,7 @@
 import numpy as np
 import scipy as sci
 import json
+import sklearn.datasets as sk
 
 def FromRowToColumn(v):
     return v.reshape((v.size, 1))
@@ -29,19 +30,6 @@ def logpdf_GAU_ND(x, mu, C):
     
     return -k_1-k_2-k_3.sum(0)
 
-def logpdf_GAU_ND_Opt(X, mu, C):
-    P = np.linalg.inv(C)
-    const = -0.5 * X.shape[0] * np.log(2*np.pi)
-    const += -0.5 * np.linalg.slogdet(C)[1]
-    
-    Y = []
-    for i in range(X.shape[1]):
-        x = X[:, i:i+1]
-        res = const + -0.5 * np.dot((x-mu).T, np.dot(P, (x-mu)))
-        Y.append(res)
-    
-    return np.array(Y).ravel()
-
 def logpdf_GMM(X,gmm,nGaussian):
     S = [] #(M,N)
     for i in range(nGaussian):
@@ -55,82 +43,127 @@ def logpdf_GMM(X,gmm,nGaussian):
     return logdens
 
 def EStep(gmmStart,X):
-    G = len(gmmStart)
+    nGaussian = len(gmmStart)
     N = X.shape[1]
-    SJ = np.zeros((G, N))
-    for g in range(G):
-        SJ[g,:] = logpdf_GAU_ND_Opt(X, gmmStart[g][1], gmmStart[g][2]) + np.log(gmmStart[g][0])
+    SJ = np.zeros((nGaussian, N))
+    for g in range(nGaussian):
+        SJ[g, :] = logpdf_GAU_ND(X, gmmStart[g][1], gmmStart[g][2]) + np.log(gmmStart[g][0])
     SM = sci.special.logsumexp(SJ, axis=0)
-    llNew = SM.sum()/N
+    llNew = SM.sum() / N
     P = np.exp(SJ - SM)
-    print(llNew)
+
     return P, llNew
 
 def MStep(P, X, nGaussian):
     gmmNew = []
     N = X.shape[1]
+    psi = 0.01
     for g in range(nGaussian):
         gamma = P[g, :]
         Z = gamma.sum()
         F = (FromColumnToRow(gamma)*X).sum(1)
         S = np.dot(X, (FromColumnToRow(gamma)*X).T)
         w = Z/N
-        mu = FromColumnToRow(F/Z)
-        Sigma = S/Z - np.dot(mu, mu.T)
-        gmmNew.append((w, FromRowToColumn(mu), Sigma))
+        mu = FromRowToColumn(F/Z)
+        sigma = S/Z - np.dot(mu, mu.T)
+
+        U, s, _ = np.linalg.svd(sigma)
+        s[s<psi] = psi
+        sigma = np.dot(U, FromRowToColumn(s)*U.T)
+
+        gmmNew.append((w, mu, sigma))
     return gmmNew
 
-def GMM_EM_nostro(X, nGaussian, gmm):
+def GMM_EM(X, nGaussian, gmmStart):
     llNew = None
     llOld = None
     nIter = 0
-    while llOld is None or llNew - llOld > 1e-6:
-        llOld = llNew
-        nIter += 1
-        respons, llNew = EStep(gmm, X)
-        gmmNew = MStep(respons, X, nGaussian)
-        print("Iteration: ", nIter)
-        gmm = gmmNew
-    return gmm
-
-
-def GMM_EM(X, gmm):
-    ll_new = None
-    ll_old = None
-    G = len(gmm)
     N = X.shape[1]
     
-    while ll_old is None or ll_new-ll_old>1e-6:
-        ll_old = ll_new
-        SJ = np.zeros((G, N))
-        for g in range(G):
-            SJ[g, :] = logpdf_GAU_ND_Opt(X, gmm[g][1], gmm[g][2]) + np.log(gmm[g][0])
-        SM = sci.special.logsumexp(SJ, axis=0)
-        ll_new = SM.sum() / N
-        P = np.exp(SJ - SM)
-        
-        gmm_new = []
-        for g in range(G):
-            gamma = P[g, :]
-            Z = gamma.sum()
-            F = (FromColumnToRow(gamma)*X).sum(1)
-            S = np.dot(X, (FromColumnToRow(gamma)*X).T)
-            w = Z/N
-            mu = FromRowToColumn(F/Z)
-            sigma = S/Z - np.dot(mu, mu.T)
-            
-            gmm_new.append((w, mu, sigma))
-        gmm = gmm_new
-        #print(ll_new)
-    #print(ll_new-ll_old)
-    return gmm
+    while llOld is None or llNew-llOld>1e-6:
+        llOld = llNew
+        nIter += 1
+        respons, llNew = EStep(gmmStart, X)
+        gmmNew = MStep(respons, X, nGaussian)
+        gmmStart = gmmNew
+        if llOld is not None:
+            if llNew < llOld:
+                print("Error: Log likelihood decreased")
+                print("llOld: {} llNew: {}".format(llOld, llNew))
+                """return"""
+    return gmmStart
+
+def LBG(X, iterations, alpha = 0.1):
+    mu = FromRowToColumn(X.mean(1))
+    C = np.cov(X)
+    GMM_i = [(1.0, mu, C)]
+    for i in range(iterations):
+        GMM_list=[]
+        for g in GMM_i:
+            Wg = g[0]
+            Ug = g[1]
+            Sg = g[2]
+            U, s, Vh = np.linalg.svd(Sg)
+            Dg = U[:, 0:1] * s[0]**0.5 * alpha
+            c1 = (Wg/2,Ug+Dg,Sg)
+            c2 = (Wg/2,Ug-Dg,Sg)
+            GMM_list.append(c1)
+            GMM_list.append(c2)
+            GMM_i = GMM_EM(X,len(GMM_list),GMM_list)
+    return GMM_i
+
+def fit(xTrain, xLabels, numComponents):
+    numClasses = len(np.unique(xLabels))
+    GMM_list = []
+    for i in range(numClasses):
+        xClassI = xTrain[:, xLabels == i]
+        k = int(np.ceil(np.log2(numComponents)))
+        GMMI = LBG(xClassI, k)
+        GMM_list.append(GMMI)
+    return GMM_list
+
     
+def trasform(xTest, xLabels, GMM_list, numComponents):
+    numClasses = len(np.unique(xLabels))
+    posteriors = []
+    for i in range(numClasses):
+        cond = logpdf_GMM(xTest, GMM_list.pop(), numComponents)
+        post = np.exp(cond)/np.sum(np.exp(cond), axis=0)
+        print("Class {}: {}".format(i, post))
+        posteriors.append(post)
+    posterios = np.array(posteriors)
+    return np.argmax(posteriors, axis=0)
+
+def load_iris():
+    D, L = sk.load_iris()['data'].T, sk.load_iris()['target']  
+    return D,L
+
+def split_db_2to1(D, L, seed=0):
+    # 2/3 dei dati per il training----->100 per training, 50 per test
+    nTrain = int(D.shape[1]*2.0/3.0)
+    np.random.seed(seed)
+    idx = np.random.permutation(D.shape[1])
+    idxTrain = idx[0:nTrain]
+    idxTest = idx[nTrain:]
+    DTR = D[:, idxTrain]
+    DTE = D[:, idxTest]
+    LTR = L[idxTrain]
+    LTE = L[idxTest]
+    return (DTR, LTR), (DTE, LTE)  # DTR= data training, LTR= Label training
+    # DTE= Data test, LTE= label testing
+
 if __name__ == '__main__':
     xMain = np.load("./GMM-data/GMM_data_4D.npy")
     gmmMain = load_gmm("./GMM-data/GMM_4D_3G_init.json")
     gmmFinal= load_gmm("./GMM-data/GMM_4D_3G_EM.json")
     solMain = np.load("./GMM-data/GMM_4D_3G_init_ll.npy")
+
+    #IRIS
+    xTest, xLabels = load_iris()
+    (dataTrain, labelsTrain), (dataTest, labelsTest) = split_db_2to1(xTest, xLabels)
+
+    GMM_list_main = fit(dataTrain, labelsTrain, 2)
+    predicted = trasform(dataTest, labelsTest, GMM_list_main, 2)
+    print("Error: {}".format((1-np.sum(predicted == labelsTest)/len(labelsTest))*100))
     
-    print(GMM_EM_nostro(xMain, 3, gmmMain))
-    print(GMM_EM(xMain, gmmMain))
-    print(gmmFinal)
+    
