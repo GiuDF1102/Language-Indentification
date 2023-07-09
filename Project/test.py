@@ -96,10 +96,11 @@ if __name__ == "__main__":
     """
 
     #LOGISTIC REGRESSION
+
+    """
     featuresTrainQuadratic = du.features_expansion(features)
     featuresTrainQuadraticZNorm = mu.z_score(featuresTrainQuadratic)
     featuresZNorm = mu.z_score(features)
-    """
     #QLOG REG NO NORMALIZATION
     lambdas = np.logspace(-3, 5, num=50)
     CprimLogReg = np.zeros((2, len(lambdas)))
@@ -147,21 +148,37 @@ if __name__ == "__main__":
     CprimLogReg[1] = minDCFList.mean(axis=0)
 
     dv.plotCPrim(lambdas, CprimLogReg, ["Log-Reg", "Log-Reg z-norm"] , "λ", "LogReg_LogRegNorm")
-    """
 
+ 
     #QLOG REG PCA
     lambdas = np.logspace(-3, 5, num=50)
     CprimLogReg = np.zeros((4, len(lambdas)))
+    
     for PCAIndex, nPCA in enumerate([5,4,3]):
         minDCFList = np.zeros((2, len(lambdas)))
+        dataPCA = dr.PCA(featuresTrainQuadratic, nPCA)
+        dataPCAExpanded = du.features_expansion(dataPCA)
         for index, pi in enumerate([0.1,0.5]):
             for lIndex, l in enumerate(lambdas):
                 logRegObj = lrc.logReg(l, pi, False)
-                _, minDCF = val.k_fold(logRegObj, featuresTrainQuadratic, labels, 5, (pi, 1, 1))
+                _, minDCF = val.k_fold(logRegObj, dataPCAExpanded, labels, 5, (pi, 1, 1))
                 print("LogReg, minDCF with pi {}, PCA {} and lambda {} is {}".format(pi, nPCA, l, minDCF))
                 minDCFList[index, lIndex] = minDCF
         CprimLogReg[PCAIndex] = minDCFList.mean(axis=0)
-    dv.plotCPrim(lambdas, CprimLogReg, ["QLog-Reg PCA-5", "QLog-Reg PCA-4", "QLog-Reg PCA-3"] , "λ", "QLogRegPCAs")
+
+    #QLOG REG NO NORMALIZATION
+    minDCFList = np.zeros((2, len(lambdas)))
+    for index, pi in enumerate([0.1,0.5]):
+        for lIndex, l in enumerate(lambdas):
+            logRegObj = lrc.logReg(l, pi, False)
+            _, minDCF = val.k_fold(logRegObj, featuresTrainQuadratic, labels, 5, (pi, 1, 1))
+            print("LogReg, minDCF with pi {} and lambda {} is {}".format(pi, l, minDCF))
+            minDCFList[index, lIndex] = minDCF
+    CprimLogReg[3] = minDCFList.mean(axis=0)
+
+    print(CprimLogReg)
+    dv.plotCPrim(lambdas, CprimLogReg, ["QLog-Reg PCA-5", "QLog-Reg PCA-4", "QLog-Reg PCA-3", "QLog-Reg no PCA"] , "λ", "QLogRegPCAs")
+    """
 
     end_time = datetime.now()
 
