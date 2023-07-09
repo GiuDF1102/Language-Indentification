@@ -5,6 +5,7 @@ import gaussian_classifiers as gc
 import validation as val
 import math_utils as mu
 import logistic_regression_classifiers as lrc
+import GMM as gmm
 import SVM_classifiers as svmc
 from datetime import datetime
 import numpy as np
@@ -96,9 +97,11 @@ if __name__ == "__main__":
     """
 
     #LOGISTIC REGRESSION
+    """
     featuresTrainQuadratic = du.features_expansion(features)
     featuresTrainQuadraticZNorm = mu.z_score(featuresTrainQuadratic)
     featuresZNorm = mu.z_score(features)
+    """
     """
     #QLOG REG NO NORMALIZATION
     lambdas = np.logspace(-3, 5, num=50)
@@ -148,7 +151,7 @@ if __name__ == "__main__":
 
     dv.plotCPrim(lambdas, CprimLogReg, ["Log-Reg", "Log-Reg z-norm"] , "λ", "LogReg_LogRegNorm")
     """
-
+    """
     #QLOG REG PCA
     lambdas = np.logspace(-3, 5, num=50)
     CprimLogReg = np.zeros((4, len(lambdas)))
@@ -162,6 +165,15 @@ if __name__ == "__main__":
                 minDCFList[index, lIndex] = minDCF
         CprimLogReg[PCAIndex] = minDCFList.mean(axis=0)
     dv.plotCPrim(lambdas, CprimLogReg, ["QLog-Reg PCA-5", "QLog-Reg PCA-4", "QLog-Reg PCA-3"] , "λ", "QLogRegPCAs")
+    """
+
+    """TEST GMM"""
+    PCA5Feature=dr.PCA(features,5)
+    PCA5TestFeatures=dr.PCA(features_test,5)
+    GMMclass=gmm.GMM(4,"mvg")
+    GMMclass.train(PCA5Feature,labels)
+    GMMclass.trasform(PCA5TestFeatures,labels_test)
+    print(val.calcErrorRate(labels_test,GMMclass.get_predicted()))
 
     end_time = datetime.now()
 
