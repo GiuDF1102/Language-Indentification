@@ -30,17 +30,15 @@ def logpdf_GAU_ND(x, mu, C):
     
     return -k_1-k_2-k_3.sum(0)
 
-def logpdf_GMM(X,gmm,nGaussian):
-    S = [] #(M,N)
-    for i in range(nGaussian):
-        wPrior = gmm[i][0]
-        mu = gmm[i][1]
-        covMatrix = gmm[i][2]
-        S.append(logpdf_GAU_ND(X,mu,covMatrix) + np.log(wPrior))
-    S = np.array(S)        
-    logdens = sci.special.logsumexp(S, axis=0)
 
-    return logdens
+def GMM_ll_per_sample(X, gmm):
+    G = len(gmm)
+    N = X.shape[1]
+    S = np.zeros((G, N))
+    
+    for g in range(G):
+        S[g, :] = logpdf_GAU_ND(X, gmm[g][1], gmm[g][2]) + np.log(gmm[g][0])
+    return sci.special.logsumexp(S, axis=0)
 
 def EStep(gmmStart,X):
     nGaussian = len(gmmStart)
@@ -86,23 +84,32 @@ def GMM_EM(X, nGaussian, gmmStart):
         respons, llNew = EStep(gmmStart, X)
         gmmNew = MStep(respons, X, nGaussian)
         gmmStart = gmmNew
+        #print("likelyhood: ",llNew)
         if llOld is not None:
             if llNew < llOld:
                 print("Error: Log likelihood decreased")
                 print("llOld: {} llNew: {}".format(llOld, llNew))
-                """return"""
+                return
     return gmmStart
 
 def LBG(X, iterations, alpha = 0.1):
     mu = FromRowToColumn(X.mean(1))
-    C = np.cov(X)
+    C=np.cov(X)
+    psi = 0.01
     GMM_i = [(1.0, mu, C)]
+    if(C.shape==()):
+        C = C.reshape((C.size, 1))
+    U, s, _ = np.linalg.svd(C)
+    s[s<psi] = psi
+    sigma = np.dot(U, FromRowToColumn(s)*U.T)
     for i in range(iterations):
         GMM_list=[]
         for g in GMM_i:
             Wg = g[0]
             Ug = g[1]
             Sg = g[2]
+            if(Sg.shape==()):
+                Sg = Sg.reshape((Sg.size, 1))
             U, s, Vh = np.linalg.svd(Sg)
             Dg = U[:, 0:1] * s[0]**0.5 * alpha
             c1 = (Wg/2,Ug+Dg,Sg)
@@ -112,7 +119,16 @@ def LBG(X, iterations, alpha = 0.1):
             GMM_i = GMM_EM(X,len(GMM_list),GMM_list)
     return GMM_i
 
-def fit(xTrain, xLabels, numComponents):
+def GMM_ll_per_sample(X, gmm):
+    G = len(gmm)
+    N = X.shape[1]
+    S = np.zeros((G, N))
+    
+    for g in range(G):
+        S[g, :] = logpdf_GAU_ND(X, gmm[g][1], gmm[g][2]) + np.log(gmm[g][0])
+    return sci.special.logsumexp(S, axis=0)
+
+def train(xTrain, xLabels, numComponents):
     numClasses = len(np.unique(xLabels))
     GMM_list = []
     for i in range(numClasses):
@@ -122,17 +138,13 @@ def fit(xTrain, xLabels, numComponents):
         GMM_list.append(GMMI)
     return GMM_list
 
-    
 def trasform(xTest, xLabels, GMM_list, numComponents):
     numClasses = len(np.unique(xLabels))
-    posteriors = []
+    ll_list = []
     for i in range(numClasses):
-        cond = logpdf_GMM(xTest, GMM_list.pop(), numComponents)
-        post = np.exp(cond)/np.sum(np.exp(cond), axis=0)
-        print("Class {}: {}".format(i, post))
-        posteriors.append(post)
-    posterios = np.array(posteriors)
-    return np.argmax(posteriors, axis=0)
+        ll_list.append(GMM_ll_per_sample(xTest, GMM_list[i]))
+    ll_list = np.array(ll_list)
+    return np.argmax(ll_list, axis=0)
 
 def load_iris():
     D, L = sk.load_iris()['data'].T, sk.load_iris()['target']  
@@ -157,13 +169,14 @@ if __name__ == '__main__':
     gmmMain = load_gmm("./GMM-data/GMM_4D_3G_init.json")
     gmmFinal= load_gmm("./GMM-data/GMM_4D_3G_EM.json")
     solMain = np.load("./GMM-data/GMM_4D_3G_init_ll.npy")
-
+    solLBG= load_gmm("./GMM-data/GMM_1D_4G_EM_LBG.json")
+    
     #IRIS
     xTest, xLabels = load_iris()
     (dataTrain, labelsTrain), (dataTest, labelsTest) = split_db_2to1(xTest, xLabels)
 
-    GMM_list_main = fit(dataTrain, labelsTrain, 2)
-    predicted = trasform(dataTest, labelsTest, GMM_list_main, 2)
+    GMM_list_main = train(dataTrain, labelsTrain, 16)#numero di gaussiani non da elevare alla seconda
+    predicted = trasform(dataTest, labelsTest, GMM_list_main, 16)
     print("Error: {}".format((1-np.sum(predicted == labelsTest)/len(labelsTest))*100))
     
     
