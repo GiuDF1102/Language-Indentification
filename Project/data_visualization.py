@@ -94,3 +94,15 @@ def get_scatter_3d(Data, n_classes, labels):
 
     plt.show()
     plt.close()
+
+def plotCPrim(x, y, labels, xlabel, name):
+    plt.figure()
+    for index,track in enumerate(y):
+        plt.plot(x, track, label=labels[index])
+    plt.xlim([min(x), max(x)])
+    plt.xscale("log")
+    plt.legend(labels)
+    plt.xlabel(xlabel)
+    plt.ylabel("min Cprim")
+    plt.savefig("{}.svg".format(name))
+    return

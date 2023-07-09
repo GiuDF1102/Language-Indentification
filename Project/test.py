@@ -8,13 +8,8 @@ import logistic_regression_classifiers as lrc
 import SVM_classifiers as svmc
 from datetime import datetime
 import numpy as np
-import sys
 
 if __name__ == "__main__":
-    orig_stdout = sys.stdout
-    f = open('out_log_reg.txt', 'w')
-    sys.stdout = f
-
     start_time = datetime.now()
 
     #LOADING DATASET
@@ -42,315 +37,134 @@ if __name__ == "__main__":
         "PC-4": 4   
     }
 
-    """#MEANS AND VARIANCE
-    no_reduction_means = mu.calcmean_classes(features, labels)
-    no_reduction_variance = mu.calcvariance_classes(features, labels)
     """
-    
-    #PCA DATA
-    PCA_5 = dr.PCA(features,5)
-    PCA_5_TEST = dr.PCA(features_test,5)
+    #MVG
+    for pi in [0.1,0.5]:
+        #NO PCA
+        mvgObj = gc.multivariate_cl([1-pi, pi])
+        _, minDCF = val.k_fold(mvgObj, features, labels, 5, (pi, 1, 1))
+        print("MVG, minDCF with pi {} is {}".format(pi, minDCF))
+        
+        #PCA
+        for nPCA in [5,4,3]:
+            dataPCA = dr.PCA(features, nPCA)
+            mvgObj = gc.multivariate_cl([1-pi, pi])
+            _, minDCF = val.k_fold(mvgObj, dataPCA, labels, 5, (pi, 1, 1))
+            print("MVG, minDCF with pi {} and {} PCA is {}".format(pi, nPCA, minDCF))
 
+    #NAIVE MVG
+    for pi in [0.1,0.5]:
+        #NO PCA
+        naiveMvgObj = gc.naive_multivariate_cl([1-pi, pi])
+        _, minDCF = val.k_fold(naiveMvgObj, features, labels, 5, (pi, 1, 1))
+        print("Naive MVG, minDCF with pi {} is {}".format(pi, minDCF))
+        
+        #PCA
+        for nPCA in [5,4,3]:
+            dataPCA = dr.PCA(features, nPCA)
+            naiveMvgObj = gc.naive_multivariate_cl([1-pi, pi])
+            _, minDCF = val.k_fold(naiveMvgObj, dataPCA, labels, 5, (pi, 1, 1))
+            print("Naive MVG, minDCF with pi {} and {} PCA is {}".format(pi, nPCA, minDCF))
 
-    #QUADRATIC FEATURES FOR REGRESSION
+    #TIED MVG
+    for pi in [0.1,0.5]:
+        #NO PCA
+        tiedMvgObj = gc.tied_multivariate_cl([1-pi, pi])
+        _, minDCF = val.k_fold(tiedMvgObj, features, labels, 5, (pi, 1, 1))
+        print("Tied MVG, minDCF with pi {} is {}".format(pi, minDCF))
+        
+        #PCA
+        for nPCA in [5,4,3]:
+            dataPCA = dr.PCA(features, nPCA)
+            tiedMvgObj = gc.tied_multivariate_cl([1-pi, pi])
+            _, minDCF = val.k_fold(tiedMvgObj, dataPCA, labels, 5, (pi, 1, 1))
+            print("Tied MVG, minDCF with pi {} and {} PCA is {}".format(pi, nPCA, minDCF))
+
+    #TIED NAIVE MVG
+    for pi in [0.1,0.5]:
+        #NO PCA
+        tiedNaiveMvgObj = gc.tied_naive_multivariate_cl([1-pi, pi])
+        _, minDCF = val.k_fold(tiedNaiveMvgObj, features, labels, 5, (pi, 1, 1))
+        print("Tied Naive MVG, minDCF with pi {} is {}".format(pi, minDCF))
+        
+        #PCA
+        for nPCA in [5,4,3]:
+            dataPCA = dr.PCA(features, nPCA)
+            tiedNaiveMvgObj = gc.tied_naive_multivariate_cl([1-pi, pi])
+            _, minDCF = val.k_fold(tiedNaiveMvgObj, dataPCA, labels, 5, (pi, 1, 1))
+            print("Tied Naive MVG, minDCF with pi {} and {} PCA is {}".format(pi, nPCA, minDCF))
+    """
+
+    #LOGISTIC REGRESSION
     featuresTrainQuadratic = du.features_expansion(features)
-    featuresTestQuadratic = du.features_expansion(features_test)
-    featuresTrainQuadraticPCA = du.features_expansion(PCA_5)
-    featuresTestQuadraticPCA = du.features_expansion(PCA_5_TEST)
-
+    featuresTrainQuadraticZNorm = mu.z_score(featuresTrainQuadratic)
+    featuresZNorm = mu.z_score(features)
     """
-    #PRINTING SCATTERPLOTS
-    dv.get_scatter(features,labels,labels_dict, features_dict)
-    #dv.get_scatter(PCA_5,labels,labels_dict, features_dict_PCA)
+    #QLOG REG NO NORMALIZATION
+    lambdas = np.logspace(-3, 5, num=50)
+    CprimLogReg = np.zeros((2, len(lambdas)))
+    minDCFList = np.zeros((2, len(lambdas)))
+    for index, pi in enumerate([0.1,0.5]):
+        for lIndex, l in enumerate(lambdas):
+            logRegObj = lrc.logReg(l, pi, False)
+            _, minDCF = val.k_fold(logRegObj, featuresTrainQuadratic, labels, 5, (pi, 1, 1))
+            print("LogReg, minDCF with pi {} and lambda {} is {}".format(pi, l, minDCF))
+            minDCFList[index, lIndex] = minDCF
+    CprimLogReg[0] = minDCFList.mean(axis=0)
 
-    #PRINTING HISTOGRAMS
-    dv.get_hist(features,labels,labels_dict, features_dict)
-    #dv.get_hist(PCA_5,labels,labels_dict, features_dict_PCA)
-    
-    #CORRELATION MATRICES
-    dv.calc_correlation_matrix(features, "Dataset")
-    dv.calc_correlation_matrix(features.T[ labels == 1].T, "Dataset Italian")
-    dv.calc_correlation_matrix(features.T[ labels == 0].T, "Dataset not Italian")
+    #QLOG REG Z-NORM
+    minDCFList = np.zeros((2, len(lambdas)))
+    for index, pi in enumerate([0.1,0.5]):
+        for lIndex, l in enumerate(lambdas):
+            logRegObj = lrc.logReg(l, pi, True)
+            _, minDCF = val.k_fold(logRegObj, featuresTrainQuadraticZNorm, labels, 5, (pi, 1, 1))
+            print("LogReg Z-Norm, minDCF with pi {} and lambda {} is {}".format(pi, l, minDCF))
+            minDCFList[index, lIndex] = minDCF
+    CprimLogReg[1] = minDCFList.mean(axis=0)
+
+    dv.plotCPrim(lambdas, CprimLogReg, ["QLog-Reg", "QLog-Reg z-norm"] , "λ", "QLogReg_QLogRegNorm")
+
+    #LOG REG NO NORMALIZATION
+    lambdas = np.logspace(-3, 5, num=50)
+    CprimLogReg = np.zeros((2, len(lambdas)))
+    minDCFList = np.zeros((2, len(lambdas)))
+    for index, pi in enumerate([0.1,0.5]):
+        for lIndex, l in enumerate(lambdas):
+            logRegObj = lrc.logReg(l, pi, False)
+            _, minDCF = val.k_fold(logRegObj, features, labels, 5, (pi, 1, 1))
+            print("LogReg, minDCF with pi {} and lambda {} is {}".format(pi, l, minDCF))
+            minDCFList[index, lIndex] = minDCF
+    CprimLogReg[0] = minDCFList.mean(axis=0)
+
+    #LOG REG Z-NORM
+    minDCFList = np.zeros((2, len(lambdas)))
+    for index, pi in enumerate([0.1,0.5]):
+        for lIndex, l in enumerate(lambdas):
+            logRegObj = lrc.logReg(l, pi, True)
+            _, minDCF = val.k_fold(logRegObj, featuresZNorm, labels, 5, (pi, 1, 1))
+            print("LogReg Z-Norm, minDCF with pi {} and lambda {} is {}".format(pi, l, minDCF))
+            minDCFList[index, lIndex] = minDCF
+    CprimLogReg[1] = minDCFList.mean(axis=0)
+
+    dv.plotCPrim(lambdas, CprimLogReg, ["Log-Reg", "Log-Reg z-norm"] , "λ", "LogReg_LogRegNorm")
     """
 
-    minDCF_list_01_logReg = []
-    minDCF_list_05_logReg = []
-    print("#####################PRIOR 0.1 ######################\n")
-    pi = 0.1
-    workingPoint = (pi, 1, 1)
-    K = 5
-    for i in [3,4,5]:
-        print("\n#################PCA: {} ##################".format(i))
-        PCA = dr.PCA(features,i)
-
-        print("###########LOGREG l = 100 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(100)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 100")
-
-        print("###########LOGREG l = 10 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(10)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 10")
-
-        print("###########LOGREG l = 1 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(1)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 1")
-
-        print("###########LOGREG l = 0.1 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.1)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.1")
-
-        print("###########LOGREG l = 0.01 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.01)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.01")
-
-        print("###########LOGREG l = 0.001 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.001)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.001")
-
-        print("###########LOGREG l = 0.0001 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.0001)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.0001")
-
-        print("###########LOGREG l = 0.00001 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.00001)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.00001")
-
-        # print("#############MVG ##############\n")
-        # mvg_test = gc.multivariate_cl([1-pi, pi]) #( class 0, class 1 )
-        # val.k_fold(mvg_test, PCA, labels, K, workingPoint, "MVG")
-
-        # mvg_test_naive = gc.naive_multivariate_cl([1-pi, pi])
-        # val.k_fold(mvg_test_naive, PCA, labels, K, workingPoint, "Naive")
-
-        # mvg_test_tied = gc.tied_multivariate_cl([1-pi, pi])
-        # val.k_fold(mvg_test_tied, PCA, labels, K, workingPoint, "Tied")
-
-        # mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi, pi])
-        # val.k_fold(mvg_test_tied_naive, PCA, labels, K, workingPoint, "Tied Naive")
-
-        # svm_lin = svmc.SVM('linear',  C=0.1, K=1)
-        # val.k_fold(svm_lin, PCA, labels, K, workingPoint, "SMV linear C=0.1, K=1")
-
-        # svm_quad = svmc.SVM('Polinomial',  C=1, K=1, d=2, c=0)
-        # val.k_fold(svm_quad, PCA, labels, K, workingPoint, "SMV Quadratic C=1, K=1, d=2, c=0")
-
-        # svm_rbf = svmc.SVM('RBF',  C=100, K=0, gamma=0.1)
-        # val.k_fold(svm_rbf, PCA, labels, K, workingPoint, "SMV RBF C=100, K=0, gamma=0.1")
-
-    print("#################NO PCA ##################\n")
-
-    print("###########LOGREG l = 100 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(100)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 100")
-
-    print("###########LOGREG l = 10 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(10)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 10")
-
-    print("###########LOGREG l = 1 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(1)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 1")
-
-    print("###########LOGREG l = 0.1 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.1)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.1")
-
-    print("###########LOGREG l = 0.01 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.01)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.01")
-
-    print("###########LOGREG l = 0.001 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.001)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.001")
-
-    print("###########LOGREG l = 0.0001 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.0001)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.0001")
-
-    print("###########LOGREG l = 0.00001 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.00001)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.00001")
-
-    # print("#############MVG ##############\n")
-    # mvg_test = gc.multivariate_cl([1-pi, pi]) #( class 0, class 1 )
-    # val.k_fold(mvg_test, features, labels, K, workingPoint, "MVG")
-
-    # mvg_test_naive = gc.naive_multivariate_cl([1-pi, pi])
-    # val.k_fold(mvg_test_naive, features, labels, K, workingPoint, "Naive")
-
-    # mvg_test_tied = gc.tied_multivariate_cl([1-pi, pi])
-    # val.k_fold(mvg_test_tied, features, labels, K, workingPoint, "Tied")
-
-    # mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi, pi])
-    # val.k_fold(mvg_test_tied_naive, features, labels, K, workingPoint, "Tied Naive")
-
-    # print("#############SVM ##############\n")
-    # svm_lin = svmc.SVM('linear',  C=0.1, K=1)
-    # val.k_fold(svm_lin, features, labels, K, workingPoint, "SMV linear C=0.1, K=1")
-
-    # svm_quad = svmc.SVM('Polinomial',  C=1, K=1, d=2, c=0)
-    # val.k_fold(svm_quad, features, labels, K, workingPoint, "SMV Quadratic C=1, K=1, d=2, c=0")
-
-    # svm_rbf = svmc.SVM('RBF',  C=100, K=0, gamma=0.1)
-    # val.k_fold(svm_rbf, features, labels, K, workingPoint, "SMV RBF C=100, K=0, gamma=0.1")
-    
-    print("\n\n#####################PRIOR 0.5 ######################\n")
-    pi = 0.5
-    workingPoint = (pi, 1, 1)
-    K = 3
-    for i in [3,4,5]:
-        print("\n#################PCA: {} ##################".format(i))
-        PCA = dr.PCA(features,i)
-
-        print("###########LOGREG l = 100 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(100)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 100")
-
-        print("###########LOGREG l = 10 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(10)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 10")
-
-        print("###########LOGREG l = 1 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(1)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 1")
-
-        print("###########LOGREG l = 0.1 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.1)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.1")
-
-        print("###########LOGREG l = 0.01 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.01)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.01")
-
-        print("###########LOGREG l = 0.001 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.001)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.001")
-
-        print("###########LOGREG l = 0.0001 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.0001)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.0001")
-
-        print("###########LOGREG l = 0.00001 #############\n")
-        expanded_f = du.features_expansion(PCA)
-        log_reg = lrc.logReg(0.00001)
-        val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.00001")
-
-        # print("#############MVG ##############\n")
-        # mvg_test = gc.multivariate_cl([1-pi, pi]) #( class 0, class 1 )
-        # val.k_fold(mvg_test, PCA, labels, K, workingPoint, "MVG")
-
-        # mvg_test_naive = gc.naive_multivariate_cl([1-pi, pi])
-        # val.k_fold(mvg_test_naive, PCA, labels, K, workingPoint, "Naive")
-
-        # mvg_test_tied = gc.tied_multivariate_cl([1-pi, pi])
-        # val.k_fold(mvg_test_tied, PCA, labels, K, workingPoint, "Tied")
-
-        # mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi, pi])
-        # val.k_fold(mvg_test_tied_naive, PCA, labels, K, workingPoint, "Tied Naive")
-
-        # print("#############SVM ##############\n")
-        # svm_lin = svmc.SVM('linear',  C=0.1, K=1)
-        # val.k_fold(svm_lin, PCA, labels, K, workingPoint, "SMV linear C=0.1, K=1")
-
-        # svm_quad = svmc.SVM('Polinomial',  C=1, K=1, d=2, c=0)
-        # val.k_fold(svm_quad, PCA, labels, K, workingPoint, "SMV Quadratic C=1, K=1, d=2, c=0")
-
-        # svm_rbf = svmc.SVM('RBF',  C=100, K=0, gamma=0.1)
-        # val.k_fold(svm_rbf, PCA, labels, K, workingPoint, "SMV RBF C=100, K=0, gamma=0.1")
-
-    print("#################NO PCA ##################\n")
-
-    print("###########LOGREG l = 100 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(100)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 100")
-
-    print("###########LOGREG l = 10 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(10)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 10")
-
-    print("###########LOGREG l = 1 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(1)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 1")
-
-    print("###########LOGREG l = 0.1 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.1)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.1")
-
-    print("###########LOGREG l = 0.01 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.01)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.01")
-
-    print("###########LOGREG l = 0.001 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.001)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.001")
-
-    print("###########LOGREG l = 0.0001 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.0001)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.0001")
-
-    print("###########LOGREG l = 0.00001 #############\n")
-    expanded_f = du.features_expansion(features)
-    log_reg = lrc.logReg(0.00001)
-    val.k_fold(log_reg, expanded_f, labels, K, workingPoint, "Logistic Regression l = 0.00001") 
-
-    # print("#############MVG ##############\n")
-    # mvg_test = gc.multivariate_cl([1-pi, pi]) #( class 0, class 1 )
-    # val.k_fold(mvg_test, features, labels, K, workingPoint, "MVG")
-
-    # mvg_test_naive = gc.naive_multivariate_cl([1-pi, pi])
-    # val.k_fold(mvg_test_naive, features, labels, K, workingPoint, "Naive")
-
-    # mvg_test_tied = gc.tied_multivariate_cl([1-pi, pi])
-    # val.k_fold(mvg_test_tied, features, labels, K, workingPoint, "Tied")
-
-    # mvg_test_tied_naive = gc.tied_naive_multivariate_cl([1-pi, pi])
-    # val.k_fold(mvg_test_tied_naive, features, labels, K, workingPoint, "Tied Naive")
-
-    # print("#############SVM ##############\n")
-    # svm_lin = svmc.SVM('linear',  C=0.1, K=1)
-    # val.k_fold(svm_lin, features, labels, K, workingPoint, "SMV linear C=0.1, K=1")
-
-    # svm_quad = svmc.SVM('Polinomial',  C=1, K=1, d=2, c=0)
-    # val.k_fold(svm_quad, features, labels, K, workingPoint, "SMV Quadratic C=1, K=1, d=2, c=0")
-
-    # svm_rbf = svmc.SVM('RBF',  C=100, K=0, gamma=0.1)
-    # val.k_fold(svm_rbf, features, labels, K, workingPoint, "SMV RBF C=100, K=0, gamma=0.1")
+    #QLOG REG PCA
+    lambdas = np.logspace(-3, 5, num=50)
+    CprimLogReg = np.zeros((4, len(lambdas)))
+    for PCAIndex, nPCA in enumerate([5,4,3]):
+        minDCFList = np.zeros((2, len(lambdas)))
+        for index, pi in enumerate([0.1,0.5]):
+            for lIndex, l in enumerate(lambdas):
+                logRegObj = lrc.logReg(l, pi, False)
+                _, minDCF = val.k_fold(logRegObj, featuresTrainQuadratic, labels, 5, (pi, 1, 1))
+                print("LogReg, minDCF with pi {}, PCA {} and lambda {} is {}".format(pi, nPCA, l, minDCF))
+                minDCFList[index, lIndex] = minDCF
+        CprimLogReg[PCAIndex] = minDCFList.mean(axis=0)
+    dv.plotCPrim(lambdas, CprimLogReg, ["QLog-Reg PCA-5", "QLog-Reg PCA-4", "QLog-Reg PCA-3"] , "λ", "QLogRegPCAs")
 
     end_time = datetime.now()
 
     print("--------- TIME ----------")
     print(f"Time elapsed: {end_time - start_time}")
-    
-    sys.stdout = orig_stdout
-    f.close()
         
