@@ -1,0 +1,433 @@
+MVG, minDCF with pi 0,1 is 0,5024746192893401
+MVG, minDCF with pi 0,1 and 5 PCA is 0,49393401015228433
+MVG, minDCF with pi 0,1 and 4 PCA is 0,5429060913705583
+MVG, minDCF with pi 0,1 and 3 PCA is 0,5407487309644671
+MVG, minDCF with pi 0,5 is 0,13133248730964467
+MVG, minDCF with pi 0,5 and 5 PCA is 0,12958121827411168
+MVG, minDCF with pi 0,5 and 4 PCA is 0,13449238578680203
+MVG, minDCF with pi 0,5 and 3 PCA is 0,14088832487309644
+Naive MVG, minDCF with pi 0,1 is 0,5466116751269036
+Naive MVG, minDCF with pi 0,1 and 5 PCA is 0,4753172588832488
+Naive MVG, minDCF with pi 0,1 and 4 PCA is 0,5369543147208122
+Naive MVG, minDCF with pi 0,1 and 3 PCA is 0,533248730964467
+Naive MVG, minDCF with pi 0,5 is 0,13793147208121828
+Naive MVG, minDCF with pi 0,5 and 5 PCA is 0,13024111675126904
+Naive MVG, minDCF with pi 0,5 and 4 PCA is 0,13086294416243655
+Naive MVG, minDCF with pi 0,5 and 3 PCA is 0,1355456852791878
+Tied MVG, minDCF with pi 0,1 is 1,0
+Tied MVG, minDCF with pi 0,1 and 5 PCA is 1,0
+Tied MVG, minDCF with pi 0,1 and 4 PCA is 1,0
+Tied MVG, minDCF with pi 0,1 and 3 PCA is 1,0
+Tied MVG, minDCF with pi 0,5 is 0,5154314720812183
+Tied MVG, minDCF with pi 0,5 and 5 PCA is 0,5091624365482234
+Tied MVG, minDCF with pi 0,5 and 4 PCA is 0,48286802030456855
+Tied MVG, minDCF with pi 0,5 and 3 PCA is 0,4810406091370558
+Tied Naive MVG, minDCF with pi 0,1 is 1,0
+Tied Naive MVG, minDCF with pi 0,1 and 5 PCA is 1,0
+Tied Naive MVG, minDCF with pi 0,1 and 4 PCA is 1,0
+Tied Naive MVG, minDCF with pi 0,1 and 3 PCA is 1,0
+Tied Naive MVG, minDCF with pi 0,5 is 0,49130710659898474
+Tied Naive MVG, minDCF with pi 0,5 and 5 PCA is 0,5101776649746192
+Tied Naive MVG, minDCF with pi 0,5 and 4 PCA is 0,4823604060913706
+Tied Naive MVG, minDCF with pi 0,5 and 3 PCA is 0,4825634517766497
+
+LogReg, minDCF with pi 0.1 and lambda 0.001 is 0.40790609137055833
+LogReg, minDCF with pi 0.1 and lambda 0.0014563484775012444 is 0.40790609137055833
+LogReg, minDCF with pi 0.1 and lambda 0.0021209508879201904 is 0.40790609137055833
+LogReg, minDCF with pi 0.1 and lambda 0.0030888435964774815 is 0.4074746192893401
+LogReg, minDCF with pi 0.1 and lambda 0.004498432668969444 is 0.4074746192893401
+LogReg, minDCF with pi 0.1 and lambda 0.006551285568595509 is 0.40540609137055833
+LogReg, minDCF with pi 0.1 and lambda 0.009540954763499945 is 0.4074746192893401
+LogReg, minDCF with pi 0.1 and lambda 0.013894954943731374 is 0.4074746192893401
+LogReg, minDCF with pi 0.1 and lambda 0.020235896477251564 is 0.4074746192893401
+LogReg, minDCF with pi 0.1 and lambda 0.029470517025518096 is 0.40454314720812184
+LogReg, minDCF with pi 0.1 and lambda 0.04291934260128776 is 0.4091116751269036
+LogReg, minDCF with pi 0.1 and lambda 0.0625055192527397 is 0.4099746192893401
+LogReg, minDCF with pi 0.1 and lambda 0.09102981779915217 is 0.40670050761421317
+LogReg, minDCF with pi 0.1 and lambda 0.13257113655901082 is 0.40213197969543146
+LogReg, minDCF with pi 0.1 and lambda 0.19306977288832497 is 0.39713197969543146
+LogReg, minDCF with pi 0.1 and lambda 0.2811768697974228 is 0.398248730964467
+LogReg, minDCF with pi 0.1 and lambda 0.4094915062380423 is 0.4041116751269036
+LogReg, minDCF with pi 0.1 and lambda 0.5963623316594643 is 0.39954314720812184
+LogReg, minDCF with pi 0.1 and lambda 0.868511373751352 is 0.40238578680203047
+LogReg, minDCF with pi 0.1 and lambda 1.2648552168552958 is 0.4049746192893401
+LogReg, minDCF with pi 0.1 and lambda 1.8420699693267144 is 0.40290609137055833
+LogReg, minDCF with pi 0.1 and lambda 2.6826957952797246 is 0.39920050761421316
+LogReg, minDCF with pi 0.1 and lambda 3.906939937054613 is 0.39256345177664975
+LogReg, minDCF with pi 0.1 and lambda 5.689866029018293 is 0.38963197969543145
+LogReg, minDCF with pi 0.1 and lambda 8.286427728546842 is 0.385494923857868
+LogReg, minDCF with pi 0.1 and lambda 12.067926406393289 is 0.3867893401015228
+LogReg, minDCF with pi 0.1 and lambda 17.575106248547893 is 0.3867893401015228
+LogReg, minDCF with pi 0.1 and lambda 25.595479226995334 is 0.3888578680203046
+LogReg, minDCF with pi 0.1 and lambda 37.27593720314938 is 0.39420050761421316
+LogReg, minDCF with pi 0.1 and lambda 54.286754393238596 is 0.3962690355329949
+LogReg, minDCF with pi 0.1 and lambda 79.06043210907686 is 0.3983375634517766
+LogReg, minDCF with pi 0.1 and lambda 115.13953993264457 is 0.41808375634517764
+LogReg, minDCF with pi 0.1 and lambda 167.68329368110065 is 0.42420050761421313
+LogReg, minDCF with pi 0.1 and lambda 244.205309454865 is 0.43833756345177666
+LogReg, minDCF with pi 0.1 and lambda 355.64803062231283 is 0.43583756345177666
+LogReg, minDCF with pi 0.1 and lambda 517.9474679231203 is 0.450748730964467
+LogReg, minDCF with pi 0.1 and lambda 754.3120063354608 is 0.44790609137055837
+LogReg, minDCF with pi 0.1 and lambda 1098.5411419875572 is 0.4399746192893401
+LogReg, minDCF with pi 0.1 and lambda 1599.8587196060573 is 0.46161167512690354
+LogReg, minDCF with pi 0.1 and lambda 2329.951810515367 is 0.4786802030456853
+LogReg, minDCF with pi 0.1 and lambda 3393.221771895323 is 0.4894543147208122
+LogReg, minDCF with pi 0.1 and lambda 4941.713361323828 is 0.5185025380710659
+LogReg, minDCF with pi 0.1 and lambda 7196.856730011514 is 0.5526395939086295
+LogReg, minDCF with pi 0.1 and lambda 10481.131341546852 is 0.5911802030456853
+LogReg, minDCF with pi 0.1 and lambda 15264.179671752303 is 0.6575634517766497
+LogReg, minDCF with pi 0.1 and lambda 22229.96482526191 is 0.7263324873096446
+LogReg, minDCF with pi 0.1 and lambda 32374.5754281764 is 0.8023730964467004
+LogReg, minDCF with pi 0.1 and lambda 47148.663634573895 is 0.8325761421319797
+LogReg, minDCF with pi 0.1 and lambda 68664.88450042998 is 0.8906852791878173
+LogReg, minDCF with pi 0.1 and lambda 100000.0 is 0.8906852791878173
+LogReg, minDCF with pi 0.5 and lambda 0.001 is 0.09888324873096446
+LogReg, minDCF with pi 0.5 and lambda 0.0014563484775012444 is 0.09888324873096446
+LogReg, minDCF with pi 0.5 and lambda 0.0021209508879201904 is 0.09888324873096446
+LogReg, minDCF with pi 0.5 and lambda 0.0030888435964774815 is 0.09888324873096446
+LogReg, minDCF with pi 0.5 and lambda 0.004498432668969444 is 0.09888324873096446
+LogReg, minDCF with pi 0.5 and lambda 0.006551285568595509 is 0.09888324873096446
+LogReg, minDCF with pi 0.5 and lambda 0.009540954763499945 is 0.09939086294416244
+LogReg, minDCF with pi 0.5 and lambda 0.013894954943731374 is 0.09939086294416244
+LogReg, minDCF with pi 0.5 and lambda 0.020235896477251564 is 0.09939086294416244
+LogReg, minDCF with pi 0.5 and lambda 0.029470517025518096 is 0.09888324873096446
+LogReg, minDCF with pi 0.5 and lambda 0.04291934260128776 is 0.09798223350253807
+LogReg, minDCF with pi 0.5 and lambda 0.0625055192527397 is 0.09798223350253807
+LogReg, minDCF with pi 0.5 and lambda 0.09102981779915217 is 0.0992258883248731
+LogReg, minDCF with pi 0.5 and lambda 0.13257113655901082 is 0.100748730964467
+LogReg, minDCF with pi 0.5 and lambda 0.19306977288832497 is 0.10228426395939086
+LogReg, minDCF with pi 0.5 and lambda 0.2811768697974228 is 0.10126903553299493
+LogReg, minDCF with pi 0.5 and lambda 0.4094915062380423 is 0.09974619289340102
+LogReg, minDCF with pi 0.5 and lambda 0.5963623316594643 is 0.10025380710659898
+LogReg, minDCF with pi 0.5 and lambda 0.868511373751352 is 0.1007233502538071
+LogReg, minDCF with pi 0.5 and lambda 1.2648552168552958 is 0.10220812182741117
+LogReg, minDCF with pi 0.5 and lambda 1.8420699693267144 is 0.10227157360406092
+LogReg, minDCF with pi 0.5 and lambda 2.6826957952797246 is 0.10328680203045686
+LogReg, minDCF with pi 0.5 and lambda 3.906939937054613 is 0.1033248730964467
+LogReg, minDCF with pi 0.5 and lambda 5.689866029018293 is 0.10281725888324873
+LogReg, minDCF with pi 0.5 and lambda 8.286427728546842 is 0.10383248730964467
+LogReg, minDCF with pi 0.5 and lambda 12.067926406393289 is 0.10309644670050762
+LogReg, minDCF with pi 0.5 and lambda 17.575106248547893 is 0.10383248730964467
+LogReg, minDCF with pi 0.5 and lambda 25.595479226995334 is 0.10364213197969543
+LogReg, minDCF with pi 0.5 and lambda 37.27593720314938 is 0.10215736040609139
+LogReg, minDCF with pi 0.5 and lambda 54.286754393238596 is 0.10274111675126904
+LogReg, minDCF with pi 0.5 and lambda 79.06043210907686 is 0.10434010152284263
+LogReg, minDCF with pi 0.5 and lambda 115.13953993264457 is 0.10555837563451777
+LogReg, minDCF with pi 0.5 and lambda 167.68329368110065 is 0.10508883248730964
+LogReg, minDCF with pi 0.5 and lambda 244.205309454865 is 0.10758883248730965
+LogReg, minDCF with pi 0.5 and lambda 355.64803062231283 is 0.10961928934010153
+LogReg, minDCF with pi 0.5 and lambda 517.9474679231203 is 0.11290609137055838
+LogReg, minDCF with pi 0.5 and lambda 754.3120063354608 is 0.11442893401015228
+LogReg, minDCF with pi 0.5 and lambda 1098.5411419875572 is 0.11852791878172589
+LogReg, minDCF with pi 0.5 and lambda 1599.8587196060573 is 0.12046954314720812
+LogReg, minDCF with pi 0.5 and lambda 2329.951810515367 is 0.12105329949238579
+LogReg, minDCF with pi 0.5 and lambda 3393.221771895323 is 0.12398477157360407
+LogReg, minDCF with pi 0.5 and lambda 4941.713361323828 is 0.12956852791878173
+LogReg, minDCF with pi 0.5 and lambda 7196.856730011514 is 0.1346954314720812
+LogReg, minDCF with pi 0.5 and lambda 10481.131341546852 is 0.14078680203045685
+LogReg, minDCF with pi 0.5 and lambda 15264.179671752303 is 0.14789340101522844
+LogReg, minDCF with pi 0.5 and lambda 22229.96482526191 is 0.15893401015228426
+LogReg, minDCF with pi 0.5 and lambda 32374.5754281764 is 0.16831218274111676
+LogReg, minDCF with pi 0.5 and lambda 47148.663634573895 is 0.18467005076142132
+LogReg, minDCF with pi 0.5 and lambda 68664.88450042998 is 0.20469543147208122
+LogReg, minDCF with pi 0.5 and lambda 100000.0 is 0.23214467005076142
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.001 is 0.8175761421319797
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.0014563484775012444 is 0.8175761421319797
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.0021209508879201904 is 0.8175761421319797
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.0030888435964774815 is 0.8175761421319797
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.004498432668969444 is 0.8200761421319797
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.006551285568595509 is 0.8250761421319797
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.009540954763499945 is 0.8267131979695432
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.013894954943731374 is 0.8267131979695432
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.020235896477251564 is 0.8274746192893401
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.029470517025518096 is 0.8245431472081218
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.04291934260128776 is 0.8191116751269036
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.0625055192527397 is 0.8242005076142132
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.09102981779915217 is 0.8179060913705584
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.13257113655901082 is 0.8216116751269035
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.19306977288832497 is 0.8241116751269036
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.2811768697974228 is 0.828248730964467
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.4094915062380423 is 0.8419543147208122
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.5963623316594643 is 0.8519670050761421
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.868511373751352 is 0.8511040609137056
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 1.2648552168552958 is 0.8531725888324873
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 1.8420699693267144 is 0.8578299492385788
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 2.6826957952797246 is 0.8556725888324873
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 3.906939937054613 is 0.8618781725888325
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 5.689866029018293 is 0.8651522842639594
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 8.286427728546842 is 0.878261421319797
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 12.067926406393289 is 0.883261421319797
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 17.575106248547893 is 0.8842893401015228
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 25.595479226995334 is 0.8930837563451777
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 37.27593720314938 is 0.8880837563451777
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 54.286754393238596 is 0.8898096446700507
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 79.06043210907686 is 0.9169670050761421
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 115.13953993264457 is 0.9286040609137056
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 167.68329368110065 is 0.9550761421319798
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 244.205309454865 is 0.9705964467005076
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 355.64803062231283 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 517.9474679231203 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 754.3120063354608 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 1098.5411419875572 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 1599.8587196060573 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 2329.951810515367 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 3393.221771895323 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 4941.713361323828 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 7196.856730011514 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 10481.131341546852 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 15264.179671752303 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 22229.96482526191 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 32374.5754281764 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 47148.663634573895 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 68664.88450042998 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 100000.0 is 0.9807741116751268
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.001 is 0.3635406091370559
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.0014563484775012444 is 0.3635406091370559
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.0021209508879201904 is 0.3635406091370559
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.0030888435964774815 is 0.3635406091370559
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.004498432668969444 is 0.36248730964467
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.006551285568595509 is 0.3614720812182741
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.009540954763499945 is 0.3570177664974619
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.013894954943731374 is 0.3589720812182741
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.020235896477251564 is 0.35885786802030456
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.029470517025518096 is 0.35588832487309646
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.04291934260128776 is 0.35635786802030456
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.0625055192527397 is 0.3638959390862944
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.09102981779915217 is 0.36744923857868017
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.13257113655901082 is 0.369251269035533
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.19306977288832497 is 0.3695558375634518
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.2811768697974228 is 0.37178934010152287
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.4094915062380423 is 0.371002538071066
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.5963623316594643 is 0.3733502538071066
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.868511373751352 is 0.37413705583756346
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 1.2648552168552958 is 0.37791878172588833
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 1.8420699693267144 is 0.3839720812182741
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 2.6826957952797246 is 0.3942766497461929
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 3.906939937054613 is 0.40139593908629445
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 5.689866029018293 is 0.41125634517766496
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 8.286427728546842 is 0.42270304568527917
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 12.067926406393289 is 0.42958121827411166
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 17.575106248547893 is 0.4490228426395939
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 25.595479226995334 is 0.46666243654822337
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 37.27593720314938 is 0.4719162436548223
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 54.286754393238596 is 0.48011421319796954
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 79.06043210907686 is 0.4927411167512691
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 115.13953993264457 is 0.50751269035533
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 167.68329368110065 is 0.5193908629441624
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 244.205309454865 is 0.5437690355329949
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 355.64803062231283 is 0.5725126903553299
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 517.9474679231203 is 0.6439086294416243
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 754.3120063354608 is 0.7063071065989848
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 1098.5411419875572 is 0.7648857868020305
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 1599.8587196060573 is 0.802258883248731
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 2329.951810515367 is 0.8230837563451777
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 3393.221771895323 is 0.8424619289340101
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 4941.713361323828 is 0.864746192893401
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 7196.856730011514 is 0.9104060913705584
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 10481.131341546852 is 0.9104060913705584
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 15264.179671752303 is 0.9104060913705584
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 22229.96482526191 is 0.9104060913705584
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 32374.5754281764 is 0.9104060913705584
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 47148.663634573895 is 0.9104060913705584
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 68664.88450042998 is 0.9104060913705584
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 100000.0 is 0.9109137055837563
+LogReg, minDCF with pi 0.1 and lambda 0.001 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.0014563484775012444 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.0021209508879201904 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.0030888435964774815 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.004498432668969444 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.006551285568595509 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.009540954763499945 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.013894954943731374 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.020235896477251564 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.029470517025518096 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.04291934260128776 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.0625055192527397 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.09102981779915217 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.13257113655901082 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.19306977288832497 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.2811768697974228 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.4094915062380423 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.5963623316594643 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 0.868511373751352 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 1.2648552168552958 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 1.8420699693267144 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 2.6826957952797246 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 3.906939937054613 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 5.689866029018293 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 8.286427728546842 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 12.067926406393289 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 17.575106248547893 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 25.595479226995334 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 37.27593720314938 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 54.286754393238596 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 79.06043210907686 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 115.13953993264457 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 167.68329368110065 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 244.205309454865 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 355.64803062231283 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 517.9474679231203 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 754.3120063354608 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 1098.5411419875572 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 1599.8587196060573 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 2329.951810515367 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 3393.221771895323 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 4941.713361323828 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 7196.856730011514 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 10481.131341546852 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 15264.179671752303 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 22229.96482526191 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 32374.5754281764 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 47148.663634573895 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 68664.88450042998 is 1.0
+LogReg, minDCF with pi 0.1 and lambda 100000.0 is 1.0
+LogReg, minDCF with pi 0.5 and lambda 0.001 is 0.521256345177665
+LogReg, minDCF with pi 0.5 and lambda 0.0014563484775012444 is 0.521256345177665
+LogReg, minDCF with pi 0.5 and lambda 0.0021209508879201904 is 0.521256345177665
+LogReg, minDCF with pi 0.5 and lambda 0.0030888435964774815 is 0.521256345177665
+LogReg, minDCF with pi 0.5 and lambda 0.004498432668969444 is 0.521256345177665
+LogReg, minDCF with pi 0.5 and lambda 0.006551285568595509 is 0.521256345177665
+LogReg, minDCF with pi 0.5 and lambda 0.009540954763499945 is 0.520748730964467
+LogReg, minDCF with pi 0.5 and lambda 0.013894954943731374 is 0.520748730964467
+LogReg, minDCF with pi 0.5 and lambda 0.020235896477251564 is 0.520748730964467
+LogReg, minDCF with pi 0.5 and lambda 0.029470517025518096 is 0.520748730964467
+LogReg, minDCF with pi 0.5 and lambda 0.04291934260128776 is 0.519733502538071
+LogReg, minDCF with pi 0.5 and lambda 0.0625055192527397 is 0.519733502538071
+LogReg, minDCF with pi 0.5 and lambda 0.09102981779915217 is 0.5192258883248732
+LogReg, minDCF with pi 0.5 and lambda 0.13257113655901082 is 0.5187182741116751
+LogReg, minDCF with pi 0.5 and lambda 0.19306977288832497 is 0.5192639593908629
+LogReg, minDCF with pi 0.5 and lambda 0.2811768697974228 is 0.5178934010152284
+LogReg, minDCF with pi 0.5 and lambda 0.4094915062380423 is 0.5151649746192893
+LogReg, minDCF with pi 0.5 and lambda 0.5963623316594643 is 0.5135279187817259
+LogReg, minDCF with pi 0.5 and lambda 0.868511373751352 is 0.5120431472081218
+LogReg, minDCF with pi 0.5 and lambda 1.2648552168552958 is 0.5101269035532995
+LogReg, minDCF with pi 0.5 and lambda 1.8420699693267144 is 0.5048223350253808
+LogReg, minDCF with pi 0.5 and lambda 2.6826957952797246 is 0.5023223350253807
+LogReg, minDCF with pi 0.5 and lambda 3.906939937054613 is 0.49774111675126903
+LogReg, minDCF with pi 0.5 and lambda 5.689866029018293 is 0.4941878172588833
+LogReg, minDCF with pi 0.5 and lambda 8.286427728546842 is 0.49313451776649747
+LogReg, minDCF with pi 0.5 and lambda 12.067926406393289 is 0.4926649746192894
+LogReg, minDCF with pi 0.5 and lambda 17.575106248547893 is 0.4921192893401015
+LogReg, minDCF with pi 0.5 and lambda 25.595479226995334 is 0.4926269035532995
+LogReg, minDCF with pi 0.5 and lambda 37.27593720314938 is 0.4954441624365482
+LogReg, minDCF with pi 0.5 and lambda 54.286754393238596 is 0.4973984771573604
+LogReg, minDCF with pi 0.5 and lambda 79.06043210907686 is 0.5055203045685279
+LogReg, minDCF with pi 0.5 and lambda 115.13953993264457 is 0.5171192893401015
+LogReg, minDCF with pi 0.5 and lambda 167.68329368110065 is 0.5348857868020305
+LogReg, minDCF with pi 0.5 and lambda 244.205309454865 is 0.567258883248731
+LogReg, minDCF with pi 0.5 and lambda 355.64803062231283 is 0.6066497461928935
+LogReg, minDCF with pi 0.5 and lambda 517.9474679231203 is 0.6619416243654822
+LogReg, minDCF with pi 0.5 and lambda 754.3120063354608 is 0.7284771573604061
+LogReg, minDCF with pi 0.5 and lambda 1098.5411419875572 is 0.79501269035533
+LogReg, minDCF with pi 0.5 and lambda 1599.8587196060573 is 0.8402284263959391
+LogReg, minDCF with pi 0.5 and lambda 2329.951810515367 is 0.8506218274111674
+LogReg, minDCF with pi 0.5 and lambda 3393.221771895323 is 0.8667005076142131
+LogReg, minDCF with pi 0.5 and lambda 4941.713361323828 is 0.8804060913705584
+LogReg, minDCF with pi 0.5 and lambda 7196.856730011514 is 0.9068020304568528
+LogReg, minDCF with pi 0.5 and lambda 10481.131341546852 is 0.9080837563451776
+LogReg, minDCF with pi 0.5 and lambda 15264.179671752303 is 0.9080837563451776
+LogReg, minDCF with pi 0.5 and lambda 22229.96482526191 is 0.9080837563451776
+LogReg, minDCF with pi 0.5 and lambda 32374.5754281764 is 0.9080837563451776
+LogReg, minDCF with pi 0.5 and lambda 47148.663634573895 is 0.9080837563451776
+LogReg, minDCF with pi 0.5 and lambda 68664.88450042998 is 0.9080837563451776
+LogReg, minDCF with pi 0.5 and lambda 100000.0 is 0.9080837563451776
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.001 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.0014563484775012444 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.0021209508879201904 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.0030888435964774815 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.004498432668969444 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.006551285568595509 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.009540954763499945 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.013894954943731374 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.020235896477251564 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.029470517025518096 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.04291934260128776 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.0625055192527397 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.09102981779915217 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.13257113655901082 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.19306977288832497 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.2811768697974228 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.4094915062380423 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.5963623316594643 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 0.868511373751352 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 1.2648552168552958 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 1.8420699693267144 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 2.6826957952797246 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 3.906939937054613 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 5.689866029018293 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 8.286427728546842 is 0.9995685279187817
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 12.067926406393289 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 17.575106248547893 is 0.9975
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 25.595479226995334 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 37.27593720314938 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 54.286754393238596 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 79.06043210907686 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 115.13953993264457 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 167.68329368110065 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 244.205309454865 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 355.64803062231283 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 517.9474679231203 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 754.3120063354608 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 1098.5411419875572 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 1599.8587196060573 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 2329.951810515367 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 3393.221771895323 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 4941.713361323828 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 7196.856730011514 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 10481.131341546852 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 15264.179671752303 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 22229.96482526191 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 32374.5754281764 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 47148.663634573895 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 68664.88450042998 is 1.0
+LogReg Z-Norm, minDCF with pi 0.1 and lambda 100000.0 is 1.0
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.001 is 0.689505076142132
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.0014563484775012444 is 0.689505076142132
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.0021209508879201904 is 0.689505076142132
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.0030888435964774815 is 0.689505076142132
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.004498432668969444 is 0.689505076142132
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.006551285568595509 is 0.689505076142132
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.009540954763499945 is 0.689505076142132
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.013894954943731374 is 0.689505076142132
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.020235896477251564 is 0.689505076142132
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.029470517025518096 is 0.6895812182741117
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.04291934260128776 is 0.6895812182741117
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.0625055192527397 is 0.6895812182741117
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.09102981779915217 is 0.6895812182741117
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.13257113655901082 is 0.6891116751269035
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.19306977288832497 is 0.6886040609137056
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.2811768697974228 is 0.6886040609137056
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.4094915062380423 is 0.6886040609137056
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.5963623316594643 is 0.6886040609137056
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 0.868511373751352 is 0.6855203045685279
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 1.2648552168552958 is 0.6848984771573604
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 1.8420699693267144 is 0.6829822335025382
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 2.6826957952797246 is 0.6809517766497462
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 3.906939937054613 is 0.6768147208121826
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 5.689866029018293 is 0.6753299492385787
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 8.286427728546842 is 0.6748984771573604
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 12.067926406393289 is 0.6731852791878172
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 17.575106248547893 is 0.6706345177664974
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 25.595479226995334 is 0.6695050761421321
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 37.27593720314938 is 0.668489847715736
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 54.286754393238596 is 0.668489847715736
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 79.06043210907686 is 0.6697335025380711
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 115.13953993264457 is 0.6751649746192894
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 167.68329368110065 is 0.6838071065989848
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 244.205309454865 is 0.6890736040609138
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 355.64803062231283 is 0.7043527918781726
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 517.9474679231203 is 0.7576142131979695
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 754.3120063354608 is 0.8100253807106599
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 1098.5411419875572 is 0.8156091370558375
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 1599.8587196060573 is 0.8303426395939086
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 2329.951810515367 is 0.8567893401015227
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 3393.221771895323 is 0.8895431472081218
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 4941.713361323828 is 0.9194035532994924
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 7196.856730011514 is 0.9243401015228427
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 10481.131341546852 is 0.9326903553299493
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 15264.179671752303 is 0.9326903553299493
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 22229.96482526191 is 0.9326903553299493
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 32374.5754281764 is 0.9326903553299493
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 47148.663634573895 is 0.9326903553299493
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 68664.88450042998 is 0.9326903553299493
+LogReg Z-Norm, minDCF with pi 0.5 and lambda 100000.0 is 0.9326903553299493
