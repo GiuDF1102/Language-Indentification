@@ -184,9 +184,11 @@ if __name__ == "__main__":
 
 
     """TEST GMM"""
-    GMMclass=gmm.GMM(1,8,"mvg")
+    dim_target=1
+    dim_non_target=32
+    GMMclass=gmm.GMM(dim_target,dim_non_target,"diagonal","mvg")
     _,minDCF = val.k_fold(GMMclass,features,labels,5, (0.5,1,1))
-    print("GMM 1, 8",minDCF)
+    print("GMM {}, {}: {}".format(dim_target,dim_non_target,minDCF))
     
     end_time = datetime.now()
 
