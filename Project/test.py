@@ -9,9 +9,14 @@ import GMM as gmm
 import SVM_classifiers as svmc
 from datetime import datetime
 import numpy as np
+import sys
 
 if __name__ == "__main__":
     start_time = datetime.now()
+
+    orig_stdout = sys.stdout
+    f = open('GMM_tests.txt', 'w')
+    sys.stdout = f
 
     #LOADING DATASET
     labels, features = du.load("..\PROJECTS\Language_detection\Train.txt")
@@ -183,15 +188,42 @@ if __name__ == "__main__":
     """
 
 
-    """TEST GMM"""
-    dim_target=1
-    dim_non_target=32
-    GMMclass=gmm.GMM(dim_target,dim_non_target,"diagonal","mvg")
-    _,minDCF = val.k_fold(GMMclass,features,labels,5, (0.5,1,1))
-    print("GMM {}, {}: {}".format(dim_target,dim_non_target,minDCF))
+    #TEST GMM
+
+    #GMM no PCA
+    for nTarget in [1,2,4,8]:
+        for nNonTarget in [1,2,4,8,16,32]:
+            for MtypeTarget in ["mvg", "tied", "diagonal", "tied diagonal"]:
+                for MtypeNonTarget in ["mvg", "tied", "diagonal", "tied diagonal"]:
+                    minDCFSum = 0
+                    for pi in [0.1,0.5]:
+                        GMMclass=gmm.GMM(nTarget,nNonTarget,MtypeTarget,MtypeNonTarget)
+                        _,minDCF = val.k_fold(GMMclass,features,labels,5, (pi,1,1))
+                        minDCFSum += minDCF
+                    Cprim = minDCFSum/2
+                    print("GMM Cprim no PCA, nTarget({}), nNonTarget({}), MTypeTarget({}), MTypeNonTarget({}): {}".format(nTarget,nNonTarget,MtypeTarget,MtypeNonTarget,Cprim))    
+
+    #GMM
+    for nPCA in [5,4,3]:
+        dataPCA = dr.PCA(features, nPCA)
+        for nTarget in [1,2,4,8]:
+            for nNonTarget in [1,2,4,8,16,32]:
+                for MtypeTarget in ["mvg", "tied", "diagonal", "tied diagonal"]:
+                    for MtypeNonTarget in ["mvg", "tied", "diagonal", "tied diagonal"]:
+                        minDCFSum = 0
+                        for pi in [0.1,0.5]:
+                            GMMclass=gmm.GMM(nTarget,nNonTarget,MtypeTarget,MtypeNonTarget)
+                            _,minDCF = val.k_fold(GMMclass,dataPCA,labels,5, (pi,1,1))
+                            minDCFSum += minDCF
+                        Cprim = minDCFSum/2
+                        print("GMM Cprim PCA({}), nTarget({}), nNonTarget({}), MTypeTarget({}), MTypeNonTarget({}): {}".format(nPCA,nTarget,nNonTarget,MtypeTarget,MtypeNonTarget,Cprim))                            
     
     end_time = datetime.now()
 
     print("--------- TIME ----------")
     print(f"Time elapsed: {end_time - start_time}")
+
+
+    sys.stdout = orig_stdout
+    f.close()
         
