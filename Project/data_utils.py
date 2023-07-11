@@ -1,5 +1,6 @@
 import numpy as np
 import math_utils as mu
+import matplotlib.pyplot as plt
 
 def load(file_name):
     file_path = file_name
@@ -53,6 +54,37 @@ def features_expansion(Dataset):
         vec = np.reshape(np.dot(mu.FromRowToColumn(Dataset[:, i]), mu.FromRowToColumn(Dataset[:, i]).T), (-1, 1), order='F')
         expansion.append(vec)
     return np.vstack((np.hstack(expansion), Dataset))
+
+def explained_variance(Data):
+    fraction_list = []
+
+    cov_matrix=np.cov(Data)
+    eignvalues,eignvectors=np.linalg.eigh(cov_matrix)
+    total_eignvalues=sum(eignvalues)
+    var_exp=[(i/total_eignvalues) for i in sorted(eignvalues,reverse=True)]
+    
+    fig = plt.figure()
+    ax = fig.gca()
+    ax.set_xticks(np.arange(0, Data.shape[0]+1, 1))
+    ax.set_yticks(np.arange(0, 1.1, 0.1))
+    plt.xlim([0, Data.shape[0]])
+    plt.ylim([0,1.0])
+    plt.grid()
+    plt.xlabel("PCA dimensions")
+    plt.ylabel("Fraction of explained variance")
+
+    for n in range(Data.shape[0]):
+        var_exp_array = np.array(var_exp[0:n])
+        sum_var_exp = var_exp_array.sum()
+        fraction_list.append(sum_var_exp)
+    
+    var_exp_array = np.array(var_exp)
+    sum_var_exp = var_exp_array.sum()
+    fraction_list.append(sum_var_exp)
+
+    plt.plot([0,1,2,3,4,5,6],fraction_list)
+    plt.savefig("{}.svg".format("Explained variance"))
+    return var_exp
 
 def modifyLabel(trainLabels):
     return np.where(trainLabels==0,-1,1)
