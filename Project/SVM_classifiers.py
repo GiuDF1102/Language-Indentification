@@ -16,9 +16,11 @@ class SVM:
     __alpha = None
     __az = None
     __c = None
+    __balanced = None
 
-    def __init__(self, kernel='linear', **kwargs):
+    def __init__(self, kernel='linear', balanced = False, **kwargs):
         self.__kernel = kernel
+        self.__balanced = balanced
 
         if len(kwargs) == 0:
             print("Please provide the arguments for {} SVM".format(self.__kernel))
@@ -38,6 +40,10 @@ class SVM:
             self.__K = kwargs['K']
             self.__gamma = kwargs['gamma']
             self.__C = kwargs['C']
+
+        if(self.__balanced == True):
+            self.__piT = kwargs['piT']
+            
 
 
     def __modifyLabel(self, trainLabels):
@@ -94,24 +100,58 @@ class SVM:
 
     def __optGetWLinear(self, C, K, data, labels):
         alpha=np.zeros(data.shape[1])#stessa dim del numero si sample
-        bounds = list(repeat((0, C), data.shape[1]))
+        bounds = []
+        if(self.__balanced == False):
+            bounds = list(repeat((0, C), data.shape[1]))
+        else:
+            bounds = list(repeat((0, C), data.shape[1]))
+            for index,l in enumerate(labels):
+                if(labels[index]==1):
+                    bounds[index] = (0,self.__CT)
+                elif(labels[index]==0):  
+                    bounds[index]= (0,self.__CF)
+
         (alpha, f, dataopt)=opt.fmin_l_bfgs_b(self.__J, alpha, args=(self.__H,),bounds=bounds, factr=1.0)
         w = np.sum((alpha*self.__modifyLabel(labels)).reshape(self.__K, data.shape[1])*self.__expandMatrix(self.__K, data), axis=1)
         self.__w = w
 
     def __optGetWPolinomial(self, C, K, data, labels):
         alpha=np.zeros(data.shape[1])#stessa dim del numero si sample
-        bounds = list(repeat((0, C), data.shape[1]))
+        bounds = []
+        if(self.__balanced == False):
+            bounds = list(repeat((0, C), data.shape[1]))
+        else:
+            bounds = list(repeat((0, C), data.shape[1]))
+            for index,l in enumerate(labels):
+                if(labels[index]==1):
+                    bounds[index] = (0,self.__CT)
+                elif(labels[index]==0):  
+                    bounds[index]= (0,self.__CF)
         (alpha, f, dataopt)=opt.fmin_l_bfgs_b(self.__J, alpha, args=(self.__H,),bounds=bounds, factr=1.0)
         self.__az = (alpha*self.__modifyLabel(labels)).reshape(1, data.shape[1])
 
     def __optGetWRBF(self, C, K, data, labels):
         alpha=np.zeros(data.shape[1])#stessa dim del numero si sample
-        bounds = list(repeat((0, C), data.shape[1]))
+        bounds = []
+        if(self.__balanced == False):
+            bounds = list(repeat((0, C), data.shape[1]))
+        else:
+            bounds = list(repeat((0, C), data.shape[1]))
+            for index,l in enumerate(labels):
+                if(labels[index]==1):
+                    bounds[index] = (0,self.__CT)
+                elif(labels[index]==0):  
+                    bounds[index]= (0,self.__CF)
         (alpha, f, dataopt)=opt.fmin_l_bfgs_b(self.__J, alpha, args=(self.__H,),bounds=bounds, factr=1.0)
         self.__az = (alpha*self.__modifyLabel(labels)).reshape(1, data.shape[1])
 
     def train(self, data, labels):
+
+        if self.__balanced == True:
+            self.__piEmpT = (data[:,labels == 1].shape[1]/data.shape[1])
+            self.__piEmpF = (data[:,labels == 0].shape[1]/data.shape[1])
+            self.__CT = self.__C*(self.__piT/self.__piEmpT)
+            self.__CF = self.__C*((1-self.__piT)/self.__piEmpF)
 
         if self.__kernel == 'linear':
             self.__calcHLinear(data, labels)

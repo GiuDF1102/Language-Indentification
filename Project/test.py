@@ -9,6 +9,7 @@ import GMM as gmm
 import SVM_classifiers as svmc
 from datetime import datetime
 import numpy as np
+from itertools import repeat
 
 if __name__ == "__main__":
     start_time = datetime.now()
@@ -170,7 +171,6 @@ if __name__ == "__main__":
 
     #QLOG REG NO NORMALIZATION
     minDCFList = np.zeros((2, len(lambdas)))
-    for index, pi in enumerate([0.1,0.5]):
         for lIndex, l in enumerate(lambdas):
             logRegObj = lrc.logReg(l, pi, False)
             _, minDCF = val.k_fold(logRegObj, featuresTrainQuadratic, labels, 5, (pi, 1, 1))
@@ -182,14 +182,59 @@ if __name__ == "__main__":
     dv.plotCPrim(lambdas, CprimLogReg, ["QLog-Reg PCA-5", "QLog-Reg PCA-4", "QLog-Reg PCA-3", "QLog-Reg no PCA"] , "λ", "QLogRegPCAs")
     """
 
-
-    """TEST GMM"""
+    """TEST GMM
     dim_target=1
     dim_non_target=32
     GMMclass=gmm.GMM(dim_target,dim_non_target,"diagonal","mvg")
     _,minDCF = val.k_fold(GMMclass,features,labels,5, (0.5,1,1))
     print("GMM {}, {}: {}".format(dim_target,dim_non_target,minDCF))
+    """
     
+    """print(du.explained_variance(features ))"""
+    """C = 10
+    CF = 0
+    CT = 1
+    labels  = [-1,1,1,1,-1,-1,1,1,-1,1]
+    bounds = list(repeat((0, C), 10))
+    for index,l in enumerate(labels):
+        if(labels[index]==1):
+            bounds[index] = (0,CT)
+        elif(labels[index]==-1):  
+            bounds[index]= (0,CF)
+    
+    print(bounds)"""
+    """
+    print(f"piEmpT {(features[:,labels == 1].shape[1]/features.shape[1])}")
+    print(f"piEmpTF {(features[:,labels == 0].shape[1]/features.shape[1])}")
+    """ 
+    
+    
+    #SVM LINEARE PCA no Norm
+    C = [0.00001, 0.0001, 0.001, 0.01, 0.1, 1, 10, 100, 1000]
+    CprimSVMLin = np.zeros((3, len(C)))
+      
+    with open("output_GMM_minDCF.txt", "w") as f:
+    
+        for pi in [0.1,0.5]:
+            for nTarget in [2,4,8]:
+                for nNonTarget in [2,4,8,16,32]:
+                    for MtypeTarget in ["mvg","tied","diagonal","tied diagonal"]:
+                        for MtypeNonTarget in ["mvg","tied","diagonal","tied diagonal"]:
+                            GMMClass = gmm.GMM(nTarget,nNonTarget,MtypeTarget,MtypeNonTarget)
+                            _, minDCF = val.k_fold(GMMClass, features, labels, 5, (pi, 1, 1))
+                            print("GMM, minDCF NO PCA with nTarget {},nNonTarget{},MTypeTarget{},MtypeNonTargte {}, and prior {} is {}".format(nTarget,nNonTarget,MtypeTarget,MtypeNonTarget, pi, minDCF),file=f)
+    
+        for pi in [0.1,0.5]:
+            for nPCA in [5,4]:
+                    dataPCA = dr.PCA(features, nPCA)
+                    for nTarget in [2,4,8]:
+                        for nNonTarget in [2,4,8,16,32]:
+                            for MtypeTarget in ["mvg","tied","diagonal","tied diagonal"]:
+                                for MtypeNonTarget in ["mvg","tied","diagonal","tied diagonal"]:
+                                    GMMClass = gmm.GMM(nTarget,nNonTarget,MtypeTarget,MtypeNonTarget)
+                                    _, minDCF = val.k_fold(GMMClass, dataPCA, labels, 5, (pi, 1, 1))
+                                    print("GMM, minDCF with PCA {}, with nTarget {},nNonTarget{},MTypeTarget{},MtypeNonTargte {}, and prior {} is {}".format(nPCA,nTarget,nNonTarget,MtypeTarget,MtypeNonTarget, pi, minDCF),file=f)
+
     end_time = datetime.now()
 
     print("--------- TIME ----------")
