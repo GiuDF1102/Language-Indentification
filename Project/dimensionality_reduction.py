@@ -22,18 +22,16 @@ def LDA(Dataset,Labels,m):
     SB=0
     SW=0
     mu=FromRowToColumn(calcmean(Dataset))
-    for i in range(2):
+    for i in range(Labels.max()+1):
         DC1s=Dataset[:,Labels==i]
         muC1s=FromRowToColumn(DC1s.mean(1))
         SW+=np.dot(DC1s-muC1s,(DC1s-muC1s).T)
         SB+=DC1s.shape[1]*np.dot(muC1s-mu,(muC1s-mu).T)
     SW/=Dataset.shape[1]
     SB/=Dataset.shape[1]
-    # print(SW)
-    # print(SB)
 
     # risolvo problema generale agli autovalori
-    s,U=sci.linalg.eig(SB,SW)
+    s,U=sci.linalg.eigh(SB,SW)
     W=U[:,::-1][:,0:m]
     DP=np.dot(W.T,Dataset)
     return DP
