@@ -1,0 +1,1538 @@
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3169035532994924
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3169035532994924
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.34469543147208126
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34469543147208126
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3169035532994924
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.3169035532994924
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.34469543147208126
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.34469543147208126
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3055901015228426
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3055901015228426
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3422715736040609
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3422715736040609
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3055901015228426
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3055901015228426
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3422715736040609
+GMM Cprim no PCA, nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3422715736040609
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2940862944162436
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.31711928934010153
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3315989847715737
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3267829949238579
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2940862944162436
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.31711928934010153
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3315989847715737
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3267829949238579
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.28666878172588833
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3055901015228426
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3303489847715736
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3282994923857868
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.28666878172588833
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3055901015228426
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3303489847715736
+GMM Cprim no PCA, nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3282994923857868
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.29942893401015225
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.272493654822335
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.280742385786802
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.30230329949238577
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.29942893401015225
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.272493654822335
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.280742385786802
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.30230329949238577
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2938642131979695
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2690672588832487
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2783692893401015
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3031598984771574
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2938642131979695
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2690672588832487
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2783692893401015
+GMM Cprim no PCA, nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3031598984771574
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2606154822335025
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2597335025380711
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.25787436548223347
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.28116751269035534
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2606154822335025
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.2597335025380711
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.25787436548223347
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.28116751269035534
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2604187817258883
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2575507614213198
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2560469543147208
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2820812182741117
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2604187817258883
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2575507614213198
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2560469543147208
+GMM Cprim no PCA, nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2820812182741117
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2428807106598985
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.23937817258883248
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2380837563451777
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.25136421319796953
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2428807106598985
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.23937817258883248
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2380837563451777
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.25136421319796953
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.24166243654822334
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2375
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2386802030456853
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2515545685279188
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.24166243654822334
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2375
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2386802030456853
+GMM Cprim no PCA, nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2515545685279188
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.23831218274111676
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2110406091370558
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.21710659898477158
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2210532994923858
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.23831218274111676
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.2110406091370558
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.21710659898477158
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2210532994923858
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2456535532994924
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2102220812182741
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.21286802030456853
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2210723350253807
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2456535532994924
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2102220812182741
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.21286802030456853
+GMM Cprim no PCA, nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2210723350253807
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3060723350253807
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3060723350253807
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.34513324873096446
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34513324873096446
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3169035532994924
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.3169035532994924
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.34469543147208126
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.34469543147208126
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3163769035532995
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3163769035532995
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3433058375634518
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3433058375634518
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.31107868020304574
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.31107868020304574
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.33541243654822334
+GMM Cprim no PCA, nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.33541243654822334
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2900317258883249
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3060723350253807
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.32039340101522845
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.32103426395939083
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2940862944162436
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.3169035532994924
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3318527918781726
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3267829949238579
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2926649746192893
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3163769035532995
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.33081852791878175
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3268210659898477
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2921573604060914
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.31107868020304574
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3238515228426396
+GMM Cprim no PCA, nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.32369289340101526
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.29418147208121825
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.27242385786802026
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.27998730964467006
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3019670050761421
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.29942893401015225
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.27373730964467
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.280742385786802
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.30230329949238577
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2971319796954315
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2710152284263959
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2799492385786802
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.30743654822335026
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.30101522842639594
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.26725253807106597
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.28016497461928935
+GMM Cprim no PCA, nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3114530456852792
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2611484771573604
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2527220812182741
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2648730964467005
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2793020304568528
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2606154822335025
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.2597335025380711
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.25787436548223347
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2796637055837563
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.26080583756345177
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.25822969543147206
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.252747461928934
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.27876269035532997
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.26321065989847714
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2622017766497462
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2577093908629442
+GMM Cprim no PCA, nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.28147842639593906
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.24341370558375636
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2374682741116751
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.24060279187817257
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.25381345177664977
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.24262690355329952
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.23937817258883248
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2383565989847716
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2508058375634518
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.23963832487309644
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2315482233502538
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2395431472081218
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2500253807106599
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.24452411167512694
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.23642766497461928
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2411802030456853
+GMM Cprim no PCA, nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.24642766497461926
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.23407994923857872
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.20873730964467005
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.21655456852791874
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.21654187817258885
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.23831218274111676
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.2110406091370558
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.21710659898477158
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2210532994923858
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.23173223350253805
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.20951776649746193
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2101967005076142
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.21527918781725885
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.23341370558375635
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2101395939086294
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2151713197969543
+GMM Cprim no PCA, nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.21836294416243654
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.32903553299492383
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32903553299492383
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.34637690355329953
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34637690355329953
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3274175126903553
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.3274175126903553
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3551713197969544
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3551713197969544
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3218591370558376
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3218591370558376
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.35141497461928933
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.35141497461928933
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.31478426395939085
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.31478426395939085
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3456916243654823
+GMM Cprim no PCA, nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3456916243654823
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.31332487309644663
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32903553299492383
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3393527918781725
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34817258883248725
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3175634517766497
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.3274175126903553
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.33803934010152287
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.33467639593908627
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3027093908629442
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3218591370558376
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.33909898477157363
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3305329949238578
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.31097081218274114
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.31478426395939085
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3366624365482233
+GMM Cprim no PCA, nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.33706218274111677
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3081027918781726
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3046002538071066
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.28831218274111675
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3106535532994924
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.32448604060913705
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.2881281725888325
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2863071065989848
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.31416878172588836
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.29638959390862946
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2837753807106599
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.29244289340101526
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3053489847715736
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3130266497461929
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2826078680203045
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.28765862944162435
+GMM Cprim no PCA, nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.31241751269035534
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.26883248730964465
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2783248730964467
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2720939086294416
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.28340101522842637
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2812246192893401
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.2939593908629442
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2734454314720812
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.29795685279187817
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2638007614213198
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.26690355329949234
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.25345177664974616
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2866180203045685
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.26498730964467004
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.268248730964467
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2744923857868021
+GMM Cprim no PCA, nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2902855329949239
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.257753807106599
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2563451776649746
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2462753807106599
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.26756345177664975
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.26024111675126904
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.2643908629441624
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2536230964467005
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.27560913705583756
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.24819162436548223
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.23776015228426395
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2453489847715736
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2549809644670051
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.25711928934010153
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.23799492385786802
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.24956218274111674
+GMM Cprim no PCA, nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2600507614213198
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2398667512690355
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.22505076142131974
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.22133883248730962
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.23523477157360406
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2420748730964467
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.2324746192893401
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.23437817258883248
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.23809010152284266
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2184263959390863
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2082931472081218
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.21356598984771571
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.21723984771573604
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.22874999999999998
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.21336928934010152
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.22336294416243654
+GMM Cprim no PCA, nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.22076776649746194
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3776903553299492
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3776903553299492
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.39059644670050764
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.39059644670050764
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.319492385786802
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.319492385786802
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.341751269035533
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.341751269035533
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3310342639593909
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3310342639593909
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.36718274111675125
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.36718274111675125
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.32181472081218276
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.32181472081218276
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3455329949238579
+GMM Cprim no PCA, nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3455329949238579
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.361491116751269
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3779441624365482
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.37249999999999994
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3731789340101523
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3049238578680203
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.319492385786802
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.33553299492385785
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3391814720812183
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3211167512690355
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3310342639593909
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.34475253807106604
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3519162436548223
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3090989847715736
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.32181472081218276
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3350253807106599
+GMM Cprim no PCA, nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3342766497461929
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.35567258883248737
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.34501903553299484
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3224619289340101
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3422271573604061
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.32098350253807106
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.29341370558375635
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2931535532994924
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3173096446700508
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.32027284263959394
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3073032994923858
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.30439720812182736
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.33226522842639594
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3066814720812182
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2861104060913706
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2865799492385787
+GMM Cprim no PCA, nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3006472081218274
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3048794416243655
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3199238578680203
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.30624365482233507
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3194733502538071
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.27885786802030454
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.2889720812182741
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.27825507614213196
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3065736040609137
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2794733502538071
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.282760152284264
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.27857868020304566
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2902220812182741
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.26970177664974615
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.280761421319797
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.26571065989847714
+GMM Cprim no PCA, nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2861484771573604
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2907931472081219
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2982677664974619
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2796827411167513
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.301497461928934
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2708946700507614
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.2666307106598985
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.25949873096446696
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2760279187817259
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.26623096446700506
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2669733502538071
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.25486040609137056
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2653362944162437
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.25352791878172587
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2544352791878173
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.25153553299492387
+GMM Cprim no PCA, nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.25419416243654824
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.24448604060913706
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2532043147208122
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.25883883248730966
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2678680203045686
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.24192893401015228
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.22749365482233502
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.23868020304568527
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.24229060913705586
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.24634517766497463
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.22723984771573602
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2344733502538071
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.23678299492385788
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2284200507614213
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.21729060913705583
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2249746192893401
+GMM Cprim no PCA, nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.22788071065989846
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.31201776649746193
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.31201776649746193
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3116243654822335
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3116243654822335
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.31201776649746193
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.31201776649746193
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3116243654822335
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3116243654822335
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.30137055837563453
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.30137055837563453
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3035977157360406
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3035977157360406
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.30137055837563453
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.30137055837563453
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3035977157360406
+GMM Cprim PCA(5), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3035977157360406
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2758058375634518
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.31201776649746193
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.29673857868020304
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3029631979695432
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2758058375634518
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.31201776649746193
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.29673857868020304
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3029631979695432
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.27424492385786803
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.30137055837563453
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.29144670050761423
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.29387690355329954
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.27424492385786803
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.30137055837563453
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.29144670050761423
+GMM Cprim PCA(5), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.29387690355329954
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.28664340101522845
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.27322969543147213
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2999492385786802
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2845241116751269
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.28664340101522845
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.27322969543147213
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2999492385786802
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2845241116751269
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.28535532994923857
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2649746192893401
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2948857868020305
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.28701776649746197
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.28535532994923857
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2649746192893401
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2948857868020305
+GMM Cprim PCA(5), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.28701776649746197
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.26034898477157353
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.28205583756345176
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.28409898477157364
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2844733502538071
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.26034898477157353
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.28205583756345176
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.28409898477157364
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2844733502538071
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.26040609137055837
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2834708121827411
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2875571065989848
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.28306472081218276
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.26040609137055837
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2834708121827411
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2875571065989848
+GMM Cprim PCA(5), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.28306472081218276
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.24383883248730964
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.24489847715736043
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.26759517766497465
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.25216370558375634
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.24383883248730964
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.24489847715736043
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.26759517766497465
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.25216370558375634
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.24784263959390862
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.24095812182741116
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.25408629441624364
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2563197969543147
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.24784263959390862
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.24095812182741116
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.25408629441624364
+GMM Cprim PCA(5), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2563197969543147
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.22654187817258883
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.21014593908629436
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.22428934010152285
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.21583756345177668
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.22654187817258883
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.21014593908629436
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.22428934010152285
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.21583756345177668
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.21941624365482232
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2141497461928934
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.23125634517766497
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.21787436548223352
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.21941624365482232
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2141497461928934
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.23125634517766497
+GMM Cprim PCA(5), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.21787436548223352
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.32715736040609134
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32715736040609134
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.32715736040609134
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.32715736040609134
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.31175761421319803
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.31175761421319803
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.310761421319797
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.310761421319797
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.30551395939086295
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.30551395939086295
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.30576776649746196
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.30576776649746196
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.30908629441624363
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.30908629441624363
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.30908629441624363
+GMM Cprim PCA(5), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.30908629441624363
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.29581218274111676
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32715736040609134
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3157043147208122
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3208883248730965
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.27605964467005073
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.31175761421319803
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.29673857868020304
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.30321700507614213
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.28503172588832487
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.30551395939086295
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2928236040609137
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2948604060913706
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2821700507614213
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.30908629441624363
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.29156725888324875
+GMM Cprim PCA(5), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.29963832487309644
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2985850253807107
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.29022208121827414
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3073794416243655
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2986802030456853
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.28664340101522845
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.27322969543147213
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.30008248730964465
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2845241116751269
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2890989847715736
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.27423223350253806
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2898286802030457
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.28602791878172584
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2880647208121827
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.26908629441624365
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2971446700507614
+GMM Cprim PCA(5), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2894035532994924
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.25343908629441625
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2927093908629442
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.29588832487309646
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2938197969543147
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.26034898477157353
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.28205583756345176
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.28409898477157364
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2844733502538071
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2665736040609137
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.28795685279187816
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2854314720812183
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2845939086294416
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2598984771573604
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.28516497461928936
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.29038071065989846
+GMM Cprim PCA(5), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2864086294416244
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2589213197969543
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2650253807106599
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2725507614213198
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.263255076142132
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.24383883248730964
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.24532994923857868
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.26759517766497465
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.25091370558375636
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.25130076142131985
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.25125
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2616687817258883
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.25592639593908634
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.25048223350253807
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.23876903553299494
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.25883883248730966
+GMM Cprim PCA(5), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.25871827411167514
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.24270939086294419
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.21644035532994924
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2353426395939086
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2221256345177665
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.22529187817258883
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.21014593908629436
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.22428934010152285
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.21583756345177668
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.23341370558375635
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.22234771573604062
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2345177664974619
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2254505076142132
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.22126903553299493
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.21633248730964466
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.22644035532994924
+GMM Cprim PCA(5), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.21826142131979695
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.313502538071066
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.313502538071066
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.31199873096446695
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.31199873096446695
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3156345177664974
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.3156345177664974
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.31481598984771575
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.31481598984771575
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.31694162436548223
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.31694162436548223
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.31643401015228423
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.31643401015228423
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3075190355329949
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3075190355329949
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3075190355329949
+GMM Cprim PCA(5), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3075190355329949
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.29120558375634514
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.313502538071066
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.29758248730964465
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.30975253807106595
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2960786802030457
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.3156345177664974
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3005456852791878
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.31550761421319795
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3057994923857868
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.31694162436548223
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3079885786802031
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3164530456852792
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2872271573604061
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3075190355329949
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.29588197969543145
+GMM Cprim PCA(5), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.30587563451776645
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.29038071065989846
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.28661167512690355
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2972652284263959
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3012690355329949
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.30383883248730964
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.2868527918781726
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2974873096446701
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2961040609137056
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3058883248730965
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2815291878172589
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.31204949238578683
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3084200507614213
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2921510152284264
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2773032994923858
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2957677664974619
+GMM Cprim PCA(5), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.28856598984771575
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2619543147208122
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.27421954314720814
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2879314720812183
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.27825507614213196
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2679885786802031
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.2906662436548223
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.28989213197969543
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2935406091370558
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.27052030456852794
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2958312182741117
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.29638324873096444
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2930774111675127
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2555266497461929
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.28802664974619285
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.28676395939086297
+GMM Cprim PCA(5), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2927284263959391
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2399238578680203
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2545875634517767
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.27067893401015225
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.252747461928934
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.25603426395939083
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.2677284263959391
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.27063451776649744
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2730774111675127
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.26096446700507614
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.25521573604060915
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2676522842639594
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2651459390862944
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.25133883248730965
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.255742385786802
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2638261421319797
+GMM Cprim PCA(5), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.25855964467005077
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.22251269035532992
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.21904187817258883
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.23543781725888327
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2161738578680203
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.23501903553299497
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.23408629441624368
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.24100253807106597
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.23149746192893406
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.24225888324873102
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.225989847715736
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.23814086294416245
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.22967005076142133
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.23452411167512693
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.21860406091370557
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2326269035532995
+GMM Cprim PCA(5), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.22428299492385786
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3290101522842639
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3290101522842639
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.330006345177665
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.330006345177665
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.31296954314720815
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.31296954314720815
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3137880710659898
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3137880710659898
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3353616751269036
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3353616751269036
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3353616751269036
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3353616751269036
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.33015862944162433
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.33015862944162433
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.33015862944162433
+GMM Cprim PCA(5), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.33015862944162433
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.31340736040609135
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3290101522842639
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3256345177664975
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.32860406091370553
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2977093908629441
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.31296954314720815
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.30249365482233503
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3128299492385787
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.324746192893401
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3353616751269036
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.328236040609137
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3353553299492386
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.30738578680203044
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.33015862944162433
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3226713197969543
+GMM Cprim PCA(5), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3258819796954315
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3010532994923858
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3050697969543147
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3259200507614213
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3162880710659899
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2959073604060914
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.27552030456852794
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.29624365482233506
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.29539340101522843
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.32777284263959394
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2936548223350254
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.32507614213197966
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3133692893401015
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3141434010152284
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2904187817258883
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3190228426395939
+GMM Cprim PCA(5), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.31054568527918786
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.26565355329949236
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.30289340101522844
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3173667512690355
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3016434010152284
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2609454314720812
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.2861738578680203
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2948984771573604
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.28600888324873097
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2708819796954315
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2929505076142132
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.32060279187817253
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.30388324873096445
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2817258883248731
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3003616751269036
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3124809644670051
+GMM Cprim PCA(5), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3013769035532995
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2685723350253807
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.27207487309644673
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.29220177664974617
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2674809644670051
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.24924492385786803
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.25051395939086296
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.273242385786802
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2639593908629442
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.26117385786802033
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2577220812182741
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.27751269035533
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.26581852791878174
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.26904822335025386
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.26825507614213195
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2881154822335026
+GMM Cprim PCA(5), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2714720812182741
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.235253807106599
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2390291878172589
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2618464467005076
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2395431472081218
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.21767766497461927
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.21895939086294416
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2457360406091371
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.22286167512690355
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.23779187817258884
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.22085025380710657
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.24595812182741114
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.23281725888324875
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.23535532994923858
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.22940355329949239
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.24076142131979694
+GMM Cprim PCA(5), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.23095812182741116
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.33369289340101516
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.33369289340101516
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.33390862944162436
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.33390862944162436
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.33369289340101516
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.33369289340101516
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.33390862944162436
+GMM Cprim PCA(4), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.33390862944162436
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3160659898477157
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.32221446700507617
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3316878172588833
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3160659898477157
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.32221446700507617
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3316878172588833
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.31130710659898475
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.33369289340101516
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3163197969543147
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.33557741116751266
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.31130710659898475
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.33369289340101516
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3163197969543147
+GMM Cprim PCA(4), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.33557741116751266
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.30699238578680205
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32593274111675125
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.32047588832487306
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.32647842639593905
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.30699238578680205
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.32593274111675125
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.32047588832487306
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.32647842639593905
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.30493654822335026
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.32819796954314717
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.31856598984771567
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3294733502538071
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.30493654822335026
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.32819796954314717
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.31856598984771567
+GMM Cprim PCA(4), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3294733502538071
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2884073604060914
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3039276649746193
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3217258883248731
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3271827411167513
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2884073604060914
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.3039276649746193
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3217258883248731
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3271827411167513
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.28458121827411165
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3032043147208122
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.326751269035533
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.322766497461929
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.28458121827411165
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3032043147208122
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.326751269035533
+GMM Cprim PCA(4), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.322766497461929
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.26957487309644673
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2802918781725888
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.315253807106599
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2926395939086294
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.26957487309644673
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.2802918781725888
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.315253807106599
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2926395939086294
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2690355329949239
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.27699873096446703
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.30772208121827416
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.29081852791878177
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2690355329949239
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.27699873096446703
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.30772208121827416
+GMM Cprim PCA(4), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.29081852791878177
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.273496192893401
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.27465736040609134
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.28623096446700513
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2525697969543147
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.273496192893401
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.27465736040609134
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.28623096446700513
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2525697969543147
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2686738578680203
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.26499365482233506
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.2839847715736041
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.25881979695431473
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2686738578680203
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.26499365482233506
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.2839847715736041
+GMM Cprim PCA(4), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.25881979695431473
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.34486675126903554
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.34486675126903554
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.34486675126903554
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34486675126903554
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.33557741116751266
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.33557741116751266
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.33661167512690354
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.33661167512690354
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.33188451776649747
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.33188451776649747
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3329187817258883
+GMM Cprim PCA(4), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3329187817258883
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.32295685279187814
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.34486675126903554
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.32824873096446694
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34682106598984774
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3158502538071066
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.3386992385786802
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.32221446700507617
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3316878172588833
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.31793781725888326
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.33557741116751266
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.31902918781725886
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.33913071065989847
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.30576142131979694
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.33188451776649747
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3168274111675127
+GMM Cprim PCA(4), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3303807106598985
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.313756345177665
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3306027918781726
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3202982233502538
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3295494923857868
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.30802664974619287
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.327011421319797
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3192258883248731
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.32647842639593905
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.30418147208121826
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3299555837563452
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.31427664974619285
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3234708121827411
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.30564086294416243
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.32767131979695435
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.32105329949238576
+GMM Cprim PCA(4), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.33272842639593914
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.28439086294416244
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3170875634517767
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.327994923857868
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3112880710659899
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2884073604060914
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.3039276649746193
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.32151015228426394
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3268147208121827
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.28517766497461927
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.31283629441624367
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3243210659898477
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.32623096446700506
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2901713197969543
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3094352791878173
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3251332487309645
+GMM Cprim PCA(4), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3202855329949239
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.27519670050761424
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.29106598984771576
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3166751269035533
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3000253807106599
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.26875634517766495
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.2802918781725888
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.315253807106599
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2923857868020304
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.268496192893401
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2788959390862944
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3103680203045685
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.29381345177664975
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.27314720812182747
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2776840101522843
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.31160532994923856
+GMM Cprim PCA(4), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2922715736040609
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2752982233502538
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2748540609137056
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.2949238578680203
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2629251269035533
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.27324238578680204
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.2748730964467005
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.28623096446700513
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.2525697969543147
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.264511421319797
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2670241116751269
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.28218908629441625
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2575444162436548
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2726776649746193
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.27012055837563453
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.28652284263959393
+GMM Cprim PCA(4), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2582360406091371
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3399682741116752
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3399682741116752
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3389340101522843
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3389340101522843
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3453045685279188
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.3453045685279188
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3450507614213198
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3450507614213198
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3437055837563452
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3437055837563452
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3437055837563452
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3437055837563452
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.340260152284264
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.340260152284264
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3411611675126903
+GMM Cprim PCA(4), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3411611675126903
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.32883248730964465
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3399682741116752
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3301459390862944
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3361230964467005
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.32458756345177664
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.3453045685279188
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.32872461928934005
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3438451776649746
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.315755076142132
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3437055837563452
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3268464467005076
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.34713832487309637
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.317252538071066
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.340260152284264
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.33029822335025383
+GMM Cprim PCA(4), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.33852157360406093
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3255964467005076
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3342766497461929
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3140799492385787
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34060279187817255
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.32371192893401013
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.327982233502538
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3084581218274112
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.32848350253807107
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.31724619289340095
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3257677664974619
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.31833121827411165
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3160279187817259
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3184263959390863
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.33807741116751266
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3248096446700508
+GMM Cprim PCA(4), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3376522842639594
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.29603426395939086
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32161167512690353
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3212690355329949
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3278743654822335
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.292258883248731
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.3095304568527919
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.31224619289340105
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3253045685279188
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2928489847715736
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3212119289340102
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.32618654822335025
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3300761421319798
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2935215736040609
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3145685279187817
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3326395939086294
+GMM Cprim PCA(4), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.32661167512690353
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.29163705583756344
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2963324873096447
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.32178299492385787
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.30181472081218275
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2674048223350254
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.2856725888324873
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3059010152284264
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.29703680203045685
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2803743654822335
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2936230964467005
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.31508248730964467
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.29596446700507617
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2735723350253807
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.29109771573604065
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3215482233502538
+GMM Cprim PCA(4), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2986484771573604
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2842195431472081
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.28109137055837563
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.29715736040609136
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.26719543147208125
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.27726522842639595
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.27238578680203046
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2928299492385787
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.261998730964467
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2722271573604061
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2670304568527919
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.29254441624365485
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2581218274111675
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.275755076142132
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.27803299492385786
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.29539340101522843
+GMM Cprim PCA(4), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2586992385786802
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3752601522842639
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3752601522842639
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.375241116751269
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.375241116751269
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3545621827411167
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.3545621827411167
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3545621827411167
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3545621827411167
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3551967005076142
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3551967005076142
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.35472715736040605
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.35472715736040605
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.36314086294416237
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.36314086294416237
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.36314086294416237
+GMM Cprim PCA(4), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.36314086294416237
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.365742385786802
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3752601522842639
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.36156091370558374
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.38527284263959394
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.33363578680203043
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.3545621827411167
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.34394035532994927
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.35102157360406094
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.33140228426395935
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3551967005076142
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3431281725888325
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3566434010152284
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.34137690355329947
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.36314086294416237
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3518718274111674
+GMM Cprim PCA(4), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.36230329949238577
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.36652918781725885
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.37026015228426395
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.36425126903553295
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.37172588832487313
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3234708121827411
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.32738578680203045
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3253553299492386
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3286357868020304
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3280203045685279
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3397652284263959
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3222208121827411
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.34200507614213194
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.32846446700507614
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.34393401015228425
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3337880710659898
+GMM Cprim PCA(4), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.34319162436548223
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.32301395939086297
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.35335659898477156
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3690672588832487
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3625697969543147
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.29582487309644667
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.31470812182741115
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3230520304568528
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3324238578680203
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2967956852791878
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3293591370558376
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.335748730964467
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.34436548223350255
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.29178934010152285
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3249619289340102
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.34222715736040604
+GMM Cprim PCA(4), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3353997461928935
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.321738578680203
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3264213197969543
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.35819796954314725
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3370114213197969
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2815736040609137
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.29605964467005075
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.31515228426395936
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.30968274111675126
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2961294416243655
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.30743654822335026
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.33021573604060916
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.317252538071066
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.27817893401015226
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2955774111675127
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3290989847715736
+GMM Cprim PCA(4), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3101015228426396
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3080583756345178
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.31392131979695437
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3330329949238578
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.29845812182741116
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2734263959390863
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.2804568527918782
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.2966243654822335
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.26251269035533
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2845177664974619
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.28041878172588836
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.30444796954314723
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2722081218274112
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2741497461928934
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2844479695431472
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.30076142131979694
+GMM Cprim PCA(4), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2512246192893401
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3212119289340102
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.33440989847715735
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34251269035532994
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3212119289340102
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.33440989847715735
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.34251269035532994
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3169225888324873
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3291814720812183
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3371065989847716
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3169225888324873
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3343972081218274
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3291814720812183
+GMM Cprim PCA(3), nTarget(1), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3371065989847716
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.32010786802030455
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.33422588832487304
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3328934010152284
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3311104060913706
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.32010786802030455
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.33422588832487304
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3328934010152284
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3311104060913706
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.31011421319796956
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3307043147208122
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.33050126903553306
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3287309644670051
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.31011421319796956
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3307043147208122
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.33050126903553306
+GMM Cprim PCA(3), nTarget(1), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3287309644670051
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2971002538071066
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3235913705583756
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3390228426395939
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3462817258883249
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2971002538071066
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.3235913705583756
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3390228426395939
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3462817258883249
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.29869923857868025
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3196319796954315
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3338451776649746
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.34303934010152287
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.29869923857868025
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3196319796954315
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3338451776649746
+GMM Cprim PCA(3), nTarget(1), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.34303934010152287
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.29218274111675124
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2935723350253807
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3263451776649746
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.30635152284263967
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.29218274111675124
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.2935723350253807
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3263451776649746
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.30635152284263967
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.29163705583756344
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2889720812182741
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3198984771573604
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3049111675126904
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.29163705583756344
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2889720812182741
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3198984771573604
+GMM Cprim PCA(3), nTarget(1), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3049111675126904
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2851269035532995
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.28246827411167513
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.30633883248730964
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.28816624365482235
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2851269035532995
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.28246827411167513
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.30633883248730964
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.28816624365482235
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2836230964467005
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.28504441624365484
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3006408629441625
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2838959390862944
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2836230964467005
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.28504441624365484
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3006408629441625
+GMM Cprim PCA(3), nTarget(1), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2838959390862944
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.33911802030456856
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.33911802030456856
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.33937182741116756
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.33937182741116756
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3358756345177665
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3358756345177665
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3358756345177665
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3358756345177665
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.33173857868020307
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.33173857868020307
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.33173857868020307
+GMM Cprim PCA(3), nTarget(2), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.33173857868020307
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.32108502538071065
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.33911802030456856
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.335253807106599
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34149111675126903
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3212119289340102
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.34081852791878176
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.33440989847715735
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.34251269035532994
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3185977157360406
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3358756345177665
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.33671954314720814
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3430456852791878
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3168845177664974
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.33173857868020307
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3286167512690355
+GMM Cprim PCA(3), nTarget(2), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.33921319796954313
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3205647208121827
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3248032994923858
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3363832487309645
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.33151015228426395
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.32010786802030455
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.33422588832487304
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3328934010152284
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3311104060913706
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.316497461928934
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.32960659898477157
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3355964467005076
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.33195431472081216
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3132741116751269
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3289213197969543
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.32777284263959394
+GMM Cprim PCA(3), nTarget(2), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.329746192893401
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2875444162436548
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32518401015228426
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3415609137055837
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3371065989847716
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.2968845177664975
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.3235913705583756
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.33777284263959395
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3456852791878173
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2940545685279188
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.322258883248731
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3312436548223351
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3415799492385787
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2941878172588832
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3198413705583757
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.33495558375634527
+GMM Cprim PCA(3), nTarget(2), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3406472081218274
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2913515228426396
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.291491116751269
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3198413705583756
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3080964467005076
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.292239847715736
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.2938071065989848
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3263451776649746
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.30484771573604064
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.29311548223350253
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2947715736040609
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3233946700507614
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.30254441624365486
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2911865482233502
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.29076142131979693
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.32165609137055834
+GMM Cprim PCA(3), nTarget(2), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.30329314720812184
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2805774111675127
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2842195431472081
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3083692893401015
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.28463197969543147
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.28487309644670056
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.28246827411167513
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.30633883248730964
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.28816624365482235
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2888769035532995
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2874428934010152
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3096827411167513
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2897271573604061
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2801840101522843
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2784073604060914
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.30058375634517764
+GMM Cprim PCA(3), nTarget(2), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2839149746192894
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3498921319796955
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3498921319796955
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3498921319796955
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3498921319796955
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.34062182741116753
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.34062182741116753
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.34062182741116753
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.34062182741116753
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3396256345177665
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3396256345177665
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.338502538071066
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.338502538071066
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.32987944162436544
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.32987944162436544
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3288832487309645
+GMM Cprim PCA(3), nTarget(4), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3288832487309645
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3375697969543147
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3498921319796955
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3509517766497462
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.35409263959390863
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.32411167512690353
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.34062182741116753
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.33751269035533
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.34490482233502534
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3267956852791878
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3396256345177665
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3400761421319797
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3436484771573604
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.32609137055837567
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.32987944162436544
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.33079949238578676
+GMM Cprim PCA(3), nTarget(4), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3396065989847715
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3303362944162437
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3470558375634517
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3539911167512691
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.34816624365482235
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.32001903553299493
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.3295368020304569
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.33577411167512694
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.33326142131979697
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.32369289340101526
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.33220812182741116
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3390609137055838
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3354568527918782
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3152791878172589
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3202982233502538
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3340609137055837
+GMM Cprim PCA(3), nTarget(4), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.32456218274111676
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3038197969543147
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32856598984771573
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3586865482233502
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3500951776649746
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.29346446700507617
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.3240926395939086
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.33563451776649744
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.342493654822335
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2979631979695432
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.32987944162436544
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.34317258883248725
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3467956852791878
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2918274111675127
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3202284263959391
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.32852791878172594
+GMM Cprim PCA(3), nTarget(4), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3310215736040609
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.2977284263959391
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.30795050761421316
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.34039340101522847
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.32935279187817257
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.29725888324873095
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.2891941624365482
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3193845177664975
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3113324873096447
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3001649746192893
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2993274111675127
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.32598350253807107
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3100253807106599
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.2969796954314721
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.29186548223350256
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3198159898477157
+GMM Cprim PCA(3), nTarget(4), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2983883248730964
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3041687817258883
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.2958058375634518
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3263388324873096
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.2975507614213198
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.29021573604060913
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.29003807106598983
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.31551395939086296
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.29244923857868027
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2910532994923858
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2897715736040609
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3146763959390863
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.2954505076142132
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.29021573604060913
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.28390862944162437
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3104251269035533
+GMM Cprim PCA(3), nTarget(4), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.2901205583756345
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.36609137055837565
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied): 0.36609137055837565
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.36609137055837565
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.36609137055837565
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3694606598984772
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied): 0.3694606598984772
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.3694606598984772
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3694606598984772
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.35170050761421323
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.35170050761421323
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3529505076142132
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3529505076142132
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.35192893401015235
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.35192893401015235
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.35192893401015235
+GMM Cprim PCA(3), nTarget(8), nNonTarget(1), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.35192893401015235
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3564784263959391
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied): 0.36609137055837565
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3687246192893401
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3670304568527918
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(mvg): 0.33631979695431474
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied): 0.3694606598984772
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.36711294416243656
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.36725253807106595
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3352220812182741
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.35170050761421323
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.350507614213198
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3648477157360406
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3312753807106599
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.35192893401015235
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.35111040609137056
+GMM Cprim PCA(3), nTarget(8), nNonTarget(2), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3631345177664975
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3438705583756345
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3609200507614213
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3636865482233503
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3555647208121827
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(mvg): 0.33748096446700515
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied): 0.35720177664974617
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.36658629441624363
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.34767766497461927
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.33574238578680204
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.3511357868020305
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3520494923857868
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.34834390862944165
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.3266941624365482
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3498540609137055
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3561421319796954
+GMM Cprim PCA(3), nTarget(8), nNonTarget(4), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3434454314720813
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.32506345177664975
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied): 0.3511738578680203
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3571637055837564
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3677030456852792
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(mvg): 0.31831218274111667
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied): 0.3423921319796954
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.35452411167512693
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3647081218274112
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.29792512690355333
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.33910532994923853
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3585088832487309
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.3590291878172589
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.29641497461928934
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.3327728426395939
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.35352791878172585
+GMM Cprim PCA(3), nTarget(8), nNonTarget(8), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.34977157360406086
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.32391497461928936
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32395304568527916
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.3538959390862944
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3390228426395939
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(mvg): 0.31018401015228425
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied): 0.3139467005076142
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.34185913705583754
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.3281535532994924
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.2974048223350254
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.30206218274111674
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3415736040609137
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.31061548223350255
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.29941624365482233
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2960406091370559
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.3354251269035533
+GMM Cprim PCA(3), nTarget(8), nNonTarget(16), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.3123794416243655
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(mvg): 0.3257170050761421
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied): 0.32306472081218274
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(diagonal): 0.34104695431472076
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(mvg), MTypeNonTarget(tied diagonal): 0.3172208121827411
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(mvg): 0.3061104060913705
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied): 0.3101840101522843
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(diagonal): 0.33765862944162434
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(tied), MTypeNonTarget(tied diagonal): 0.305501269035533
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(mvg): 0.3013451776649746
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied): 0.2930710659898477
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(diagonal): 0.3221573604060914
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(diagonal), MTypeNonTarget(tied diagonal): 0.29925761421319796
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(mvg): 0.29418781725888327
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied): 0.2977855329949239
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(diagonal): 0.31667512690355326
+GMM Cprim PCA(3), nTarget(8), nNonTarget(32), MTypeTarget(tied diagonal), MTypeNonTarget(tied diagonal): 0.29833756345177664
+--------- TIME ----------
+Time elapsed: 13:00:13.572992

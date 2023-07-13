@@ -80,7 +80,7 @@ def get_scatter(data, labels, map_classes, map_features):
             if i != j:
                 plt.legend()
                 plt.tight_layout()
-                plt.savefig("scatter_plots/Scatter Plot {} x {}.png".format(inv_map_feats[i], inv_map_feats[j]))
+                plt.savefig("scatter_plots/Scatter Plot {} x {}.svg".format(inv_map_feats[i], inv_map_feats[j]))
             plt.close()
 
 def get_scatter_3d(Data, n_classes, labels):
@@ -104,5 +104,5 @@ def plotCPrim(x, y, labels, xlabel, name):
     plt.legend(labels)
     plt.xlabel(xlabel)
     plt.ylabel("min Cprim")
-    plt.savefig("{}.svg".format(name))
+    plt.savefig("figures_SVM/{}.svg".format(name))
     return
