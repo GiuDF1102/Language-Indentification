@@ -112,7 +112,7 @@ class SVM:
                     bounds[index]= (0,self.__CF)
 
         (alpha, f, dataopt)=opt.fmin_l_bfgs_b(self.__J, alpha, args=(self.__H,),bounds=bounds, factr=1.0)
-        w = np.sum((alpha*self.__modifyLabel(labels)).reshape(self.__K, data.shape[1])*self.__expandMatrix(self.__K, data), axis=1)
+        w = np.sum((alpha*self.__modifyLabel(labels)).reshape(1, data.shape[1])*self.__expandMatrix(self.__K, data), axis=1)
         self.__w = w
 
     def __optGetWPolinomial(self, C, K, data, labels):

@@ -104,7 +104,7 @@ class SVM:
         alpha=np.zeros(data.shape[1])#stessa dim del numero si sample
         bounds = list(repeat((0, C), data.shape[1]))
         (alpha, f, dataopt)=opt.fmin_l_bfgs_b(self.__J, alpha, args=(self.__H,),bounds=bounds, factr=1.0)
-        w = np.sum((alpha*self.__modifyLabel(labels)).reshape(self.__K, data.shape[1])*self.__expandMatrix(self.__K, data), axis=1)
+        w = np.sum((alpha*self.__modifyLabel(labels)).reshape(1, data.shape[1])*self.__expandMatrix(self.__K, data), axis=1)
         self.__w = w
 
     def __optGetWPolinomial(self, C, K, data, labels):
@@ -171,7 +171,7 @@ if __name__ == '__main__':
     (dataTrain, labelsTrain), (dataTest, labelsTest) = split_db_2to1(D, L)
 
     svmObjLinear = SVM('linear')
-    svmObjLinear.train(dataTrain, labelsTrain, C=0.1, K=1)
+    svmObjLinear.train(dataTrain, labelsTrain, C=10, K=1)
     P = svmObjLinear.trasform(dataTest)
     errorRateLinear = calcErrorRate(modifyLabel(labelsTest), P)
     print("Linear error rate: {:.1f}".format(errorRateLinear))
