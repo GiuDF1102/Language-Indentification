@@ -44,8 +44,7 @@ if __name__ == "__main__":
 
 
     dataPCA = dr.PCA(features, 2)
-    dv.get_scatter(dataPCA, labels, labels_dict, {"PC-0": 0, "PC-1": 1})
-
+    dv.get_scatter(dataPCA, labels, labels_dict, {"PC-0":0, "PC-1":1})
     # #MVG
     # for pi in [0.1,0.5]:
     #     #NO PCA

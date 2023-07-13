@@ -7,10 +7,10 @@ class logReg():
     __b = None
     __w = None
 
-    def __init__(self,l, pi, balanced):
+    def __init__(self,l, pi, mode):
         self.__l=l
         self.__pi=pi
-        self.__balanced=balanced
+        self.__mode=mode
 
     def __logreg_obj(self,v):
         w= mu.FromRowToColumn(v[0:self.__DTR.shape[0]])
@@ -46,20 +46,30 @@ class logReg():
         return loss
     
     def train(self, data, labels):
-        if self.__balanced == False:
+        if self.__mode == 'unbalanced':
             self.__DTR=data
             self.__ZTR=labels*2.0-1.0
             x0=np.zeros(self.__DTR.shape[0]+1)
             xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.__logreg_obj,x0=x0,approx_grad=True)
             self.__w = xOpt[0:self.__DTR.shape[0]]
             self.__b = xOpt[-1]
-        else:    
+        elif self.__mode == 'balanced':    
             self.__DTR=data
             self.__ZTR=labels*2.0-1.0
             x0=np.zeros(self.__DTR.shape[0]+1)
             xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.__logreg_obj_balanced,x0=x0,approx_grad=True)
             self.__w = xOpt[0:self.__DTR.shape[0]]
             self.__b = xOpt[-1]
+        elif self.__mode == 'calibration':
+            self.__DTR=data
+            self.__ZTR=labels*2.0-1.0
+            self.nt = np.sum(self.__ZTR == 1)
+            self.nf = np.sum(self.__ZTR == -1)
+            self.zi = np.where(self.__ZTR == 1, 1, 0)
+            x0 = np.zeros(2)
+            xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.__logreg_obj_calibration,x0=x0,approx_grad=True)
+            self.alpha = xOpt[0]
+            self.gamma = xOpt[-1]
 
     def transform(self, DTE):
         self.scores = np.dot(self.__w.T,DTE)+self.__b
@@ -68,3 +78,6 @@ class logReg():
 
     def get_scores(self):
         return self.scores
+
+    def get_params(self):
+        return self.__w, self.__b

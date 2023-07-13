@@ -3,6 +3,7 @@ import data_utils as du
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
 import calibration as cal
+import logistic_regression_classifiers as lr
 
 def calcErrorRate(lab, pre):
     confronted = lab == pre
@@ -371,3 +372,21 @@ def k_fold_calibrated(learner,x,labels,k, workingPoint, name, pi):
     minDCF, _ = compute_minDCF(gotscores, Y, workingPoint, pi, True)
     print("{} DCF: {}".format(name, actualDCF))
     print("{} minDCF: {}".format(name, minDCF))
+
+
+def fusion(score_vec, pi, labels):
+    scores = np.vstack(score_vec)
+    logReg = lr.logReg(1,pi,'calibration')
+    logReg.train(scores, labels)
+    w, b = logReg.get_params()
+    calibrated_scores = []
+
+    for(i, score) in enumerate(score_vec):
+        calibrated_scores.append(np.dot(w[i], score[i]))
+
+    array_CS = np.array(calibrated_scores).sum() + b
+
+    predicted = np.where(array_CS> -np.log(pi/(1-pi)), 1, 0)
+
+    return array_CS, predicted
+
