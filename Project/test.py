@@ -42,29 +42,23 @@ if __name__ == "__main__":
         "PC-4": 4   
     }
 
-    #LDA
-    LDAData = dr.LDA(features, labels, 1)
-    dv.get_hist(LDAData, labels, labels_dict, {"feature 0": 0})
 
-    # lda = LinearDiscriminantAnalysis()
-    # lda.fit(features.T, labels)
-    # trasformed = lda.transform(features.T)
-    # dv.get_hist(trasformed.T, labels, labels_dict, {"feature 0": 0})
+    dataPCA = dr.PCA(features, 2)
+    dv.get_scatter(dataPCA, labels, labels_dict, {"PC-0": 0, "PC-1": 1})
 
-
-    #MVG
-    for pi in [0.1,0.5]:
-        #NO PCA
-        mvgObj = gc.multivariate_cl([1-pi, pi])
-        _, minDCF = val.k_fold(mvgObj, features, labels, 5, (pi, 1, 1))
-        print("MVG, minDCF with pi {} is {}".format(pi, minDCF))
+    # #MVG
+    # for pi in [0.1,0.5]:
+    #     #NO PCA
+    #     mvgObj = gc.multivariate_cl([1-pi, pi])
+    #     _, minDCF = val.k_fold(mvgObj, features, labels, 5, (pi, 1, 1))
+    #     print("MVG, minDCF with pi {} is {}".format(pi, minDCF))
         
-        #PCA
-        for nPCA in [5,4,3]:
-            dataPCA = dr.PCA(features, nPCA)
-            mvgObj = gc.multivariate_cl([1-pi, pi])
-            _, minDCF = val.k_fold(mvgObj, dataPCA, labels, 5, (pi, 1, 1))
-            print("MVG, minDCF with pi {} and {} PCA is {}".format(pi, nPCA, minDCF))
+    #     #PCA
+    #     for nPCA in [5,4,3]:
+    #         dataPCA = dr.PCA(features, nPCA)
+    #         mvgObj = gc.multivariate_cl([1-pi, pi])
+    #         _, minDCF = val.k_fold(mvgObj, dataPCA, labels, 5, (pi, 1, 1))
+    #         print("MVG, minDCF with pi {} and {} PCA is {}".format(pi, nPCA, minDCF))
     """
     #NAIVE MVG
     for pi in [0.1,0.5]:
@@ -243,6 +237,22 @@ if __name__ == "__main__":
     #                                 GMMClass = gmm.GMM(nTarget,nNonTarget,MtypeTarget,MtypeNonTarget)
     #                                 _, minDCF = val.k_fold(GMMClass, dataPCA, labels, 5, (pi, 1, 1))
     #                                 print("GMM, minDCF with PCA {}, with nTarget {},nNonTarget{},MTypeTarget{},MtypeNonTargte {}, and prior {} is {}".format(nPCA,nTarget,nNonTarget,MtypeTarget,MtypeNonTarget, pi, minDCF),file=f)
+
+    # GMMClass = gmm.GMM(1,32,'diagonal','diagonal')
+    # _, minDCF = val.k_fold(GMMClass, features, labels, 5, (0.1, 1, 1))
+    # print("GMM, minDCF NO PCA with nTarget {},nNonTarget{},MTypeTarget{},MtypeNonTargte {}, and prior {} is {}".format(1,32,'diagonal','tied', 0.1, minDCF))
+
+    # GMMClass = gmm.GMM(1,32,'diagonal','diagonal')
+    # _, minDCF = val.k_fold(GMMClass, features, labels, 5, (0.5, 1, 1))
+    # print("GMM, minDCF NO PCA with nTarget {},nNonTarget{},MTypeTarget{},MtypeNonTargte {}, and prior {} is {}".format(1,32,'diagonal','tied', 0.5, minDCF))
+
+    # GMMClass = gmm.GMM(1,32,'diagonal','tied')
+    # _, minDCF = val.k_fold(GMMClass, features, labels, 5, (0.1, 1, 1))
+    # print("GMM, minDCF NO PCA with nTarget {},nNonTarget{},MTypeTarget{},MtypeNonTargte {}, and prior {} is {}".format(1,32,'diagonal','tied diagonal', 0.1, minDCF))
+
+    # GMMClass = gmm.GMM(1,32,'diagonal','tied')
+    # _, minDCF = val.k_fold(GMMClass, features, labels, 5, (0.5, 1, 1))
+    # print("GMM, minDCF NO PCA with nTarget {},nNonTarget{},MTypeTarget{},MtypeNonTargte {}, and prior {} is {}".format(1,32,'diagonal','tied diagonal', 0.5, minDCF))
 
     end_time = datetime.now()
 
