@@ -70,6 +70,8 @@ class logReg():
             xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.__logreg_obj_calibration,x0=x0,approx_grad=True)
             self.alpha = xOpt[0]
             self.gamma = xOpt[-1]
+        else:
+            print("---------------> error, mode:", self.__mode)
 
     def transform(self, DTE):
         self.scores = np.dot(self.__w.T,DTE)+self.__b

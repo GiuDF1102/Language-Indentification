@@ -232,16 +232,27 @@ def get_error_plot(scores, true_labels, C,name):
     dcf = []
     min_dcf = []
     for p in pi:
-        min_dcf.append(min_DCF(scores, true_labels, p, C))
-        dcf.append(DCF(scores,true_labels, p, C))   
-        
-    plt.plot(effPriorLogOdds, dcf, label='min DCF', color='r')
-    plt.plot(effPriorLogOdds, min_dcf, label='min DCF', color='b')
-    plt.ylim([0, 1.1])
+        t = - np.log((p*C[0][1])/(1-p)*C[1][0])        
+        gotpredicted = np.where(scores>t,1,0)
+        cm = __calc_conf_matrix(gotpredicted, true_labels, 2)
+        DCFu = compute_bayes_risk(cm, (p, C[0][1], C[1][0]))
+        actualDCF = DCFu/compute_dummy_bayes((p, C[0][1], C[1][0]))
+        dcf.append(actualDCF)   
+        a, _ = compute_minDCF(scores, true_labels, (p, C[0][1], C[1][0]), p, False)
+        min_dcf.append(a)
+
+        print(a, actualDCF)
+
+    plt.figure()
+    print(dcf)
+    print(min_dcf)
+    plt.plot(effPriorLogOdds, dcf, label='actual DCF', color='r')
+    plt.plot(effPriorLogOdds, min_dcf, label='min DCF', color='b', linestyle='dotted')
+    plt.ylim([0,1.6])
     plt.xlim([-3, 3])
+    plt.legend(["act DCF", "min DCF"])
     plt.ylabel('DCF value')
     plt.xlabel('prior log-odds')
-    plt.title("ROC - {}".format(name))
     plt.savefig("error plot - {}.png".format(name))
     plt.close()
 
@@ -338,6 +349,38 @@ def k_fold(learner,x,labels,k, workingPoint):
     cm_best  = __calc_conf_matrix(min_DCF_predicted, Y, 2)
     return actualDCF, minDCF
 
+def k_fold_bayes_plot(learner,x,labels,k, workingPoint,name):
+    pi = workingPoint[0]
+    X, Y = shuffle(x.T, labels, random_state=0)
+    X_splitted = np.array_split(X, k)
+    y_splitted = np.array_split(Y, k)
+    concat_scores = []
+    concat_llr = []
+    for i in range(k): #for each fold
+        X_folds = X_splitted.copy()
+        y_folds = y_splitted.copy()
+        X_val = X_folds.pop(i).T
+        y_val = y_folds.pop(i)
+        X_train = np.vstack(X_folds).T
+        y_train = np.hstack(y_folds)
+        learner.train(X_train, y_train)
+        learner.transform(X_val)
+        scores = learner.get_scores()
+        concat_scores.append(scores)
+    gotscores = np.hstack(concat_scores)
+    gotpredicted = np.where(gotscores> -np.log(pi/(1-pi)), 1, 0)
+    cm = __calc_conf_matrix(gotpredicted, Y, 2)
+    DCFu = compute_bayes_risk(cm, workingPoint)
+    actualDCF = DCFu/compute_dummy_bayes(workingPoint)
+    minDCF, best_t = compute_minDCF(gotscores, Y, workingPoint, False, None)
+    min_DCF_predicted = np.where(gotscores>best_t, 1, 0)
+    cm_best  = __calc_conf_matrix(min_DCF_predicted, Y, 2)
+    C = np.zeros((2,2))
+    C[0][1] = workingPoint[1] 
+    C[1][0] = workingPoint[2] 
+    get_error_plot(gotscores, labels, C, name)
+    return actualDCF, minDCF
+
 def __calc_conf_matrix(predicted, labels, size):
     matrix = np.zeros((size, size)).astype(int)
     for i in range(labels.size -1):
@@ -372,7 +415,6 @@ def k_fold_calibrated(learner,x,labels,k, workingPoint, name, pi):
     minDCF, _ = compute_minDCF(gotscores, Y, workingPoint, pi, True)
     print("{} DCF: {}".format(name, actualDCF))
     print("{} minDCF: {}".format(name, minDCF))
-
 
 def fusion(score_vec, pi, labels):
     scores = np.vstack(score_vec)
