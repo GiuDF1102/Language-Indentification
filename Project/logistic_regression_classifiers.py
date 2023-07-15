@@ -40,8 +40,8 @@ class logReg():
     def __logreg_obj_calibration(self, v):
         alpha = v[0]
         gamma = v[1]
-        exp = - np.dot(self.zi,(alpha*self.DTR.T + gamma + np.log(self.pi/(1-self.pi))))
-        wi = np.where(self.zi == 1, self.pi/self.nt, (1-self.pi)/self.nf)
+        exp = - np.dot(self.zi,(alpha*self.__DTR.T + gamma + np.log(self.__pi/(1-self.__pi))))
+        wi = np.where(self.zi == 1, self.__pi/self.nt, (1-self.__pi)/self.nf)
         loss = np.dot(wi,np.logaddexp(0, exp).T).sum(axis=0)
         return loss
     
@@ -78,6 +78,10 @@ class logReg():
         labels = np.where(self.scores>0, 1,0)
         return labels
 
+    def get_calibrated_scores(self, DTE):
+        self.scores = np.dot(self.alpha.T,DTE)+self.gamma
+        return self.scores
+        
     def get_scores(self):
         return self.scores
 

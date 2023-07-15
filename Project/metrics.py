@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 import logistic_regression_classifiers as lr
 import GMM as gmm
 
+
 def bayes_optimal_decisions(llr, pi1, cfn, cfp):
     
     threshold = -np.log(pi1*cfn/((1-pi1)*cfp))
@@ -119,6 +120,36 @@ def Kfold(D, L, model, K=5, prior=0.5):
         print("K cannot be <=1")
     return
 
+def KfoldActualDCFCalibrated(D, L, model, lambd=1e-4, K=3, prior=0.5):
+    if (K>1):
+        folds, labels = Ksplit(D, L, seed=0, K=K)
+        orderedLabels = []
+        scores = []
+        for i in range(K):
+            trainingSet = []
+            labelsOfTrainingSet = []
+            for j in range(K):
+                if j!=i:
+                    trainingSet.append(folds[j])
+                    labelsOfTrainingSet.append(labels[j])
+            evaluationSet = folds[i]
+            orderedLabels.append(labels[i])
+            trainingSet=np.hstack(trainingSet)
+            labelsOfTrainingSet=np.hstack(labelsOfTrainingSet)
+            model.train(trainingSet, labelsOfTrainingSet)
+            getpredicted = model.transform(evaluationSet)
+            scores.append(model.get_scores())
+        scores=np.hstack(scores)
+        orderedLabels=np.hstack(orderedLabels)
+        lrc = lr.logReg(lambd, prior, 'calibration')
+        lrc.train(scores, orderedLabels)
+        scores = lrc.get_calibrated_scores(scores)
+        labels = np.hstack(labels)
+        return compute_actual_DCF(scores, orderedLabels, prior, 1, 1)
+    else:
+        print("K cannot be <=1")
+    return
+
 def bayesErrorPlot(dcf, mindcf, effPriorLogOdds, model):
     plt.figure()
     plt.plot(effPriorLogOdds, dcf, label='act DCF', color='r')
@@ -139,20 +170,48 @@ def confusionMatrix(predictedLabels, actualLabels, K):
     for i in range(actualLabels.size):
         matrix[predictedLabels[i], actualLabels[i]] += 1
     return matrix
+
+def bayesErrorPlotV2(dcf0, dcf1, mindcf, effPriorLogOdds, model, lambda0, lambda1):
+    plt.figure()
+    plt.plot(effPriorLogOdds, dcf0, label='act DCF', color='r')
+    plt.plot(effPriorLogOdds, dcf1, label='act DCF', color='g')
+    plt.plot(effPriorLogOdds, mindcf, label='min DCF', color='b', linestyle="--")
+    plt.xlim([min(effPriorLogOdds), max(effPriorLogOdds)])
+    plt.legend([model + " - act DCF lambda = "+lambda0, model + " - act DCF lambda = "+lambda1, model+" - min DCF"])
+    plt.xlabel("prior log-odds")
+    plt.ylabel("DCF")
+    plt.savefig(model + "_DCF.png")
+    return
+
 if __name__ == '__main__':
     # Load data
     labels, features = du.load("..\PROJECTS\Language_detection\Train.txt")
 
-    #NAIVE PCA 5
-    actualDCFs = []
+    # #NAIVE PCA 5
+    # actualDCFs = []
+    # minDCFs = []
+    # numberOfPoints=21
+    # effPriorLogOdds = np.linspace(-3, 3, numberOfPoints)
+    # effPriors = 1/(1+np.exp(-1*effPriorLogOdds))
+    # gmmc = gmm.GMM(2,32,'MVG','tied')
+    # for i in range(numberOfPoints):
+    #     actualDCFs.append(KfoldActualDCF(features, labels, gmmc, prior=effPriors[i]))
+    #     minDCFs.append(Kfold(features, labels,gmmc, prior=effPriors[i]))
+    #     print("At iteration", i, "the min DCF is", minDCFs[i], "and the actual DCF is", actualDCFs[i])
+    # bayesErrorPlot(actualDCFs, minDCFs, effPriorLogOdds, "GMM")
+
+    #Score calibration on Tied-Cov
+    actualDCFs0 = []
+    actualDCFs1 = []
     minDCFs = []
     numberOfPoints=21
     effPriorLogOdds = np.linspace(-3, 3, numberOfPoints)
     effPriors = 1/(1+np.exp(-1*effPriorLogOdds))
-    gmmc = gmm.GMM(2,32,'MVG','tied')
+    GC = gc.naive_multivariate_cl([1-0.1, 0.1])
+    dataPCA5 = dr.PCA(features, 5)
     for i in range(numberOfPoints):
-        actualDCFs.append(KfoldActualDCF(features, labels, gmmc, prior=effPriors[i]))
-        minDCFs.append(Kfold(features, labels,gmmc, prior=effPriors[i]))
-        print("At iteration", i, "the min DCF is", minDCFs[i], "and the actual DCF is", actualDCFs[i])
-    bayesErrorPlot(actualDCFs, minDCFs, effPriorLogOdds, "GMM")
-
+        print("Working on point:", i)
+        minDCFs.append(Kfold(dataPCA5, labels, GC, prior=effPriors[i]))
+        actualDCFs0.append(KfoldActualDCFCalibrated(dataPCA5, labels, GC, lambd=100, prior=effPriors[i]))
+        actualDCFs1.append(KfoldActualDCFCalibrated(dataPCA5, labels, GC, lambd=10, prior=effPriors[i]))
+    bayesErrorPlotV2(actualDCFs0, actualDCFs1, minDCFs, effPriorLogOdds, "Naive PCA 5", "10^(-4)", "10^(-3)")
