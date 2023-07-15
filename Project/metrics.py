@@ -5,6 +5,7 @@ import gaussian_classifiers as gc
 import matplotlib.pyplot as plt
 import logistic_regression_classifiers as lr
 import GMM as gmm
+import math_utils as mu
 
 
 def bayes_optimal_decisions(llr, pi1, cfn, cfp):
@@ -44,7 +45,6 @@ def minimum_detection_costs (llr, LTE, pi1, cfn, cfp):
     return NDCF[index]
 
 def compute_actual_DCF(llr, LTE, pi1, cfn, cfp):
-    
     predictions = (llr > (-np.log(pi1/(1-pi1)))).astype(int)
     
     confMatrix =  confusionMatrix(predictions, LTE, LTE.max()+1)
@@ -120,7 +120,7 @@ def Kfold(D, L, model, K=5, prior=0.5):
         print("K cannot be <=1")
     return
 
-def KfoldActualDCFCalibrated(D, L, model, lambd=1e-4, K=3, prior=0.5):
+def KfoldActualDCFCalibrated(D, L, model, lambd=1e-4, K=5, prior=0.5):
     if (K>1):
         folds, labels = Ksplit(D, L, seed=0, K=K)
         orderedLabels = []
@@ -141,9 +141,7 @@ def KfoldActualDCFCalibrated(D, L, model, lambd=1e-4, K=3, prior=0.5):
             scores.append(model.get_scores())
         scores=np.hstack(scores)
         orderedLabels=np.hstack(orderedLabels)
-        lrc = lr.logReg(lambd, prior, 'calibration')
-        lrc.train(scores, orderedLabels)
-        scores = lrc.get_calibrated_scores(scores)
+        scores = calibrateScores(scores, orderedLabels, lambd, prior=0.1).ravel()
         labels = np.hstack(labels)
         return compute_actual_DCF(scores, orderedLabels, prior, 1, 1)
     else:
@@ -167,6 +165,8 @@ def confusionMatrix(predictedLabels, actualLabels, K):
     # We're computing the confusion
     # matrix which "counts" how many times we get prediction i when the actual
     # label is j.
+    # print("CONFMATRIX")
+    # print(predictedLabels,actualLabels)
     for i in range(actualLabels.size):
         matrix[predictedLabels[i], actualLabels[i]] += 1
     return matrix
@@ -182,6 +182,18 @@ def bayesErrorPlotV2(dcf0, dcf1, mindcf, effPriorLogOdds, model, lambda0, lambda
     plt.ylabel("DCF")
     plt.savefig(model + "_DCF.png")
     return
+
+def calibrateScores(s, L, lambd, prior=0.1):
+    # f(s) = as+b can be interpreted as the llr for the two class hypothesis
+    # class posterior probability: as+b+log(pi/(1-pi)) = as +b'
+    s=mu.FromColumnToRow(s)
+    lrc = lr.logReg(lambd, prior, 'balanced')
+    lrc.train(s, L)
+    params = lrc.get_params()
+    alpha = params[0]
+    betafirst = params[1]
+    calibScores = alpha*s+betafirst-np.log(prior/(1-prior))
+    return calibScores
 
 if __name__ == '__main__':
     # Load data
@@ -208,10 +220,12 @@ if __name__ == '__main__':
     effPriorLogOdds = np.linspace(-3, 3, numberOfPoints)
     effPriors = 1/(1+np.exp(-1*effPriorLogOdds))
     GC = gc.naive_multivariate_cl([1-0.1, 0.1])
-    dataPCA5 = dr.PCA(features, 5)
+    QlogReg = lr.logReg(127, 0.17, 'balanced')
+    exapanded = du.features_expansion(features)
+    lambd1 = 10e-3
+    lambd2 = 10e-4
     for i in range(numberOfPoints):
         print("Working on point:", i)
-        minDCFs.append(Kfold(dataPCA5, labels, GC, prior=effPriors[i]))
-        actualDCFs0.append(KfoldActualDCFCalibrated(dataPCA5, labels, GC, lambd=100, prior=effPriors[i]))
-        actualDCFs1.append(KfoldActualDCFCalibrated(dataPCA5, labels, GC, lambd=10, prior=effPriors[i]))
-    bayesErrorPlotV2(actualDCFs0, actualDCFs1, minDCFs, effPriorLogOdds, "Naive PCA 5", "10^(-4)", "10^(-3)")
+        minDCFs.append(Kfold(exapanded, labels, QlogReg, prior=effPriors[i]))
+        actualDCFs1.append(KfoldActualDCFCalibrated(exapanded, labels, QlogReg, lambd = lambd2, prior=effPriors[i]))
+    bayesErrorPlotV2(actualDCFs1, actualDCFs1, minDCFs, effPriorLogOdds, "Naive PCA 5", "10", "100")
