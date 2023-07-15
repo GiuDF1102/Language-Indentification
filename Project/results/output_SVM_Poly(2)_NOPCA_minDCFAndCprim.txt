@@ -1,0 +1,575 @@
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.001 and K: 0.01 is 0.5779822335025381
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.001 and K: 0.01 is 0.12890862944162437
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.01 and c:0.001 is 0.35344543147208124
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.01 and K: 0.01 is 0.5638451776649746
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.01 and K: 0.01 is 0.12836294416243654
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.01 and c:0.01 is 0.34610406091370555
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:1 and K: 0.01 is 0.5641116751269035
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:1 and K: 0.01 is 0.12468274111675126
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.01 and c:1 is 0.3443972081218274
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:10 and K: 0.01 is 0.395241116751269
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:10 and K: 0.01 is 0.10059644670050762
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.01 and c:10 is 0.2479187817258883
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:100 and K: 0.01 is 0.4175634517766497
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:100 and K: 0.01 is 0.10439086294416244
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.01 and c:100 is 0.26097715736040605
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.001 and K: 0.1 is 0.5630710659898477
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.001 and K: 0.1 is 0.12859137055837563
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.1 and c:0.001 is 0.3458312182741117
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.01 and K: 0.1 is 0.5597081218274111
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.01 and K: 0.1 is 0.12710659898477156
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.1 and c:0.01 is 0.3434073604060913
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:1 and K: 0.1 is 0.5583375634517765
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:1 and K: 0.1 is 0.12468274111675126
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.1 and c:1 is 0.3415101522842639
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:10 and K: 0.1 is 0.395241116751269
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:10 and K: 0.1 is 0.10059644670050762
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.1 and c:10 is 0.2479187817258883
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:100 and K: 0.1 is 0.4175634517766497
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:100 and K: 0.1 is 0.10439086294416244
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 0.1 and c:100 is 0.26097715736040605
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.001 and K: 1 is 0.5590228426395939
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.001 and K: 1 is 0.12663705583756346
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 1 and c:0.001 is 0.3428299492385787
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.01 and K: 1 is 0.5552284263959392
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.01 and K: 1 is 0.12460659898477157
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 1 and c:0.01 is 0.33991751269035536
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:1 and K: 1 is 0.5239467005076143
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:1 and K: 1 is 0.11953045685279189
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 1 and c:1 is 0.32173857868020306
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:10 and K: 1 is 0.395241116751269
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:10 and K: 1 is 0.10008883248730964
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 1 and c:10 is 0.24766497461928932
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:100 and K: 1 is 0.4175634517766497
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:100 and K: 1 is 0.10439086294416244
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 1 and c:100 is 0.26097715736040605
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.001 and K: 10 is 0.5147969543147208
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.001 and K: 10 is 0.11601522842639594
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 10 and c:0.001 is 0.3154060913705584
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.01 and K: 10 is 0.5053172588832487
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.01 and K: 10 is 0.11644670050761421
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 10 and c:0.01 is 0.31088197969543147
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:1 and K: 10 is 0.4704187817258883
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:1 and K: 10 is 0.11480964467005075
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 10 and c:1 is 0.29261421319796954
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:10 and K: 10 is 0.397741116751269
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:10 and K: 10 is 0.10008883248730964
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 10 and c:10 is 0.24891497461928933
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:100 and K: 10 is 0.4175634517766497
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:100 and K: 10 is 0.10439086294416244
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 10 and c:100 is 0.26097715736040605
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.001 and K: 100 is 0.45402284263959397
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.001 and K: 100 is 0.10571065989847717
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 100 and c:0.001 is 0.2798667512690356
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:0.01 and K: 100 is 0.4528172588832488
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:0.01 and K: 100 is 0.10520304568527919
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 100 and c:0.01 is 0.279010152284264
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:1 and K: 100 is 0.4206725888324873
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:1 and K: 100 is 0.11554568527918782
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 100 and c:1 is 0.26810913705583755
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:10 and K: 100 is 0.392741116751269
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:10 and K: 100 is 0.10200507614213199
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 100 and c:10 is 0.2473730964467005
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.001 and c:100 and K: 100 is 0.4175634517766497
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.001 and c:100 and K: 100 is 0.10439086294416244
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.001 and K: 100 and c:100 is 0.26097715736040605
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.001 and K: 0.01 is 0.5573857868020304
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.001 and K: 0.01 is 0.12453045685279188
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.01 and c:0.001 is 0.34095812182741114
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.01 and K: 0.01 is 0.5453172588832487
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.01 and K: 0.01 is 0.11531725888324873
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.01 and c:0.01 is 0.3303172588832487
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:1 and K: 0.01 is 0.431015228426396
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:1 and K: 0.01 is 0.11383248730964468
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.01 and c:1 is 0.27242385786802037
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:10 and K: 0.01 is 0.4023096446700508
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:10 and K: 0.01 is 0.10552030456852793
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.01 and c:10 is 0.25391497461928936
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:100 and K: 0.01 is 0.41049492385786795
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:100 and K: 0.01 is 0.10552030456852793
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.01 and c:100 is 0.25800761421319796
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.001 and K: 0.1 is 0.5145431472081219
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.001 and K: 0.1 is 0.11695431472081219
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.1 and c:0.001 is 0.31574873096446704
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.01 and K: 0.1 is 0.48024111675126896
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.01 and K: 0.1 is 0.11360406091370559
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.1 and c:0.01 is 0.2969225888324873
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:1 and K: 0.1 is 0.428515228426396
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:1 and K: 0.1 is 0.11388324873096448
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.1 and c:1 is 0.2711992385786802
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:10 and K: 0.1 is 0.4023096446700508
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:10 and K: 0.1 is 0.10552030456852793
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.1 and c:10 is 0.25391497461928936
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:100 and K: 0.1 is 0.4134263959390863
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:100 and K: 0.1 is 0.10450507614213198
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 0.1 and c:100 is 0.25896573604060913
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.001 and K: 1 is 0.4528172588832488
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.001 and K: 1 is 0.10676395939086294
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 1 and c:0.001 is 0.2797906091370559
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.01 and K: 1 is 0.4141116751269036
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.01 and K: 1 is 0.10418781725888324
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 1 and c:0.01 is 0.25914974619289344
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:1 and K: 1 is 0.4117005076142132
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:1 and K: 1 is 0.10977157360406092
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 1 and c:1 is 0.260736040609137
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:10 and K: 1 is 0.4023096446700508
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:10 and K: 1 is 0.10501269035532995
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 1 and c:10 is 0.2536611675126904
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:100 and K: 1 is 0.4125634517766497
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:100 and K: 1 is 0.10536802030456853
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 1 and c:100 is 0.25896573604060913
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.001 and K: 10 is 0.41376903553299493
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.001 and K: 10 is 0.10153553299492386
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 10 and c:0.001 is 0.2576522842639594
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.01 and K: 10 is 0.40256345177664976
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.01 and K: 10 is 0.10302030456852793
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 10 and c:0.01 is 0.25279187817258886
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:1 and K: 10 is 0.38515228426395937
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:1 and K: 10 is 0.10578680203045686
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 10 and c:1 is 0.24546954314720812
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:10 and K: 10 is 0.4023096446700508
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:10 and K: 10 is 0.10501269035532995
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 10 and c:10 is 0.2536611675126904
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:100 and K: 10 is 0.4109263959390863
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:100 and K: 10 is 0.10501269035532995
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 10 and c:100 is 0.2579695431472081
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.001 and K: 100 is 0.42186548223350256
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.001 and K: 100 is 0.10571065989847717
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 100 and c:0.001 is 0.2637880710659899
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:0.01 and K: 100 is 0.42058375634517764
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:0.01 and K: 100 is 0.10274111675126904
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 100 and c:0.01 is 0.26166243654822335
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:1 and K: 100 is 0.40187817258883246
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:1 and K: 100 is 0.10302030456852793
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 100 and c:1 is 0.2524492385786802
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:10 and K: 100 is 0.4023096446700508
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:10 and K: 100 is 0.10348984771573605
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 100 and c:10 is 0.25289974619289346
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.01 and c:100 and K: 100 is 0.4134263959390863
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.01 and c:100 and K: 100 is 0.10450507614213198
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.01 and K: 100 and c:100 is 0.25896573604060913
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.001 and K: 0.01 is 0.443248730964467
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.001 and K: 0.01 is 0.11317258883248732
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.01 and c:0.001 is 0.27821065989847715
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.01 and K: 0.01 is 0.45195431472081216
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.01 and K: 0.01 is 0.11469543147208122
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.01 and c:0.01 is 0.2833248730964467
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:1 and K: 0.01 is 0.3912690355329949
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:1 and K: 0.01 is 0.1049746192893401
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.01 and c:1 is 0.2481218274111675
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:10 and K: 0.01 is 0.4089467005076142
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:10 and K: 0.01 is 0.10368020304568529
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.01 and c:10 is 0.25631345177664977
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:100 and K: 0.01 is 0.42058375634517764
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:100 and K: 0.01 is 0.10446700507614212
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.01 and c:100 is 0.2625253807106599
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.001 and K: 0.1 is 0.43472081218274117
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.001 and K: 0.1 is 0.10794416243654822
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.1 and c:0.001 is 0.2713324873096447
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.01 and K: 0.1 is 0.42333756345177664
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.01 and K: 0.1 is 0.09918781725888325
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.1 and c:0.01 is 0.26126269035532995
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:1 and K: 0.1 is 0.4336802030456853
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:1 and K: 0.1 is 0.10548223350253808
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.1 and c:1 is 0.2695812182741117
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:10 and K: 0.1 is 0.40972081218274115
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:10 and K: 0.1 is 0.10364213197969543
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.1 and c:10 is 0.2566814720812183
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:100 and K: 0.1 is 0.4354060913705583
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:100 and K: 0.1 is 0.10348984771573605
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 0.1 and c:100 is 0.2694479695431472
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.001 and K: 1 is 0.41299492385786796
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.001 and K: 1 is 0.106497461928934
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 1 and c:0.001 is 0.25974619289340095
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.01 and K: 1 is 0.3948096446700508
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.01 and K: 1 is 0.10446700507614212
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 1 and c:0.01 is 0.24963832487309645
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:1 and K: 1 is 0.4291116751269035
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:1 and K: 1 is 0.10755076142131981
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 1 and c:1 is 0.26833121827411166
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:10 and K: 1 is 0.40670050761421317
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:10 and K: 1 is 0.10629441624365482
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 1 and c:10 is 0.25649746192893397
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:100 and K: 1 is 0.40876903553299493
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:100 and K: 1 is 0.10645939086294418
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 1 and c:100 is 0.25761421319796957
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.001 and K: 10 is 0.4120431472081218
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.001 and K: 10 is 0.09591370558375635
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 10 and c:0.001 is 0.2539784263959391
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.01 and K: 10 is 0.4073096446700508
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.01 and K: 10 is 0.10446700507614212
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 10 and c:0.01 is 0.2558883248730965
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:1 and K: 10 is 0.41118020304568526
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:1 and K: 10 is 0.10294416243654822
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 10 and c:1 is 0.25706218274111675
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:10 and K: 10 is 0.41583756345177664
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:10 and K: 10 is 0.10524111675126904
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 10 and c:10 is 0.26053934010152285
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:100 and K: 10 is 0.40876903553299493
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:100 and K: 10 is 0.10091370558375634
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 10 and c:100 is 0.25484137055837564
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.001 and K: 100 is 0.41394670050761423
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.001 and K: 100 is 0.09380710659898478
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 100 and c:0.001 is 0.2538769035532995
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:0.01 and K: 100 is 0.4175634517766497
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:0.01 and K: 100 is 0.10576142131979696
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 100 and c:0.01 is 0.26166243654822335
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:1 and K: 100 is 0.4199746192893401
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:1 and K: 100 is 0.1050507614213198
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 100 and c:1 is 0.26251269035533
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:10 and K: 100 is 0.4144543147208122
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:10 and K: 100 is 0.10469543147208121
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 100 and c:10 is 0.25957487309644667
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 0.1 and c:100 and K: 100 is 0.41549492385786796
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 0.1 and c:100 and K: 100 is 0.10700507614213198
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 0.1 and K: 100 and c:100 is 0.26125
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.001 and K: 0.01 is 0.7680710659898478
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.001 and K: 0.01 is 0.1991751269035533
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.01 and c:0.001 is 0.48362309644670054
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.01 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.01 and K: 0.01 is 0.22945431472081218
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.01 and c:0.01 is 0.6147271573604061
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:1 and K: 0.01 is 0.6203172588832487
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:1 and K: 0.01 is 0.1708502538071066
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.01 and c:1 is 0.3955837563451777
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:10 and K: 0.01 is 0.4511802030456853
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:10 and K: 0.01 is 0.11766497461928935
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.01 and c:10 is 0.28442258883248733
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:100 and K: 0.01 is 0.49894670050761425
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:100 and K: 0.01 is 0.12016497461928935
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.01 and c:100 is 0.3095558375634518
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.001 and K: 0.1 is 0.8371065989847716
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.001 and K: 0.1 is 0.17205583756345177
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.1 and c:0.001 is 0.5045812182741116
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.01 and K: 0.1 is 0.7674492385786802
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.01 and K: 0.1 is 0.19081218274111678
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.1 and c:0.01 is 0.4791307106598985
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:1 and K: 0.1 is 0.5642005076142131
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:1 and K: 0.1 is 0.1409010152284264
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.1 and c:1 is 0.3525507614213198
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:10 and K: 0.1 is 0.5979060913705584
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:10 and K: 0.1 is 0.13272842639593907
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.1 and c:10 is 0.36531725888324873
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:100 and K: 0.1 is 0.5654060913705583
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:100 and K: 0.1 is 0.14159898477157362
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.1 and c:100 is 0.35350253807106596
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.001 and K: 1 is 0.7968527918781726
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.001 and K: 1 is 0.18263959390862944
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 1 and c:0.001 is 0.48974619289340104
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.01 and K: 1 is 0.5439340101522844
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.01 and K: 1 is 0.1641751269035533
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 1 and c:0.01 is 0.35405456852791883
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:1 and K: 1 is 0.5891116751269035
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:1 and K: 1 is 0.13148477157360405
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 1 and c:1 is 0.3602982233502538
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:10 and K: 1 is 0.6313451776649746
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:10 and K: 1 is 0.14827411167512689
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 1 and c:10 is 0.38980964467005075
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:100 and K: 1 is 0.5675634517766498
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:100 and K: 1 is 0.16060913705583754
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 1 and c:100 is 0.3640862944162437
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.001 and K: 10 is 0.6091878172588833
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.001 and K: 10 is 0.14406091370558377
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 10 and c:0.001 is 0.37662436548223355
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.01 and K: 10 is 0.7352284263959391
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.01 and K: 10 is 0.18600253807106598
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 10 and c:0.01 is 0.46061548223350257
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:1 and K: 10 is 0.602982233502538
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:1 and K: 10 is 0.16
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 10 and c:1 is 0.381491116751269
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:10 and K: 10 is 0.6147208121827411
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:10 and K: 10 is 0.20109137055837562
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 10 and c:10 is 0.40790609137055833
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:100 and K: 10 is 0.5531598984771574
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:100 and K: 10 is 0.1340228426395939
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 10 and c:100 is 0.34359137055837563
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.001 and K: 100 is 0.6408248730964466
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.001 and K: 100 is 0.16389593908629443
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 100 and c:0.001 is 0.4023604060913705
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:0.01 and K: 100 is 0.778743654822335
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:0.01 and K: 100 is 0.16140862944162437
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 100 and c:0.01 is 0.4700761421319797
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:1 and K: 100 is 0.5797081218274112
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:1 and K: 100 is 0.13789340101522843
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 100 and c:1 is 0.3588007614213198
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:10 and K: 100 is 0.618248730964467
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:10 and K: 100 is 0.1464467005076142
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 100 and c:10 is 0.3823477157360406
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and c:100 and K: 100 is 0.5660913705583757
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and c:100 and K: 100 is 0.1290989847715736
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 100 and c:100 is 0.3475951776649746
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.001 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.001 and K: 0.01 is 0.4649619289340101
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.01 and c:0.001 is 0.7324809644670051
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.01 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.01 and K: 0.01 is 0.462246192893401
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.01 and c:0.01 is 0.7311230964467005
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:1 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:1 and K: 0.01 is 0.4951522842639594
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.01 and c:1 is 0.7475761421319798
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:10 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:10 and K: 0.01 is 0.35968274111675125
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.01 and c:10 is 0.6798413705583757
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:100 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:100 and K: 0.01 is 0.36290609137055835
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.01 and c:100 is 0.6814530456852792
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.001 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.001 and K: 0.1 is 0.5431598984771573
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.1 and c:0.001 is 0.7715799492385786
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.01 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.01 and K: 0.1 is 0.4990736040609137
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.1 and c:0.01 is 0.7495368020304569
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:1 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:1 and K: 0.1 is 0.3591751269035533
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.1 and c:1 is 0.6795875634517766
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:10 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:10 and K: 0.1 is 0.37019035532994926
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.1 and c:10 is 0.6850951776649746
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:100 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:100 and K: 0.1 is 0.3410913705583757
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.1 and c:100 is 0.6705456852791878
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.001 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.001 and K: 1 is 0.3946446700507614
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 1 and c:0.001 is 0.6973223350253808
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.01 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.01 and K: 1 is 0.3714086294416244
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 1 and c:0.01 is 0.6857043147208122
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:1 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:1 and K: 1 is 0.3755203045685279
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 1 and c:1 is 0.687760152284264
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:10 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:10 and K: 1 is 0.3147208121827411
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 1 and c:10 is 0.6573604060913706
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:100 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:100 and K: 1 is 0.46720812182741117
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 1 and c:100 is 0.7336040609137056
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.001 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.001 and K: 10 is 0.39803299492385785
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 10 and c:0.001 is 0.699016497461929
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.01 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.01 and K: 10 is 0.4582233502538071
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 10 and c:0.01 is 0.7291116751269036
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:1 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:1 and K: 10 is 0.324746192893401
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 10 and c:1 is 0.6623730964467005
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:10 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:10 and K: 10 is 0.4568147208121827
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 10 and c:10 is 0.7284073604060913
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:100 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:100 and K: 10 is 0.3920685279187818
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 10 and c:100 is 0.6960342639593908
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.001 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.001 and K: 100 is 0.44972081218274107
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 100 and c:0.001 is 0.7248604060913706
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:0.01 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:0.01 and K: 100 is 0.4300253807106599
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 100 and c:0.01 is 0.71501269035533
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:1 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:1 and K: 100 is 0.39577411167512694
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 100 and c:1 is 0.6978870558375635
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:10 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:10 and K: 100 is 0.40201776649746196
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 100 and c:10 is 0.701008883248731
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and c:100 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and c:100 and K: 100 is 0.48568527918781723
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 100 and c:100 is 0.7428426395939086
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.001 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.001 and K: 0.01 is 0.6439467005076142
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.01 and c:0.001 is 0.8219733502538071
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.01 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.01 and K: 0.01 is 0.42848984771573606
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.01 and c:0.01 is 0.7142449238578681
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:1 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:1 and K: 0.01 is 0.45946700507614213
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.01 and c:1 is 0.7297335025380711
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:10 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:10 and K: 0.01 is 0.5171192893401015
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.01 and c:10 is 0.7585596446700508
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:100 and K: 0.01 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:100 and K: 0.01 is 0.4356345177664975
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.01 and c:100 is 0.7178172588832488
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.001 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.001 and K: 0.1 is 0.6037182741116751
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.1 and c:0.001 is 0.8018591370558376
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.01 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.01 and K: 0.1 is 0.5625126903553299
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.1 and c:0.01 is 0.781256345177665
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:1 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:1 and K: 0.1 is 0.5756218274111675
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.1 and c:1 is 0.7878109137055838
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:10 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:10 and K: 0.1 is 0.5029441624365483
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.1 and c:10 is 0.7514720812182741
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:100 and K: 0.1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:100 and K: 0.1 is 0.6859390862944162
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.1 and c:100 is 0.8429695431472082
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.001 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.001 and K: 1 is 0.5398477157360406
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 1 and c:0.001 is 0.7699238578680203
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.01 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.01 and K: 1 is 0.5536294416243654
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 1 and c:0.01 is 0.7768147208121827
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:1 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:1 and K: 1 is 0.672741116751269
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 1 and c:1 is 0.8363705583756345
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:10 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:10 and K: 1 is 0.5137309644670051
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 1 and c:10 is 0.7568654822335026
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:100 and K: 1 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:100 and K: 1 is 0.668515228426396
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 1 and c:100 is 0.834257614213198
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.001 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.001 and K: 10 is 0.6537944162436549
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 10 and c:0.001 is 0.8268972081218274
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.01 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.01 and K: 10 is 0.6766370558375635
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 10 and c:0.01 is 0.8383185279187817
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:1 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:1 and K: 10 is 0.5954441624365482
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 10 and c:1 is 0.7977220812182741
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:10 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:10 and K: 10 is 0.45578680203045685
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 10 and c:10 is 0.7278934010152285
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:100 and K: 10 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:100 and K: 10 is 0.490253807106599
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 10 and c:100 is 0.7451269035532995
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.001 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.001 and K: 100 is 0.5976015228426396
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 100 and c:0.001 is 0.7988007614213197
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:0.01 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:0.01 and K: 100 is 0.7473857868020305
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 100 and c:0.01 is 0.8736928934010153
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:1 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:1 and K: 100 is 0.6014467005076142
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 100 and c:1 is 0.8007233502538071
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:10 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:10 and K: 100 is 0.38444162436548224
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 100 and c:10 is 0.6922208121827411
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and c:100 and K: 100 is 1.0
+Poly(2) SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and c:100 and K: 100 is 0.44586294416243655
+Poly(2) SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 100 and c:100 is 0.7229314720812183
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.001 and K: 0.01 is 0.4819543147208122
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.001 and K: 0.01 is 0.10266497461928933
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.001 and K: 0.01 is 0.29230964467005077
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.01 and K: 0.01 is 0.445748730964467
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.01 and K: 0.01 is 0.10063451776649746
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.01 and K: 0.01 is 0.2731916243654822
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:1 and K: 0.01 is 0.5066243654822334
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:1 and K: 0.01 is 0.11277918781725887
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:1 and K: 0.01 is 0.3097017766497462
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:10 and K: 0.01 is 0.39351522842639597
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:10 and K: 0.01 is 0.0992258883248731
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:10 and K: 0.01 is 0.24637055837563454
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:100 and K: 0.01 is 0.39187817258883245
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:100 and K: 0.01 is 0.10093908629441625
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:100 and K: 0.01 is 0.24640862944162434
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.001 and K: 0.1 is 0.4840228426395939
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.001 and K: 0.1 is 0.10266497461928933
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.001 and K: 0.1 is 0.2933439086294416
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.01 and K: 0.1 is 0.44945431472081215
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.01 and K: 0.1 is 0.10063451776649746
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.01 and K: 0.1 is 0.27504441624365483
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:1 and K: 0.1 is 0.5061928934010151
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:1 and K: 0.1 is 0.1093020304568528
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:1 and K: 0.1 is 0.307747461928934
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:10 and K: 0.1 is 0.39351522842639597
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:10 and K: 0.1 is 0.0992258883248731
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:10 and K: 0.1 is 0.24637055837563454
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:100 and K: 0.1 is 0.39187817258883245
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:100 and K: 0.1 is 0.10093908629441625
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:100 and K: 0.1 is 0.24640862944162434
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.001 and K: 1 is 0.48376903553299494
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.001 and K: 1 is 0.10266497461928933
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.001 and K: 1 is 0.2932170050761421
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.01 and K: 1 is 0.44945431472081215
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.01 and K: 1 is 0.10164974619289341
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.01 and K: 1 is 0.2755520304568528
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:1 and K: 1 is 0.49022842639593917
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:1 and K: 1 is 0.10871827411167512
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:1 and K: 1 is 0.29947335025380717
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:10 and K: 1 is 0.39351522842639597
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:10 and K: 1 is 0.0992258883248731
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:10 and K: 1 is 0.24637055837563454
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:100 and K: 1 is 0.39187817258883245
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:100 and K: 1 is 0.10093908629441625
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:100 and K: 1 is 0.24640862944162434
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.001 and K: 10 is 0.456522842639594
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.001 and K: 10 is 0.09758883248730965
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.001 and K: 10 is 0.2770558375634518
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.01 and K: 10 is 0.44790609137055837
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.01 and K: 10 is 0.09606598984771575
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.01 and K: 10 is 0.27198604060913706
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:1 and K: 10 is 0.45592639593908635
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:1 and K: 10 is 0.10559644670050762
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:1 and K: 10 is 0.280761421319797
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:10 and K: 10 is 0.39394670050761427
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:10 and K: 10 is 0.09989847715736042
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:10 and K: 10 is 0.24692258883248736
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:100 and K: 10 is 0.39187817258883245
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:100 and K: 10 is 0.10093908629441625
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:100 and K: 10 is 0.24640862944162434
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.001 and K: 100 is 0.44945431472081215
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.001 and K: 100 is 0.103997461928934
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.001 and K: 100 is 0.2767258883248731
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:0.01 and K: 100 is 0.43472081218274117
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:0.01 and K: 100 is 0.1024746192893401
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:0.01 and K: 100 is 0.26859771573604063
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:1 and K: 100 is 0.40187817258883246
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:1 and K: 100 is 0.1018020304568528
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:1 and K: 100 is 0.25184010152284264
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:10 and K: 100 is 0.39144670050761426
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:10 and K: 100 is 0.10024111675126904
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:10 and K: 100 is 0.24584390862944167
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and c:100 and K: 100 is 0.39187817258883245
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and c:100 and K: 100 is 0.10093908629441625
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and c:100 and K: 100 is 0.24640862944162434
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:0.001 and K: 0.01 is 0.45083756345177667
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:0.001 and K: 0.01 is 0.10211928934010152
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:0.001 and K: 0.01 is 0.2764784263959391
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:0.01 and K: 0.01 is 0.46678934010152284
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:0.01 and K: 0.01 is 0.10633248730964467
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:0.01 and K: 0.01 is 0.2865609137055838
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:1 and K: 0.01 is 0.4275634517766498
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:1 and K: 0.01 is 0.10770304568527918
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:1 and K: 0.01 is 0.2676332487309645
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:10 and K: 0.01 is 0.39437817258883245
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:10 and K: 0.01 is 0.09992385786802031
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:10 and K: 0.01 is 0.2471510152284264
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:100 and K: 0.01 is 0.3898096446700508
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:100 and K: 0.01 is 0.10191624365482232
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:100 and K: 0.01 is 0.24586294416243656
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:0.001 and K: 0.1 is 0.45152284263959397
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:0.001 and K: 0.1 is 0.09704314720812182
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:0.001 and K: 0.1 is 0.2742829949238579
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:0.01 and K: 0.1 is 0.42178934010152286
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:0.01 and K: 0.1 is 0.1001269035532995
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:0.01 and K: 0.1 is 0.2609581218274112
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:1 and K: 0.1 is 0.39972081218274114
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:1 and K: 0.1 is 0.10142131979695432
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:1 and K: 0.1 is 0.25057106598984774
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:10 and K: 0.1 is 0.39437817258883245
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:10 and K: 0.1 is 0.09941624365482234
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:10 and K: 0.1 is 0.2468972081218274
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:100 and K: 0.1 is 0.39187817258883245
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:100 and K: 0.1 is 0.10140862944162438
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:100 and K: 0.1 is 0.24664340101522841
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:0.001 and K: 1 is 0.4309263959390863
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and c:0.001 and K: 1 is 0.1009517766497462
+Poly(2) SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and c:0.001 and K: 1 is 0.26593908629441626
+Poly(2) SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and c:0.01 and K: 1 is 0.392994923857868
