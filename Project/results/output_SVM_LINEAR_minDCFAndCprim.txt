@@ -1,0 +1,225 @@
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and K: 0.01 is 0.4851776649746193
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.01 is 0.7425888324873097
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and K: 0.1 is 0.841992385786802
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 0.1 is 0.920996192893401
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and K: 1 is 0.9256598984771574
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 1 is 0.9628299492385787
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and K: 10 is 0.8533883248730965
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 10 is 0.9266941624365482
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 1 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 1 and K: 100 is 0.85997461928934
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 1 and K: 100 is 0.92998730964467
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and K: 0.01 is 0.6400507614213198
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.01 is 0.8200253807106599
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and K: 0.1 is 0.9307741116751269
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 0.1 is 0.9653870558375635
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and K: 1 is 0.9251649746192894
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 1 is 0.9625824873096447
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and K: 10 is 0.8645939086294416
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 10 is 0.9322969543147208
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 10 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 10 and K: 100 is 0.956763959390863
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 10 and K: 100 is 0.9783819796954315
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and K: 0.01 is 0.8314340101522842
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.01 is 0.9157170050761421
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and K: 0.1 is 0.8447588832487309
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 0.1 is 0.9223794416243655
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and K: 1 is 0.8676522842639594
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 1 is 0.9338261421319797
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and K: 10 is 0.8620050761421321
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 10 is 0.931002538071066
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.1 and C: 100 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF NO PCA and pi: 0.5 and C: 100 and K: 100 is 0.9389340101522843
+Linear SVM Not Balanced Not Normalized, Cprim NO PCA and C: 100 and K: 100 is 0.9694670050761421
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and K: 0.01 is 0.4854060913705584
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and K: 0.01 is 0.7427030456852792
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and K: 0.1 is 0.48591370558375635
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and K: 0.1 is 0.7429568527918782
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and K: 1 is 0.48092639593908626
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and K: 1 is 0.7404631979695431
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and K: 10 is 0.9383883248730964
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and K: 10 is 0.9691941624365482
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.001 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.001 and K: 100 is 0.855482233502538
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.001 and K: 100 is 0.927741116751269
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and K: 0.01 is 0.48536802030456855
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and K: 0.01 is 0.7426840101522842
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and K: 0.1 is 0.4863832487309645
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and K: 0.1 is 0.7431916243654823
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and K: 1 is 0.8356598984771574
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and K: 1 is 0.9178299492385786
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and K: 10 is 0.8637944162436548
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and K: 10 is 0.9318972081218274
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.01 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.01 and K: 100 is 0.927728426395939
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.01 and K: 100 is 0.9638642131979696
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.1 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.1 and K: 0.01 is 0.4831472081218274
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.1 and K: 0.01 is 0.7415736040609137
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.1 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.1 and K: 0.1 is 0.48619289340101524
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.1 and K: 0.1 is 0.7430964467005077
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.1 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.1 and K: 1 is 0.8299238578680203
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.1 and K: 1 is 0.9149619289340101
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.1 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.1 and K: 10 is 0.8099619289340101
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.1 and K: 10 is 0.904980964467005
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 0.1 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 0.1 and K: 100 is 0.9473730964467004
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 0.1 and K: 100 is 0.9736865482233502
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 1 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 1 and K: 0.01 is 0.4835786802030457
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 1 and K: 0.01 is 0.7417893401015229
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 1 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 1 and K: 0.1 is 0.9049999999999999
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 1 and K: 0.1 is 0.9524999999999999
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 1 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 1 and K: 1 is 0.8480456852791879
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 1 and K: 1 is 0.924022842639594
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 1 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 1 and K: 10 is 0.9441497461928934
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 1 and K: 10 is 0.9720748730964467
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 1 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 1 and K: 100 is 0.8834263959390863
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 1 and K: 100 is 0.9417131979695432
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 10 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 10 and K: 0.01 is 0.7111167512690356
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 10 and K: 0.01 is 0.8555583756345178
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 10 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 10 and K: 0.1 is 0.8750634517766498
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 10 and K: 0.1 is 0.9375317258883249
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 10 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 10 and K: 1 is 0.7402157360406092
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 10 and K: 1 is 0.8701078680203046
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 10 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 10 and K: 10 is 0.7728172588832487
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 10 and K: 10 is 0.8864086294416244
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 10 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 10 and K: 100 is 0.8055964467005076
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 10 and K: 100 is 0.9027982233502538
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 100 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 100 and K: 0.01 is 0.8581091370558376
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 100 and K: 0.01 is 0.9290545685279188
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 100 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 100 and K: 0.1 is 0.8556852791878172
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 100 and K: 0.1 is 0.9278426395939086
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 100 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 100 and K: 1 is 0.8624365482233503
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 100 and K: 1 is 0.9312182741116751
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 100 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 100 and K: 10 is 0.8207868020304568
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 100 and K: 10 is 0.9103934010152284
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 5 and C: 100 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 5 and C: 100 and K: 100 is 0.9594416243654823
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 5 and C: 100 and K: 100 is 0.9797208121827412
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.001 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.001 and K: 0.01 is 0.5604441624365483
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.001 and K: 0.01 is 0.7802220812182741
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.001 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.001 and K: 0.1 is 0.5604441624365483
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.001 and K: 0.1 is 0.7802220812182741
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.001 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.001 and K: 1 is 0.4857233502538071
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.001 and K: 1 is 0.7428616751269035
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.001 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.001 and K: 10 is 0.8624492385786803
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.001 and K: 10 is 0.9312246192893401
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.001 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.001 and K: 100 is 0.9152284263959392
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.001 and K: 100 is 0.9576142131979696
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.01 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.01 and K: 0.01 is 0.48885786802030456
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.01 and K: 0.01 is 0.7444289340101523
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.01 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.01 and K: 0.1 is 0.4874492385786802
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.01 and K: 0.1 is 0.7437246192893401
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.01 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.01 and K: 1 is 0.7649746192893401
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.01 and K: 1 is 0.88248730964467
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.01 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.01 and K: 10 is 0.9562690355329949
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.01 and K: 10 is 0.9781345177664975
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.01 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.01 and K: 100 is 0.8376776649746193
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.01 and K: 100 is 0.9188388324873096
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.1 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.1 and K: 0.01 is 0.4883502538071066
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.1 and K: 0.01 is 0.7441751269035533
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.1 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.1 and K: 0.1 is 0.48619289340101524
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.1 and K: 0.1 is 0.7430964467005077
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.1 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.1 and K: 1 is 0.8678045685279188
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.1 and K: 1 is 0.9339022842639594
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.1 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.1 and K: 10 is 0.8351776649746192
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.1 and K: 10 is 0.9175888324873096
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 0.1 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 0.1 and K: 100 is 0.9052411167512691
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 0.1 and K: 100 is 0.9526205583756345
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 1 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 1 and K: 0.01 is 0.4881472081218274
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 1 and K: 0.01 is 0.7440736040609137
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 1 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 1 and K: 0.1 is 0.8113705583756345
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 1 and K: 0.1 is 0.9056852791878173
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 1 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 1 and K: 1 is 0.7872081218274112
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 1 and K: 1 is 0.8936040609137056
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 1 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 1 and K: 10 is 0.80751269035533
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 1 and K: 10 is 0.903756345177665
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 1 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 1 and K: 100 is 0.882982233502538
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 1 and K: 100 is 0.941491116751269
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 10 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 10 and K: 0.01 is 0.575
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 10 and K: 0.01 is 0.7875
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 10 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 10 and K: 0.1 is 0.7799619289340102
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 10 and K: 0.1 is 0.8899809644670051
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 10 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 10 and K: 1 is 0.9045685279187816
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 10 and K: 1 is 0.9522842639593908
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 10 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 10 and K: 10 is 0.8061167512690355
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 10 and K: 10 is 0.9030583756345177
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 10 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 10 and K: 100 is 0.7704441624365482
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 10 and K: 100 is 0.8852220812182741
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 100 and K: 0.01 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 100 and K: 0.01 is 0.8875761421319797
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 100 and K: 0.01 is 0.9437880710659898
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 100 and K: 0.1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 100 and K: 0.1 is 0.8870177664974619
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 100 and K: 0.1 is 0.943508883248731
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 100 and K: 1 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 100 and K: 1 is 0.8668274111675127
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 100 and K: 1 is 0.9334137055837564
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 100 and K: 10 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 100 and K: 10 is 0.8199619289340101
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 100 and K: 10 is 0.909980964467005
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.1 and PCA: 4 and C: 100 and K: 100 is 1.0
+Linear SVM Not Balanced Not Normalized, minDCF with pi: 0.5 and PCA: 4 and C: 100 and K: 100 is 0.9114086294416244
+Linear SVM Not Balanced Not Normalized, Cprim with PCA: 4 and C: 100 and K: 100 is 0.9557043147208122
