@@ -1,5 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import data_utils as du
+import validation as val
+import gaussian_classifiers as gc
+from sklearn.utils import shuffle
+import dimensionality_reduction as dr
+import logistic_regression_classifiers as lr
+import math_utils as mu
 
 class confusion_matrix:
     true_labels = []
@@ -85,13 +92,6 @@ def FNR_FPR_binary_ind(confusion_matrix):
     FNR = cm[0][1]/(cm[0][1]+cm[1][1])
     FPR = cm[1][0]/(cm[0][0]+cm[1][0])
     return (FNR, FPR)
-
-def DCF_binary_norm_ind(cm, pi,C):
-    FNR = cm[0][1]/(cm[0][1]+cm[1][1])
-    FPR = cm[1][0]/(cm[0][0]+cm[1][0])
-    Cfn = C[0][1]
-    Cfp = C[1][0]
-    return (pi*Cfn*FNR+(1-pi)*Cfp*FPR)/np.min([pi*Cfn, (1-pi)*Cfp])
     
 def min_DCF(scores, pi, Cfn, Cfp, true_labels, predicted_labels):
     sorted_scores = sorted(scores)
@@ -100,21 +100,10 @@ def min_DCF(scores, pi, Cfn, Cfp, true_labels, predicted_labels):
     for t in sorted_scores:
         predicted_labels = np.where(scores>t,1,0)
         dcf = DCF(pi, Cfn, Cfp, true_labels, predicted_labels)
-        print(dcf)
         if dcf < min_dcf:
             min_dcf = dcf
             best_threshold = t
     return min_dcf
-
-"""def DCF(scores, true_labels, pi, C):
-    Cfn = C[0][1]
-    Cfp = C[1][0]
-    t = - np.log((pi*Cfn)/(1-pi)*Cfp)
-    predicted_labels = np.where(scores>t,1,0)
-    cnf_mat = confusion_matrix(true_labels, predicted_labels, False)
-    cm = cnf_mat.get_confusion_matrix()
-    FNR, FPR = FNR_FPR_binary_ind(cm)
-    return (pi*Cfn*FNR+(1-pi)*Cfp*FPR)/np.min([pi*Cfn, (1-pi)*Cfp]) """
 
 def get_ROC(scores, true_labels, name):
     sorted_scores = sorted(scores)
@@ -160,20 +149,43 @@ def binary_threshold(pi, C):
     t = - np.log((pi*Cfn)/(1-pi)*Cfp)
     return t
 
-if __name__ == "__main__":
-    llr=np.load("./Data/commedia_llr_infpar.npy")
-    Labels=np.load("./Data/commedia_labels_infpar.npy")
-    pi = 0.5
-    Cfn = 1
-    Cfp = 1
-    t = - np.log((pi*Cfn)/(1-pi)*Cfp)
-    predicted_labels = np.where(llr > t, 1, 0)
+def k_fold_bayes_plot(learner,x,labels,k, workingPoint,name):
+    pi = workingPoint[0]
+    Cfn = workingPoint[1]
+    Cfp = workingPoint[2]
+    X, Y = shuffle(x.T, labels, random_state=0)
+    X_splitted = np.array_split(X, k)
+    y_splitted = np.array_split(Y, k)
+    concat_scores = []
+    concat_predicted = []
+    for i in range(k): #for each fold
+        print(f"FOLD {i}")
+        X_folds = X_splitted.copy()
+        y_folds = y_splitted.copy()
+        X_val = X_folds.pop(i).T
+        y_val = y_folds.pop(i)
+        X_train = np.vstack(X_folds).T
+        y_train = np.hstack(y_folds)
+        learner.train(X_train, y_train)
+        concat_predicted.append(learner.transform(X_val))
+        scores = learner.get_scores()
+        concat_scores.append(scores)
+    gotscores = np.hstack(concat_scores)
+    gotpredicted = np.hstack(concat_predicted)
+    actualDCF = DCF(pi, Cfn, Cfp, Y, gotpredicted)
+    minDCF = min_DCF(gotscores, pi, Cfn, Cfp, Y, gotpredicted)
+    print(actualDCF, minDCF)
+    get_error_plot(gotscores, Cfn, Cfp, Y, gotpredicted, name)
+    return actualDCF, minDCF, gotscores
     
-    """t = - np.log((pi*Cfn)/(1-pi)*Cfp)
-    cm = confusion_matrix(Labels, predicted_labels, False)
-    print(cm.get_confusion_matrix())"""
-        
-    """print(min_DCF(llr, pi, Cfn, Cfp, Labels, predicted_labels))"""
-    C = np.array([[0,1], [1,0]])
-    get_ROC(llr, Labels, "test")
-    get_error_plot(llr, Cfn, Cfp, Labels, predicted_labels, "test")
+if __name__ == "__main__":
+
+    L, D = du.load("..\PROJECTS\Language_detection\Train.txt")
+    DPCA = dr.PCA(D, 5)
+    gcl = gc.naive_multivariate_cl([1-0.1,0.1])
+    actualDCF, minDCF, scores = k_fold_bayes_plot(gcl, DPCA, L, 5, (0.1, 1, 1), "NaivePCA5")
+    print(f"Not Calibrated, aDCF: {actualDCF}, minDCF: {minDCF}")
+    print("scores: ",scores)
+    lrc = lr.logReg(0,0.1,"balanced")
+    actualDCF, minDCF, _ = k_fold_bayes_plot(lrc, mu.FromColumnToRow(scores), L, 5, (0.1, 1, 1), "NaivePCA5Calibrated")  
+    print(f"Calibrated, aDCF: {actualDCF}, minDCF: {minDCF}")  
