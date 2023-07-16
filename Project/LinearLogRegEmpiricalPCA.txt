@@ -1,0 +1,195 @@
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.01 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.014873521072935119 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.022122162910704492 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.03290344562312668 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.04893900918477494 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.07278953843983153 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.10826367338740546 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.16102620275609392 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.2395026619987486 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.35622478902624444 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.529831690628371 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 0.7880462815669912 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 1.1721022975334805 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 1.743328822199989 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 2.592943797404667 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 3.856620421163472 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 5.736152510448681 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 8.531678524172815 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 12.689610031679234 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 18.873918221350976 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 28.072162039411786 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 41.753189365604044 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 62.10169418915616 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 92.36708571873865 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 137.3823795883264 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 204.33597178569437 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 303.91953823132013 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 452.035365636025 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 672.3357536499335 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.1 and lambda 1000.0 is 1.0
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.01 is 0.5236948249619482
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.014873521072935119 is 0.5236948249619482
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.022122162910704492 is 0.523187468290208
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.03290344562312668 is 0.5226801116184677
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.04893900918477494 is 0.5221727549467275
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.07278953843983153 is 0.5216653982749873
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.10826367338740546 is 0.5201433282597666
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.16102620275609392 is 0.5199594114662608
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.2395026619987486 is 0.5173858447488584
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.35622478902624444 is 0.5153564180618975
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.529831690628371 is 0.5123490613901572
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 0.7880462815669912 is 0.511150431253171
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 1.1721022975334805 is 0.5093049213597158
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 1.743328822199989 is 0.5035109081684424
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 2.592943797404667 is 0.5015182648401826
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 3.856620421163472 is 0.49648148148148147
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 5.736152510448681 is 0.49379756468797564
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 8.531678524172815 is 0.4871283612379502
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 12.689610031679234 is 0.48752536783358696
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 18.873918221350976 is 0.4865474378488077
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 28.072162039411786 is 0.4860768645357686
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 41.753189365604044 is 0.4860768645357686
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 62.10169418915616 is 0.4872387113140538
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 92.36708571873865 is 0.4857166412988331
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 137.3823795883264 is 0.48673135464231354
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 204.33597178569437 is 0.48626078132927447
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 303.91953823132013 is 0.48673135464231354
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 452.035365636025 is 0.48626078132927447
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 672.3357536499335 is 0.48575342465753424
+Linear LogReg Empirical Not Normalized, minDCF with piTilde 0.5 and lambda 1000.0 is 0.48626078132927447
+Cprim list [0.76184741 0.76184741 0.76159373 0.76134006 0.76108638 0.7608327
+ 0.76007166 0.75997971 0.75869292 0.75767821 0.75617453 0.75557522
+ 0.75465246 0.75175545 0.75075913 0.74824074 0.74689878 0.74356418
+ 0.74376268 0.74327372 0.74303843 0.74303843 0.74361936 0.74285832
+ 0.74336568 0.74313039 0.74336568 0.74313039 0.74287671 0.74313039]
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.01 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.014873521072935119 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.022122162910704492 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.03290344562312668 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.04893900918477494 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.07278953843983153 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.10826367338740546 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.16102620275609392 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.2395026619987486 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.35622478902624444 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.529831690628371 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 0.7880462815669912 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 1.1721022975334805 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 1.743328822199989 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 2.592943797404667 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 3.856620421163472 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 5.736152510448681 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 8.531678524172815 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 12.689610031679234 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 18.873918221350976 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 28.072162039411786 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 41.753189365604044 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 62.10169418915616 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 92.36708571873865 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 137.3823795883264 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 204.33597178569437 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 303.91953823132013 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 452.035365636025 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 672.3357536499335 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.1 and lambda 1000.0 is 1.0
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.01 is 0.5171651445966514
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.014873521072935119 is 0.5171651445966514
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.022122162910704492 is 0.5171651445966514
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.03290344562312668 is 0.5171651445966514
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.04893900918477494 is 0.5171651445966514
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.07278953843983153 is 0.5171651445966514
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.10826367338740546 is 0.5176725012683917
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.16102620275609392 is 0.5171283612379503
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.2395026619987486 is 0.5165106544901066
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.35622478902624444 is 0.5134665144596651
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.529831690628371 is 0.5119444444444444
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 0.7880462815669912 is 0.5094444444444444
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 1.1721022975334805 is 0.5073782343987823
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 1.743328822199989 is 0.5061212582445459
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 2.592943797404667 is 0.5003932014205986
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 3.856620421163472 is 0.4973490613901573
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 5.736152510448681 is 0.4911872146118721
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 8.531678524172815 is 0.4891945712836124
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 12.689610031679234 is 0.4881798579401319
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 18.873918221350976 is 0.4881062912227295
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 28.072162039411786 is 0.4881062912227295
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 41.753189365604044 is 0.48727549467275494
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 62.10169418915616 is 0.485246067985794
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 92.36708571873865 is 0.48473871131405377
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 137.3823795883264 is 0.485246067985794
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 204.33597178569437 is 0.48423135464231354
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 303.91953823132013 is 0.48423135464231354
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 452.035365636025 is 0.48423135464231354
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 672.3357536499335 is 0.48423135464231354
+Linear LogReg Empirical Not Normalized PCA 5, minDCF with piTilde 0.5 and lambda 1000.0 is 0.48423135464231354
+Cprim list [0.75858257 0.75858257 0.75858257 0.75858257 0.75858257 0.75858257
+ 0.75883625 0.75856418 0.75825533 0.75673326 0.75597222 0.75472222
+ 0.75368912 0.75306063 0.7501966  0.74867453 0.74559361 0.74459729
+ 0.74408993 0.74405315 0.74405315 0.74363775 0.74262303 0.74236936
+ 0.74262303 0.74211568 0.74211568 0.74211568 0.74211568 0.74211568]
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.01 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.014873521072935119 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.022122162910704492 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.03290344562312668 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.04893900918477494 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.07278953843983153 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.10826367338740546 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.16102620275609392 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.2395026619987486 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.35622478902624444 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.529831690628371 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 0.7880462815669912 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 1.1721022975334805 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 1.743328822199989 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 2.592943797404667 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 3.856620421163472 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 5.736152510448681 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 8.531678524172815 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 12.689610031679234 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 18.873918221350976 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 28.072162039411786 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 41.753189365604044 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 62.10169418915616 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 92.36708571873865 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 137.3823795883264 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 204.33597178569437 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 303.91953823132013 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 452.035365636025 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 672.3357536499335 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.1 and lambda 1000.0 is 1.0
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.01 is 0.48923135464231354
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.014873521072935119 is 0.48923135464231354
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.022122162910704492 is 0.48923135464231354
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.03290344562312668 is 0.48923135464231354
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.04893900918477494 is 0.4892681380010147
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.07278953843983153 is 0.4892681380010147
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.10826367338740546 is 0.4892681380010147
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.16102620275609392 is 0.48915778792491116
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.2395026619987486 is 0.488650431253171
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.35622478902624444 is 0.4881430745814307
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.529831690628371 is 0.4891945712836124
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 0.7880462815669912 is 0.48923135464231354
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 1.1721022975334805 is 0.48759893455098935
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 1.743328822199989 is 0.4866577879249112
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 2.592943797404667 is 0.486150431253171
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 3.856620421163472 is 0.4845915778792491
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 5.736152510448681 is 0.4845915778792491
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 8.531678524172815 is 0.48430492135971587
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 12.689610031679234 is 0.48342973110096393
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 18.873918221350976 is 0.48531963470319633
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 28.072162039411786 is 0.48423135464231354
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 41.753189365604044 is 0.48321664129883307
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 62.10169418915616 is 0.4837239979705733
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 92.36708571873865 is 0.485246067985794
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 137.3823795883264 is 0.485246067985794
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 204.33597178569437 is 0.4857166412988331
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 303.91953823132013 is 0.48520928462709284
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 452.035365636025 is 0.48520928462709284
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 672.3357536499335 is 0.48520928462709284
+Linear LogReg Empirical Not Normalized PCA 4, minDCF with piTilde 0.5 and lambda 1000.0 is 0.48520928462709284
+Cprim list [0.74461568 0.74461568 0.74461568 0.74461568 0.74463407 0.74463407
+ 0.74463407 0.74457889 0.74432522 0.74407154 0.74459729 0.74461568
+ 0.74379947 0.74332889 0.74307522 0.74229579 0.74229579 0.74215246
+ 0.74171487 0.74265982 0.74211568 0.74160832 0.741862   0.74262303
+ 0.74262303 0.74285832 0.74260464 0.74260464 0.74260464 0.74260464]
