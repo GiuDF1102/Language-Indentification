@@ -173,17 +173,17 @@ class SVM:
 
         if self.__kernel == 'linear':
             self.scores = np.dot(self.__w.T, self.__expandMatrix(self.__K, dataTest))
-            predicted = np.where(self.scores > 0, 1, -1)
+            predicted = np.where(self.scores > 0, 1, 0)
             return predicted
         
         elif self.__kernel == 'Polinomial':
             self.scores= np.sum(np.dot(self.__az,self.__polinomialKernel(self.__data,dataTest,self.__c,self.__d,self.__K, np.sqrt(self.__K))), axis=0)
-            predicted = np.where(self.scores > 0, 1, -1)
+            predicted = np.where(self.scores > 0, 1, 0)
             return predicted
 
         elif self.__kernel == 'RBF':
             self.scores= np.sum(np.dot(self.__az,self.__RBFKernel(self.__data,dataTest,self.__gamma, np.sqrt(self.__K))), axis=0)
-            predicted = np.where(self.scores > 0, 1, -1)
+            predicted = np.where(self.scores > 0, 1, 0)
             return predicted
 
     def get_scores(self):

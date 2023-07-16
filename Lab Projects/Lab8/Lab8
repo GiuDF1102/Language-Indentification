@@ -168,6 +168,17 @@ if __name__ == "__main__":
     Cfp = 1
     t = - np.log((pi*Cfn)/(1-pi)*Cfp)
     predicted_labels = np.where(llr > t, 1, 0)
+
+    import logistic_regression_classifiers as lrc
+    import math_utils as mu
+    llr = mu.FromColumnToRow(llr)
+    lrcobj = lrc.logReg(0,0.5,"balanced")
+    lrcobj.train(llr,Labels)
+    alpha, beta = lrcobj.get_params()
+    
+    calibScores = alpha*llr+beta-np.log(0.5/(1-0.5))
+    calibScores = calibScores[0]
+    calibLabels = np.where(calibScores>0,1,0)
     
     """t = - np.log((pi*Cfn)/(1-pi)*Cfp)
     cm = confusion_matrix(Labels, predicted_labels, False)
@@ -175,5 +186,5 @@ if __name__ == "__main__":
         
     """print(min_DCF(llr, pi, Cfn, Cfp, Labels, predicted_labels))"""
     C = np.array([[0,1], [1,0]])
-    get_ROC(llr, Labels, "test")
-    get_error_plot(llr, Cfn, Cfp, Labels, predicted_labels, "test")
+    #get_ROC(llr, Labels, "test")
+    get_error_plot(calibScores, Cfn, Cfp, Labels, calibLabels, "testcalib")
