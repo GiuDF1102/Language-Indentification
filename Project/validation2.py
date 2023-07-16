@@ -8,6 +8,7 @@ import logistic_regression_classifiers as lrc
 import math_utils as mu
 import SVM_classifiers as svm
 import data_visualization as dv
+import GMM as gmm
 
 class confusion_matrix:
     true_labels = []
@@ -153,7 +154,6 @@ def binary_threshold(pi, C):
 def act_DCF(scores, pi, Cfn, Cfp, true_labels,t):
     
     if t is None:
-        print("denom: ",(1-pi)*Cfp)
         t = - np.log((pi*Cfn)/(1-pi)*Cfp)
     predicted_labels = np.where(scores>t,1,0)
     return DCF(pi, Cfn, Cfp, true_labels, predicted_labels)
@@ -186,8 +186,8 @@ def k_fold_bayes_plot(learner,x,labels,k, workingPoint,name):
     actualDCF = act_DCF(gotscores, pi, Cfn, Cfp, Y, None)
     minDCF = min_DCF(gotscores, pi, Cfn, Cfp, Y, gotpredicted)
     print(actualDCF, minDCF)
-    get_error_plot(gotscores, Cfn, Cfp, Y, gotpredicted, name)
-    return actualDCF, minDCF, gotscores
+    #get_error_plot(gotscores, Cfn, Cfp, Y, gotpredicted, name)
+    return actualDCF, minDCF, gotscores, gotpredicted
 
 def k_fold(learner,x,labels,k, workingPoint):
     pi = workingPoint[0]
@@ -214,7 +214,7 @@ def k_fold(learner,x,labels,k, workingPoint):
     gotpredicted = np.where(gotscores>0,1,0)
     actualDCF = DCF(pi, Cfn, Cfp, Y, gotpredicted)
     minDCF = min_DCF(gotscores, pi, Cfn, Cfp, Y, gotpredicted)
-    return actualDCF, minDCF
+    return actualDCF, minDCF, gotscores
 
 def k_fold_bayes_plot_calibrated(learner,x,labels,k, workingPoint,name):
     pi = workingPoint[0]
@@ -250,18 +250,56 @@ def k_fold_bayes_plot_calibrated(learner,x,labels,k, workingPoint,name):
     actualDCF_ = act_DCF(calibScores,pi, Cfn, Cfp, Y, None)
     minDCF_ = min_DCF(calibScores, pi, Cfn, Cfp, Y, calibLabels)
     print(actualDCF_, minDCF_)
-    get_error_plot(calibScores, Cfn, Cfp, Y, calibLabels, name)
+    #get_error_plot(calibScores, Cfn, Cfp, Y, calibLabels, name)
     return actualDCF_, minDCF_, gotscores
 
 
 if __name__ == "__main__":
 
-    L, D = du.load("..\PROJECTS\Language_detection\Train.txt")
-    svmc = lrc.logReg(10, 0.1, "balanced")
-    DPCA = du.features_expansion(D)
-    actualDCF, minDCF, scores = k_fold_bayes_plot(svmc, DPCA, L, 5, (0.1, 1, 1), "PROVAQLOGREG")
-    print(f"Not Calibrated, aDCF: {actualDCF}, minDCF: {minDCF}")
-    print("scores: ",scores)
+    # L, D = du.load("..\PROJECTS\Language_detection\Train.txt")
+    # svmc = gmm.GMM(2,32,"MVG", "tied")
+    # DPCA = D
+    # actualDCF, minDCF, scores = k_fold_bayes_plot(svmc, DPCA, L, 5, (0.1, 1, 1), "PROVAGMM")
+    # print(f"Not Calibrated, aDCF: {actualDCF}, minDCF: {minDCF}")
+    # print("scores: ",scores)
 
-    actualDCF1, minDCF1, _ = k_fold_bayes_plot_calibrated(svmc, DPCA, L, 5, (0.1, 1, 1), "PROVAQLOGREGCALIBRATO")  
-    print(f"Calibrated, aDCF: {actualDCF1}, minDCF: {minDCF1}")  
+    # actualDCF1, minDCF1, _ = k_fold_bayes_plot_calibrated(svmc, DPCA, L, 5, (0.1, 1, 1), "PROVAGMMCALIBRATED")  
+    # print(f"Calibrated, aDCF: {actualDCF1}, minDCF: {minDCF1}")  
+
+    L, D = du.load("..\PROJECTS\Language_detection\Train.txt")
+    svmc = svm.SVM("RBF", balanced=True, K=0.1, C=0.01, gamma=0.01, piT=0.2)
+    DPCA5 = dr.PCA(D, 5)
+    actualDCF, minDCF, scoresSVM, lab = k_fold_bayes_plot(svmc, DPCA5, L, 5, (0.1, 1, 1), "PROVASVM")
+    L = shuffle(L, random_state=0)
+    actualDCF = act_DCF(scoresSVM,0.1,1,1,L,None)
+    minDCF = min_DCF(scoresSVM, 0.1, 1, 1, L, lab)
+    print(f"SVM aDCF: {actualDCF}, minDCF: {minDCF}")
+
+    gmmc = gmm.GMM(2,32,"MVG", "tied")
+    DPCA5 = dr.PCA(D, 5)
+    actualDCF, minDCF, scores = k_fold_bayes_plot(gmmc, D, L, 5, (0.1, 1, 1), "PROVASVM")
+    print(f"GMM aDCF: {actualDCF}, minDCF: {minDCF}")
+
+    qlogreg = lrc.logReg(10,0.17,"balanced")
+    expanded = du.features_expansion(D)
+    actualDCF, minDCF, scores = k_fold_bayes_plot(qlogreg, expanded, L, 5, (0.1, 1, 1), "PROVASVM")
+    print(f"QLOG aDCF: {actualDCF}, minDCF: {minDCF}")
+
+    #CAL
+
+
+
+    svmc = svm.SVM("RBF", balanced=True, K=0.1, C=0.01, gamma=0.01, piT=0.2)
+    DPCA5 = dr.PCA(D, 5)
+    actualDCF, minDCF, scores = k_fold_bayes_plot_calibrated(svmc, DPCA5, L, 5, (0.1, 1, 1), "PROVASVM")
+    print(f"SVM CAL aDCF: {actualDCF}, minDCF: {minDCF}")
+
+    gmmc = gmm.GMM(2,32,"MVG", "tied")
+    DPCA5 = dr.PCA(D, 5)
+    actualDCF, minDCF, scores = k_fold_bayes_plot_calibrated(gmmc, D, L, 5, (0.1, 1, 1), "PROVASVM")
+    print(f"GMM CAL aDCF: {actualDCF}, minDCF: {minDCF}")
+
+    qlogreg = lrc.logReg(10,0.17,"balanced")
+    expanded = du.features_expansion(D)
+    actualDCF, minDCF, scores = k_fold_bayes_plot_calibrated(qlogreg, expanded, L, 5, (0.1, 1, 1), "PROVASVM")
+    print(f"QLOG CAL aDCF: {actualDCF}, minDCF: {minDCF}")
