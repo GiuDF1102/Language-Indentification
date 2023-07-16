@@ -44,20 +44,30 @@ class logReg():
         wi = np.where(self.zi == 1, self.__pi/self.nt, (1-self.__pi)/self.nf)
         loss = np.dot(wi,np.logaddexp(0, exp).T).sum(axis=0)
         return loss
-    
+
+    def logreg_obj_wrap(self,dtr, ltr, lambda_r, prior=-1):
+        def logreg_obj(v):
+            w, b = mu.FromRowToColumn(v[0:-1]), v[-1]
+            return self.J(w, b, dtr, ltr, lambda_r, prior)
+        return logreg_obj
+
+    def J(self,w, b, DTR, LTR, lambda_r, prior):
+        z = (LTR*2) - 1
+        norm_term = 0.5 * lambda_r * (np.linalg.norm(w) ** 2)
+        if prior >= 0:
+            c1 = ((prior) / (LTR[LTR == 1].shape[0])) * np.logaddexp(0, -1*z[z==1]*(np.dot(w.T, DTR[:, LTR == 1])+b)).sum()
+            c0 = ((1-prior) / (LTR[LTR == 0].shape[0])) * np.logaddexp(0, -1*z[z==-1]*(np.dot(w.T, DTR[:, LTR == 0])+b)).sum()
+            return norm_term + c1 + c0
+        else:
+            c = (LTR.shape[0] ** -1) * np.logaddexp(0, -1*z*(np.dot(w.T, DTR)+b)).sum()
+            return norm_term + c
+
     def train(self, data, labels):
         if self.__mode == 'unbalanced':
             self.__DTR=data
             self.__ZTR=labels*2.0-1.0
             x0=np.zeros(self.__DTR.shape[0]+1)
             xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.__logreg_obj,x0=x0,approx_grad=True)
-            self.__w = xOpt[0:self.__DTR.shape[0]]
-            self.__b = xOpt[-1]
-        elif self.__mode == 'balanced':    
-            self.__DTR=data
-            self.__ZTR=labels*2.0-1.0
-            x0=np.zeros(self.__DTR.shape[0]+1)
-            xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.__logreg_obj_balanced,x0=x0,approx_grad=True)
             self.__w = xOpt[0:self.__DTR.shape[0]]
             self.__b = xOpt[-1]
         elif self.__mode == 'calibration':
@@ -70,6 +80,14 @@ class logReg():
             xOpt,fOpt,d=opt.fmin_l_bfgs_b(self.__logreg_obj_calibration,x0=x0,approx_grad=True)
             self.alpha = xOpt[0]
             self.gamma = xOpt[-1]
+        elif self.__mode == 'balanced':
+            self.__DTR=data
+            self.__ZTR=labels*2.0-1.0
+            x0=np.zeros(self.__DTR.shape[0]+1)
+            logreg_obj = self.logreg_obj_wrap(data, labels, self.__l, self.__pi)
+            xOpt,fOpt,d=opt.fmin_l_bfgs_b(logreg_obj,x0=x0,approx_grad=True)
+            self.__w = xOpt[0:self.__DTR.shape[0]]
+            self.__b = xOpt[-1]
         else:
             print("---------------> error, mode:", self.__mode)
 
@@ -87,3 +105,6 @@ class logReg():
 
     def get_params(self):
         return self.__w, self.__b
+
+    def compute_scores(self, DTE):
+        return np.dot(self.__w.T,DTE)+self.__b
