@@ -34,7 +34,7 @@ featuresPCA5ZNorm = dr.PCA(mu.z_score(features),5)
 featuresPCA5Exapanded = du.features_expansion(featuresPCA5)
 featuresPCA4Exapanded = du.features_expansion(featuresPCA4)
 featuresPCA5ZNormExapanded = du.features_expansion(dr.PCA(mu.z_score(features), 5))
-
+"""
 ##LINEAR NOT NORM + LINEAR Z-NORM EMPIRICAL
 labels_text = [
     "Linear LogReg",
@@ -71,7 +71,7 @@ with open("LinearLogRegEmpiricalNoNorm_Norm.txt", "w") as f:
     print("Cprim list {}".format(CprimLogReg[1]))
 
     dv.plotCPrim(lambdas, CprimLogReg, labels_text, "λ", "LinearLogRegEmpiricalNoNorm_Norm")
-
+"""
 # ##LINEAR NOT NORM PCAs EMPIRICAL
 # labels_text = [
 #     "Linear LogReg NO PCA",
@@ -274,14 +274,14 @@ with open("LinearLogRegEmpiricalNoNorm_Norm.txt", "w") as f:
 #     print("Cprim list {}".format(CprimLogReg[2]))
 
 #     dv.plotCPrim(lambdas, CprimLogReg, labels_text, "λ", "QuadraticLogRegEmpiricalPCATEST2")
-
-# with open("QLOGREG_PI_PITILDE.txt","w") as f:
-#     for piT in [0.11,0.12,0.13,0.14,0.15,0.16,0.17,0.18,0.19,0.20]:
-#         CprimList=[]
-#         for piTilde in [0.1,0.5]:
-#             logRegObj = lrc.logReg(lambdaBest, piT, "balanced")
-#             _, minDCF = val.val.k_fold(logRegObj, featuresTrainQuadratic, labels, 5, (piTilde, 1, 1))
-#             print("Quadratic LogReg Balanced Not Normalized, minDCF with piT {} and piTilde {} no PCA and  is {}".format(piT, piTilde, minDCF),file=f)
-#             CprimList.append(minDCF)
-#         Cprim=np.array(CprimList).mean(axis=0)
-#         print("Quadratic LogReg Balanced Not Normalized, Cprim with piT {}  no PCA and  is {}".format(piT,Cprim ),file=f)
+lambdaBest=10
+with open("QLOGREG_PI_PITILDE.txt","w") as f:
+    for piT in [0.1,0.17,0.2,0.5]:
+        CprimList=[]
+        for piTilde in [0.1,0.5]:
+            logRegObj = lrc.logReg(lambdaBest, piT, "balanced")
+            actualDCF, minDCF,_ = val.k_fold(logRegObj, featuresTrainQuadratic, labels, 5, (piTilde, 1, 1))
+            print("Quadratic LogReg Balanced Not Normalized, minDCF with piT {} and piTilde {} no PCA and  is {}".format(piT, piTilde, minDCF),file=f)
+            CprimList.append(minDCF)
+        Cprim=np.array(CprimList).mean(axis=0)
+        print("Quadratic LogReg Balanced Not Normalized, Cprim with piT {}  no PCA and  is {}".format(piT,Cprim ),file=f)

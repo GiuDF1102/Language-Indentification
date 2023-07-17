@@ -110,7 +110,7 @@ def min_DCF(scores, pi, Cfn, Cfp, true_labels, predicted_labels):
 def get_ROC(scores, true_labels, name):
     sorted_scores = sorted(scores)
     FPR_list = []
-    TPR_list = []
+    FNR_list = []
     for t in sorted_scores:
         predicted_labels = np.where(scores>t,1,0)
         cnf_mat = confusion_matrix(true_labels, predicted_labels, False)
@@ -118,15 +118,58 @@ def get_ROC(scores, true_labels, name):
         FNR, FPR = FNR_FPR_binary_ind(cm)
         TPR = 1 - FNR
         FPR_list.append(FPR)
-        TPR_list.append(TPR)
+        FNR_list.append(TPR)
     
-    plt.plot(FPR_list, TPR_list, linestyle='-')
+    plt.plot(FPR_list, FNR_list, linestyle='-')
     plt.xlabel('FPR')
     plt.ylabel('TPR')
     plt.grid(True)
     plt.savefig("ROC - {}.png".format(name))
     plt.close()
-        
+
+def get_DET(scores, true_labels, name):
+    sorted_scores = sorted(scores)
+    FPR_list = []
+    FNR_list = []
+    for t in sorted_scores:
+        predicted_labels = np.where(scores>t,1,0)
+        cnf_mat = confusion_matrix(true_labels, predicted_labels, False)
+        cm = cnf_mat.get_confusion_matrix()
+        FNR, FPR = FNR_FPR_binary_ind(cm)
+        print("FNR:{},FPR:{}".format(FNR,FPR))
+        FPR_list.append(FPR)
+        FNR_list.append(FNR)
+    plt.plot(FPR_list, FNR_list, linestyle='-')
+    plt.xlabel('FPR')
+    plt.ylabel('FNR')
+    plt.grid(True)
+    plt.savefig("DET - {}.png".format(name))
+    plt.close()
+
+def get_DET_chatgpt(scores,labels,name):
+    scores=sorted(scores)
+    fpr, fnr = [], []
+    thresholds = np.linspace(0, 1, 100)
+    for threshold in scores:
+        predicted_labels = (scores >= threshold).astype(int)
+        fp = np.sum((predicted_labels == 1) & (labels == 0))
+        fn = np.sum((predicted_labels == 0) & (labels == 1))
+        tn = np.sum((predicted_labels == 0) & (labels == 0))
+        tp = np.sum((predicted_labels == 1) & (labels == 1))
+        fpr.append(fp / (fp + tn))
+        fnr.append(fn / (fn + tp))
+
+    #Plot the DET curve
+    plt.figure(figsize=(8, 8))
+    plt.plot(fpr, fnr)
+    plt.plot(thresholds,thresholds,linestyle="dotted")
+    plt.xlabel('False Positive Rate (FPR)')
+    plt.ylabel('False Negative Rate (FNR)')
+    plt.title('Detection Error Tradeoff (DET) Curve')
+    plt.grid(True)
+    plt.savefig("DET - {}.png".format(name))
+    plt.close()
+ 
 def get_error_plot(scores, Cfn, Cfp, true_labels, predicted_labels, name):
     effPriorLogOdds = np.linspace(-3,3,21)
     pi = 1/(1+np.exp(-effPriorLogOdds))
@@ -212,7 +255,7 @@ def k_fold(learner,x,labels,k, workingPoint):
     gotscores = np.hstack(concat_scores)
     gotpredicted = np.hstack(concat_predicted)
     gotpredicted = np.where(gotscores>0,1,0)
-    actualDCF = DCF(pi, Cfn, Cfp, Y, gotpredicted)
+    actualDCF = act_DCF(pi, Cfn, Cfp, Y, gotpredicted)
     minDCF = min_DCF(gotscores, pi, Cfn, Cfp, Y, gotpredicted)
     return actualDCF, minDCF, gotscores
 
@@ -267,39 +310,37 @@ if __name__ == "__main__":
     # print(f"Calibrated, aDCF: {actualDCF1}, minDCF: {minDCF1}")  
 
     L, D = du.load("..\PROJECTS\Language_detection\Train.txt")
-    svmc = svm.SVM("RBF", balanced=True, K=0.1, C=0.01, gamma=0.01, piT=0.2)
-    DPCA5 = dr.PCA(D, 5)
-    actualDCF, minDCF, scoresSVM, lab = k_fold_bayes_plot(svmc, DPCA5, L, 5, (0.1, 1, 1), "PROVASVM")
-    L = shuffle(L, random_state=0)
-    actualDCF = act_DCF(scoresSVM,0.1,1,1,L,None)
-    minDCF = min_DCF(scoresSVM, 0.1, 1, 1, L, lab)
-    print(f"SVM aDCF: {actualDCF}, minDCF: {minDCF}")
+    
+    # svmc = svm.SVM("RBF", balanced=True, K=0.1, C=0.01, gamma=0.01, piT=0.2)
+    # DPCA5 = dr.PCA(D, 5)
+    # actualDCF, minDCF, scoresSVM, lab = k_fold_bayes_plot(svmc, DPCA5, L, 5, (0.1, 1, 1), "PROVASVM")
+    # print(f"SVM aDCF: {actualDCF}, minDCF: {minDCF}")
 
     gmmc = gmm.GMM(2,32,"MVG", "tied")
     DPCA5 = dr.PCA(D, 5)
-    actualDCF, minDCF, scores = k_fold_bayes_plot(gmmc, D, L, 5, (0.1, 1, 1), "PROVASVM")
+    actualDCF, minDCF, scoresGMM,predictedGMM = k_fold_bayes_plot(gmmc, D, L, 5, (0.1, 1, 1), "PROVASVM")
     print(f"GMM aDCF: {actualDCF}, minDCF: {minDCF}")
 
-    qlogreg = lrc.logReg(10,0.17,"balanced")
-    expanded = du.features_expansion(D)
-    actualDCF, minDCF, scores = k_fold_bayes_plot(qlogreg, expanded, L, 5, (0.1, 1, 1), "PROVASVM")
-    print(f"QLOG aDCF: {actualDCF}, minDCF: {minDCF}")
+    # qlogreg = lrc.logReg(10,0.1,"balanced")
+    # expanded = du.features_expansion(D)
+    # actualDCF, minDCF, scoresQLOGREG,predictedQLOGREG = k_fold_bayes_plot(qlogreg, expanded, L, 5, (0.1, 1, 1),"DETQLOGREG")
+    # print(f"QLOG aDCF: {actualDCF}, minDCF: {minDCF}")
 
-    #CAL
+    L=shuffle(L,random_state=0)
+    get_DET_chatgpt(scoresGMM,L,"GMMDET")
 
+    # #CAL
+    # svmc = svm.SVM("RBF", balanced=True, K=0.1, C=0.01, gamma=0.01, piT=0.2)
+    # DPCA5 = dr.PCA(D, 5)
+    # actualDCF, minDCF, scores = k_fold_bayes_plot_calibrated(svmc, DPCA5, L, 5, (0.1, 1, 1), "PROVASVM")
+    # print(f"SVM CAL aDCF: {actualDCF}, minDCF: {minDCF}")
 
+    # gmmc = gmm.GMM(2,32,"MVG", "tied")
+    # DPCA5 = dr.PCA(D, 5)
+    # actualDCF, minDCF, scores = k_fold_bayes_plot_calibrated(gmmc, D, L, 5, (0.1, 1, 1), "PROVASVM")
+    # print(f"GMM CAL aDCF: {actualDCF}, minDCF: {minDCF}")
 
-    svmc = svm.SVM("RBF", balanced=True, K=0.1, C=0.01, gamma=0.01, piT=0.2)
-    DPCA5 = dr.PCA(D, 5)
-    actualDCF, minDCF, scores = k_fold_bayes_plot_calibrated(svmc, DPCA5, L, 5, (0.1, 1, 1), "PROVASVM")
-    print(f"SVM CAL aDCF: {actualDCF}, minDCF: {minDCF}")
-
-    gmmc = gmm.GMM(2,32,"MVG", "tied")
-    DPCA5 = dr.PCA(D, 5)
-    actualDCF, minDCF, scores = k_fold_bayes_plot_calibrated(gmmc, D, L, 5, (0.1, 1, 1), "PROVASVM")
-    print(f"GMM CAL aDCF: {actualDCF}, minDCF: {minDCF}")
-
-    qlogreg = lrc.logReg(10,0.17,"balanced")
-    expanded = du.features_expansion(D)
-    actualDCF, minDCF, scores = k_fold_bayes_plot_calibrated(qlogreg, expanded, L, 5, (0.1, 1, 1), "PROVASVM")
+    # qlogreg = lrc.logReg(10,0.17,"balanced")
+    # expanded = du.features_expansion(D)
+    # actualDCF, minDCF, scores = k_fold_bayes_plot_calibrated(qlogreg, expanded, L, 5, (0.1, 1, 1), "PROVASVM")
     print(f"QLOG CAL aDCF: {actualDCF}, minDCF: {minDCF}")

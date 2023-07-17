@@ -1,0 +1,12 @@
+Quadratic LogReg Balanced Not Normalized, minDCF with piT 0.1 and piTilde 0.1 no PCA and  is 0.3809132420091324
+Quadratic LogReg Balanced Not Normalized, minDCF with piT 0.1 and piTilde 0.5 no PCA and  is 0.10258878741755453
+Quadratic LogReg Balanced Not Normalized, Cprim with piT 0.1  no PCA and  is 0.24175101471334348
+Quadratic LogReg Balanced Not Normalized, minDCF with piT 0.17 and piTilde 0.1 no PCA and  is 0.385810502283105
+Quadratic LogReg Balanced Not Normalized, minDCF with piT 0.17 and piTilde 0.5 no PCA and  is 0.10375063419583967
+Quadratic LogReg Balanced Not Normalized, Cprim with piT 0.17  no PCA and  is 0.24478056823947233
+Quadratic LogReg Balanced Not Normalized, minDCF with piT 0.2 and piTilde 0.1 no PCA and  is 0.383310502283105
+Quadratic LogReg Balanced Not Normalized, minDCF with piT 0.2 and piTilde 0.5 no PCA and  is 0.10226534753932014
+Quadratic LogReg Balanced Not Normalized, Cprim with piT 0.2  no PCA and  is 0.24278792491121257
+Quadratic LogReg Balanced Not Normalized, minDCF with piT 0.5 and piTilde 0.1 no PCA and  is 0.3837442922374429
+Quadratic LogReg Balanced Not Normalized, minDCF with piT 0.5 and piTilde 0.5 no PCA and  is 0.10219178082191781
+Quadratic LogReg Balanced Not Normalized, Cprim with piT 0.5  no PCA and  is 0.24296803652968035
