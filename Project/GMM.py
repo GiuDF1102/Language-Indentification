@@ -235,6 +235,7 @@ class GMM:
             self.ll.append(self._GMM_ll_per_sample(xTest, self.GMM_list[i]))
         self.ll = np.array(self.ll)
         self.predicted=np.argmax(self.ll, axis=0)
+        return self.predicted
 
     def get_scores(self):
         return self.ll[1] - self.ll[0]

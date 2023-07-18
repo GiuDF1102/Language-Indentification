@@ -184,9 +184,32 @@ def get_error_plot(scores, Cfn, Cfp, true_labels, predicted_labels, name):
     plt.xlim([-3, 3])
     plt.ylabel('DCF value')
     plt.xlabel('prior log-odds')
-    plt.savefig("error plot - {}.png".format(name))
+    plt.savefig("{}.svg".format(name))
     plt.close()
         
+
+def get_error_plot_Cprim(scores1,scores2, Cfn, Cfp, true_labels, predicted_labels1,predicted_labels2,name):
+    effPriorLogOdds = np.linspace(-3,3,21)
+    pi = 1/(1+np.exp(-effPriorLogOdds))
+    avg_dcf = []
+    avg_min_dcf = []
+    for p in pi:
+        min_dcf1=(min_DCF(scores1, p, Cfn, Cfp, true_labels, predicted_labels1))
+        dcf1=(act_DCF(scores1, p, Cfn, Cfp, true_labels,None))
+        min_dcf2=(min_DCF(scores2, p, Cfn, Cfp, true_labels, predicted_labels2))
+        dcf2=(act_DCF(scores2, p, Cfn, Cfp, true_labels,None))
+        avg_dcf.append((dcf1+dcf2)/2)
+        avg_min_dcf.append((min_dcf1+min_dcf2)/2)
+    plt.plot(effPriorLogOdds, avg_dcf, label='actual cost', color='r')
+    plt.plot(effPriorLogOdds, avg_min_dcf, label='min cost', color='b')
+    plt.ylim([0, 1.1])
+    plt.xlim([-3, 3])
+    plt.ylabel('Cprim')
+    plt.xlabel('prior log-odds')
+    plt.savefig("{}.svg".format(name))
+    plt.close()
+        
+
 
 def binary_threshold(pi, C):
     Cfn = C[0][1]
