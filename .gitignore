@@ -1,12 +1,2 @@
-**/Project/histograms
-**/Project/scatter_plots
-**/Project/__pycache__
-**/Lab Projects/__pycache__
-**/Project/correlation_matrices
-**/Project/histograms_l2_norm
-**/Project/histograms_original
-**/Project/histograms_PCA
-**/Project/histograms_z_score
-**/Project/scatter_plots_z_score
-**/Project/scatter_plots_PCA
-**/Project/scatter_plots_original
+**/Project/figures
+**/Project/results
