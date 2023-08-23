@@ -15,7 +15,7 @@ for pi in [0.1,0.5]:
     print("MVG, minDCF with pi {} is {}".format(pi, minDCF))
     
     #PCA
-    for nPCA in [5,4,3]:
+    for nPCA in [5,4]:
         dataPCA = dr.PCA(features, nPCA)
         mvgObj = gc.multivariate_cl([1-pi, pi])
         _, minDCF = val.k_fold(mvgObj, dataPCA, labels, 5, (pi, 1, 1))
@@ -29,7 +29,7 @@ for pi in [0.1,0.5]:
     print("Naive MVG, minDCF with pi {} is {}".format(pi, minDCF))
     
     #PCA
-    for nPCA in [5,4,3]:
+    for nPCA in [5,4]:
         dataPCA = dr.PCA(features, nPCA)
         naiveMvgObj = gc.naive_multivariate_cl([1-pi, pi])
         _, minDCF = val.k_fold(naiveMvgObj, dataPCA, labels, 5, (pi, 1, 1))
@@ -43,7 +43,7 @@ for pi in [0.1,0.5]:
     print("Tied MVG, minDCF with pi {} is {}".format(pi, minDCF))
     
     #PCA
-    for nPCA in [5,4,3]:
+    for nPCA in [5,4]:
         dataPCA = dr.PCA(features, nPCA)
         tiedMvgObj = gc.tied_multivariate_cl([1-pi, pi])
         _, minDCF = val.k_fold(tiedMvgObj, dataPCA, labels, 5, (pi, 1, 1))
@@ -57,7 +57,7 @@ for pi in [0.1,0.5]:
     print("Tied Naive MVG, minDCF with pi {} is {}".format(pi, minDCF))
     
     #PCA
-    for nPCA in [5,4,3]:
+    for nPCA in [5,4]:
         dataPCA = dr.PCA(features, nPCA)
         tiedNaiveMvgObj = gc.tied_naive_multivariate_cl([1-pi, pi])
         _, minDCF = val.k_fold(tiedNaiveMvgObj, dataPCA, labels, 5, (pi, 1, 1))
