@@ -9,6 +9,7 @@ import math_utils as mu
 import SVM_classifiers as svm
 import data_visualization as dv
 import GMM as gmm
+import scipy
 
 class confusion_matrix:
     true_labels = []
@@ -110,7 +111,7 @@ def min_DCF(scores, pi, Cfn, Cfp, true_labels, predicted_labels):
 def get_ROC(scores, true_labels, name):
     sorted_scores = sorted(scores)
     FPR_list = []
-    FNR_list = []
+    TPR_list = []
     for t in sorted_scores:
         predicted_labels = np.where(scores>t,1,0)
         cnf_mat = confusion_matrix(true_labels, predicted_labels, False)
@@ -118,17 +119,24 @@ def get_ROC(scores, true_labels, name):
         FNR, FPR = FNR_FPR_binary_ind(cm)
         TPR = 1 - FNR
         FPR_list.append(FPR)
-        FNR_list.append(TPR)
+        TPR_list.append(TPR)
     
-    plt.plot(FPR_list, FNR_list, linestyle='-')
+    plt.plot(FPR_list, TPR_list, linestyle='-')
     plt.xlabel('FPR')
     plt.ylabel('TPR')
     plt.grid(True)
+    plt.title('ROC curve')
+    # text ticks
+    xticks = np.arange(0, 1.1, 0.2)
+    yticks = np.arange(0, 1.1, 0.2)
+    plt.xticks(xticks)
+    plt.yticks(yticks)
     plt.savefig("ROC - {}.png".format(name))
     plt.close()
 
 def get_DET(scores, true_labels, name):
-    sorted_scores = sorted(scores)
+    norm_scores = scipy.stats.norm.ppf(scores)
+    sorted_scores = sorted(norm_scores)
     FPR_list = []
     FNR_list = []
     for t in sorted_scores:
@@ -136,40 +144,66 @@ def get_DET(scores, true_labels, name):
         cnf_mat = confusion_matrix(true_labels, predicted_labels, False)
         cm = cnf_mat.get_confusion_matrix()
         FNR, FPR = FNR_FPR_binary_ind(cm)
-        print("FNR:{},FPR:{}".format(FNR,FPR))
         FPR_list.append(FPR)
         FNR_list.append(FNR)
+    
+    FPR_list = scipy.stats.norm.ppf(FPR_list)
+    FNR_list = scipy.stats.norm.ppf(FNR_list)
+
     plt.plot(FPR_list, FNR_list, linestyle='-')
+
+    # normalization axes
     plt.xlabel('FPR')
     plt.ylabel('FNR')
     plt.grid(True)
+    plt.title('DET curve')
     plt.savefig("DET - {}.png".format(name))
     plt.close()
 
-def get_DET_chatgpt(scores,labels,name):
-    scores=sorted(scores)
-    fpr, fnr = [], []
-    thresholds = np.linspace(0, 1, 100)
-    for threshold in scores:
-        predicted_labels = (scores >= threshold).astype(int)
-        fp = np.sum((predicted_labels == 1) & (labels == 0))
-        fn = np.sum((predicted_labels == 0) & (labels == 1))
-        tn = np.sum((predicted_labels == 0) & (labels == 0))
-        tp = np.sum((predicted_labels == 1) & (labels == 1))
-        fpr.append(fp / (fp + tn))
-        fnr.append(fn / (fn + tp))
+def get_multi_DET(scores, true_labels, names, name):
+    plt.figure()
 
-    #Plot the DET curve
-    plt.figure(figsize=(8, 8))
-    plt.plot(fpr, fnr)
-    plt.plot(thresholds,thresholds,linestyle="dotted")
-    plt.xlabel('False Positive Rate (FPR)')
-    plt.ylabel('False Negative Rate (FNR)')
-    plt.title('Detection Error Tradeoff (DET) Curve')
+    for i, ss in enumerate(scores):
+        ss_sorted = sorted(ss)
+        FPR_list = []
+        FNR_list = []
+        for t in ss_sorted:
+            predicted_labels = np.where(ss>t,1,0)
+            cnf_mat = confusion_matrix(true_labels, predicted_labels, False)
+            cm = cnf_mat.get_confusion_matrix()
+            FNR, FPR = FNR_FPR_binary_ind(cm)
+            FPR_list.append(FPR)
+            FNR_list.append(FNR)
+        FPR_list = scipy.stats.norm.ppf(FPR_list)
+        FNR_list = scipy.stats.norm.ppf(FNR_list)
+        plt.plot(FPR_list, FNR_list, linestyle='-')
+
+
+    # ticks 
+    ticksx = [0.001, 0.01, 0.05, 0.20]
+    tick_locationsx = scipy.stats.norm.ppf(ticksx)
+    tick_labelsx = [
+        "{:.0%}".format(s) if (100 * s).is_integer() else "{:.1%}".format(s)
+        for s in ticksx
+    ]
+    ticks = [0.001, 0.01, 0.05, 0.20, 0.5, 0.80]
+    tick_locations = scipy.stats.norm.ppf(ticks)
+    tick_labels = [
+        "{:.0%}".format(s) if (100 * s).is_integer() else "{:.1%}".format(s)
+        for s in ticks
+    ]
+    plt.xticks(tick_locationsx, tick_labelsx)
+    plt.yticks(tick_locations, tick_labels)
+    plt.xlim([-3, -1.2])
+    plt.ylim([-3, 1.2])
+    plt.legend(names, loc='upper right')
+    plt.xlabel('FPR')
+    plt.ylabel('FNR')
     plt.grid(True)
+    plt.title('DET curve')
     plt.savefig("DET - {}.png".format(name))
     plt.close()
- 
+
 def get_error_plot(scores, Cfn, Cfp, true_labels, predicted_labels, name):
     effPriorLogOdds = np.linspace(-3,3,21)
     pi = 1/(1+np.exp(-effPriorLogOdds))

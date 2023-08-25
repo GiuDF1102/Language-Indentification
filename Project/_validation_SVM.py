@@ -1,4 +1,4 @@
-import validation as val
+import validation2 as val
 import data_utils as du
 import dimensionality_reduction as dr
 import SVM_classifiers as svm
@@ -218,6 +218,7 @@ for index, pi in enumerate([0.1,0.5]):
 CprimPolinomialNorm3[3] = minDCFList.mean(axis=0)
 
 dv.plotCPrim(C, CprimPolinomialNorm3, ["Polynomial (d = 3) SVM", "Polynomial (d = 3) SVM Z-Norm", "Polynomial (d = 3) SVM PCA 5", "Polynomial (d = 3) SVM PCA 5 Z-Norm"] , "C", "Polynomial3SVMPCAsNorm")
+
 # #Test ZNorm best SVM
 # NormFeatures = mu.z_score(features)
 # dataPCA5Norm = dr.PCA(NormFeatures, 5)

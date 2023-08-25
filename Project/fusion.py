@@ -206,6 +206,10 @@ def k_fold_fusionV4(learner1, learner2,x1,x2,labels,k, workingPoint, name):
     
     scores1 = np.hstack(concat_scores1)
     lrcobj = lrc.logReg(0,pi,"balanced")
+    print(scores1.shape)
+    print(Y.shape)
+    print(scores1)
+    print(Y)
     lrcobj.train(scores1,Y)
     alpha1, beta1 = lrcobj.get_params()
     calibScores1 = alpha1*scores1+beta1-np.log(pi/(1-pi))
