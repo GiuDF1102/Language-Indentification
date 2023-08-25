@@ -93,7 +93,27 @@ if __name__ == "__main__":
     print(f"QS minDCF: {minDCFQS} actualDCF: {actualDCFQS}")
     print(f"QG minDCF: {minDCFQG} actualDCF: {actualDCFQG}")
     print(f"SG minDCF: {minDCFSG} actualDCF: {actualDCFSG}")
-    
+    """
+    Fusion results
+        cal_l = 0 pi = 0.5
+            QSG minDCF: 0.10258878741755453 actualDCF: 0.20333840690005073
+            QS minDCF: 0.10258878741755453 actualDCF: 0.20333840690005073
+            QG minDCF: 0.10258878741755453 actualDCF: 0.20333840690005073
+            SG minDCF: 0.0889269406392694 actualDCF: 0.13547818366311515
+
+        cal_l = 0 pi = 0.1
+            QSG minDCF: 0.3809132420091324 actualDCF: 1.0
+            QS minDCF: 0.3809132420091324 actualDCF: 1.0
+            QG minDCF: 0.3809132420091324 actualDCF: 1.0
+            SG minDCF: 0.3717808219178082 actualDCF: 1.0
+
+        
+        QSG minCprim: 0.241 Cprim: 0.601
+        QS minCprim: 0.241 Cprim: 0.601
+        QG minCprim: 0.241 Cprim: 0.601
+        SG minCprim: 0.230 Cprim: 0.567
+    """
+
     end_time = datetime.now()
     print("--------- TIME ----------")
     print(f"Time elapsed: {end_time - start_time}")
