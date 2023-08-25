@@ -49,7 +49,7 @@ if __name__ == "__main__":
 
     ### FUSION
     FUSER = lrc.logReg(0, 0.1, "balanced")
-    pi = 0.1
+    pi = 0.5
 
     # TRAIN MODELS AND GET SCORES
     _,_,scoresQLR, _ = val.k_fold_bayes_plot(QLR, features_expanded, labels, 5, (pi, 1, 1), "QLR")
@@ -74,20 +74,25 @@ if __name__ == "__main__":
 
 
     # USE WEIGHTS FOR CLASSIFICATION
-    predictedQSG = np.where(wQSG.T.dot(scoresQSG) + bQSG > np.log(pi/(1-pi)), 1, 0)
-    predictedQS = np.where(wQS.T.dot(scoresQS) + bQS > np.log(pi/(1-pi)), 1, 0)
-    predictedQG = np.where(wQG.T.dot(scoresQG) + bQG > np.log(pi/(1-pi)), 1, 0)
-    predictedSG = np.where(wSG.T.dot(scoresSG) + bSG > np.log(pi/(1-pi)), 1, 0)
+    scoresFUSQSG = wQSG.T.dot(scoresQSG) + bQSG
+    scoresFUSQS = wQS.T.dot(scoresQS) + bQS
+    scoresFUSQG = wQG.T.dot(scoresQG) + bQG
+    scoresFUSSG = wSG.T.dot(scoresSG) + bSG
+
+    predictedQSG = np.where(scoresFUSQSG > np.log(pi/(1-pi)), 1, 0)
+    predictedQS = np.where(scoresFUSQS > np.log(pi/(1-pi)), 1, 0)
+    predictedQG = np.where(scoresFUSQG > np.log(pi/(1-pi)), 1, 0)
+    predictedSG = np.where(scoresFUSSG > np.log(pi/(1-pi)), 1, 0)
 
     # GET ADCF AND MINDCF
-    minDCFQSG = val.min_DCF(scoresQSG[0], pi, 1, 1, labels_sh, predictedQSG)
-    actualDCFQSG = val.act_DCF(scoresQSG[0], pi, 1, 1, labels_sh, None)
-    minDCFQS = val.min_DCF(scoresQS[0], pi, 1, 1, labels_sh, predictedQS)
-    actualDCFQS = val.act_DCF(scoresQS[0], pi, 1, 1, labels_sh, None)
-    minDCFQG = val.min_DCF(scoresQG[0], pi, 1, 1, labels_sh, predictedQG)
-    actualDCFQG = val.act_DCF(scoresQG[0], pi, 1, 1, labels_sh, None)
-    minDCFSG = val.min_DCF(scoresSG[0], pi, 1, 1, labels_sh, predictedSG)
-    actualDCFSG = val.act_DCF(scoresSG[0], pi, 1, 1, labels_sh, None)
+    minDCFQSG = val.min_DCF(scoresFUSQSG, pi, 1, 1, labels_sh, predictedQSG)
+    actualDCFQSG = val.act_DCF(scoresFUSQSG, pi, 1, 1, labels_sh, None)
+    minDCFQS = val.min_DCF(scoresFUSQS, pi, 1, 1, labels_sh, predictedQS)
+    actualDCFQS = val.act_DCF(scoresFUSQS, pi, 1, 1, labels_sh, None)
+    minDCFQG = val.min_DCF(scoresFUSQG, pi, 1, 1, labels_sh, predictedQG)
+    actualDCFQG = val.act_DCF(scoresFUSQG, pi, 1, 1, labels_sh, None)
+    minDCFSG = val.min_DCF(scoresFUSSG, pi, 1, 1, labels_sh, predictedSG)
+    actualDCFSG = val.act_DCF(scoresFUSSG, pi, 1, 1, labels_sh, None)
 
     # PRINT RESULTS
     print(f"QSG minDCF: {minDCFQSG} actualDCF: {actualDCFQSG}")
@@ -98,23 +103,28 @@ if __name__ == "__main__":
     """
     Fusion results
         cal_l = 0 pi = 0.5
-            QSG minDCF: 0.10258878741755453 actualDCF: 0.20333840690005073
-            QS minDCF: 0.10258878741755453 actualDCF: 0.20333840690005073
-            QG minDCF: 0.10258878741755453 actualDCF: 0.20333840690005073
-            SG minDCF: 0.0889269406392694 actualDCF: 0.13547818366311515
+        QSG minDCF: 0.085 actualDCF: 0.198
+        QS minDCF: 0.091 actualDCF: 0.219
+        QG minDCF: 0.085 actualDCF: 0.198
+        SG minDCF: 0.084 actualDCF: 0.199
 
         cal_l = 0 pi = 0.1
-            QSG minDCF: 0.3809132420091324 actualDCF: 1.0
-            QS minDCF: 0.3809132420091324 actualDCF: 1.0
-            QG minDCF: 0.3809132420091324 actualDCF: 1.0
-            SG minDCF: 0.3717808219178082 actualDCF: 1.0
+            QSG minDCF: 0.348 actualDCF: 0.583
+            QS minDCF: 0.370 actualDCF: 0.655
+            QG minDCF: 0.346 actualDCF: 0.588
+            SG minDCF: 0.346 actualDCF: 0.561
 
         
-        QSG minCprim: 0.241 Cprim: 0.601
-        QS minCprim: 0.241 Cprim: 0.601
-        QG minCprim: 0.241 Cprim: 0.601
-        SG minCprim: 0.230 Cprim: 0.567
+        QSG minCprim: 0.216 Cprim: 0.390
+        QS minCprim: 0.230 Cprim: 0.442
+        QG minCprim: 0.216 Cprim: 0.400
+        SG minCprim: 0.215 Cprim: 0.380
+
+        BEST MODEL SVM + GMM
     """
+
+    #val.get_error_plot(scoresFUSSG, 1, 1, labels_sh, predictedSG, "Best fusion")
+
 
     end_time = datetime.now()
     print("--------- TIME ----------")
