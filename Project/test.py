@@ -93,6 +93,7 @@ if __name__ == "__main__":
     print(f"QS minDCF: {minDCFQS} actualDCF: {actualDCFQS}")
     print(f"QG minDCF: {minDCFQG} actualDCF: {actualDCFQG}")
     print(f"SG minDCF: {minDCFSG} actualDCF: {actualDCFSG}")
+    
     """
     Fusion results
         cal_l = 0 pi = 0.5
