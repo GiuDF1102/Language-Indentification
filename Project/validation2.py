@@ -261,7 +261,7 @@ def act_DCF(scores, pi, Cfn, Cfp, true_labels,t):
 #----------------------------------------------------
 
 
-def k_fold_bayes_plot(learner,x,labels,k, workingPoint,name):
+def k_fold_bayes_plot(learner,x,labels,k, workingPoint,name, plot):
     pi = workingPoint[0]
     Cfn = workingPoint[1]
     Cfp = workingPoint[2]
@@ -286,7 +286,8 @@ def k_fold_bayes_plot(learner,x,labels,k, workingPoint,name):
     actualDCF = act_DCF(gotscores, pi, Cfn, Cfp, Y, None)
     minDCF = min_DCF(gotscores, pi, Cfn, Cfp, Y, gotpredicted)
     print(actualDCF, minDCF)
-    #get_error_plot(gotscores, Cfn, Cfp, Y, gotpredicted, name)
+    if plot:
+        get_error_plot(gotscores, Cfn, Cfp, Y, gotpredicted, name)
     return actualDCF, minDCF, gotscores, gotpredicted
 
 def k_fold(learner,x,labels,k, workingPoint):

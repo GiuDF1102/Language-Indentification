@@ -6,6 +6,7 @@ import scipy.optimize as opt
 class logReg():
     __b = None
     __w = None
+    __pi = 0
 
     def __init__(self,l, pi, mode):
         self.__l=l
@@ -93,7 +94,10 @@ class logReg():
 
     def transform(self, DTE):
         self.scores = np.dot(self.__w.T,DTE)+self.__b
-        labels = np.where(self.scores>0, 1,0)
+        if self.__pi == 0:
+            labels = np.where(self.scores>0, 1,0)
+        else:
+            labels = np.where(self.scores>np.log(self.__pi/(1-self.__pi)), 1,0)
         return labels
 
     def get_calibrated_scores(self, DTE):
