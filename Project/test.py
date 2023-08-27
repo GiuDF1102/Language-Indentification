@@ -111,7 +111,11 @@ if __name__ == "__main__":
     print("SG minCprim: {} Cprim: {}".format((minDCFSG1 + minDCFSG2)/2, (aDCFSG1 + aDCFSG2)/2))
 
     # PLOTS best model
-    val.get_error_plot_Cprim(scoresQGS1, scoresQGS2, 1, 1, labels_sh_sh, predictedQG1, predictedQG2, "FUSER")
+    val.get_error_plot_Cprim(scoresQGS1, scoresQGS2, 1, 1, labels_sh_sh, predictedQG1, predictedQG2, "FUSER QGS")
+    val.get_error_plot_Cprim(scoresQS1, scoresQS2, 1, 1, labels_sh_sh, predictedQS1, predictedQS2, "FUSER QS")
+    val.get_error_plot_Cprim(scoresQG1, scoresQG2, 1, 1, labels_sh_sh, predictedQG1, predictedQG2, "FUSER QG")
+    val.get_error_plot_Cprim(scoresSG1, scoresSG2, 1, 1, labels_sh_sh, predictedSG1, predictedSG2, "FUSER SG")
+    
 
     """
         p 0.5 QSG minDCF: 0.08664003044140031 actualDCF: 0.08816210045662101
