@@ -49,30 +49,10 @@ if __name__ == "__main__":
     val.get_multi_DET([scoresQLR, scoresSVM, scoresGMM], labels_sh, ["QLR", "SMV", "GMM"], "Best Models")
     """
 
-    """
-    Fusion results
-        cal_l = 0 pi = 0.5
-        QSG minDCF: 0.085 actualDCF: 0.198
-        QS minDCF: 0.091 actualDCF: 0.219
-        QG minDCF: 0.085 actualDCF: 0.198
-        SG minDCF: 0.084 actualDCF: 0.199
-
-        cal_l = 0 pi = 0.1
-            QSG minDCF: 0.348 actualDCF: 0.583
-            QS minDCF: 0.370 actualDCF: 0.655
-            QG minDCF: 0.346 actualDCF: 0.588
-            SG minDCF: 0.346 actualDCF: 0.561
-
-        
-        QSG minCprim: 0.216 Cprim: 0.390
-        QS minCprim: 0.230 Cprim: 0.442
-        QG minCprim: 0.216 Cprim: 0.400
-        SG minCprim: 0.215 Cprim: 0.380
-
-        BEST MODEL SVM + GMM
-    """
+    ### FUSION 
     # FUSER 
-    FUSER = lrc.logReg(0.1, 0.3, "balanced")
+    FUSER1 = lrc.logReg(0.1, 0.3, "balanced")
+    FUSER2 = lrc.logReg(0.1, 0.6, "balanced")
     labels_sh = shuffle(labels,random_state=0)
     labels_sh_sh = shuffle(labels_sh,random_state=0)
 
@@ -97,35 +77,57 @@ if __name__ == "__main__":
 
     # FUSION
     # - QLR GMM
-    aDCFQG1, minDCFQG1, scoresQG1, predictedQG1 = val.k_fold_bayes_plot(FUSER, scoresQG1, labels_sh, 5, (0.5, 1, 1), "FUSER", False)
-    aDCFQG2, minDCFQG2, scoresQG2, predictedQG2 = val.k_fold_bayes_plot(FUSER, scoresQG2, labels_sh, 5, (0.1, 1, 1), "FUSER", False)
+    aDCFQG1, minDCFQG1, scoresQG1, predictedQG1 = val.k_fold_bayes_plot(FUSER1, scoresQG1, labels_sh, 5, (0.5, 1, 1), "FUSER", False)
+    aDCFQG2, minDCFQG2, scoresQG2, predictedQG2 = val.k_fold_bayes_plot(FUSER2, scoresQG2, labels_sh, 5, (0.1, 1, 1), "FUSER", False)
 
     # - SVM GMM
-    aDCFSG1, minDCFSG1, scoresSG1, predictedSG1 = val.k_fold_bayes_plot(FUSER, scoresSG1, labels_sh, 5, (0.5, 1, 1), "FUSER", False)
-    aDCFSG2, minDCFSG2, scoresSG2, predictedSG2 = val.k_fold_bayes_plot(FUSER, scoresSG2, labels_sh, 5, (0.1, 1, 1), "FUSER", False)
+    aDCFSG1, minDCFSG1, scoresSG1, predictedSG1 = val.k_fold_bayes_plot(FUSER1, scoresSG1, labels_sh, 5, (0.5, 1, 1), "FUSER", False)
+    aDCFSG2, minDCFSG2, scoresSG2, predictedSG2 = val.k_fold_bayes_plot(FUSER2, scoresSG2, labels_sh, 5, (0.1, 1, 1), "FUSER", False)
 
     # - QLR SVM
-    aDCFQS1, minDCFQS1, scoresQS1, predictedQS1 = val.k_fold_bayes_plot(FUSER, scoresQS1, labels_sh, 5, (0.5, 1, 1), "FUSER", False)
-    aDCFQS2, minDCFQS2, scoresQS2, predictedQS2 = val.k_fold_bayes_plot(FUSER, scoresQS2, labels_sh, 5, (0.1, 1, 1), "FUSER", False)
+    aDCFQS1, minDCFQS1, scoresQS1, predictedQS1 = val.k_fold_bayes_plot(FUSER1, scoresQS1, labels_sh, 5, (0.5, 1, 1), "FUSER", False)
+    aDCFQS2, minDCFQS2, scoresQS2, predictedQS2 = val.k_fold_bayes_plot(FUSER2, scoresQS2, labels_sh, 5, (0.1, 1, 1), "FUSER", False)
 
     # - QLR SVM GMM
-    aDCFQGS1, minDCFQGS1, scoresQGS1, predictedQGS1 = val.k_fold_bayes_plot(FUSER, scoresQGS1, labels_sh, 5, (0.5, 1, 1), "FUSER", False)
-    aDCFQGS2, minDCFQGS2, scoresQGS2, predictedQGS2 = val.k_fold_bayes_plot(FUSER, scoresQGS2, labels_sh, 5, (0.1, 1, 1), "FUSER", False)
+    aDCFQGS1, minDCFQGS1, scoresQGS1, predictedQGS1 = val.k_fold_bayes_plot(FUSER1, scoresQGS1, labels_sh, 5, (0.5, 1, 1), "FUSER", False)
+    aDCFQGS2, minDCFQGS2, scoresQGS2, predictedQGS2 = val.k_fold_bayes_plot(FUSER2, scoresQGS2, labels_sh, 5, (0.1, 1, 1), "FUSER", False)
 
-    # print minCprim and actualCprim Cprim = (minDCF1 + minDCF2)/2
+    # print minDCF and actualDCF 1
+    print("p 0.5 QSG minDCF: {} actualDCF: {}".format(minDCFQGS1, aDCFQGS1))
+    print("p 0.5 QS minDCF: {} actualDCF: {}".format(minDCFQS1, aDCFQS1))
+    print("p 0.5 QG minDCF: {} actualDCF: {}".format(minDCFQG1, aDCFQG1))
+    print("p 0.5 SG minDCF: {} actualDCF: {}".format(minDCFSG1, aDCFSG1))
+
+    # print minDCF and actualDCF 2
+    print("p 0.1 QSG minDCF: {} actualDCF: {}".format(minDCFQGS2, aDCFQGS2))
+    print("p 0.1 QS minDCF: {} actualDCF: {}".format(minDCFQS2, aDCFQS2))
+    print("p 0.1 QG minDCF: {} actualDCF: {}".format(minDCFQG2, aDCFQG2))
+    print("p 0.1 SG minDCF: {} actualDCF: {}".format(minDCFSG2, aDCFSG2))
+
+    # print minCprim and actualCprim 
     print("QSG minCprim: {} Cprim: {}".format((minDCFQGS1 + minDCFQGS2)/2, (aDCFQGS1 + aDCFQGS2)/2))
     print("QS minCprim: {} Cprim: {}".format((minDCFQS1 + minDCFQS2)/2, (aDCFQS1 + aDCFQS2)/2))
     print("QG minCprim: {} Cprim: {}".format((minDCFQG1 + minDCFQG2)/2, (aDCFQG1 + aDCFQG2)/2))
     print("SG minCprim: {} Cprim: {}".format((minDCFSG1 + minDCFSG2)/2, (aDCFSG1 + aDCFSG2)/2))
 
     # PLOTS best model
-    val.get_error_plot_Cprim(scoresQG1, scoresQG2, 1, 1, labels_sh_sh, predictedQG1, predictedQG2, "FUSER")
+    val.get_error_plot_Cprim(scoresQGS1, scoresQGS2, 1, 1, labels_sh_sh, predictedQG1, predictedQG2, "FUSER")
 
     """
-        QSG minCprim: 0.22012937595129378 Cprim: 0.27794520547945206
-        QS minCprim: 0.23437975646879758 Cprim: 0.4345554287163876
-        QG minCprim: 0.21940512430238457 Cprim: 0.2821657787924911
-        SG minCprim: 0.21869165398274987 Cprim: 0.28917681380010146
+        p 0.5 QSG minDCF: 0.08664003044140031 actualDCF: 0.08816210045662101
+        p 0.5 QS minDCF: 0.1012138508371385 actualDCF: 0.10584601725012684
+        p 0.5 QG minDCF: 0.08769152714358194 actualDCF: 0.08866945712836125
+        p 0.5 SG minDCF: 0.08682394723490613 actualDCF: 0.09269152714358193
+
+        p 0.1 QSG minDCF: 0.35818493150684927 actualDCF: 0.3754794520547945
+        p 0.1 QS minDCF: 0.36754566210045664 actualDCF: 0.417648401826484
+        p 0.1 QG minDCF: 0.3536187214611872 actualDCF: 0.3779794520547945
+        p 0.1 SG minDCF: 0.3505593607305936 actualDCF: 0.35894977168949777
+
+        QSG minCprim: 0.2224124809741248 Cprim: 0.23182077625570774
+        QS minCprim: 0.23437975646879758 Cprim: 0.26174720953830544
+        QG minCprim: 0.2206551243023846 Cprim: 0.23332445459157786
+        SG minCprim: 0.21869165398274987 Cprim: 0.22582064941653984
     """
     end_time = datetime.now()
     print("--------- TIME ----------")
