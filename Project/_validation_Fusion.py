@@ -49,6 +49,7 @@ if __name__ == "__main__":
     val.get_multi_DET([scoresQLR, scoresSVM, scoresGMM], labels_sh, ["QLR", "SMV", "GMM"], "Best Models")
     """
 
+    """
     ### FUSION 
     # FUSER 
     FUSER1 = lrc.logReg(0.1, 0.3, "balanced")
@@ -117,22 +118,30 @@ if __name__ == "__main__":
     val.get_error_plot_Cprim(scoresSG1, scoresSG2, 1, 1, labels_sh_sh, predictedSG1, predictedSG2, "FUSER SG")
     
 
-    """
-        p 0.5 QSG minDCF: 0.08664003044140031 actualDCF: 0.08816210045662101
-        p 0.5 QS minDCF: 0.1012138508371385 actualDCF: 0.10584601725012684
-        p 0.5 QG minDCF: 0.08769152714358194 actualDCF: 0.08866945712836125
-        p 0.5 SG minDCF: 0.08682394723490613 actualDCF: 0.09269152714358193
+        # p 0.5 QSG minDCF: 0.08664003044140031 actualDCF: 0.08816210045662101
+        # p 0.5 QS minDCF: 0.1012138508371385 actualDCF: 0.10584601725012684
+        # p 0.5 QG minDCF: 0.08769152714358194 actualDCF: 0.08866945712836125
+        # p 0.5 SG minDCF: 0.08682394723490613 actualDCF: 0.09269152714358193
 
-        p 0.1 QSG minDCF: 0.35818493150684927 actualDCF: 0.3754794520547945
-        p 0.1 QS minDCF: 0.36754566210045664 actualDCF: 0.417648401826484
-        p 0.1 QG minDCF: 0.3536187214611872 actualDCF: 0.3779794520547945
-        p 0.1 SG minDCF: 0.3505593607305936 actualDCF: 0.35894977168949777
+        # p 0.1 QSG minDCF: 0.35818493150684927 actualDCF: 0.3754794520547945
+        # p 0.1 QS minDCF: 0.36754566210045664 actualDCF: 0.417648401826484
+        # p 0.1 QG minDCF: 0.3536187214611872 actualDCF: 0.3779794520547945
+        # p 0.1 SG minDCF: 0.3505593607305936 actualDCF: 0.35894977168949777
 
-        QSG minCprim: 0.2224124809741248 Cprim: 0.23182077625570774
-        QS minCprim: 0.23437975646879758 Cprim: 0.26174720953830544
-        QG minCprim: 0.2206551243023846 Cprim: 0.23332445459157786
-        SG minCprim: 0.21869165398274987 Cprim: 0.22582064941653984
+        # QSG minCprim: 0.2224124809741248 Cprim: 0.23182077625570774
+        # QS minCprim: 0.23437975646879758 Cprim: 0.26174720953830544
+        # QG minCprim: 0.2206551243023846 Cprim: 0.23332445459157786
+        # SG minCprim: 0.21869165398274987 Cprim: 0.22582064941653984
     """
+
+    aDCF, minDCF, scores, predicted = val.k_fold_bayes_plot(GMM, features, labels, 5, (0.5, 1, 1), "GMM", False)
+    print("minDCF: {} actualDCF: {}".format(minDCF, aDCF))
+    
+    features_norm = mu.z_score(features)
+
+    aDCFNorm, minDCNorm, scoresNorm, predictedNorm = val.k_fold_bayes_plot(GMM, features_norm, labels, 5, (0.5, 1, 1), "GMM", False)
+    print("NORM minDCF: {} actualDCF: {}".format(minDCNorm, aDCFNorm))
+
     end_time = datetime.now()
     print("--------- TIME ----------")
     print(f"Time elapsed: {end_time - start_time}")
