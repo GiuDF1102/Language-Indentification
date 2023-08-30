@@ -137,5 +137,5 @@ def plotCPrim(x, y, labels, xlabel, name):
     plt.xlabel(xlabel)
     plt.ylabel("min Cprim")
     plt.tight_layout()
-    plt.savefig("figures_SVM/{}.svg".format(name))
+    plt.savefig("{}.svg".format(name))
     return
