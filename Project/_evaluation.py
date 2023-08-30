@@ -221,28 +221,34 @@ if __name__ == "__main__":
 
     ### SVM
     ## POLI
-    print("POLI")
-    for nPCA in [5, 6]:
-        if nPCA == 6:
-            data_train = features
-            data_test = features_test
-        else:
-            data_train = dr.PCA(features, nPCA)
-            data_test = dr.PCA(features_test, nPCA)
-        for _k in [1, 10, 100]:
-            minCprimLists = []
-            for _c in [0.1, 1, 10]:
-                minCprimList = []
-                for _C in [0.001, 0.01, 0.1, 1, 10, 100]:
-                    minDCFList = []
-                    for pi in [0.1, 0.5]:
-                        SVMC = svmc.SVM('Polinomial', balanced=False, d=2, K=_k, C=_C, c=_c)
-                        SVMC.train(data_train, labels)
-                        predictedSVM = SVMC.transform(data_test)
-                        scoresSVM = SVMC.get_scores()
-                        minDCF = val.min_DCF(scoresSVM, 0.5, 1, 1, labels_test, predictedSVM)
-                        minDCFList.append(minDCF)
-                    minCprim = (minDCFList[0]+minDCFList[1])/2
-                    minCprimList.append(minCprim)
-                minCprimLists.append(minCprimList)
-            
+    with open("SVM_Poli.txt", "w") as f:
+        start = datetime.now()
+        print("POLI")
+        for nPCA in [5, 6]:
+            if nPCA == 6:
+                data_train = features
+                data_test = features_test
+            else:
+                data_train = dr.PCA(features, nPCA)
+                data_test = dr.PCA(features_test, nPCA)
+            for _k in [1, 10, 100]:
+                minCprimLists = []
+                minCprimList = np.zeros((3, 6))
+                for ic, _c in enumerate([0.1, 1, 10]):
+                    for iC, _C in enumerate([0.001, 0.01, 0.1, 1, 10, 100]):
+                        minDCFList = []
+                        for pi in [0.1, 0.5]:
+                            print("POLI nPCA:", nPCA, "k:", _k, "c:", _c, "C:", _C, "pi:", pi, "time:", datetime.now()-start)
+                            SVMC = svmc.SVM('Polinomial', balanced=False, d=2, K=_k, C=_C, c=_c)
+                            SVMC.train(data_train, labels)
+                            predictedSVM = SVMC.transform(data_test)
+                            scoresSVM = SVMC.get_scores()
+                            minDCF = val.min_DCF(scoresSVM, pi, 1, 1, labels_test, predictedSVM)
+                            print("nPCA:", nPCA, "k:", _k, "c:", _c, "C:", _C, "pi:", pi, "minDCF:", minDCF, file=f)
+                            minDCFList.append(minDCF)
+                        minCprim = (minDCFList[0]+minDCFList[1])/2
+                        print("minCprim:", minCprim, file=f)
+                        print("minCprim:", minCprim)
+                        minCprimList[ic, iC] = minCprim
+                # Save as npy file for later plotting, so in case of errors, there is no need of re-executions
+                np.save("minCprimList_Poli_nPCA_{}_k_{}.npy".format(nPCA, _k), minCprimList)
