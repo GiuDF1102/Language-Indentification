@@ -4,8 +4,8 @@ import dimensionality_reduction as dr
 import gaussian_classifiers as gc
 
 #LOADING DATASET
-labels, features = du.load("..\PROJECTS\Language_detection\Train.txt")
-labels_test, features_test = du.load("..\PROJECTS\Language_detection\Test.txt")
+labels, features = du.load(".\Data\Train.txt")
+labels_test, features_test = du.load(".\Data\Test.txt")
 
 #MVG
 for pi in [0.1,0.5]:
