@@ -1,4 +1,4 @@
-import validation2 as val
+import validation as val
 import data_utils as du
 import dimensionality_reduction as dr
 import SVM_classifiers as svm
@@ -7,8 +7,8 @@ import numpy as np
 import data_visualization as dv
 
 #LOADING DATASET
-labels, features = du.load("..\PROJECTS\Language_detection\Train.txt")
-labels_test, features_test = du.load("..\PROJECTS\Language_detection\Test.txt")
+labels, features = du.load(".\Data\Train.txt")
+labels_test, features_test = du.load(".\Data\Test.txt")
 featuresZNorm = mu.z_score(features)
 C = np.logspace(-3, 5, num=9)
 

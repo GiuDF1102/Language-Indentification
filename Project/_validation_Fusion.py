@@ -2,7 +2,7 @@ import data_utils as du
 import data_visualization as dv
 import dimensionality_reduction as dr
 import gaussian_classifiers as gc
-import validation2 as val
+import validation as val
 import math_utils as mu
 import logistic_regression_classifiers as lrc
 import GMM as gmm
@@ -13,16 +13,13 @@ import sys
 from itertools import repeat
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
-import fusion
-
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 if __name__ == "__main__":
     start_time = datetime.now()
 
     #LOADING DATASET
-    labels, features = du.load("Train.txt")
-    labels_test, features_test = du.load("Test.txt")
+    labels, features = du.load(".\Data\Train.txt")
+    labels_test, features_test = du.load(".\Data\Test.txt")
     labels_sh = shuffle(labels,random_state=0)
     labels_sh_sh = shuffle(labels_sh,random_state=0)
 

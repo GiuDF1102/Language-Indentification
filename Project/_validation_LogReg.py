@@ -8,9 +8,9 @@ import logistic_regression_classifiers as lrc
 import math_utils as mu
 import SVM_classifiers as svm
 import data_visualization as dv
-import validation2 as val
+import validation as val
 
-# L, D = du.load("..\PROJECTS\Language_detection\Train.txt")
+# L, D = du.load(".\Data\Train.txt")
 # svmc = svm.SVM("RBF", True, gamma=0.01, C=0.1, K=0.01, piT=0.2)
 # DPCA = dr.PCA(D, 5)
 # actualDCF, minDCF, scores = val.k_fold_bayes_plot(svmc, DPCA, L, 5, (0.1, 1, 1), "NaivePCA5")
@@ -21,7 +21,7 @@ import validation2 as val
 # print(f"Calibrated, aDCF: {actualDCF1}, minDCF: {minDCF1}")  
 
 
-labels, features = du.load("..\PROJECTS\Language_detection\Train.txt")    
+labels, features = du.load(".\Data\Train.txt")  
 lambdas = np.logspace(-2, 3, num=30)
 k = 5
 

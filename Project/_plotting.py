@@ -1,29 +1,22 @@
 import data_utils as du
-import data_visualization as dv
 import dimensionality_reduction as dr
-import validation2 as val
-import math_utils as mu
+import validation as val
 import logistic_regression_classifiers as lrc
 import GMM as gmm
 import SVM_classifiers as svmc
 from datetime import datetime
-import numpy as np
-import sys
 from itertools import repeat
 from sklearn.utils import shuffle
 import matplotlib.pyplot as plt
-import fusion
 import seaborn as sns
 import pandas as pd
-
-from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
 
 if __name__ == "__main__":
     start_time = datetime.now()
 
     #LOADING DATASET
-    labels, features = du.load("Train.txt")
-    labels_test, features_test = du.load("Test.txt")
+    labels, features = du.load(".\Data\Train.txt")
+    labels_test, features_test = du.load(".\Data\Test.txt")
     labels_sh = shuffle(labels,random_state=0)
     labels_sh_sh = shuffle(labels_sh,random_state=0)
 
@@ -35,7 +28,6 @@ if __name__ == "__main__":
     SVMC = svmc.SVM('RBF', balanced=True, gamma=0.01, K=0.01, C=0.1, piT=0.2)
     GMM = gmm.GMM(2, 32, "mvg", "tied")
 
-    """
     ### DET/ROC PLOTS
     # BEST MODELS
     ## Quadratic Logistic Regression NO PCA piT = 0.1, lambda = 10 
@@ -48,9 +40,7 @@ if __name__ == "__main__":
     _,_,scoresGMM, _ = val.k_fold_bayes_plot(GMM, features, labels, 5, (0.5, 1, 1), "GMM")
 
     val.get_multi_DET([scoresQLR, scoresSVM, scoresGMM], labels_sh, ["QLR", "SMV", "GMM"], "Best Models")
-    """
 
-    """
     ## GMM plots
     df = pd.read_csv('GMM_BestPCA_FC.csv')
     #sort by NonTarget
@@ -73,7 +63,7 @@ if __name__ == "__main__":
     #margin
     plt.subplots_adjust(right=0.8)
     plt.savefig("figures_gmm/{}.svg".format("GMM_BestPCA_FC"))
-    """
+
 
     end_time = datetime.now()
     print("--------- TIME ----------")
