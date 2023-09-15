@@ -2,6 +2,7 @@ import validation as val
 import data_utils as du
 import dimensionality_reduction as dr
 import gaussian_classifiers as gc
+import math_utils as mu
 
 #LOADING DATASET
 labels, features = du.load(".\Data\Train.txt")
@@ -62,3 +63,28 @@ for pi in [0.1,0.5]:
         tiedNaiveMvgObj = gc.tied_naive_multivariate_cl([1-pi, pi])
         _, minDCF = val.k_fold(tiedNaiveMvgObj, dataPCA, labels, 5, (pi, 1, 1))
         print("Tied Naive MVG, minDCF with pi {} and {} PCA is {}".format(pi, nPCA, minDCF))
+
+
+BESTMVG = gc.naive_multivariate_cl([0.9, 0.1])
+
+# BEST MODEL WITH Z-NORMALIZATION
+featuresZNorm = mu.z_score(features)
+featuresPCA5ZNorm = dr.PCA(mu.z_score(features),5)
+featuresPCA4ZNorm = dr.PCA(mu.z_score(features),4)
+_, minDCF1, scores, pred = val.k_fold_bayes_plot(BESTMVG, featuresZNorm, labels, 5, (0.1, 1, 1), "BESTMVG", None)
+print("minDCF NAIVE Z-NORM 0.1:", minDCF1)
+_, minDCF2, scores, pred = val.k_fold_bayes_plot(BESTMVG, featuresZNorm, labels, 5, (0.5, 1, 1), "BESTMVG", None)
+print("minDCF NAIVE Z-NORM 0.5:", minDCF2)
+print("minCprim NAIVE Z-NORM:", (minDCF1+minDCF2)/2)
+
+_, minDCF1, scores, pred = val.k_fold_bayes_plot(BESTMVG, featuresPCA5ZNorm, labels, 5, (0.1, 1, 1), "BESTMVG", None)
+print("minDCF NAIVE PCA 5 Z-NORM 0.1:", minDCF1)
+_, minDCF2, scores, pred = val.k_fold_bayes_plot(BESTMVG, featuresPCA5ZNorm, labels, 5, (0.5, 1, 1), "BESTMVG", None)
+print("minDCF NAIVE PCA 5 Z-NORM 0.5:", minDCF2)
+print("minCprim NAIVE PCA 5 Z-NORM:", (minDCF1+minDCF2)/2)
+
+_, minDCF1, scores, pred = val.k_fold_bayes_plot(BESTMVG, featuresPCA4ZNorm, labels, 5, (0.1, 1, 1), "BESTMVG", None)
+print("minDCF NAIVE PCA 4 Z-NORM 0.1:", minDCF1)
+_, minDCF2, scores, pred = val.k_fold_bayes_plot(BESTMVG, featuresPCA4ZNorm, labels, 5, (0.5, 1, 1), "BESTMVG", None)
+print("minDCF NAIVE PCA 4 Z-NORM 0.5:", minDCF2)
+print("minCprim NAIVE PCA 4 Z-NORM:", (minDCF1+minDCF2)/2)

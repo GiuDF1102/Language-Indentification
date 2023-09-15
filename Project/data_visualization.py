@@ -5,11 +5,7 @@ import numpy as np
 import math_utils as mu
 import seaborn as sns
 
-def calc_correlation_matrix(D, name): #TODO:ottimizzare
-    # if(os.path.exists("correlation_martices")):
-    #     shutil.rmtree("correlation_martices")
-    # os.makedirs("correlation_martices")
-
+def calc_correlation_matrix(D, name):
     mean = mu.calcmean(D)
     cov_matr = mu.cov_mat(D,mean)
     variance=cov_matr.diagonal()

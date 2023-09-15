@@ -1,4 +1,3 @@
-import data_utils as du
 import math_utils as mu
 import numpy as np
 import scipy.optimize as opt

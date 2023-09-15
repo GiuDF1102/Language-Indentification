@@ -1,5 +1,4 @@
 import numpy as np
-import sklearn.datasets as sk
 import scipy.optimize as opt
 from itertools import repeat
 
