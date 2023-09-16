@@ -5,6 +5,7 @@ This study presents an investigation into the performance of some common machine
 The main contributions and findings of the study are:
 
 - The study provides a comprehensive analysis of the behaviour and performance of four classifiers: Support Vector Machines (SVM), Gaussian Models, Logistic Regression, and Gaussian Mixture Models (GMM).
+- The study also applies Z-normalization to see the effects of normalization in the models.
 - The study shows that quadratic classification rules are more effective than linear ones for this task, as the data is not linearly separable.
 - The study demonstrates that GMM and SVM are the best performing classifiers among the four. The study also shows that fusion of different classifiers can improve the results further.
 - The study evaluates the models on two working points with different prior probabilities and costs, and uses the minCprim metric as the primary measure of performance.
