@@ -1,52 +1,14 @@
-# MachineLearningProject2023
-Select a candidate between more different possible alternatives (Best performance).
+This is a possible README file for the current web page context:
 
-## Protocol (Compulsory)
-- The Training data can be use to estimate model parameters. So the train data has to be used only to build the model.
-- The Validation set can be taken ONLY from the training data (maybe using k-fold cross-validation). Should be left aside and used to evaluate the possible alternatives. 
-- The Test set can be used EXCLUSIVELY for evaluation.
+# Italian Language Detection from Utterance Embeddings: A Comparative Study of SVM, Gaussian Models, Logistic Regression, and GMM
 
-## Evaluation
-Once we have chosena a model, we need the test set (evaluation in the document). You cannot estimate anything on the evaluation test. However the evaluation should depend on the target application.
+This study presents an investigation into the performance of some common machine learning algorithms for the task of identifying the Italian language among a set of 26 languages. The algorithms are trained on a dataset of synthetic language embeddings extracted from audio sources. The study also explores the effects of dimensionality reduction, score calibration, and fusion on the classification results.
 
-## Post-evaluation
-Show the differences between the selected model and the discarded ones. Basically follow the questions on the slides.
+The main contributions and findings of the study are:
 
-## Structure of the Report
-Should be a pdf file. It should have the form of a scientific paper... There is no need to add notions about the models, it is not relevant. Write only from the results of the project. If some techniques are not the best, try to add some information about why they don't work, it might be interesting.
-
-- The code of the project has to be provided.
-
-- Avoid using ML libraries.
-
-- Do a ZIP file, avoid RAR.
-
-## About "Target Application"
-"Sometimes it is better to have more false positive guesses than false negative guesses."
-
-## Projects
-### Gender Identification
-Consisting of gender identification from high-level features extracted from face images (we assume that the features have already been extracted and given as embeddings, fixed dimensional vector of numbers). The embeddings are synthetic data, they don't come from real samples.
-
-#### Classes
-Keep attention that CLASSES ARE NOT BALANCED. The samples come from threee different age groups, which may have different characteristics for male and female. Young males might be different old males, but the label is not given.
-
-### Language Detection
-Detect wheter an utterance is spoken in a target language (italian or not -> binary problem). The data is also already extracted into embeddings.
-
-#### Classes
-We have six components of each vector, classes are not balanced, the target class has significantly less samples than the other languages (25 possible non-target languages). We need to optimize on two target applications.
-
-### Fingerprint spoofing
-The goal is to detect wheter a fingerprint image is authentic or spoofed. We still work with embeddings, and classify them. 
-
-#### Classes
-There are 10 continous features, the classes are imbalanced (but not too much). We need to optimize on one only target application.
-
-
-### Biometric identity verification
-The goal is to detect wheter a pair of embeddings belongs to the same person. 
-
-#### Classes
-The training set is built to make this project as complex as the others, but check out the documentation. Classes are also slightly imbalanced.
-
+- The study provides a comprehensive analysis of the behaviour and performance of four classifiers: Support Vector Machines (SVM), Gaussian Models, Logistic Regression, and Gaussian Mixture Models (GMM).
+- The study shows that quadratic classification rules are more effective than linear ones for this task, as the data is not linearly separable.
+- The study demonstrates that GMM and SVM are the best performing classifiers among the four. The study also shows that fusion of different classifiers can improve the results further.
+- The study evaluates the models on two working points with different prior probabilities and costs, and uses the minCprim metric as the primary measure of performance.
+- The study applies Principal Component Analysis (PCA) to reduce the dimensionality of the data and observes that it slightly improves the performance of some models, but not significantly.
+- The study applies score calibration to adjust the scores of the models to better reflect the posterior probabilities and observes that it reduces the classification cost for some models, especially for SVM and Logistic Regression.
