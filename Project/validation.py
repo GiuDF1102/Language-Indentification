@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 import logistic_regression_classifiers as lrc
 import math_utils as mu
 import scipy
+from sklearn.utils import shuffle
 
 class confusion_matrix:
     true_labels = []
@@ -258,6 +259,33 @@ def get_multi_error_plot(scores, Cfn, Cfp, true_labels, predicted_labels, names,
     plt.savefig("{}.svg".format(name))
     plt.close()
 
+def get_multi_error_plot_fusion(scores, Cfn, Cfp, true_labels, predicted_labels, names, name):
+    # plot 1+ error plots in the same figure for comparison
+    effPriorLogOdds = np.linspace(-3,3,21)
+    pi = 1/(1+np.exp(-effPriorLogOdds))
+    dcf = []
+    min_dcf = []
+    for index, ss in enumerate(scores):
+        dcf = []
+        min_dcf = []
+        for p in pi:
+            if index == 0:
+                fusion_labels = shuffle(true_labels, random_state=0)
+                min_dcf.append(min_DCF(ss, p, Cfn, Cfp, fusion_labels, predicted_labels))
+                dcf.append(act_DCF(ss, p, Cfn, Cfp, fusion_labels,None))
+            else:
+                min_dcf.append(min_DCF(ss, p, Cfn, Cfp, true_labels, predicted_labels))
+                dcf.append(act_DCF(ss, p, Cfn, Cfp, true_labels,None))
+
+        line = plt.plot(effPriorLogOdds, dcf, label='min DCF')
+        plt.plot(effPriorLogOdds, min_dcf, label='min DCF', color=line[0].get_color(), linestyle='--')
+    plt.ylim([0, 1.1])
+    plt.xlim([-3, 3])
+    plt.legend(names, loc='upper right')
+    plt.ylabel('DCF value')
+    plt.xlabel('prior log-odds')
+    plt.savefig("{}.svg".format(name))
+    plt.close()
 
 def binary_threshold(pi, C):
     Cfn = C[0][1]
@@ -299,7 +327,6 @@ def k_fold_bayes_plot(learner,x,labels,k, workingPoint,name, plot):
     gotpredicted = np.hstack(concat_predicted)
     actualDCF = act_DCF(gotscores, pi, Cfn, Cfp, Y, None)
     minDCF = min_DCF(gotscores, pi, Cfn, Cfp, Y, gotpredicted)
-    print(actualDCF, minDCF)
     if plot:
         get_error_plot(gotscores, Cfn, Cfp, Y, gotpredicted, name)
     return actualDCF, minDCF, gotscores, gotpredicted
