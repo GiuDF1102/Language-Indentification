@@ -1,5 +1,3 @@
-This is a possible README file for the current web page context:
-
 # Italian Language Detection from Utterance Embeddings: A Comparative Study of SVM, Gaussian Models, Logistic Regression, and GMM
 
 This study presents an investigation into the performance of some common machine learning algorithms for the task of identifying the Italian language among a set of 26 languages. The algorithms are trained on a dataset of synthetic language embeddings extracted from audio sources. The study also explores the effects of dimensionality reduction, score calibration, and fusion on the classification results.
