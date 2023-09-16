@@ -1,6 +1,7 @@
 import numpy as np
 import math_utils as mu
 import matplotlib.pyplot as plt
+from sklearn.utils import shuffle
 
 def load(file_name):
     file_path = file_name
@@ -33,6 +34,20 @@ def split_db(D, L,pTrain,pTest,seed=0):#versicolor=1, virginica=0
     return (DTR, LTR), (DTE, LTE)  # DTR= data training, LTR= Label training
     # DTE= Data test, LTE= label testing
 
+def split_db_2to1(D, L, seed=0):#versicolor=1, virginica=0
+    # 2/3 dei dati per il training----->100 per training, 50 per test
+    nTrain = int(D.shape[1]*2.0/3.0)
+    np.random.seed(seed)
+    idx = np.random.permutation(D.shape[1])
+    idxTrain = idx[0:nTrain]
+    idxTest = idx[nTrain:]
+    DTR = D[:, idxTrain]
+    DTE = D[:, idxTest]
+    LTR = L[idxTrain]
+    LTE = L[idxTest]
+    return (DTR, LTR), (DTE, LTE)  # DTR= data training, LTR= Label training
+    # DTE= Data test, LTE= label testing
+    
 def split_k(X, y, k):
     indices = np.random.permutation(len(X))
     X, y = X[indices], y[indices]
@@ -88,3 +103,13 @@ def explained_variance(Data):
 
 def modifyLabel(trainLabels):
     return np.where(trainLabels==0,-1,1)
+
+def split8020(data, labels):
+    X, Y = shuffle(data.T, labels, random_state=0)
+    X_train, y_train = X[:int((X.shape[0]*80)/100)].T, Y[:int((X.shape[0]*80)/100)]
+    X_val, y_val = X[int((X.shape[0]*80)/100):].T, Y[int((X.shape[0]*80)/100):]
+
+    X_train = mu.FromColumnToRow(X_train)
+    X_val = mu.FromColumnToRow(X_val)
+
+    return X_train, y_train, X_val, y_val

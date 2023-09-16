@@ -9,6 +9,9 @@ def FromColumnToRow(v):
 def vrow(x):
     return x.reshape((1,x.shape[0]))
 
+def vcol(x):
+    return x.reshape((x.shape[0],1))
+
 def calcmean(D):
     return D.mean(1) #ritorno media sulle colonne
 
@@ -88,3 +91,10 @@ def log_gaussian_multivariate(x, mu, C):
     
 def log_likelihood(x,m_ML,C_ML):
     return np.sum(log_gaussian_multivariate(x,m_ML,C_ML))
+
+def z_score(DTR):
+    mu = vcol(DTR.mean(1))
+    std = vcol(DTR.std(1))
+
+    DTR_znorm = (DTR - mu) / std
+    return DTR_znorm

@@ -2,7 +2,6 @@ import numpy as np
 import scipy as sci
 import math_utils as mut  
 
-
 class GMM:
 
     ll=None
